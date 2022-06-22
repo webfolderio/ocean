@@ -12,7 +12,7 @@ Both the JRE and the JDK are suitable for use with this library.
 Integration with Maven
 ----------------------
 
-To use the official release of duktape4j, please use the following snippet in your `pom.xml` file.
+To use the official release of ocean, please use the following snippet in your `pom.xml` file.
 
 Add the following to your POM's `<dependencies>` tag:
 
