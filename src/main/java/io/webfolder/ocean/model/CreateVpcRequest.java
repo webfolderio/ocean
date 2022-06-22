@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * CreateVpcRequest
  */
@@ -41,7 +39,6 @@ public class CreateVpcRequest {
      * @return name
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "env.prod-vpc", required = true, value = "The name of the VPC. Must be unique and may only contain alphanumeric characters, dashes, and periods.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -67,7 +64,6 @@ public class CreateVpcRequest {
      * @return description
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "VPC for production environment", value = "A free-form text field for describing the VPC's purpose. It may be a maximum of 255 characters.")
     @JsonProperty(JSON_PROPERTY_DESCRIPTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -92,7 +88,6 @@ public class CreateVpcRequest {
      * @return region
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "nyc1", required = true, value = "The slug identifier for the region where the VPC will be created.")
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -122,7 +117,6 @@ public class CreateVpcRequest {
      * @return ipRange
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "10.10.10.0/24", value = "The range of IP addresses in the VPC in CIDR notation. Network ranges cannot overlap with other networks in the same account and must be in range of private addresses as defined in RFC1918. It may not be smaller than `/28` nor larger than `/16`. If no IP range is specified, a `/20` network range is generated that won't conflict with other VPC networks in your account.")
     @JsonProperty(JSON_PROPERTY_IP_RANGE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

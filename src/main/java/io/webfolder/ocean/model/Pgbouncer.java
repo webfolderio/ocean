@@ -10,13 +10,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * PGBouncer connection pooling settings
  */
-@ApiModel(description = "PGBouncer connection pooling settings")
 @JsonPropertyOrder({ Pgbouncer.JSON_PROPERTY_SERVER_RESET_QUERY_ALWAYS,
         Pgbouncer.JSON_PROPERTY_IGNORE_STARTUP_PARAMETERS, Pgbouncer.JSON_PROPERTY_MIN_POOL_SIZE,
         Pgbouncer.JSON_PROPERTY_SERVER_LIFETIME, Pgbouncer.JSON_PROPERTY_SERVER_IDLE_TIMEOUT,
@@ -136,7 +132,6 @@ public class Pgbouncer {
      * @return serverResetQueryAlways
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "false", value = "Run server_reset_query (DISCARD ALL) in all pooling modes.")
     @JsonProperty(JSON_PROPERTY_SERVER_RESET_QUERY_ALWAYS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -169,7 +164,6 @@ public class Pgbouncer {
      * @return ignoreStartupParameters
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"extra_float_digits\",\"search_path\"]", value = "List of parameters to ignore when given in startup packet.")
     @JsonProperty(JSON_PROPERTY_IGNORE_STARTUP_PARAMETERS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -197,7 +191,6 @@ public class Pgbouncer {
      * @return minPoolSize
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "1", value = "If current server connections are below this number, adds more. Improves behavior when usual load comes suddenly back after period of total inactivity. The value is effectively capped at the pool size.")
     @JsonProperty(JSON_PROPERTY_MIN_POOL_SIZE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -223,7 +216,6 @@ public class Pgbouncer {
      * @return serverLifetime
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "3600", value = "The pooler closes any unused server connection that has been connected longer than this amount of seconds.")
     @JsonProperty(JSON_PROPERTY_SERVER_LIFETIME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -249,7 +241,6 @@ public class Pgbouncer {
      * @return serverIdleTimeout
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "600", value = "Drops server connections if they have been idle more than this many seconds.  If 0, timeout is disabled. ")
     @JsonProperty(JSON_PROPERTY_SERVER_IDLE_TIMEOUT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -275,7 +266,6 @@ public class Pgbouncer {
      * @return autodbPoolSize
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "1", value = "If non-zero, automatically creates a pool of that size per user when a pool doesn't exist.")
     @JsonProperty(JSON_PROPERTY_AUTODB_POOL_SIZE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -300,7 +290,6 @@ public class Pgbouncer {
      * @return autodbPoolMode
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "session", value = "PGBouncer pool mode")
     @JsonProperty(JSON_PROPERTY_AUTODB_POOL_MODE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -326,7 +315,6 @@ public class Pgbouncer {
      * @return autodbMaxDbConnections
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "1", value = "Only allows a maximum this many server connections per database (regardless of user). If 0, allows unlimited connections.")
     @JsonProperty(JSON_PROPERTY_AUTODB_MAX_DB_CONNECTIONS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -352,7 +340,6 @@ public class Pgbouncer {
      * @return autodbIdleTimeout
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "3600", value = "If the automatically-created database pools have been unused this many seconds, they are freed. If 0, timeout is disabled.")
     @JsonProperty(JSON_PROPERTY_AUTODB_IDLE_TIMEOUT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

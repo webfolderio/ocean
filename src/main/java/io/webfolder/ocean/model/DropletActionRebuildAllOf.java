@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * DropletActionRebuildAllOf
  */
@@ -31,7 +29,6 @@ public class DropletActionRebuildAllOf {
      * @return image
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "ubuntu-20-04-x64", value = "The image ID of a public or private image or the slug identifier for a public image. The Droplet will be rebuilt using this image as its base.")
     @JsonProperty(JSON_PROPERTY_IMAGE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

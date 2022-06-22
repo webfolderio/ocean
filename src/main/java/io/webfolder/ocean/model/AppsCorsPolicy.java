@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppsCorsPolicy
  */
@@ -57,7 +55,6 @@ public class AppsCorsPolicy {
      * @return allowOrigins
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[{\"exact\":\"https://www.example.com\"},{\"regex\":\"^.*example.com\"}]", value = "The set of allowed CORS origins.")
     @JsonProperty(JSON_PROPERTY_ALLOW_ORIGINS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -91,7 +88,6 @@ public class AppsCorsPolicy {
      * @return allowMethods
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"GET\",\"OPTIONS\",\"POST\",\"PUT\",\"PATCH\",\"DELETE\"]", value = "The set of allowed HTTP methods. This configures the `Access-Control-Allow-Methods` header.")
     @JsonProperty(JSON_PROPERTY_ALLOW_METHODS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -125,7 +121,6 @@ public class AppsCorsPolicy {
      * @return allowHeaders
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"Content-Type\",\"X-Custom-Header\"]", value = "The set of allowed HTTP request headers. This configures the `Access-Control-Allow-Headers` header.")
     @JsonProperty(JSON_PROPERTY_ALLOW_HEADERS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -159,7 +154,6 @@ public class AppsCorsPolicy {
      * @return exposeHeaders
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"Content-Encoding\",\"X-Custom-Header\"]", value = "The set of HTTP response headers that browsers are allowed to access. This configures the `Access-Control-Expose-Headers` header.")
     @JsonProperty(JSON_PROPERTY_EXPOSE_HEADERS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -186,7 +180,6 @@ public class AppsCorsPolicy {
      * @return maxAge
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "5h30m", value = "An optional duration specifying how long browsers can cache the results of a preflight request. This configures the `Access-Control-Max-Age` header.")
     @JsonProperty(JSON_PROPERTY_MAX_AGE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -213,7 +206,6 @@ public class AppsCorsPolicy {
      * @return allowCredentials
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "false", value = "Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is include. This configures the `Access-Control-Allow-Credentials` header.")
     @JsonProperty(JSON_PROPERTY_ALLOW_CREDENTIALS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * InvoiceSummaryUserBillingAddress
  */
@@ -57,7 +55,6 @@ public class InvoiceSummaryUserBillingAddress {
      * @return addressLine1
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "101 Shark Row", value = "Street address line 1")
     @JsonProperty(JSON_PROPERTY_ADDRESS_LINE1)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -82,7 +79,6 @@ public class InvoiceSummaryUserBillingAddress {
      * @return addressLine2
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = " ", value = "Street address line 2")
     @JsonProperty(JSON_PROPERTY_ADDRESS_LINE2)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -107,7 +103,6 @@ public class InvoiceSummaryUserBillingAddress {
      * @return city
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "Atlantis", value = "City")
     @JsonProperty(JSON_PROPERTY_CITY)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -132,7 +127,6 @@ public class InvoiceSummaryUserBillingAddress {
      * @return region
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "OC", value = "Region")
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -157,7 +151,6 @@ public class InvoiceSummaryUserBillingAddress {
      * @return postalCode
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "12345", value = "Postal code")
     @JsonProperty(JSON_PROPERTY_POSTAL_CODE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -182,7 +175,6 @@ public class InvoiceSummaryUserBillingAddress {
      * @return countryIso2Code
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "US", value = "Country (ISO2) code")
     @JsonProperty(JSON_PROPERTY_COUNTRY_ISO2_CODE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -207,7 +199,6 @@ public class InvoiceSummaryUserBillingAddress {
      * @return createdAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2019-09-03T16:34:46.000+00:00", value = "Timestamp billing address was created")
     @JsonProperty(JSON_PROPERTY_CREATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -232,7 +223,6 @@ public class InvoiceSummaryUserBillingAddress {
      * @return updatedAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2019-09-03T16:34:46.000+00:00", value = "Timestamp billing address was updated")
     @JsonProperty(JSON_PROPERTY_UPDATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

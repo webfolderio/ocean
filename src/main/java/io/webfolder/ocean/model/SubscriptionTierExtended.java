@@ -10,8 +10,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * SubscriptionTierExtended
  */
@@ -74,7 +72,6 @@ public class SubscriptionTierExtended {
      * @return eligible
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "A boolean indicating whether your account it eligible to use a certain subscription tier.")
     @JsonProperty(JSON_PROPERTY_ELIGIBLE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -108,7 +105,6 @@ public class SubscriptionTierExtended {
      * @return eligibilityReasons
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"OverRepositoryLimit\"]", value = "If your account is not eligible to use a certain subscription tier, this will include a list of reasons that prevent you from using the tier.")
     @JsonProperty(JSON_PROPERTY_ELIGIBILITY_REASONS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

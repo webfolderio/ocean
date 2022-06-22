@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * MetaMeta
  */
@@ -30,7 +28,6 @@ public class MetaMeta {
      * @return total
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "1", required = true, value = "Number of objects returned by the request.")
     @JsonProperty(JSON_PROPERTY_TOTAL)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

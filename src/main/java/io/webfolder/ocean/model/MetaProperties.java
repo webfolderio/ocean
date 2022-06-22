@@ -6,13 +6,9 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * Information about the response itself.
  */
-@ApiModel(description = "Information about the response itself.")
 @JsonPropertyOrder({ MetaProperties.JSON_PROPERTY_TOTAL })
 public class MetaProperties {
     public static final String JSON_PROPERTY_TOTAL = "total";
@@ -32,7 +28,6 @@ public class MetaProperties {
      * @return total
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "1", value = "Number of objects returned by the request.")
     @JsonProperty(JSON_PROPERTY_TOTAL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

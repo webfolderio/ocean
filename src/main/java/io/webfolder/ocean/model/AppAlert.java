@@ -9,8 +9,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppAlert
  */
@@ -54,7 +52,6 @@ public class AppAlert {
      * @return id
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "4f6c71e2-1e90-4762-9fee-6cc4a0a9f2cf", value = "")
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -73,7 +70,6 @@ public class AppAlert {
      * @return componentName
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "backend", value = "")
     @JsonProperty(JSON_PROPERTY_COMPONENT_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -98,7 +94,6 @@ public class AppAlert {
      * @return spec
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_SPEC)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -131,7 +126,6 @@ public class AppAlert {
      * @return emails
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"sammy@digitalocean.com\"]", value = "")
     @JsonProperty(JSON_PROPERTY_EMAILS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -164,7 +158,6 @@ public class AppAlert {
      * @return slackWebhooks
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_SLACK_WEBHOOKS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -189,7 +182,6 @@ public class AppAlert {
      * @return phase
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_PHASE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -214,7 +206,6 @@ public class AppAlert {
      * @return progress
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_PROGRESS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

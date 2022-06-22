@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * ConnectionPool
  */
@@ -50,7 +48,6 @@ public class ConnectionPool {
      * @return name
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "backend-pool", required = true, value = "A unique name for the connection pool. Must be between 3 and 60 characters.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -76,7 +73,6 @@ public class ConnectionPool {
      * @return mode
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "transaction", required = true, value = "The PGBouncer transaction mode for the connection pool. The allowed values are session, transaction, and statement.")
     @JsonProperty(JSON_PROPERTY_MODE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -106,7 +102,6 @@ public class ConnectionPool {
      * @return size
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "10", required = true, value = "The desired size of the PGBouncer connection pool. The maximum allowed size is determined by the size of the cluster's primary node. 25 backend server connections are allowed for every 1GB of RAM. Three are reserved for maintenance. For example, a primary node with 1 GB of RAM allows for a maximum of 22 backend server connections while one with 4 GB would allow for 97. Note that these are shared across all connection pools in a cluster.")
     @JsonProperty(JSON_PROPERTY_SIZE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -131,7 +126,6 @@ public class ConnectionPool {
      * @return db
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "defaultdb", required = true, value = "The database for use with the connection pool.")
     @JsonProperty(JSON_PROPERTY_DB)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -156,7 +150,6 @@ public class ConnectionPool {
      * @return user
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "doadmin", required = true, value = "The name of the user for use with the connection pool.")
     @JsonProperty(JSON_PROPERTY_USER)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -181,7 +174,6 @@ public class ConnectionPool {
      * @return connection
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_CONNECTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -206,7 +198,6 @@ public class ConnectionPool {
      * @return privateConnection
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_PRIVATE_CONNECTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

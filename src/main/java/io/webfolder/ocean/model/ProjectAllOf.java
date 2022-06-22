@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * ProjectAllOf
  */
@@ -31,7 +29,6 @@ public class ProjectAllOf {
      * @return isDefault
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "false", value = "If true, all resources will be added to this project if no project is specified.")
     @JsonProperty(JSON_PROPERTY_IS_DEFAULT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

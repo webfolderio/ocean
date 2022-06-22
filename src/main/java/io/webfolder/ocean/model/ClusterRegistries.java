@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * ClusterRegistries
  */
@@ -40,7 +38,6 @@ public class ClusterRegistries {
      * @return clusterUuids
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"bd5f5959-5e1e-4205-a714-a914373942af\",\"50c2f44c-011d-493e-aee5-361a4a0d1844\"]", value = "An array containing the UUIDs of Kubernetes clusters.")
     @JsonProperty(JSON_PROPERTY_CLUSTER_UUIDS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

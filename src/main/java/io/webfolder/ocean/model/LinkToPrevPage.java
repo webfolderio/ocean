@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * LinkToPrevPage
  */
@@ -30,7 +28,6 @@ public class LinkToPrevPage {
      * @return prev
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "https://api.digitalocean.com/v2/images?page=1", value = "URI of the previous page of the results.")
     @JsonProperty(JSON_PROPERTY_PREV)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

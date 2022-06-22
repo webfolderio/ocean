@@ -6,14 +6,10 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * When authorized in a team context, includes information about the current
  * team.
  */
-@ApiModel(description = "When authorized in a team context, includes information about the current team.")
 @JsonPropertyOrder({ AccountTeam.JSON_PROPERTY_UUID, AccountTeam.JSON_PROPERTY_NAME })
 public class AccountTeam {
     public static final String JSON_PROPERTY_UUID = "uuid";
@@ -36,7 +32,6 @@ public class AccountTeam {
      * @return uuid
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "5df3e3004a17e242b7c20ca6c9fc25b701a47ece", value = "The unique universal identifier for the current team.")
     @JsonProperty(JSON_PROPERTY_UUID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -61,7 +56,6 @@ public class AccountTeam {
      * @return name
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "My Team", value = "The name for the current team.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

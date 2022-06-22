@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * InstallKubernetesResponse
  */
@@ -30,7 +28,6 @@ public class InstallKubernetesResponse {
      * @return message
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "Successfully kicked off addon job.", value = "A message about the result of the request.")
     @JsonProperty(JSON_PROPERTY_MESSAGE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

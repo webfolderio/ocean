@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AddFirewallDropletsRequest
  */
@@ -37,7 +35,6 @@ public class AddFirewallDropletsRequest {
      * @return dropletIds
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "[49696269]", required = true, value = "An array containing the IDs of the Droplets to be assigned to the firewall.")
     @JsonProperty(JSON_PROPERTY_DROPLET_IDS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

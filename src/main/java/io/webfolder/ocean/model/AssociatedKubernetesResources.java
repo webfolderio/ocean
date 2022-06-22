@@ -8,14 +8,10 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * An object containing the IDs of resources associated with a Kubernetes
  * cluster.
  */
-@ApiModel(description = "An object containing the IDs of resources associated with a Kubernetes cluster.")
 @JsonPropertyOrder({ AssociatedKubernetesResources.JSON_PROPERTY_LOAD_BALANCERS,
         AssociatedKubernetesResources.JSON_PROPERTY_VOLUMES,
         AssociatedKubernetesResources.JSON_PROPERTY_VOLUME_SNAPSHOTS })
@@ -52,7 +48,6 @@ public class AssociatedKubernetesResources {
      * @return loadBalancers
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[{\"id\":\"4de7ac8b-495b-4884-9a69-1050c6793cd6\",\"name\":\"lb-001\"}]", value = "A list of names and IDs for associated load balancers that can be destroyed along with the cluster.")
     @JsonProperty(JSON_PROPERTY_LOAD_BALANCERS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -86,7 +81,6 @@ public class AssociatedKubernetesResources {
      * @return volumes
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[{\"id\":\"ba49449a-7435-11ea-b89e-0a58ac14480f\",\"name\":\"volume-001\"}]", value = "A list of names and IDs for associated volumes that can be destroyed along with the cluster.")
     @JsonProperty(JSON_PROPERTY_VOLUMES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -120,7 +114,6 @@ public class AssociatedKubernetesResources {
      * @return volumeSnapshots
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[{\"id\":\"edb0478d-7436-11ea-86e6-0a58ac144b91\",\"name\":\"snapshot-001\"}]", value = "A list of names and IDs for associated volume snapshots that can be destroyed along with the cluster.")
     @JsonProperty(JSON_PROPERTY_VOLUME_SNAPSHOTS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

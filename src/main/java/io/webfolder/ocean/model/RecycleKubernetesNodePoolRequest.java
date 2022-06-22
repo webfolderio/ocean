@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * RecycleKubernetesNodePoolRequest
  */
@@ -40,7 +38,6 @@ public class RecycleKubernetesNodePoolRequest {
      * @return nodes
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"d8db5e1a-6103-43b5-a7b3-8a948210a9fc\"]", value = "")
     @JsonProperty(JSON_PROPERTY_NODES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

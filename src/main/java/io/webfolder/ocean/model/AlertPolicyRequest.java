@@ -10,8 +10,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AlertPolicyRequest
  */
@@ -200,7 +198,6 @@ public class AlertPolicyRequest {
      * @return alerts
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(required = true, value = "")
     @JsonProperty(JSON_PROPERTY_ALERTS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -225,7 +222,6 @@ public class AlertPolicyRequest {
      * @return compare
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "GreaterThan", required = true, value = "")
     @JsonProperty(JSON_PROPERTY_COMPARE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -250,7 +246,6 @@ public class AlertPolicyRequest {
      * @return description
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "CPU Alert", required = true, value = "")
     @JsonProperty(JSON_PROPERTY_DESCRIPTION)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -275,7 +270,6 @@ public class AlertPolicyRequest {
      * @return enabled
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "true", required = true, value = "")
     @JsonProperty(JSON_PROPERTY_ENABLED)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -305,7 +299,6 @@ public class AlertPolicyRequest {
      * @return entities
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "[\"192018292\"]", required = true, value = "")
     @JsonProperty(JSON_PROPERTY_ENTITIES)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -335,7 +328,6 @@ public class AlertPolicyRequest {
      * @return tags
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "[\"droplet_tag\"]", required = true, value = "")
     @JsonProperty(JSON_PROPERTY_TAGS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -360,7 +352,6 @@ public class AlertPolicyRequest {
      * @return type
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "v1/insights/droplet/cpu", required = true, value = "")
     @JsonProperty(JSON_PROPERTY_TYPE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -385,7 +376,6 @@ public class AlertPolicyRequest {
      * @return value
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "80", required = true, value = "")
     @JsonProperty(JSON_PROPERTY_VALUE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -410,7 +400,6 @@ public class AlertPolicyRequest {
      * @return window
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "5m", required = true, value = "")
     @JsonProperty(JSON_PROPERTY_WINDOW)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

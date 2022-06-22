@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * UserKubernetesClusterUser
  */
@@ -35,7 +33,6 @@ public class UserKubernetesClusterUser {
      * @return username
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "sammy@digitalocean.com", value = "The username for the cluster admin user.")
     @JsonProperty(JSON_PROPERTY_USERNAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -68,7 +65,6 @@ public class UserKubernetesClusterUser {
      * @return groups
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"k8saas:authenticated\"]", value = "A list of in-cluster groups that the user belongs to.")
     @JsonProperty(JSON_PROPERTY_GROUPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

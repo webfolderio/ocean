@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * VolumeActionPostBase
  */
@@ -72,7 +70,6 @@ public class VolumeActionPostBase {
      * @return type
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "attach", required = true, value = "The volume action to initiate.")
     @JsonProperty(JSON_PROPERTY_TYPE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -97,7 +94,6 @@ public class VolumeActionPostBase {
      * @return region
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

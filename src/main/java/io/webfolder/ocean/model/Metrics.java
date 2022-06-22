@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * Metrics
  */
@@ -70,7 +68,6 @@ public class Metrics {
      * @return data
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(required = true, value = "")
     @JsonProperty(JSON_PROPERTY_DATA)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -95,7 +92,6 @@ public class Metrics {
      * @return status
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "success", required = true, value = "")
     @JsonProperty(JSON_PROPERTY_STATUS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

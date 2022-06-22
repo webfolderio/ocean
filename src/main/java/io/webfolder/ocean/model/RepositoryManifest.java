@@ -9,8 +9,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * RepositoryManifest
  */
@@ -57,7 +55,6 @@ public class RepositoryManifest {
      * @return registryName
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "example", value = "The name of the container registry.")
     @JsonProperty(JSON_PROPERTY_REGISTRY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -82,7 +79,6 @@ public class RepositoryManifest {
      * @return repository
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "repo-1", value = "The name of the repository.")
     @JsonProperty(JSON_PROPERTY_REPOSITORY)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -107,7 +103,6 @@ public class RepositoryManifest {
      * @return digest
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "sha256:cb8a924afdf0229ef7515d9e5b3024e23b3eb03ddbba287f4a19c6ac90b8d221", value = "The manifest digest")
     @JsonProperty(JSON_PROPERTY_DIGEST)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -132,7 +127,6 @@ public class RepositoryManifest {
      * @return compressedSizeBytes
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2803255", value = "The compressed size of the manifest in bytes.")
     @JsonProperty(JSON_PROPERTY_COMPRESSED_SIZE_BYTES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -158,7 +152,6 @@ public class RepositoryManifest {
      * @return sizeBytes
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "5861888", value = "The uncompressed size of the manifest in bytes (this size is calculated asynchronously so it may not be immediately available).")
     @JsonProperty(JSON_PROPERTY_SIZE_BYTES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -183,7 +176,6 @@ public class RepositoryManifest {
      * @return updatedAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2020-04-09T23:54:25Z", value = "The time the manifest was last updated.")
     @JsonProperty(JSON_PROPERTY_UPDATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -216,7 +208,6 @@ public class RepositoryManifest {
      * @return tags
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"latest\",\"v1\",\"v2\"]", value = "All tags associated with this manifest")
     @JsonProperty(JSON_PROPERTY_TAGS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -249,7 +240,6 @@ public class RepositoryManifest {
      * @return blobs
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "All blobs associated with this manifest")
     @JsonProperty(JSON_PROPERTY_BLOBS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

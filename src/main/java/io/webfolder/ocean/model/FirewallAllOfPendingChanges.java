@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * FirewallAllOfPendingChanges
  */
@@ -37,7 +35,6 @@ public class FirewallAllOfPendingChanges {
      * @return dropletId
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "8043964", value = "")
     @JsonProperty(JSON_PROPERTY_DROPLET_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -62,7 +59,6 @@ public class FirewallAllOfPendingChanges {
      * @return removing
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "false", value = "")
     @JsonProperty(JSON_PROPERTY_REMOVING)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -87,7 +83,6 @@ public class FirewallAllOfPendingChanges {
      * @return status
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "waiting", value = "")
     @JsonProperty(JSON_PROPERTY_STATUS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppsAssignAppAlertDestinationsRequest
  */
@@ -44,7 +42,6 @@ public class AppsAssignAppAlertDestinationsRequest {
      * @return emails
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"sammy@digitalocean.com\"]", value = "")
     @JsonProperty(JSON_PROPERTY_EMAILS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -77,7 +74,6 @@ public class AppsAssignAppAlertDestinationsRequest {
      * @return slackWebhooks
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_SLACK_WEBHOOKS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

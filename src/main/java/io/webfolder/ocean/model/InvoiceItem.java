@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * InvoiceItem
  */
@@ -64,7 +62,6 @@ public class InvoiceItem {
      * @return product
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "Kubernetes Clusters", value = "Name of the product being billed in the invoice item.")
     @JsonProperty(JSON_PROPERTY_PRODUCT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -89,7 +86,6 @@ public class InvoiceItem {
      * @return resourceUuid
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "711157cb-37c8-4817-b371-44fa3504a39c", value = "UUID of the resource billing in the invoice item if available.")
     @JsonProperty(JSON_PROPERTY_RESOURCE_UUID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -114,7 +110,6 @@ public class InvoiceItem {
      * @return resourceId
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2353624", value = "ID of the resource billing in the invoice item if available.")
     @JsonProperty(JSON_PROPERTY_RESOURCE_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -140,7 +135,6 @@ public class InvoiceItem {
      * @return groupDescription
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "my-doks-cluster", value = "Description of the invoice item when it is a grouped set of usage, such  as DOKS or databases.")
     @JsonProperty(JSON_PROPERTY_GROUP_DESCRIPTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -165,7 +159,6 @@ public class InvoiceItem {
      * @return description
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "a56e086a317d8410c8b4cfd1f4dc9f82", value = "Description of the invoice item.")
     @JsonProperty(JSON_PROPERTY_DESCRIPTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -190,7 +183,6 @@ public class InvoiceItem {
      * @return amount
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "12.34", value = "Billed amount of this invoice item. Billed in USD.")
     @JsonProperty(JSON_PROPERTY_AMOUNT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -215,7 +207,6 @@ public class InvoiceItem {
      * @return duration
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "744", value = "Duration of time this invoice item was used and subsequently billed.")
     @JsonProperty(JSON_PROPERTY_DURATION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -240,7 +231,6 @@ public class InvoiceItem {
      * @return durationUnit
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "Hours", value = "Unit of time for duration.")
     @JsonProperty(JSON_PROPERTY_DURATION_UNIT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -265,7 +255,6 @@ public class InvoiceItem {
      * @return startTime
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2020-01-01T00:00:00Z", value = "Time the invoice item began to be billed for usage.")
     @JsonProperty(JSON_PROPERTY_START_TIME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -290,7 +279,6 @@ public class InvoiceItem {
      * @return endTime
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2020-02-01T00:00:00Z", value = "Time the invoice item stoped being billed for usage.")
     @JsonProperty(JSON_PROPERTY_END_TIME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -315,7 +303,6 @@ public class InvoiceItem {
      * @return projectName
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "web", value = "Name of the DigitalOcean Project this resource belongs to.")
     @JsonProperty(JSON_PROPERTY_PROJECT_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

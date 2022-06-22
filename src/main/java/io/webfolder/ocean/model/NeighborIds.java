@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * NeighborIds
  */
@@ -41,7 +39,6 @@ public class NeighborIds {
      * @return neighborIds
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[[168671828,168663509,168671815],[168671883,168671750]]", value = "An array of arrays. Each array will contain a set of Droplet IDs for Droplets that share a physical server.")
     @JsonProperty(JSON_PROPERTY_NEIGHBOR_IDS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

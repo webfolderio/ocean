@@ -9,8 +9,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * Mysql
  */
@@ -155,7 +153,6 @@ public class Mysql {
      * @return backupHour
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "3", value = "The hour of day (in UTC) when backup for the service starts. New backup only starts if previous backup has already completed.")
     @JsonProperty(JSON_PROPERTY_BACKUP_HOUR)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -181,7 +178,6 @@ public class Mysql {
      * @return backupMinute
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "30", value = "The minute of the backup hour when backup for the service starts. New backup  only starts if previous backup has already completed.")
     @JsonProperty(JSON_PROPERTY_BACKUP_MINUTE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -207,7 +203,6 @@ public class Mysql {
      * @return sqlMode
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "ANSI,TRADITIONAL", value = "Global SQL mode. If empty, uses MySQL server defaults. Must only include uppercase alphabetic characters, underscores, and commas.")
     @JsonProperty(JSON_PROPERTY_SQL_MODE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -233,7 +228,6 @@ public class Mysql {
      * @return connectTimeout
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "10", value = "The number of seconds that the mysqld server waits for a connect packet before responding with bad handshake.")
     @JsonProperty(JSON_PROPERTY_CONNECT_TIMEOUT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -260,7 +254,6 @@ public class Mysql {
      * @return defaultTimeZone
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "+03:00", value = "Default server time zone, in the form of an offset from UTC (from -12:00 to +12:00), a time zone name (EST), or 'SYSTEM' to use the MySQL server default.")
     @JsonProperty(JSON_PROPERTY_DEFAULT_TIME_ZONE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -286,7 +279,6 @@ public class Mysql {
      * @return groupConcatMaxLen
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "1024", value = "The maximum permitted result length, in bytes, for the GROUP_CONCAT() function.")
     @JsonProperty(JSON_PROPERTY_GROUP_CONCAT_MAX_LEN)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -312,7 +304,6 @@ public class Mysql {
      * @return informationSchemaStatsExpiry
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "86400", value = "The time, in seconds, before cached statistics expire.")
     @JsonProperty(JSON_PROPERTY_INFORMATION_SCHEMA_STATS_EXPIRY)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -338,7 +329,6 @@ public class Mysql {
      * @return innodbFtMinTokenSize
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "3", value = "The minimum length of words that an InnoDB FULLTEXT index stores.")
     @JsonProperty(JSON_PROPERTY_INNODB_FT_MIN_TOKEN_SIZE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -363,7 +353,6 @@ public class Mysql {
      * @return innodbFtServerStopwordTable
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "db_name/table_name", value = "The InnoDB FULLTEXT index stopword list for all InnoDB tables.")
     @JsonProperty(JSON_PROPERTY_INNODB_FT_SERVER_STOPWORD_TABLE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -389,7 +378,6 @@ public class Mysql {
      * @return innodbLockWaitTimeout
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "50", value = "The time, in seconds, that an InnoDB transaction waits for a row lock. before giving up.")
     @JsonProperty(JSON_PROPERTY_INNODB_LOCK_WAIT_TIMEOUT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -415,7 +403,6 @@ public class Mysql {
      * @return innodbLogBufferSize
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "16777216", value = "The size of the buffer, in bytes, that InnoDB uses to write to the log files. on disk.")
     @JsonProperty(JSON_PROPERTY_INNODB_LOG_BUFFER_SIZE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -442,7 +429,6 @@ public class Mysql {
      * @return innodbOnlineAlterLogMaxSize
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "134217728", value = "The upper limit, in bytes, of the size of the temporary log files used during online DDL operations for InnoDB tables.")
     @JsonProperty(JSON_PROPERTY_INNODB_ONLINE_ALTER_LOG_MAX_SIZE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -468,7 +454,6 @@ public class Mysql {
      * @return innodbPrintAllDeadlocks
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "When enabled, records information about all deadlocks in InnoDB user transactions  in the error log. Disabled by default.")
     @JsonProperty(JSON_PROPERTY_INNODB_PRINT_ALL_DEADLOCKS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -494,7 +479,6 @@ public class Mysql {
      * @return innodbRollbackOnTimeout
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "When enabled, transaction timeouts cause InnoDB to abort and roll back the entire transaction.")
     @JsonProperty(JSON_PROPERTY_INNODB_ROLLBACK_ON_TIMEOUT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -520,7 +504,6 @@ public class Mysql {
      * @return interactiveTimeout
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "3600", value = "The time, in seconds, the server waits for activity on an interactive. connection before closing it.")
     @JsonProperty(JSON_PROPERTY_INTERACTIVE_TIMEOUT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -545,7 +528,6 @@ public class Mysql {
      * @return internalTmpMemStorageEngine
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "TempTable", value = "The storage engine for in-memory internal temporary tables.")
     @JsonProperty(JSON_PROPERTY_INTERNAL_TMP_MEM_STORAGE_ENGINE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -571,7 +553,6 @@ public class Mysql {
      * @return netReadTimeout
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "30", value = "The time, in seconds, to wait for more data from an existing connection. aborting the read.")
     @JsonProperty(JSON_PROPERTY_NET_READ_TIMEOUT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -597,7 +578,6 @@ public class Mysql {
      * @return netWriteTimeout
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "30", value = "The number of seconds to wait for a block to be written to a connection before aborting the write.")
     @JsonProperty(JSON_PROPERTY_NET_WRITE_TIMEOUT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -625,7 +605,6 @@ public class Mysql {
      * @return sqlRequirePrimaryKey
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "Require primary key to be defined for new tables or old tables modified with ALTER TABLE and fail if missing. It is recommended to always have primary keys because various functionality may break if any large table is missing them.")
     @JsonProperty(JSON_PROPERTY_SQL_REQUIRE_PRIMARY_KEY)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -651,7 +630,6 @@ public class Mysql {
      * @return waitTimeout
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "28800", value = "The number of seconds the server waits for activity on a noninteractive connection before closing it.")
     @JsonProperty(JSON_PROPERTY_WAIT_TIMEOUT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -677,7 +655,6 @@ public class Mysql {
      * @return maxAllowedPacket
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "67108864", value = "The size of the largest message, in bytes, that can be received by the server. Default is 67108864 (64M).")
     @JsonProperty(JSON_PROPERTY_MAX_ALLOWED_PACKET)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -704,7 +681,6 @@ public class Mysql {
      * @return maxHeapTableSize
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "16777216", value = "The maximum size, in bytes, of internal in-memory tables. Also set tmp_table_size. Default is 16777216 (16M)")
     @JsonProperty(JSON_PROPERTY_MAX_HEAP_TABLE_SIZE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -730,7 +706,6 @@ public class Mysql {
      * @return sortBufferSize
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "262144", value = "The sort buffer size, in bytes, for ORDER BY optimization. Default is 262144. (256K).")
     @JsonProperty(JSON_PROPERTY_SORT_BUFFER_SIZE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -757,7 +732,6 @@ public class Mysql {
      * @return tmpTableSize
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "16777216", value = "The maximum size, in bytes, of internal in-memory tables. Also set max_heap_table_size. Default is 16777216 (16M).")
     @JsonProperty(JSON_PROPERTY_TMP_TABLE_SIZE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -783,7 +757,6 @@ public class Mysql {
      * @return slowQueryLog
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "When enabled, captures slow queries. When disabled, also truncates the mysql.slow_log table. Default is false.")
     @JsonProperty(JSON_PROPERTY_SLOW_QUERY_LOG)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -809,7 +782,6 @@ public class Mysql {
      * @return longQueryTime
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "10", value = "The time, in seconds, for a query to take to execute before  being captured by slow_query_logs. Default is 10 seconds.")
     @JsonProperty(JSON_PROPERTY_LONG_QUERY_TIME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

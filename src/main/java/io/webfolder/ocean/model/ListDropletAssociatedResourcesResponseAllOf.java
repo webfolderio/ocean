@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * ListDropletAssociatedResourcesResponseAllOf
  */
@@ -56,7 +54,6 @@ public class ListDropletAssociatedResourcesResponseAllOf {
      * @return reservedIps
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_RESERVED_IPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -89,7 +86,6 @@ public class ListDropletAssociatedResourcesResponseAllOf {
      * @return floatingIps
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_FLOATING_IPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -122,7 +118,6 @@ public class ListDropletAssociatedResourcesResponseAllOf {
      * @return snapshots
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_SNAPSHOTS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -155,7 +150,6 @@ public class ListDropletAssociatedResourcesResponseAllOf {
      * @return volumes
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_VOLUMES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -188,7 +182,6 @@ public class ListDropletAssociatedResourcesResponseAllOf {
      * @return volumeSnapshots
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_VOLUME_SNAPSHOTS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

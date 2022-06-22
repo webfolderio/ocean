@@ -10,8 +10,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * KubernetesNodePool
  */
@@ -77,7 +75,6 @@ public class KubernetesNodePool {
      * @return size
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "s-1vcpu-2gb", required = true, value = "The slug identifier for the type of Droplet used as workers in the node pool.")
     @JsonProperty(JSON_PROPERTY_SIZE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -97,7 +94,6 @@ public class KubernetesNodePool {
      * @return id
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "cdda885e-7663-40c8-bc74-3a036c66545d", value = "A unique ID that can be used to identify and reference a specific node pool.")
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -116,7 +112,6 @@ public class KubernetesNodePool {
      * @return name
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "frontend-pool", required = true, value = "A human-readable name for the node pool.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -141,7 +136,6 @@ public class KubernetesNodePool {
      * @return count
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "3", required = true, value = "The number of Droplet instances in the node pool.")
     @JsonProperty(JSON_PROPERTY_COUNT)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -176,7 +170,6 @@ public class KubernetesNodePool {
      * @return tags
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"k8s\",\"k8s:bd5f5959-5e1e-4205-a714-a914373942af\",\"k8s-worker\",\"production\",\"web-team\"]", value = "An array containing the tags applied to the node pool. All node pools are automatically tagged `k8s`, `k8s-worker`, and `k8s:$K8S_CLUSTER_ID`.")
     @JsonProperty(JSON_PROPERTY_TAGS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -202,7 +195,6 @@ public class KubernetesNodePool {
      * @return labels
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "An object containing a set of Kubernetes labels. The keys and are values are both user-defined.")
     @JsonProperty(JSON_PROPERTY_LABELS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -237,7 +229,6 @@ public class KubernetesNodePool {
      * @return taints
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "An array of taints to apply to all nodes in a pool. Taints will automatically be applied to all existing nodes and any subsequent nodes added to the pool. When a taint is removed, it is removed from all nodes in the pool.")
     @JsonProperty(JSON_PROPERTY_TAINTS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -263,7 +254,6 @@ public class KubernetesNodePool {
      * @return autoScale
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "A boolean value indicating whether auto-scaling is enabled for this node pool.")
     @JsonProperty(JSON_PROPERTY_AUTO_SCALE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -290,7 +280,6 @@ public class KubernetesNodePool {
      * @return minNodes
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "3", value = "The minimum number of nodes that this node pool can be auto-scaled to. The value will be `0` if `auto_scale` is set to `false`.")
     @JsonProperty(JSON_PROPERTY_MIN_NODES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -317,7 +306,6 @@ public class KubernetesNodePool {
      * @return maxNodes
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "6", value = "The maximum number of nodes that this node pool can be auto-scaled to. The value will be `0` if `auto_scale` is set to `false`.")
     @JsonProperty(JSON_PROPERTY_MAX_NODES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -337,7 +325,6 @@ public class KubernetesNodePool {
      * @return nodes
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "An object specifying the details of a specific worker node in a node pool.")
     @JsonProperty(JSON_PROPERTY_NODES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * DropletActionChangeKernelAllOf
  */
@@ -30,7 +28,6 @@ public class DropletActionChangeKernelAllOf {
      * @return kernel
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "12389723", value = "A unique number used to identify and reference a specific kernel.")
     @JsonProperty(JSON_PROPERTY_KERNEL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

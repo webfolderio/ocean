@@ -10,8 +10,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * MetricsResult
  */
@@ -42,7 +40,6 @@ public class MetricsResult {
      * @return metric
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "{\"host_id\":\"19201920\"}", required = true, value = "An object containing the metric labels.")
     @JsonProperty(JSON_PROPERTY_METRIC)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -72,7 +69,6 @@ public class MetricsResult {
      * @return values
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "[[1435781430,\"1\"],[1435781445,\"1\"]]", required = true, value = "")
     @JsonProperty(JSON_PROPERTY_VALUES)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

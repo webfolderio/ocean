@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppsDeploymentStaticSite
  */
@@ -34,7 +32,6 @@ public class AppsDeploymentStaticSite {
      * @return name
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "web", value = "")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -59,7 +56,6 @@ public class AppsDeploymentStaticSite {
      * @return sourceCommitHash
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "54d4a727f457231062439895000d45437c7bb405", value = "")
     @JsonProperty(JSON_PROPERTY_SOURCE_COMMIT_HASH)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

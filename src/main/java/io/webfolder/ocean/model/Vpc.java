@@ -9,8 +9,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * Vpc
  */
@@ -65,7 +63,6 @@ public class Vpc {
      * @return name
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "env.prod-vpc", value = "The name of the VPC. Must be unique and may only contain alphanumeric characters, dashes, and periods.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -91,7 +88,6 @@ public class Vpc {
      * @return description
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "VPC for production environment", value = "A free-form text field for describing the VPC's purpose. It may be a maximum of 255 characters.")
     @JsonProperty(JSON_PROPERTY_DESCRIPTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -116,7 +112,6 @@ public class Vpc {
      * @return region
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "nyc1", value = "The slug identifier for the region where the VPC will be created.")
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -146,7 +141,6 @@ public class Vpc {
      * @return ipRange
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "10.10.10.0/24", value = "The range of IP addresses in the VPC in CIDR notation. Network ranges cannot overlap with other networks in the same account and must be in range of private addresses as defined in RFC1918. It may not be smaller than `/28` nor larger than `/16`. If no IP range is specified, a `/20` network range is generated that won't conflict with other VPC networks in your account.")
     @JsonProperty(JSON_PROPERTY_IP_RANGE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -177,7 +171,6 @@ public class Vpc {
      * @return _default
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "A boolean value indicating whether or not the VPC is the default network for the region. All applicable resources are placed into the default VPC network unless otherwise specified during their creation. The `default` field cannot be unset from `true`. If you want to set a new default VPC network, update the `default` field of another VPC network in the same region. The previous network's `default` field will be set to `false` when a new default VPC has been defined.")
     @JsonProperty(JSON_PROPERTY_DEFAULT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -197,7 +190,6 @@ public class Vpc {
      * @return id
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "5a4981aa-9653-4bd1-bef5-d6bff52042e4", value = "A unique ID that can be used to identify and reference the VPC.")
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -217,7 +209,6 @@ public class Vpc {
      * @return urn
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "do:droplet:13457723", value = "The uniform resource name (URN) for the resource in the format do:resource_type:resource_id.")
     @JsonProperty(JSON_PROPERTY_URN)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -237,7 +228,6 @@ public class Vpc {
      * @return createdAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2020-03-13T19:20:47.442049222Z", value = "A time value given in ISO8601 combined date and time format.")
     @JsonProperty(JSON_PROPERTY_CREATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

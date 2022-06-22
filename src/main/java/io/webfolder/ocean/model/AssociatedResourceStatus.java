@@ -7,13 +7,9 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * An objects containing information about a resources scheduled for deletion.
  */
-@ApiModel(description = "An objects containing information about a resources scheduled for deletion.")
 @JsonPropertyOrder({ AssociatedResourceStatus.JSON_PROPERTY_DROPLET, AssociatedResourceStatus.JSON_PROPERTY_RESOURCES,
         AssociatedResourceStatus.JSON_PROPERTY_COMPLETED_AT, AssociatedResourceStatus.JSON_PROPERTY_FAILURES })
 public class AssociatedResourceStatus {
@@ -43,7 +39,6 @@ public class AssociatedResourceStatus {
      * @return droplet
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_DROPLET)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -68,7 +63,6 @@ public class AssociatedResourceStatus {
      * @return resources
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_RESOURCES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -94,7 +88,6 @@ public class AssociatedResourceStatus {
      * @return completedAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2020-04-01T18:11:49Z", value = "A time value given in ISO8601 combined date and time format indicating when the requested action was completed.")
     @JsonProperty(JSON_PROPERTY_COMPLETED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -119,7 +112,6 @@ public class AssociatedResourceStatus {
      * @return failures
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "0", value = "A count of the associated resources that failed to be destroyed, if any.")
     @JsonProperty(JSON_PROPERTY_FAILURES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

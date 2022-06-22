@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * InvoiceSummaryProductCharges
  */
@@ -39,7 +37,6 @@ public class InvoiceSummaryProductCharges {
      * @return name
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "Product usage charges", value = "Description of usage charges")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -64,7 +61,6 @@ public class InvoiceSummaryProductCharges {
      * @return amount
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "12.34", value = "Total amount charged")
     @JsonProperty(JSON_PROPERTY_AMOUNT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -97,7 +93,6 @@ public class InvoiceSummaryProductCharges {
      * @return items
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[{\"amount\":\"10.00\",\"name\":\"Spaces Subscription\",\"count\":\"1\"},{\"amount\":\"2.34\",\"name\":\"Database Clusters\",\"count\":\"1\"}]", value = "List of amount, and grouped aggregates by resource type.")
     @JsonProperty(JSON_PROPERTY_ITEMS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

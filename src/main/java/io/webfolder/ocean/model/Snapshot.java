@@ -11,8 +11,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * Snapshot
  */
@@ -96,7 +94,6 @@ public class Snapshot {
      * @return id
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "6372321", required = true, value = "The unique identifier for the snapshot.")
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -121,7 +118,6 @@ public class Snapshot {
      * @return name
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "web-01-1595954862243", required = true, value = "A human-readable name for the snapshot.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -147,7 +143,6 @@ public class Snapshot {
      * @return createdAt
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "2020-07-28T16:47:44Z", required = true, value = "A time value given in ISO8601 combined date and time format that represents when the snapshot was created.")
     @JsonProperty(JSON_PROPERTY_CREATED_AT)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -178,7 +173,6 @@ public class Snapshot {
      * @return regions
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "[\"nyc3\",\"sfo3\"]", required = true, value = "An array of the regions that the snapshot is available in. The regions are represented by their identifying slug values.")
     @JsonProperty(JSON_PROPERTY_REGIONS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -203,7 +197,6 @@ public class Snapshot {
      * @return minDiskSize
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "25", required = true, value = "The minimum size in GB required for a volume or Droplet to use this snapshot.")
     @JsonProperty(JSON_PROPERTY_MIN_DISK_SIZE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -228,7 +221,6 @@ public class Snapshot {
      * @return sizeGigabytes
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "2.34", required = true, value = "The billable size of the snapshot in gigabytes.")
     @JsonProperty(JSON_PROPERTY_SIZE_GIGABYTES)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -253,7 +245,6 @@ public class Snapshot {
      * @return resourceId
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "200776916", required = true, value = "The unique identifier for the resource that the snapshot originated from.")
     @JsonProperty(JSON_PROPERTY_RESOURCE_ID)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -278,7 +269,6 @@ public class Snapshot {
      * @return resourceType
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "droplet", required = true, value = "The type of resource that the snapshot originated from.")
     @JsonProperty(JSON_PROPERTY_RESOURCE_TYPE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -308,7 +298,6 @@ public class Snapshot {
      * @return tags
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"web\",\"env:prod\"]", required = true, value = "An array of Tags the snapshot has been tagged with.")
     @JsonProperty(JSON_PROPERTY_TAGS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

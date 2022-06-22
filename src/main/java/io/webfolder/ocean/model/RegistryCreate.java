@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * RegistryCreate
  */
@@ -121,7 +119,6 @@ public class RegistryCreate {
      * @return name
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "example", required = true, value = "A globally unique name for the container registry. Must be lowercase and be composed only of numbers, letters and `-`, up to a limit of 63 characters.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -147,7 +144,6 @@ public class RegistryCreate {
      * @return subscriptionTierSlug
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "basic", required = true, value = "The slug of the subscription tier to sign up for. Valid values can be retrieved using the options endpoint.")
     @JsonProperty(JSON_PROPERTY_SUBSCRIPTION_TIER_SLUG)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -173,7 +169,6 @@ public class RegistryCreate {
      * @return region
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "fra1", value = "Slug of the region where registry data is stored. When not provided, a region will be selected.")
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

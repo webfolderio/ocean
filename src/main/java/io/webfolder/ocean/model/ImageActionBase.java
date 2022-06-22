@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * ImageActionBase
  */
@@ -69,7 +67,6 @@ public class ImageActionBase {
      * @return type
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "convert", required = true, value = "The action to be taken on the image. Can be either `convert` or `transfer`.")
     @JsonProperty(JSON_PROPERTY_TYPE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

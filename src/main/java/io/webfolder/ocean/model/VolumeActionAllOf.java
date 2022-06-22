@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * VolumeActionAllOf
  */
@@ -35,7 +33,6 @@ public class VolumeActionAllOf {
      * @return type
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "attach_volume", value = "This is the type of action that the object represents. For example, this could be \"attach_volume\" to represent the state of a volume attach action.")
     @JsonProperty(JSON_PROPERTY_TYPE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -60,7 +57,6 @@ public class VolumeActionAllOf {
      * @return resourceId
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_RESOURCE_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

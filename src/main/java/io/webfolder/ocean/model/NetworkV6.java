@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * NetworkV6
  */
@@ -76,7 +74,6 @@ public class NetworkV6 {
      * @return ipAddress
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2604:a880:0:1010::18a:a001", value = "The IP address of the IPv6 network interface.")
     @JsonProperty(JSON_PROPERTY_IP_ADDRESS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -101,7 +98,6 @@ public class NetworkV6 {
      * @return netmask
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "64", value = "The netmask of the IPv6 network interface.")
     @JsonProperty(JSON_PROPERTY_NETMASK)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -126,7 +122,6 @@ public class NetworkV6 {
      * @return gateway
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2604:a880:0:1010::1", value = "The gateway of the specified IPv6 network interface.")
     @JsonProperty(JSON_PROPERTY_GATEWAY)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -152,7 +147,6 @@ public class NetworkV6 {
      * @return type
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "public", value = "The type of the IPv6 network interface.  **Note**: IPv6 private  networking is not currently supported. ")
     @JsonProperty(JSON_PROPERTY_TYPE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

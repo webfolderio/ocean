@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * RegistrySubscription
  */
@@ -47,7 +45,6 @@ public class RegistrySubscription {
      * @return tier
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_TIER)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -67,7 +64,6 @@ public class RegistrySubscription {
      * @return createdAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2020-01-23T21:19:12Z", value = "The time at which the subscription was created.")
     @JsonProperty(JSON_PROPERTY_CREATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -81,7 +77,6 @@ public class RegistrySubscription {
      * @return updatedAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2020-11-05T15:53:24Z", value = "The time at which the subscription was last updated.")
     @JsonProperty(JSON_PROPERTY_UPDATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

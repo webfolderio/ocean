@@ -7,8 +7,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * DatabaseClusterConnection
  */
@@ -64,7 +62,6 @@ public class DatabaseClusterConnection {
      * @return uri
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "postgres://doadmin:wv78n3zpz42xezdk@backend-do-user-19081923-0.db.ondigitalocean.com:25060/defaultdb?sslmode=require", value = "A connection string in the format accepted by the `psql` command. This is provided as a convenience and should be able to be constructed by the other attributes.")
     @JsonProperty(JSON_PROPERTY_URI)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -78,7 +75,6 @@ public class DatabaseClusterConnection {
      * @return database
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "defaultdb", value = "The name of the default database.")
     @JsonProperty(JSON_PROPERTY_DATABASE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -92,7 +88,6 @@ public class DatabaseClusterConnection {
      * @return host
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "backend-do-user-19081923-0.db.ondigitalocean.com", value = "The FQDN pointing to the database cluster's current primary node.")
     @JsonProperty(JSON_PROPERTY_HOST)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -106,7 +101,6 @@ public class DatabaseClusterConnection {
      * @return port
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "25060", value = "The port on which the database cluster is listening.")
     @JsonProperty(JSON_PROPERTY_PORT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -120,7 +114,6 @@ public class DatabaseClusterConnection {
      * @return user
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "doadmin", value = "The default user for the database.")
     @JsonProperty(JSON_PROPERTY_USER)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -134,7 +127,6 @@ public class DatabaseClusterConnection {
      * @return password
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "wv78n3zpz42xezdk", value = "The randomly generated password for the default user.")
     @JsonProperty(JSON_PROPERTY_PASSWORD)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -148,7 +140,6 @@ public class DatabaseClusterConnection {
      * @return ssl
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "A boolean value indicating if the connection should be made over SSL.")
     @JsonProperty(JSON_PROPERTY_SSL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

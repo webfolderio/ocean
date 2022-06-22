@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * SingleDropletResponse
  */
@@ -33,7 +31,6 @@ public class SingleDropletResponse {
      * @return droplet
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(required = true, value = "")
     @JsonProperty(JSON_PROPERTY_DROPLET)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -58,7 +55,6 @@ public class SingleDropletResponse {
      * @return links
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(required = true, value = "")
     @JsonProperty(JSON_PROPERTY_LINKS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

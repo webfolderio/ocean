@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * ListBillingHistoryResponseAllOf
  */
@@ -40,7 +38,6 @@ public class ListBillingHistoryResponseAllOf {
      * @return billingHistory
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_BILLING_HISTORY)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

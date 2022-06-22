@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppProposeResponse
  */
@@ -51,7 +49,6 @@ public class AppProposeResponse {
      * @return appIsStatic
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "Indicates whether the app is a static app.")
     @JsonProperty(JSON_PROPERTY_APP_IS_STATIC)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -76,7 +73,6 @@ public class AppProposeResponse {
      * @return appNameAvailable
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "Indicates whether the app name is available.")
     @JsonProperty(JSON_PROPERTY_APP_NAME_AVAILABLE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -101,7 +97,6 @@ public class AppProposeResponse {
      * @return appNameSuggestion
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "newName", value = "The suggested name if the proposed app name is unavailable.")
     @JsonProperty(JSON_PROPERTY_APP_NAME_SUGGESTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -127,7 +122,6 @@ public class AppProposeResponse {
      * @return existingStaticApps
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2", value = "The maximum number of free static apps the account can have. We will charge you for any additional static apps.")
     @JsonProperty(JSON_PROPERTY_EXISTING_STATIC_APPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -152,7 +146,6 @@ public class AppProposeResponse {
      * @return spec
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_SPEC)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -181,7 +174,6 @@ public class AppProposeResponse {
      * @return appCost
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "5", value = "The monthly cost of the proposed app in USD using the next pricing plan tier. For example, if you propose an app that uses the Basic tier, the `app_tier_upgrade_cost` field displays the monthly cost of the app if it were to use the Professional tier. If the proposed app already uses the most expensive tier, the field is empty.")
     @JsonProperty(JSON_PROPERTY_APP_COST)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -210,7 +202,6 @@ public class AppProposeResponse {
      * @return appTierDowngradeCost
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "17", value = "The monthly cost of the proposed app in USD using the previous pricing plan tier. For example, if you propose an app that uses the Professional tier, the `app_tier_downgrade_cost` field displays the monthly cost of the app if it were to use the Basic tier. If the proposed app already uses the lest expensive tier, the field is empty.")
     @JsonProperty(JSON_PROPERTY_APP_TIER_DOWNGRADE_COST)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

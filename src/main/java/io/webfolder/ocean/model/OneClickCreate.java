@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * OneClickCreate
  */
@@ -41,7 +39,6 @@ public class OneClickCreate {
      * @return addonSlugs
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "[\"kube-state-metrics\",\"loki\"]", required = true, value = "An array of 1-Click Application slugs to be installed to the Kubernetes cluster.")
     @JsonProperty(JSON_PROPERTY_ADDON_SLUGS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -67,7 +64,6 @@ public class OneClickCreate {
      * @return clusterUuid
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "50a994b6-c303-438f-9495-7e896cfe6b08", required = true, value = "A unique ID for the Kubernetes cluster to which the 1-Click Applications will be installed.")
     @JsonProperty(JSON_PROPERTY_CLUSTER_UUID)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

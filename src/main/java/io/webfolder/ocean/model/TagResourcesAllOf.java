@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * TagResourcesAllOf
  */
@@ -44,7 +42,6 @@ public class TagResourcesAllOf {
      * @return droplets
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_DROPLETS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -69,7 +66,6 @@ public class TagResourcesAllOf {
      * @return imgages
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_IMGAGES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -94,7 +90,6 @@ public class TagResourcesAllOf {
      * @return volumes
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_VOLUMES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -119,7 +114,6 @@ public class TagResourcesAllOf {
      * @return volumeSnapshots
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_VOLUME_SNAPSHOTS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -144,7 +138,6 @@ public class TagResourcesAllOf {
      * @return databases
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_DATABASES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

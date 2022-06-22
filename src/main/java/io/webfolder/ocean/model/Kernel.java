@@ -6,9 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * **Note**: All Droplets created after March 2017 use internal kernels by
  * default. These Droplets will have this attribute set to &#x60;null&#x60;. The
@@ -19,7 +16,6 @@ import io.swagger.annotations.ApiModelProperty;
  * @deprecated
  */
 @Deprecated
-@ApiModel(description = "**Note**: All Droplets created after March 2017 use internal kernels by default. These Droplets will have this attribute set to `null`.  The current [kernel](https://www.digitalocean.com/docs/droplets/how-to/kernel/) for Droplets with externally managed kernels. This will initially be set to the kernel of the base image when the Droplet is created. ")
 @JsonPropertyOrder({ Kernel.JSON_PROPERTY_ID, Kernel.JSON_PROPERTY_NAME, Kernel.JSON_PROPERTY_VERSION })
 public class Kernel {
     public static final String JSON_PROPERTY_ID = "id";
@@ -45,7 +41,6 @@ public class Kernel {
      * @return id
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "7515", value = "A unique number used to identify and reference a specific kernel.")
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -71,7 +66,6 @@ public class Kernel {
      * @return name
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "DigitalOcean GrubLoader v0.2 (20160714)", value = "The display name of the kernel. This is shown in the web UI and is generally a descriptive title for the kernel in question.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -97,7 +91,6 @@ public class Kernel {
      * @return version
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2016.07.13-DigitalOcean_loader_Ubuntu", value = "A standard kernel version string representing the version, patch, and release information.")
     @JsonProperty(JSON_PROPERTY_VERSION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * Size
  */
@@ -62,7 +60,6 @@ public class Size {
      * @return slug
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "s-1vcpu-1gb", required = true, value = "A human-readable string that is used to uniquely identify each size.")
     @JsonProperty(JSON_PROPERTY_SLUG)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -88,7 +85,6 @@ public class Size {
      * @return memory
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "1024", required = true, value = "The amount of RAM allocated to Droplets created of this size. The value is represented in megabytes.")
     @JsonProperty(JSON_PROPERTY_MEMORY)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -113,7 +109,6 @@ public class Size {
      * @return vcpus
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "1", required = true, value = "The integer of number CPUs allocated to Droplets of this size.")
     @JsonProperty(JSON_PROPERTY_VCPUS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -139,7 +134,6 @@ public class Size {
      * @return disk
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "25", required = true, value = "The amount of disk space set aside for Droplets of this size. The value is represented in gigabytes.")
     @JsonProperty(JSON_PROPERTY_DISK)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -166,7 +160,6 @@ public class Size {
      * @return transfer
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "1", required = true, value = "The amount of transfer bandwidth that is available for Droplets created in this size. This only counts traffic on the public interface. The value is given in terabytes.")
     @JsonProperty(JSON_PROPERTY_TRANSFER)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -192,7 +185,6 @@ public class Size {
      * @return priceMonthly
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "5", required = true, value = "This attribute describes the monthly cost of this Droplet size if the Droplet is kept for an entire month. The value is measured in US dollars.")
     @JsonProperty(JSON_PROPERTY_PRICE_MONTHLY)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -218,7 +210,6 @@ public class Size {
      * @return priceHourly
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "0.00743999984115362", required = true, value = "This describes the price of the Droplet size as measured hourly. The value is measured in US dollars.")
     @JsonProperty(JSON_PROPERTY_PRICE_HOURLY)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -249,7 +240,6 @@ public class Size {
      * @return regions
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "[\"ams2\",\"ams3\",\"blr1\",\"fra1\",\"lon1\",\"nyc1\",\"nyc2\",\"nyc3\",\"sfo1\",\"sfo2\",\"sfo3\",\"sgp1\",\"tor1\"]", required = true, value = "An array containing the region slugs where this size is available for Droplet creates.")
     @JsonProperty(JSON_PROPERTY_REGIONS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -275,7 +265,6 @@ public class Size {
      * @return available
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "true", required = true, value = "This is a boolean value that represents whether new Droplets can be created with this size.")
     @JsonProperty(JSON_PROPERTY_AVAILABLE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -302,7 +291,6 @@ public class Size {
      * @return description
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "Basic", required = true, value = "A string describing the class of Droplets created from this size. For example: Basic, General Purpose, CPU-Optimized, Memory-Optimized, or Storage-Optimized.")
     @JsonProperty(JSON_PROPERTY_DESCRIPTION)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

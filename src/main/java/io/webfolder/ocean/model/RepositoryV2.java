@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * RepositoryV2
  */
@@ -44,7 +42,6 @@ public class RepositoryV2 {
      * @return registryName
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "example", value = "The name of the container registry.")
     @JsonProperty(JSON_PROPERTY_REGISTRY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -69,7 +66,6 @@ public class RepositoryV2 {
      * @return name
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "repo-1", value = "The name of the repository.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -94,7 +90,6 @@ public class RepositoryV2 {
      * @return latestManifest
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_LATEST_MANIFEST)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -119,7 +114,6 @@ public class RepositoryV2 {
      * @return tagCount
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "1", value = "The number of tags in the repository.")
     @JsonProperty(JSON_PROPERTY_TAG_COUNT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -144,7 +138,6 @@ public class RepositoryV2 {
      * @return manifestCount
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "1", value = "The number of manifests in the repository.")
     @JsonProperty(JSON_PROPERTY_MANIFEST_COUNT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

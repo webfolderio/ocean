@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * ClusterUpdate
  */
@@ -46,7 +44,6 @@ public class ClusterUpdate {
      * @return name
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "prod-cluster-01", required = true, value = "A human-readable name for a Kubernetes cluster.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -80,7 +77,6 @@ public class ClusterUpdate {
      * @return tags
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"k8s\",\"k8s:bd5f5959-5e1e-4205-a714-a914373942af\",\"production\",\"web-team\"]", value = "An array of tags applied to the Kubernetes cluster. All clusters are automatically tagged `k8s` and `k8s:$K8S_CLUSTER_ID`.")
     @JsonProperty(JSON_PROPERTY_TAGS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -105,7 +101,6 @@ public class ClusterUpdate {
      * @return maintenancePolicy
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_MAINTENANCE_POLICY)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -131,7 +126,6 @@ public class ClusterUpdate {
      * @return autoUpgrade
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "A boolean value indicating whether the cluster will be automatically upgraded to new patch releases during its maintenance window.")
     @JsonProperty(JSON_PROPERTY_AUTO_UPGRADE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -158,7 +152,6 @@ public class ClusterUpdate {
      * @return surgeUpgrade
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "A boolean value indicating whether surge upgrade is enabled/disabled for the cluster. Surge upgrade makes cluster upgrades fast and reliable by bringing up new nodes before destroying the outdated nodes.")
     @JsonProperty(JSON_PROPERTY_SURGE_UPGRADE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

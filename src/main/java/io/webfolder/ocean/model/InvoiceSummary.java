@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * InvoiceSummary
  */
@@ -65,7 +63,6 @@ public class InvoiceSummary {
      * @return invoiceUuid
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "22737513-0ea7-4206-8ceb-98a575af7681", value = "UUID of the invoice")
     @JsonProperty(JSON_PROPERTY_INVOICE_UUID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -91,7 +88,6 @@ public class InvoiceSummary {
      * @return billingPeriod
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2020-01", value = "Billing period of usage for which the invoice is issued, in `YYYY-MM`  format.")
     @JsonProperty(JSON_PROPERTY_BILLING_PERIOD)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -117,7 +113,6 @@ public class InvoiceSummary {
      * @return amount
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "27.13", value = "Total amount of the invoice, in USD.  This will reflect month-to-date usage in the invoice preview.")
     @JsonProperty(JSON_PROPERTY_AMOUNT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -142,7 +137,6 @@ public class InvoiceSummary {
      * @return userName
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "Sammy Shark", value = "Name of the DigitalOcean customer being invoiced.")
     @JsonProperty(JSON_PROPERTY_USER_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -167,7 +161,6 @@ public class InvoiceSummary {
      * @return userBillingAddress
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_USER_BILLING_ADDRESS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -192,7 +185,6 @@ public class InvoiceSummary {
      * @return userCompany
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "DigitalOcean", value = "Company of the DigitalOcean customer being invoiced, if set.")
     @JsonProperty(JSON_PROPERTY_USER_COMPANY)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -217,7 +209,6 @@ public class InvoiceSummary {
      * @return userEmail
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "sammy@digitalocean.com", value = "Email of the DigitalOcean customer being invoiced.")
     @JsonProperty(JSON_PROPERTY_USER_EMAIL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -242,7 +233,6 @@ public class InvoiceSummary {
      * @return productCharges
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_PRODUCT_CHARGES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -267,7 +257,6 @@ public class InvoiceSummary {
      * @return overages
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_OVERAGES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -292,7 +281,6 @@ public class InvoiceSummary {
      * @return taxes
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_TAXES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -317,7 +305,6 @@ public class InvoiceSummary {
      * @return creditsAndAdjustments
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_CREDITS_AND_ADJUSTMENTS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

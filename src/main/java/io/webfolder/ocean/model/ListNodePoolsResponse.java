@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * ListNodePoolsResponse
  */
@@ -40,7 +38,6 @@ public class ListNodePoolsResponse {
      * @return nodePools
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_NODE_POOLS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * ImageUpdate
  */
@@ -39,7 +37,6 @@ public class ImageUpdate {
      * @return name
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "Nifty New Snapshot", value = "The display name that has been given to an image.  This is what is shown in the control panel and is generally a descriptive title for the image in question.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -64,7 +61,6 @@ public class ImageUpdate {
      * @return distribution
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_DISTRIBUTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -89,7 +85,6 @@ public class ImageUpdate {
      * @return description
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = " ", value = "An optional free-form text field to describe an image.")
     @JsonProperty(JSON_PROPERTY_DESCRIPTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

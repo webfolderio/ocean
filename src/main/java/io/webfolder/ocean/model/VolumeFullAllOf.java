@@ -7,8 +7,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * VolumeFullAllOf
  */
@@ -39,7 +37,6 @@ public class VolumeFullAllOf {
      * @return region
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "{\"name\":\"New York 1\",\"slug\":\"nyc1\",\"sizes\":[\"s-1vcpu-1gb\",\"s-1vcpu-2gb\",\"s-1vcpu-3gb\",\"s-2vcpu-2gb\",\"s-3vcpu-1gb\",\"s-2vcpu-4gb\",\"s-4vcpu-8gb\",\"s-6vcpu-16gb\",\"s-8vcpu-32gb\",\"s-12vcpu-48gb\",\"s-16vcpu-64gb\",\"s-20vcpu-96gb\",\"s-24vcpu-128gb\",\"s-32vcpu-192gb\"],\"features\":[\"private_networking\",\"backups\",\"ipv6\",\"metadata\"],\"available\":true}", value = "")
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -58,7 +55,6 @@ public class VolumeFullAllOf {
      * @return filesystemType
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "ext4", value = "The type of filesystem currently in-use on the volume.")
     @JsonProperty(JSON_PROPERTY_FILESYSTEM_TYPE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -83,7 +79,6 @@ public class VolumeFullAllOf {
      * @return filesystemLabel
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "example", value = "The label currently applied to the filesystem.")
     @JsonProperty(JSON_PROPERTY_FILESYSTEM_LABEL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

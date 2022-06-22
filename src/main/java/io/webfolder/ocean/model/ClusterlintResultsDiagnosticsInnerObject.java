@@ -6,13 +6,9 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * Metadata about the Kubernetes API object the diagnostic is reported on.
  */
-@ApiModel(description = "Metadata about the Kubernetes API object the diagnostic is reported on.")
 @JsonPropertyOrder({ ClusterlintResultsDiagnosticsInnerObject.JSON_PROPERTY_NAME,
         ClusterlintResultsDiagnosticsInnerObject.JSON_PROPERTY_KIND,
         ClusterlintResultsDiagnosticsInnerObject.JSON_PROPERTY_NAMESPACE })
@@ -40,7 +36,6 @@ public class ClusterlintResultsDiagnosticsInnerObject {
      * @return name
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "foo", value = "Name of the object")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -65,7 +60,6 @@ public class ClusterlintResultsDiagnosticsInnerObject {
      * @return kind
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "config map", value = "The kind of Kubernetes API object")
     @JsonProperty(JSON_PROPERTY_KIND)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -90,7 +84,6 @@ public class ClusterlintResultsDiagnosticsInnerObject {
      * @return namespace
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "kube-system", value = "The namespace the object resides in the cluster.")
     @JsonProperty(JSON_PROPERTY_NAMESPACE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * ReservedIpRegion
  */
@@ -47,7 +45,6 @@ public class ReservedIpRegion {
      * @return name
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "New York 3", required = true, value = "The display name of the region.  This will be a full name that is used in the control panel and other interfaces.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -72,7 +69,6 @@ public class ReservedIpRegion {
      * @return slug
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "nyc3", required = true, value = "A human-readable string that is used as a unique identifier for each region.")
     @JsonProperty(JSON_PROPERTY_SLUG)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -103,7 +99,6 @@ public class ReservedIpRegion {
      * @return features
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "[\"private_networking\",\"backups\",\"ipv6\",\"metadata\",\"install_agent\",\"storage\",\"image_transfer\"]", required = true, value = "This attribute is set to an array which contains features available in this region")
     @JsonProperty(JSON_PROPERTY_FEATURES)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -129,7 +124,6 @@ public class ReservedIpRegion {
      * @return available
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "true", required = true, value = "This is a boolean value that represents whether new Droplets can be created in this region.")
     @JsonProperty(JSON_PROPERTY_AVAILABLE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -160,7 +154,6 @@ public class ReservedIpRegion {
      * @return sizes
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "[\"s-1vcpu-1gb\",\"s-1vcpu-2gb\",\"s-1vcpu-3gb\",\"s-2vcpu-2gb\",\"s-3vcpu-1gb\",\"s-2vcpu-4gb\",\"s-4vcpu-8gb\",\"s-6vcpu-16gb\",\"s-8vcpu-32gb\",\"s-12vcpu-48gb\",\"s-16vcpu-64gb\",\"s-20vcpu-96gb\",\"s-24vcpu-128gb\",\"s-32vcpu-192g\"]", required = true, value = "This attribute is set to an array which contains the identifying slugs for the sizes available in this region.")
     @JsonProperty(JSON_PROPERTY_SIZES)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

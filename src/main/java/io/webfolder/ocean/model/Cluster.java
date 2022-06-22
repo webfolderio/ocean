@@ -11,8 +11,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * Cluster
  */
@@ -109,7 +107,6 @@ public class Cluster {
      * @return id
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "bd5f5959-5e1e-4205-a714-a914373942af", value = "A unique ID that can be used to identify and reference a Kubernetes cluster.")
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -128,7 +125,6 @@ public class Cluster {
      * @return name
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "prod-cluster-01", required = true, value = "A human-readable name for a Kubernetes cluster.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -153,7 +149,6 @@ public class Cluster {
      * @return region
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "nyc1", required = true, value = "The slug identifier for the region where the Kubernetes cluster is located.")
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -183,7 +178,6 @@ public class Cluster {
      * @return version
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "1.18.6-do.0", required = true, value = "The slug identifier for the version of Kubernetes used for the cluster. If set to a minor version (e.g. \"1.14\"), the latest version within it will be used (e.g. \"1.14.6-do.1\"); if set to \"latest\", the latest published version will be used. See the `/v2/kubernetes/options` endpoint to find all currently available versions.")
     @JsonProperty(JSON_PROPERTY_VERSION)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -204,7 +198,6 @@ public class Cluster {
      * @return clusterSubnet
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "10.244.0.0/16", value = "The range of IP addresses in the overlay network of the Kubernetes cluster in CIDR notation.")
     @JsonProperty(JSON_PROPERTY_CLUSTER_SUBNET)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -219,7 +212,6 @@ public class Cluster {
      * @return serviceSubnet
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "10.245.0.0/16", value = "The range of assignable IP addresses for services running in the Kubernetes cluster in CIDR notation.")
     @JsonProperty(JSON_PROPERTY_SERVICE_SUBNET)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -239,7 +231,6 @@ public class Cluster {
      * @return vpcUuid
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "c33931f2-a26a-4e61-b85c-4e95a2ec431b", value = "A string specifying the UUID of the VPC to which the Kubernetes cluster is assigned.")
     @JsonProperty(JSON_PROPERTY_VPC_UUID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -260,7 +251,6 @@ public class Cluster {
      * @return ipv4
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "68.183.121.157", value = "The public IPv4 address of the Kubernetes master node. This will not be set if high availability is configured on the cluster (v1.21+)")
     @JsonProperty(JSON_PROPERTY_IPV4)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -274,7 +264,6 @@ public class Cluster {
      * @return endpoint
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "https://bd5f5959-5e1e-4205-a714-a914373942af.k8s.ondigitalocean.com", value = "The base URL of the API server on the Kubernetes master node.")
     @JsonProperty(JSON_PROPERTY_ENDPOINT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -302,7 +291,6 @@ public class Cluster {
      * @return tags
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"k8s\",\"k8s:bd5f5959-5e1e-4205-a714-a914373942af\",\"production\",\"web-team\"]", value = "An array of tags applied to the Kubernetes cluster. All clusters are automatically tagged `k8s` and `k8s:$K8S_CLUSTER_ID`.")
     @JsonProperty(JSON_PROPERTY_TAGS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -333,7 +321,6 @@ public class Cluster {
      * @return nodePools
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(required = true, value = "An object specifying the details of the worker nodes available to the Kubernetes cluster.")
     @JsonProperty(JSON_PROPERTY_NODE_POOLS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -358,7 +345,6 @@ public class Cluster {
      * @return maintenancePolicy
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_MAINTENANCE_POLICY)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -384,7 +370,6 @@ public class Cluster {
      * @return autoUpgrade
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "A boolean value indicating whether the cluster will be automatically upgraded to new patch releases during its maintenance window.")
     @JsonProperty(JSON_PROPERTY_AUTO_UPGRADE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -409,7 +394,6 @@ public class Cluster {
      * @return status
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_STATUS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -430,7 +414,6 @@ public class Cluster {
      * @return createdAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2018-11-15T16:00:11Z", value = "A time value given in ISO8601 combined date and time format that represents when the Kubernetes cluster was created.")
     @JsonProperty(JSON_PROPERTY_CREATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -445,7 +428,6 @@ public class Cluster {
      * @return updatedAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2018-11-15T16:00:11Z", value = "A time value given in ISO8601 combined date and time format that represents when the Kubernetes cluster was last updated.")
     @JsonProperty(JSON_PROPERTY_UPDATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -466,7 +448,6 @@ public class Cluster {
      * @return surgeUpgrade
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "A boolean value indicating whether surge upgrade is enabled/disabled for the cluster. Surge upgrade makes cluster upgrades fast and reliable by bringing up new nodes before destroying the outdated nodes.")
     @JsonProperty(JSON_PROPERTY_SURGE_UPGRADE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -493,7 +474,6 @@ public class Cluster {
      * @return ha
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "A boolean value indicating whether the control plane is run in a highly available configuration in the cluster. Highly available control planes incur less downtime.")
     @JsonProperty(JSON_PROPERTY_HA)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -514,7 +494,6 @@ public class Cluster {
      * @return registryEnabled
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "A read-only boolean value indicating if a container registry is integrated with the cluster.")
     @JsonProperty(JSON_PROPERTY_REGISTRY_ENABLED)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppStaticSiteSpecAllOf
  */
@@ -51,7 +49,6 @@ public class AppStaticSiteSpecAllOf {
      * @return indexDocument
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "main.html", value = "The name of the index document to use when serving this static site. Default: index.html")
     @JsonProperty(JSON_PROPERTY_INDEX_DOCUMENT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -78,7 +75,6 @@ public class AppStaticSiteSpecAllOf {
      * @return errorDocument
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "error.html", value = "The name of the error document to use when serving this static site. Default: 404.html. If no such file exists within the built assets, App Platform will supply one.")
     @JsonProperty(JSON_PROPERTY_ERROR_DOCUMENT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -105,7 +101,6 @@ public class AppStaticSiteSpecAllOf {
      * @return catchallDocument
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "index.html", value = "The name of the document to use as the fallback for any requests to documents that are not found when serving this static site. Only 1 of `catchall_document` or `error_document` can be set.")
     @JsonProperty(JSON_PROPERTY_CATCHALL_DOCUMENT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -133,7 +128,6 @@ public class AppStaticSiteSpecAllOf {
      * @return outputDir
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "dist/", value = "An optional path to where the built assets will be located, relative to the build context. If not set, App Platform will automatically scan for these directory names: `_static`, `dist`, `public`, `build`.")
     @JsonProperty(JSON_PROPERTY_OUTPUT_DIR)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -158,7 +152,6 @@ public class AppStaticSiteSpecAllOf {
      * @return cors
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_CORS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -191,7 +184,6 @@ public class AppStaticSiteSpecAllOf {
      * @return routes
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "A list of HTTP routes that should be routed to this component.")
     @JsonProperty(JSON_PROPERTY_ROUTES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

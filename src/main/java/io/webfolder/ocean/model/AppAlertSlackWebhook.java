@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppAlertSlackWebhook
  */
@@ -33,7 +31,6 @@ public class AppAlertSlackWebhook {
      * @return url
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX", value = "")
     @JsonProperty(JSON_PROPERTY_URL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -58,7 +55,6 @@ public class AppAlertSlackWebhook {
      * @return channel
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "Channel Name", value = "")
     @JsonProperty(JSON_PROPERTY_CHANNEL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

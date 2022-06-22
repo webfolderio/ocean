@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppServiceSpecAllOf
  */
@@ -46,7 +44,6 @@ public class AppServiceSpecAllOf {
      * @return cors
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_CORS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -71,7 +68,6 @@ public class AppServiceSpecAllOf {
      * @return healthCheck
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_HEALTH_CHECK)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -99,7 +95,6 @@ public class AppServiceSpecAllOf {
      * @return httpPort
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "3000", value = "The internal port on which this service's run command will listen. Default: 8080 If there is not an environment variable with the name `PORT`, one will be automatically added with its value set to the value of this field.")
     @JsonProperty(JSON_PROPERTY_HTTP_PORT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -132,7 +127,6 @@ public class AppServiceSpecAllOf {
      * @return internalPorts
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[80,443]", value = "The ports on which this service will listen for internal traffic.")
     @JsonProperty(JSON_PROPERTY_INTERNAL_PORTS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -165,7 +159,6 @@ public class AppServiceSpecAllOf {
      * @return routes
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "A list of HTTP routes that should be routed to this component.")
     @JsonProperty(JSON_PROPERTY_ROUTES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

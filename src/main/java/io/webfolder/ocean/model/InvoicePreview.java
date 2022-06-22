@@ -6,13 +6,9 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * The invoice preview.
  */
-@ApiModel(description = "The invoice preview.")
 @JsonPropertyOrder({ InvoicePreview.JSON_PROPERTY_INVOICE_UUID, InvoicePreview.JSON_PROPERTY_AMOUNT,
         InvoicePreview.JSON_PROPERTY_INVOICE_PERIOD, InvoicePreview.JSON_PROPERTY_UPDATED_AT })
 public class InvoicePreview {
@@ -42,7 +38,6 @@ public class InvoicePreview {
      * @return invoiceUuid
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "fdabb512-6faf-443c-ba2e-665452332a9e", value = "The UUID of the invoice. The canonical reference for the invoice.")
     @JsonProperty(JSON_PROPERTY_INVOICE_UUID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -68,7 +63,6 @@ public class InvoicePreview {
      * @return amount
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "23.45", value = "Total amount of the invoice, in USD.  This will reflect month-to-date usage in the invoice preview.")
     @JsonProperty(JSON_PROPERTY_AMOUNT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -94,7 +88,6 @@ public class InvoicePreview {
      * @return invoicePeriod
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2020-01", value = "Billing period of usage for which the invoice is issued, in `YYYY-MM`  format.")
     @JsonProperty(JSON_PROPERTY_INVOICE_PERIOD)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -120,7 +113,6 @@ public class InvoicePreview {
      * @return updatedAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2020-01-23T06:31:50Z", value = "Time the invoice was last updated.  This is only included with the invoice preview.")
     @JsonProperty(JSON_PROPERTY_UPDATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

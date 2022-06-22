@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * ReserveToRegion1
  */
@@ -30,7 +28,6 @@ public class ReserveToRegion1 {
      * @return region
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "nyc3", required = true, value = "The slug identifier for the region the reserved IP will be reserved to.")
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * DropletActionRenameAllOf
  */
@@ -30,7 +28,6 @@ public class DropletActionRenameAllOf {
      * @return name
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "nifty-new-name", value = "The new name for the Droplet.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

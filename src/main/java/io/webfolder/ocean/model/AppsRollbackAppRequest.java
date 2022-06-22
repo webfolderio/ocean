@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppsRollbackAppRequest
  */
@@ -34,7 +32,6 @@ public class AppsRollbackAppRequest {
      * @return deploymentId
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "3aa4d20e-5527-4c00-b496-601fbd22520a", value = "The ID of the deployment to rollback to.")
     @JsonProperty(JSON_PROPERTY_DEPLOYMENT_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -64,7 +61,6 @@ public class AppsRollbackAppRequest {
      * @return skipPin
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "false", value = "Whether to skip pinning the rollback deployment. If false, the rollback deployment will be pinned and any new deployments including Auto Deploy on Push hooks will be disabled until the rollback is either manually committed or reverted via the CommitAppRollback or RevertAppRollback endpoints respectively. If true, the rollback will be immediately committed and the app will remain unpinned.")
     @JsonProperty(JSON_PROPERTY_SKIP_PIN)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

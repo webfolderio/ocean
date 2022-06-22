@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * FloatingIp
  */
@@ -40,7 +38,6 @@ public class FloatingIp {
      * @return ip
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "45.55.96.47", value = "The public IP address of the floating IP. It also serves as its identifier.")
     @JsonProperty(JSON_PROPERTY_IP)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -65,7 +62,6 @@ public class FloatingIp {
      * @return region
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -90,7 +86,6 @@ public class FloatingIp {
      * @return droplet
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_DROPLET)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -116,7 +111,6 @@ public class FloatingIp {
      * @return locked
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "A boolean value indicating whether or not the floating IP has pending actions preventing new ones from being submitted.")
     @JsonProperty(JSON_PROPERTY_LOCKED)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

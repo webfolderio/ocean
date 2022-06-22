@@ -9,8 +9,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * UpdateEndpoint
  */
@@ -85,7 +83,6 @@ public class UpdateEndpoint {
      * @return ttl
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "3600", value = "The amount of time the content is cached by the CDN's edge servers in seconds. TTL must be one of 60, 600, 3600, 86400, or 604800. Defaults to 3600 (one hour) when excluded.")
     @JsonProperty(JSON_PROPERTY_TTL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -111,7 +108,6 @@ public class UpdateEndpoint {
      * @return certificateId
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "892071a0-bb95-49bc-8021-3afd67a210bf", value = "The ID of a DigitalOcean managed TLS certificate used for SSL when a custom subdomain is provided.")
     @JsonProperty(JSON_PROPERTY_CERTIFICATE_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -137,7 +133,6 @@ public class UpdateEndpoint {
      * @return customDomain
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "static.example.com", value = "The fully qualified domain name (FQDN) of the custom subdomain used with the CDN endpoint.")
     @JsonProperty(JSON_PROPERTY_CUSTOM_DOMAIN)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

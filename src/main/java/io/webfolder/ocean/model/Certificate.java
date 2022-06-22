@@ -12,8 +12,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * Certificate
  */
@@ -144,7 +142,6 @@ public class Certificate {
      * @return id
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "892071a0-bb95-49bc-8021-3afd67a210bf", value = "A unique ID that can be used to identify and reference a certificate.")
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -163,7 +160,6 @@ public class Certificate {
      * @return name
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "web-cert-01", value = "A unique human-readable name referring to a certificate.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -184,7 +180,6 @@ public class Certificate {
      * @return notAfter
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2017-02-22T00:23Z", value = "A time value given in ISO8601 combined date and time format that represents the certificate's expiration date.")
     @JsonProperty(JSON_PROPERTY_NOT_AFTER)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -198,7 +193,6 @@ public class Certificate {
      * @return sha1Fingerprint
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "dfcc9f57d86bf58e321c2c6c31c7a971be244ac7", value = "A unique identifier generated from the SHA-1 fingerprint of the certificate.")
     @JsonProperty(JSON_PROPERTY_SHA1_FINGERPRINT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -213,7 +207,6 @@ public class Certificate {
      * @return createdAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2017-02-08T16:02:37Z", value = "A time value given in ISO8601 combined date and time format that represents when the certificate was created.")
     @JsonProperty(JSON_PROPERTY_CREATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -241,7 +234,6 @@ public class Certificate {
      * @return dnsNames
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"www.example.com\",\"example.com\"]", value = "An array of fully qualified domain names (FQDNs) for which the certificate was issued.")
     @JsonProperty(JSON_PROPERTY_DNS_NAMES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -262,7 +254,6 @@ public class Certificate {
      * @return state
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "verified", value = "A string representing the current state of the certificate. It may be `pending`, `verified`, or `error`.")
     @JsonProperty(JSON_PROPERTY_STATE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -284,7 +275,6 @@ public class Certificate {
      * @return type
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "lets_encrypt", value = "A string representing the type of the certificate. The value will be `custom` for a user-uploaded certificate or `lets_encrypt` for one automatically generated with Let's Encrypt.")
     @JsonProperty(JSON_PROPERTY_TYPE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

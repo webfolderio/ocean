@@ -8,13 +8,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * An object specifying health check settings for the load balancer.
  */
-@ApiModel(description = "An object specifying health check settings for the load balancer.")
 @JsonPropertyOrder({ HealthCheck.JSON_PROPERTY_PROTOCOL, HealthCheck.JSON_PROPERTY_PORT, HealthCheck.JSON_PROPERTY_PATH,
         HealthCheck.JSON_PROPERTY_CHECK_INTERVAL_SECONDS, HealthCheck.JSON_PROPERTY_RESPONSE_TIMEOUT_SECONDS,
         HealthCheck.JSON_PROPERTY_UNHEALTHY_THRESHOLD, HealthCheck.JSON_PROPERTY_HEALTHY_THRESHOLD })
@@ -93,7 +89,6 @@ public class HealthCheck {
      * @return protocol
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "http", value = "The protocol used for health checks sent to the backend Droplets. The possible values are `http`, `https`, or `tcp`.")
     @JsonProperty(JSON_PROPERTY_PROTOCOL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -119,7 +114,6 @@ public class HealthCheck {
      * @return port
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "80", value = "An integer representing the port on the backend Droplets on which the health check will attempt a connection.")
     @JsonProperty(JSON_PROPERTY_PORT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -145,7 +139,6 @@ public class HealthCheck {
      * @return path
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "/", value = "The path on the backend Droplets to which the load balancer instance will send a request.")
     @JsonProperty(JSON_PROPERTY_PATH)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -170,7 +163,6 @@ public class HealthCheck {
      * @return checkIntervalSeconds
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "10", value = "The number of seconds between between two consecutive health checks.")
     @JsonProperty(JSON_PROPERTY_CHECK_INTERVAL_SECONDS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -196,7 +188,6 @@ public class HealthCheck {
      * @return responseTimeoutSeconds
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "5", value = "The number of seconds the load balancer instance will wait for a response until marking a health check as failed.")
     @JsonProperty(JSON_PROPERTY_RESPONSE_TIMEOUT_SECONDS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -222,7 +213,6 @@ public class HealthCheck {
      * @return unhealthyThreshold
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "5", value = "The number of times a health check must fail for a backend Droplet to be marked \"unhealthy\" and be removed from the pool.")
     @JsonProperty(JSON_PROPERTY_UNHEALTHY_THRESHOLD)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -248,7 +238,6 @@ public class HealthCheck {
      * @return healthyThreshold
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "3", value = "The number of times a health check must pass for a backend Droplet to be marked \"healthy\" and be re-added to the pool.")
     @JsonProperty(JSON_PROPERTY_HEALTHY_THRESHOLD)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

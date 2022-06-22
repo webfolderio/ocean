@@ -8,14 +8,10 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * An object containing the IDs of resources to be destroyed along with their
  * associated with a Kubernetes cluster.
  */
-@ApiModel(description = "An object containing the IDs of resources to be destroyed along with their associated with a Kubernetes cluster.")
 @JsonPropertyOrder({ DestroyAssociatedKubernetesResources.JSON_PROPERTY_LOAD_BALANCERS,
         DestroyAssociatedKubernetesResources.JSON_PROPERTY_VOLUMES,
         DestroyAssociatedKubernetesResources.JSON_PROPERTY_VOLUME_SNAPSHOTS })
@@ -52,7 +48,6 @@ public class DestroyAssociatedKubernetesResources {
      * @return loadBalancers
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"4de7ac8b-495b-4884-9a69-1050c6793cd6\"]", value = "A list of IDs for associated load balancers to destroy along with the cluster.")
     @JsonProperty(JSON_PROPERTY_LOAD_BALANCERS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -85,7 +80,6 @@ public class DestroyAssociatedKubernetesResources {
      * @return volumes
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"ba49449a-7435-11ea-b89e-0a58ac14480f\"]", value = "A list of IDs for associated volumes to destroy along with the cluster.")
     @JsonProperty(JSON_PROPERTY_VOLUMES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -119,7 +113,6 @@ public class DestroyAssociatedKubernetesResources {
      * @return volumeSnapshots
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"edb0478d-7436-11ea-86e6-0a58ac144b91\"]", value = "A list of IDs for associated volume snapshots to destroy along with the cluster.")
     @JsonProperty(JSON_PROPERTY_VOLUME_SNAPSHOTS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

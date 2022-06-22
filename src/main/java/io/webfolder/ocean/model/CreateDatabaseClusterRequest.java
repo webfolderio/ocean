@@ -12,8 +12,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * CreateDatabaseClusterRequest
  */
@@ -189,7 +187,6 @@ public class CreateDatabaseClusterRequest {
      * @return id
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "9cc10173-e9ea-4176-9dbc-a4cee4c4ff30", value = "A unique ID that can be used to identify and reference a database cluster.")
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -208,7 +205,6 @@ public class CreateDatabaseClusterRequest {
      * @return name
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "backend", required = true, value = "A unique, human-readable name referring to a database cluster.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -235,7 +231,6 @@ public class CreateDatabaseClusterRequest {
      * @return engine
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "pg", required = true, value = "A slug representing the database engine used for the cluster. The possible values are: \"pg\" for PostgreSQL, \"mysql\" for MySQL, \"redis\" for Redis, and \"mongodb\" for MongoDB.")
     @JsonProperty(JSON_PROPERTY_ENGINE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -261,7 +256,6 @@ public class CreateDatabaseClusterRequest {
      * @return version
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "10", value = "A string representing the version of the database engine in use for the cluster.")
     @JsonProperty(JSON_PROPERTY_VERSION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -286,7 +280,6 @@ public class CreateDatabaseClusterRequest {
      * @return numNodes
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "2", required = true, value = "The number of nodes in the database cluster.")
     @JsonProperty(JSON_PROPERTY_NUM_NODES)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -312,7 +305,6 @@ public class CreateDatabaseClusterRequest {
      * @return size
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "db-s-2vcpu-4gb", required = true, value = "The slug identifier representing the size of the nodes in the database cluster.")
     @JsonProperty(JSON_PROPERTY_SIZE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -337,7 +329,6 @@ public class CreateDatabaseClusterRequest {
      * @return region
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "nyc3", required = true, value = "The slug identifier for the region where the database cluster is located.")
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -357,7 +348,6 @@ public class CreateDatabaseClusterRequest {
      * @return status
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "creating", value = "A string representing the current status of the database cluster.")
     @JsonProperty(JSON_PROPERTY_STATUS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -372,7 +362,6 @@ public class CreateDatabaseClusterRequest {
      * @return createdAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2019-01-11T18:37:36Z", value = "A time value given in ISO8601 combined date and time format that represents when the database cluster was created.")
     @JsonProperty(JSON_PROPERTY_CREATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -393,7 +382,6 @@ public class CreateDatabaseClusterRequest {
      * @return privateNetworkUuid
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "d455e75d-4858-4eec-8c95-da2f0a5f93a7", value = "A string specifying the UUID of the VPC to which the database cluster will be assigned. If excluded, the cluster when creating a new database cluster, it will be assigned to your account's default VPC for the region.")
     @JsonProperty(JSON_PROPERTY_PRIVATE_NETWORK_UUID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -426,7 +414,6 @@ public class CreateDatabaseClusterRequest {
      * @return tags
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"production\"]", value = "An array of tags that have been applied to the database cluster.")
     @JsonProperty(JSON_PROPERTY_TAGS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -447,7 +434,6 @@ public class CreateDatabaseClusterRequest {
      * @return dbNames
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"doadmin\"]", value = "An array of strings containing the names of databases created in the database cluster.")
     @JsonProperty(JSON_PROPERTY_DB_NAMES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -466,7 +452,6 @@ public class CreateDatabaseClusterRequest {
      * @return connection
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_CONNECTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -491,7 +476,6 @@ public class CreateDatabaseClusterRequest {
      * @return privateConnection
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_PRIVATE_CONNECTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -511,7 +495,6 @@ public class CreateDatabaseClusterRequest {
      * @return users
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_USERS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -530,7 +513,6 @@ public class CreateDatabaseClusterRequest {
      * @return maintenanceWindow
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_MAINTENANCE_WINDOW)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -557,7 +539,6 @@ public class CreateDatabaseClusterRequest {
      * @return projectId
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "9cc10173-e9ea-4176-9dbc-a4cee4c4ff30", value = "The ID of the project that the database cluster is assigned to. If excluded when creating a new database cluster, it will be assigned to your default project.")
     @JsonProperty(JSON_PROPERTY_PROJECT_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -582,7 +563,6 @@ public class CreateDatabaseClusterRequest {
      * @return backupRestore
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_BACKUP_RESTORE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

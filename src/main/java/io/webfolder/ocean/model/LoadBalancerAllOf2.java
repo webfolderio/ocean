@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * LoadBalancerAllOf2
  */
@@ -31,7 +29,6 @@ public class LoadBalancerAllOf2 {
      * @return tag
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "prod:web", value = "The name of a Droplet tag corresponding to Droplets assigned to the load balancer.")
     @JsonProperty(JSON_PROPERTY_TAG)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

@@ -6,9 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * A tag is a label that can be applied to a resource (currently Droplets,
  * Images, Volumes, Volume Snapshots, and Database clusters) in order to better
@@ -17,7 +14,6 @@ import io.swagger.annotations.ApiModelProperty;
  * &#x60;resources&#x60; attribute with information about resources that have
  * been tagged.
  */
-@ApiModel(description = "A tag is a label that can be applied to a resource (currently Droplets, Images, Volumes, Volume Snapshots, and Database clusters) in order to better organize or facilitate the lookups and actions on it. Tags have two attributes: a user defined `name` attribute and an embedded `resources` attribute with information about resources that have been tagged.")
 @JsonPropertyOrder({ Tag.JSON_PROPERTY_NAME, Tag.JSON_PROPERTY_RESOURCES })
 public class Tag {
     public static final String JSON_PROPERTY_NAME = "name";
@@ -51,7 +47,6 @@ public class Tag {
      * @return name
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "extra-awesome", value = "The name of the tag. Tags may contain letters, numbers, colons, dashes, and underscores. There is a limit of 255 characters per tag.  **Note:** Tag names are case stable, which means the capitalization you use when you first create a tag is canonical.  When working with tags in the API, you must use the tag's canonical capitalization. For example, if you create a tag named \"PROD\", the URL to add that tag to a resource would be `https://api.digitalocean.com/v2/tags/PROD/resources` (not `/v2/tags/prod/resources`).  Tagged resources in the control panel will always display the canonical capitalization. For example, if you create a tag named \"PROD\", you can tag resources in the control panel by entering \"prod\". The tag will still display with its canonical capitalization, \"PROD\". ")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -76,7 +71,6 @@ public class Tag {
      * @return resources
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_RESOURCES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

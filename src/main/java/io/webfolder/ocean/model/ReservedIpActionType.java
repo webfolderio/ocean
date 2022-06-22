@@ -13,7 +13,6 @@ import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
 import io.webfolder.ocean.JSON;
 
 /**
@@ -83,7 +82,6 @@ public class ReservedIpActionType {
      * @return type
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(required = true, value = "The type of action to initiate for the reserved IP.")
     @JsonProperty(JSON_PROPERTY_TYPE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * ImageNewCustomAllOf
  */
@@ -42,7 +40,6 @@ public class ImageNewCustomAllOf {
      * @return url
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "http://cloud-images.ubuntu.com/minimal/releases/bionic/release/ubuntu-18.04-minimal-cloudimg-amd64.img", value = "A URL from which the custom Linux virtual machine image may be retrieved.  The image it points to must be in the raw, qcow2, vhdx, vdi, or vmdk format.  It may be compressed using gzip or bzip2 and must be smaller than 100 GB after being decompressed.")
     @JsonProperty(JSON_PROPERTY_URL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -67,7 +64,6 @@ public class ImageNewCustomAllOf {
      * @return region
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -101,7 +97,6 @@ public class ImageNewCustomAllOf {
      * @return tags
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"base-image\",\"prod\"]", value = "A flat array of tag names as strings to be applied to the resource. Tag names may be for either existing or new tags.")
     @JsonProperty(JSON_PROPERTY_TAGS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

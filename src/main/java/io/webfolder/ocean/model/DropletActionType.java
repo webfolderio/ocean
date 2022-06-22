@@ -8,13 +8,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * Specifies the action that will be taken on the Droplet.
  */
-@ApiModel(description = "Specifies the action that will be taken on the Droplet.")
 @JsonPropertyOrder({ DropletActionType.JSON_PROPERTY_TYPE })
 public class DropletActionType {
     /**
@@ -95,7 +91,6 @@ public class DropletActionType {
      * @return type
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "reboot", required = true, value = "The type of action to initiate for the Droplet.")
     @JsonProperty(JSON_PROPERTY_TYPE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppRouteSpec
  */
@@ -34,7 +32,6 @@ public class AppRouteSpec {
      * @return path
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "/api", value = "An HTTP path prefix. Paths must start with / and must be unique across all components within an app.")
     @JsonProperty(JSON_PROPERTY_PATH)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -64,7 +61,6 @@ public class AppRouteSpec {
      * @return preservePathPrefix
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "An optional flag to preserve the path that is forwarded to the backend service. By default, the HTTP request path will be trimmed from the left when forwarded to the component. For example, a component with `path=/api` will have requests to `/api/list` trimmed to `/list`. If this value is `true`, the path will remain `/api/list`.")
     @JsonProperty(JSON_PROPERTY_PRESERVE_PATH_PREFIX)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * NetworkV4
  */
@@ -77,7 +75,6 @@ public class NetworkV4 {
      * @return ipAddress
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "104.236.32.182", value = "The IP address of the IPv4 network interface.")
     @JsonProperty(JSON_PROPERTY_IP_ADDRESS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -102,7 +99,6 @@ public class NetworkV4 {
      * @return netmask
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "255.255.192.0", value = "The netmask of the IPv4 network interface.")
     @JsonProperty(JSON_PROPERTY_NETMASK)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -129,7 +125,6 @@ public class NetworkV4 {
      * @return gateway
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "104.236.0.1", value = "The gateway of the specified IPv4 network interface.  For private interfaces, a gateway is not provided. This is denoted by returning `nil` as its value. ")
     @JsonProperty(JSON_PROPERTY_GATEWAY)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -154,7 +149,6 @@ public class NetworkV4 {
      * @return type
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "public", value = "The type of the IPv4 network interface.")
     @JsonProperty(JSON_PROPERTY_TYPE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

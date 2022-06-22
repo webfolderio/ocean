@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * GetDropletResponse
  */
@@ -30,7 +28,6 @@ public class GetDropletResponse {
      * @return droplet
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_DROPLET)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

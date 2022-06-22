@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * DropletActionSnapshotAllOf
  */
@@ -30,7 +28,6 @@ public class DropletActionSnapshotAllOf {
      * @return name
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "Nifty New Snapshot", value = "The name to give the new snapshot of the Droplet.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

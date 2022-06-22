@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppsGetLogsResponse
  */
@@ -43,7 +41,6 @@ public class AppsGetLogsResponse {
      * @return historicUrls
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_HISTORIC_URLS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -70,7 +67,6 @@ public class AppsGetLogsResponse {
      * @return liveUrl
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "ws://logs/build", value = "A URL of the real-time live logs. This URL may use either the `https://` or `wss://` protocols and will keep pushing live logs as they become available.")
     @JsonProperty(JSON_PROPERTY_LIVE_URL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

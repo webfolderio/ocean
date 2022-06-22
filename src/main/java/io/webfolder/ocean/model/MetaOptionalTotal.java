@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * MetaOptionalTotal
  */
@@ -30,7 +28,6 @@ public class MetaOptionalTotal {
      * @return meta
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(required = true, value = "")
     @JsonProperty(JSON_PROPERTY_META)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

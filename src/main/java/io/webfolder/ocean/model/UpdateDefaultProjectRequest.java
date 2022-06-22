@@ -10,8 +10,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * UpdateDefaultProjectRequest
  */
@@ -111,7 +109,6 @@ public class UpdateDefaultProjectRequest {
      * @return id
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "4e1bfbc3-dc3e-41f2-a18f-1b4d7ba71679", value = "The unique universal identifier of this project.")
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -125,7 +122,6 @@ public class UpdateDefaultProjectRequest {
      * @return ownerUuid
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "99525febec065ca37b2ffe4f852fd2b2581895e7", value = "The unique universal identifier of the project owner.")
     @JsonProperty(JSON_PROPERTY_OWNER_UUID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -139,7 +135,6 @@ public class UpdateDefaultProjectRequest {
      * @return ownerId
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "258992", value = "The integer id of the project owner.")
     @JsonProperty(JSON_PROPERTY_OWNER_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -159,7 +154,6 @@ public class UpdateDefaultProjectRequest {
      * @return name
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "my-web-api", required = true, value = "The human-readable name for the project. The maximum length is 175 characters and the name must be unique.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -184,7 +178,6 @@ public class UpdateDefaultProjectRequest {
      * @return description
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "My website API", required = true, value = "The description of the project. The maximum length is 255 characters.")
     @JsonProperty(JSON_PROPERTY_DESCRIPTION)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -215,7 +208,6 @@ public class UpdateDefaultProjectRequest {
      * @return purpose
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "Service or API", required = true, value = "The purpose of the project. The maximum length is 255 characters. It can have one of the following values:  - Just trying out DigitalOcean - Class project / Educational purposes - Website or blog - Web Application - Service or API - Mobile Application - Machine learning / AI / Data processing - IoT - Operational / Developer tooling  If another value for purpose is specified, for example, \"your custom purpose\", your purpose will be stored as `Other: your custom purpose`. ")
     @JsonProperty(JSON_PROPERTY_PURPOSE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -240,7 +232,6 @@ public class UpdateDefaultProjectRequest {
      * @return environment
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "Production", required = true, value = "The environment of the project's resources.")
     @JsonProperty(JSON_PROPERTY_ENVIRONMENT)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -261,7 +252,6 @@ public class UpdateDefaultProjectRequest {
      * @return createdAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2018-09-27T20:10:35Z", value = "A time value given in ISO8601 combined date and time format that represents when the project was created.")
     @JsonProperty(JSON_PROPERTY_CREATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -276,7 +266,6 @@ public class UpdateDefaultProjectRequest {
      * @return updatedAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2018-09-27T20:10:35Z", value = "A time value given in ISO8601 combined date and time format that represents when the project was updated.")
     @JsonProperty(JSON_PROPERTY_UPDATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -296,7 +285,6 @@ public class UpdateDefaultProjectRequest {
      * @return isDefault
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "false", required = true, value = "If true, all resources will be added to this project if no project is specified.")
     @JsonProperty(JSON_PROPERTY_IS_DEFAULT)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

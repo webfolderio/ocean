@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * ResetAuthRequest
  */
@@ -30,7 +28,6 @@ public class ResetAuthRequest {
      * @return mysqlSettings
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_MYSQL_SETTINGS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

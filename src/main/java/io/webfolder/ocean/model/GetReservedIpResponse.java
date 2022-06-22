@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * GetReservedIpResponse
  */
@@ -30,7 +28,6 @@ public class GetReservedIpResponse {
      * @return reservedIp
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_RESERVED_IP)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

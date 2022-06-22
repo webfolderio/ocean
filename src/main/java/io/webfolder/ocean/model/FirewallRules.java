@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * FirewallRules
  */
@@ -43,7 +41,6 @@ public class FirewallRules {
      * @return inboundRules
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_INBOUND_RULES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -76,7 +73,6 @@ public class FirewallRules {
      * @return outboundRules
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_OUTBOUND_RULES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

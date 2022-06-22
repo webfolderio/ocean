@@ -11,8 +11,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * DropletSnapshot
  */
@@ -93,7 +91,6 @@ public class DropletSnapshot {
      * @return id
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "6372321", required = true, value = "The unique identifier for the snapshot or backup.")
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -118,7 +115,6 @@ public class DropletSnapshot {
      * @return name
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "web-01-1595954862243", required = true, value = "A human-readable name for the snapshot.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -144,7 +140,6 @@ public class DropletSnapshot {
      * @return createdAt
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "2020-07-28T16:47:44Z", required = true, value = "A time value given in ISO8601 combined date and time format that represents when the snapshot was created.")
     @JsonProperty(JSON_PROPERTY_CREATED_AT)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -175,7 +170,6 @@ public class DropletSnapshot {
      * @return regions
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "[\"nyc3\",\"sfo3\"]", required = true, value = "An array of the regions that the snapshot is available in. The regions are represented by their identifying slug values.")
     @JsonProperty(JSON_PROPERTY_REGIONS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -200,7 +194,6 @@ public class DropletSnapshot {
      * @return minDiskSize
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "25", required = true, value = "The minimum size in GB required for a volume or Droplet to use this snapshot.")
     @JsonProperty(JSON_PROPERTY_MIN_DISK_SIZE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -225,7 +218,6 @@ public class DropletSnapshot {
      * @return sizeGigabytes
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "2.34", required = true, value = "The billable size of the snapshot in gigabytes.")
     @JsonProperty(JSON_PROPERTY_SIZE_GIGABYTES)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -252,7 +244,6 @@ public class DropletSnapshot {
      * @return type
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "snapshot", required = true, value = "Describes the kind of image. It may be one of `snapshot` or `backup`. This specifies whether an image is a user-generated Droplet snapshot or automatically created Droplet backup.")
     @JsonProperty(JSON_PROPERTY_TYPE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

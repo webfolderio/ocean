@@ -7,13 +7,9 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * An object containing information about a resource scheduled for deletion.
  */
-@ApiModel(description = "An object containing information about a resource scheduled for deletion.")
 @JsonPropertyOrder({ DestroyedAssociatedResource.JSON_PROPERTY_ID, DestroyedAssociatedResource.JSON_PROPERTY_NAME,
         DestroyedAssociatedResource.JSON_PROPERTY_DESTROYED_AT,
         DestroyedAssociatedResource.JSON_PROPERTY_ERROR_MESSAGE })
@@ -44,7 +40,6 @@ public class DestroyedAssociatedResource {
      * @return id
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "61486916", value = "The unique identifier for the resource scheduled for deletion.")
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -69,7 +64,6 @@ public class DestroyedAssociatedResource {
      * @return name
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "ubuntu-s-1vcpu-1gb-nyc1-01-1585758823330", value = "The name of the resource scheduled for deletion.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -95,7 +89,6 @@ public class DestroyedAssociatedResource {
      * @return destroyedAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2020-04-01T18:11:49Z", value = "A time value given in ISO8601 combined date and time format indicating when the resource was destroyed if the request was successful.")
     @JsonProperty(JSON_PROPERTY_DESTROYED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -121,7 +114,6 @@ public class DestroyedAssociatedResource {
      * @return errorMessage
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = " ", value = "A string indicating that the resource was not successfully destroyed and providing additional information.")
     @JsonProperty(JSON_PROPERTY_ERROR_MESSAGE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

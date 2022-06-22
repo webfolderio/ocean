@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * Database
  */
@@ -30,7 +28,6 @@ public class Database {
      * @return name
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "alpha", required = true, value = "The name of the database.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

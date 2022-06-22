@@ -10,8 +10,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * CertificateRequestLetsEncrypt
  */
@@ -79,7 +77,6 @@ public class CertificateRequestLetsEncrypt {
      * @return name
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "web-cert-01", required = true, value = "A unique human-readable name referring to a certificate.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -107,7 +104,6 @@ public class CertificateRequestLetsEncrypt {
      * @return type
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "lets_encrypt", value = "A string representing the type of the certificate. The value will be `custom` for a user-uploaded certificate or `lets_encrypt` for one automatically generated with Let's Encrypt.")
     @JsonProperty(JSON_PROPERTY_TYPE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -139,7 +135,6 @@ public class CertificateRequestLetsEncrypt {
      * @return dnsNames
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "[\"www.example.com\",\"example.com\"]", required = true, value = "An array of fully qualified domain names (FQDNs) for which the certificate was issued. A certificate covering all subdomains can be issued using a wildcard (e.g. `*.example.com`).")
     @JsonProperty(JSON_PROPERTY_DNS_NAMES)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

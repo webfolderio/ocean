@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * ListDropletSnapshotsResponse
  */
@@ -47,7 +45,6 @@ public class ListDropletSnapshotsResponse {
      * @return snapshots
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_SNAPSHOTS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -72,7 +69,6 @@ public class ListDropletSnapshotsResponse {
      * @return links
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_LINKS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -97,7 +93,6 @@ public class ListDropletSnapshotsResponse {
      * @return meta
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(required = true, value = "")
     @JsonProperty(JSON_PROPERTY_META)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

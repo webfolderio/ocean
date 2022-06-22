@@ -9,8 +9,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * VolumeFull
  */
@@ -70,7 +68,6 @@ public class VolumeFull {
      * @return id
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "506f78a4-e098-11e5-ad9f-000f53306ae1", value = "The unique identifier for the block storage volume.")
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -85,7 +82,6 @@ public class VolumeFull {
      * @return dropletIds
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[]", value = "An array containing the IDs of the Droplets the volume is attached to. Note that at this time, a volume can only be attached to a single Droplet.")
     @JsonProperty(JSON_PROPERTY_DROPLET_IDS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -106,7 +102,6 @@ public class VolumeFull {
      * @return name
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "example", value = "A human-readable name for the block storage volume. Must be lowercase and be composed only of numbers, letters and \"-\", up to a limit of 64 characters. The name must begin with a letter.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -131,7 +126,6 @@ public class VolumeFull {
      * @return description
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "Block store for examples", value = "An optional free-form text field to describe a block storage volume.")
     @JsonProperty(JSON_PROPERTY_DESCRIPTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -156,7 +150,6 @@ public class VolumeFull {
      * @return sizeGigabytes
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "10", value = "The size of the block storage volume in GiB (1024^3).")
     @JsonProperty(JSON_PROPERTY_SIZE_GIGABYTES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -177,7 +170,6 @@ public class VolumeFull {
      * @return createdAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2020-03-02T17:00:49Z", value = "A time value given in ISO8601 combined date and time format that represents when the block storage volume was created.")
     @JsonProperty(JSON_PROPERTY_CREATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -205,7 +197,6 @@ public class VolumeFull {
      * @return tags
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"base-image\",\"prod\"]", value = "A flat array of tag names as strings to be applied to the resource. Tag names may be for either existing or new tags.")
     @JsonProperty(JSON_PROPERTY_TAGS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -225,7 +216,6 @@ public class VolumeFull {
      * @return region
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "{\"name\":\"New York 1\",\"slug\":\"nyc1\",\"sizes\":[\"s-1vcpu-1gb\",\"s-1vcpu-2gb\",\"s-1vcpu-3gb\",\"s-2vcpu-2gb\",\"s-3vcpu-1gb\",\"s-2vcpu-4gb\",\"s-4vcpu-8gb\",\"s-6vcpu-16gb\",\"s-8vcpu-32gb\",\"s-12vcpu-48gb\",\"s-16vcpu-64gb\",\"s-20vcpu-96gb\",\"s-24vcpu-128gb\",\"s-32vcpu-192gb\"],\"features\":[\"private_networking\",\"backups\",\"ipv6\",\"metadata\"],\"available\":true}", value = "")
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -244,7 +234,6 @@ public class VolumeFull {
      * @return filesystemType
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "ext4", value = "The type of filesystem currently in-use on the volume.")
     @JsonProperty(JSON_PROPERTY_FILESYSTEM_TYPE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -269,7 +258,6 @@ public class VolumeFull {
      * @return filesystemLabel
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "example", value = "The label currently applied to the filesystem.")
     @JsonProperty(JSON_PROPERTY_FILESYSTEM_LABEL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

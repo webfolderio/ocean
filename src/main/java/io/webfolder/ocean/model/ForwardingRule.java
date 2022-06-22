@@ -8,13 +8,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * An object specifying a forwarding rule for a load balancer.
  */
-@ApiModel(description = "An object specifying a forwarding rule for a load balancer.")
 @JsonPropertyOrder({ ForwardingRule.JSON_PROPERTY_ENTRY_PROTOCOL, ForwardingRule.JSON_PROPERTY_ENTRY_PORT,
         ForwardingRule.JSON_PROPERTY_TARGET_PROTOCOL, ForwardingRule.JSON_PROPERTY_TARGET_PORT,
         ForwardingRule.JSON_PROPERTY_CERTIFICATE_ID, ForwardingRule.JSON_PROPERTY_TLS_PASSTHROUGH })
@@ -133,7 +129,6 @@ public class ForwardingRule {
      * @return entryProtocol
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "https", required = true, value = "The protocol used for traffic to the load balancer. The possible values are: `http`, `https`, `http2`, or `tcp`. ")
     @JsonProperty(JSON_PROPERTY_ENTRY_PROTOCOL)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -159,7 +154,6 @@ public class ForwardingRule {
      * @return entryPort
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "443", required = true, value = "An integer representing the port on which the load balancer instance will listen.")
     @JsonProperty(JSON_PROPERTY_ENTRY_PORT)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -186,7 +180,6 @@ public class ForwardingRule {
      * @return targetProtocol
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "http", required = true, value = "The protocol used for traffic from the load balancer to the backend Droplets. The possible values are: `http`, `https`, `http2`, or `tcp`. ")
     @JsonProperty(JSON_PROPERTY_TARGET_PROTOCOL)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -212,7 +205,6 @@ public class ForwardingRule {
      * @return targetPort
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "80", required = true, value = "An integer representing the port on the backend Droplets to which the load balancer will send traffic.")
     @JsonProperty(JSON_PROPERTY_TARGET_PORT)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -237,7 +229,6 @@ public class ForwardingRule {
      * @return certificateId
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "892071a0-bb95-49bc-8021-3afd67a210bf", value = "The ID of the TLS certificate used for SSL termination if enabled.")
     @JsonProperty(JSON_PROPERTY_CERTIFICATE_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -263,7 +254,6 @@ public class ForwardingRule {
      * @return tlsPassthrough
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "false", value = "A boolean value indicating whether SSL encrypted traffic will be passed through to the backend Droplets.")
     @JsonProperty(JSON_PROPERTY_TLS_PASSTHROUGH)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AssociatedKubernetesResource
  */
@@ -33,7 +31,6 @@ public class AssociatedKubernetesResource {
      * @return id
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "edb0478d-7436-11ea-86e6-0a58ac144b91", value = "The ID of a resource associated with a Kubernetes cluster.")
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -58,7 +55,6 @@ public class AssociatedKubernetesResource {
      * @return name
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "volume-001", value = "The name of a resource associated with a Kubernetes cluster.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

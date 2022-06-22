@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppsGitSourceSpec
  */
@@ -33,7 +31,6 @@ public class AppsGitSourceSpec {
      * @return branch
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "main", value = "The name of the branch to use")
     @JsonProperty(JSON_PROPERTY_BRANCH)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -59,7 +56,6 @@ public class AppsGitSourceSpec {
      * @return repoCloneUrl
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "https://github.com/digitalocean/sample-golang.git", value = "The clone URL of the repo. Example: `https://github.com/digitalocean/sample-golang.git`")
     @JsonProperty(JSON_PROPERTY_REPO_CLONE_URL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

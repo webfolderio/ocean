@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AddLoadBalancerForwardingRulesRequest
  */
@@ -37,7 +35,6 @@ public class AddLoadBalancerForwardingRulesRequest {
      * @return forwardingRules
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(required = true, value = "")
     @JsonProperty(JSON_PROPERTY_FORWARDING_RULES)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

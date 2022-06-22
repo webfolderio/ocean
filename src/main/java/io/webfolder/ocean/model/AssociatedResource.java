@@ -6,13 +6,9 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * An objects containing information about a resource associated with a Droplet.
  */
-@ApiModel(description = "An objects containing information about a resource associated with a Droplet.")
 @JsonPropertyOrder({ AssociatedResource.JSON_PROPERTY_ID, AssociatedResource.JSON_PROPERTY_NAME,
         AssociatedResource.JSON_PROPERTY_COST })
 public class AssociatedResource {
@@ -39,7 +35,6 @@ public class AssociatedResource {
      * @return id
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "61486916", value = "The unique identifier for the resource associated with the Droplet.")
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -64,7 +59,6 @@ public class AssociatedResource {
      * @return name
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "ubuntu-s-1vcpu-1gb-nyc1-01-1585758823330", value = "The name of the resource associated with the Droplet.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -90,7 +84,6 @@ public class AssociatedResource {
      * @return cost
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "0.05", value = "The cost of the resource in USD per month if the resource is retained after the Droplet is destroyed.")
     @JsonProperty(JSON_PROPERTY_COST)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

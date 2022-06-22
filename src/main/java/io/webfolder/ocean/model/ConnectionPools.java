@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * ConnectionPools
  */
@@ -33,7 +31,6 @@ public class ConnectionPools {
      * @return pools
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "An array of connection pool objects.")
     @JsonProperty(JSON_PROPERTY_POOLS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

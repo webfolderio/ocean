@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * DropletActionResizeAllOf
  */
@@ -35,7 +33,6 @@ public class DropletActionResizeAllOf {
      * @return disk
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "When `true`, the Droplet's disk will be resized in addition to its RAM and CPU. This is a permanent change and cannot be reversed as a Droplet's disk size cannot be decreased.")
     @JsonProperty(JSON_PROPERTY_DISK)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -60,7 +57,6 @@ public class DropletActionResizeAllOf {
      * @return size
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "s-2vcpu-2gb", value = "The slug identifier for the size to which you wish to resize the Droplet.")
     @JsonProperty(JSON_PROPERTY_SIZE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

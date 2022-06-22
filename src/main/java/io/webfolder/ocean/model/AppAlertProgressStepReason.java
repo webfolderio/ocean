@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppAlertProgressStepReason
  */
@@ -33,7 +31,6 @@ public class AppAlertProgressStepReason {
      * @return code
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "Title of Error", value = "")
     @JsonProperty(JSON_PROPERTY_CODE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -58,7 +55,6 @@ public class AppAlertProgressStepReason {
      * @return message
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "This is an error", value = "")
     @JsonProperty(JSON_PROPERTY_MESSAGE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

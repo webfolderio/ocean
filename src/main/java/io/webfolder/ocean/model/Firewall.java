@@ -11,8 +11,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * Firewall
  */
@@ -105,7 +103,6 @@ public class Firewall {
      * @return id
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "bb4b2611-3d72-467b-8602-280330ecd65c", value = "A unique ID that can be used to identify and reference a firewall.")
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -120,7 +117,6 @@ public class Firewall {
      * @return status
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "waiting", value = "A status string indicating the current state of the firewall. This can be \"waiting\", \"succeeded\", or \"failed\".")
     @JsonProperty(JSON_PROPERTY_STATUS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -135,7 +131,6 @@ public class Firewall {
      * @return createdAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2020-05-23T21:24Z", value = "A time value given in ISO8601 combined date and time format that represents when the firewall was created.")
     @JsonProperty(JSON_PROPERTY_CREATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -152,7 +147,6 @@ public class Firewall {
      * @return pendingChanges
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[{\"droplet_id\":8043964,\"removing\":false,\"status\":\"waiting\"}]", value = "An array of objects each containing the fields \"droplet_id\", \"removing\", and \"status\". It is provided to detail exactly which Droplets are having their security policies updated. When empty, all changes have been successfully applied.")
     @JsonProperty(JSON_PROPERTY_PENDING_CHANGES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -173,7 +167,6 @@ public class Firewall {
      * @return name
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "firewall", value = "A human-readable name for a firewall. The name must begin with an alphanumeric character. Subsequent characters must either be alphanumeric characters, a period (.), or a dash (-).")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -206,7 +199,6 @@ public class Firewall {
      * @return dropletIds
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[8043964]", value = "An array containing the IDs of the Droplets assigned to the firewall.")
     @JsonProperty(JSON_PROPERTY_DROPLET_IDS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -231,7 +223,6 @@ public class Firewall {
      * @return tags
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_TAGS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -264,7 +255,6 @@ public class Firewall {
      * @return inboundRules
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_INBOUND_RULES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -297,7 +287,6 @@ public class Firewall {
      * @return outboundRules
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_OUTBOUND_RULES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * ErrorWithRootCauses
  */
@@ -39,7 +37,6 @@ public class ErrorWithRootCauses {
      * @return error
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "not_found", required = true, value = "A message providing information about the error.")
     @JsonProperty(JSON_PROPERTY_ERROR)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -72,7 +69,6 @@ public class ErrorWithRootCauses {
      * @return messages
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "A list of legacy error messages.")
     @JsonProperty(JSON_PROPERTY_MESSAGES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -103,7 +99,6 @@ public class ErrorWithRootCauses {
      * @return rootCauses
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "[]", required = true, value = "A list of underlying causes for the error, including details to help  resolve it when possible.")
     @JsonProperty(JSON_PROPERTY_ROOT_CAUSES)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

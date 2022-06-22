@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * ClusterlintResultsDiagnosticsInner
  */
@@ -42,7 +40,6 @@ public class ClusterlintResultsDiagnosticsInner {
      * @return checkName
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "unused-config-map", value = "The clusterlint check that resulted in the diagnostic.")
     @JsonProperty(JSON_PROPERTY_CHECK_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -67,7 +64,6 @@ public class ClusterlintResultsDiagnosticsInner {
      * @return severity
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "warning", value = "Can be one of error, warning or suggestion.")
     @JsonProperty(JSON_PROPERTY_SEVERITY)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -92,7 +88,6 @@ public class ClusterlintResultsDiagnosticsInner {
      * @return message
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "Unused config map", value = "Feedback about the object for users to fix.")
     @JsonProperty(JSON_PROPERTY_MESSAGE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -117,7 +112,6 @@ public class ClusterlintResultsDiagnosticsInner {
      * @return _object
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_OBJECT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

@@ -6,13 +6,9 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * DataDog configuration.
  */
-@ApiModel(description = "DataDog configuration.")
 @JsonPropertyOrder({ AppLogDestinationDatadogSpec.JSON_PROPERTY_ENDPOINT,
         AppLogDestinationDatadogSpec.JSON_PROPERTY_API_KEY })
 public class AppLogDestinationDatadogSpec {
@@ -36,7 +32,6 @@ public class AppLogDestinationDatadogSpec {
      * @return endpoint
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "https://mydatadogendpoint.com", value = "Datadog HTTP log intake endpoint.")
     @JsonProperty(JSON_PROPERTY_ENDPOINT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -61,7 +56,6 @@ public class AppLogDestinationDatadogSpec {
      * @return apiKey
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "abcdefghijklmnopqrstuvwxyz0123456789", required = true, value = "Datadog API key.")
     @JsonProperty(JSON_PROPERTY_API_KEY)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

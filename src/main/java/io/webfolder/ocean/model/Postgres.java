@@ -9,8 +9,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * Postgres
  */
@@ -468,7 +466,6 @@ public class Postgres {
      * @return autovacuumFreezeMaxAge
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "200000000", value = "Specifies the maximum age (in transactions) that a table's pg_class.relfrozenxid field can attain before a VACUUM operation is forced to prevent transaction ID wraparound within the table. Note that the system will launch autovacuum processes to prevent wraparound even when autovacuum is otherwise disabled. This parameter will cause the server to be restarted.")
     @JsonProperty(JSON_PROPERTY_AUTOVACUUM_FREEZE_MAX_AGE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -495,7 +492,6 @@ public class Postgres {
      * @return autovacuumMaxWorkers
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "5", value = "Specifies the maximum number of autovacuum processes (other than the autovacuum launcher) that may be running at any one time. The default is three. This parameter can only be set at server start.")
     @JsonProperty(JSON_PROPERTY_AUTOVACUUM_MAX_WORKERS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -521,7 +517,6 @@ public class Postgres {
      * @return autovacuumNaptime
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "43200", value = "Specifies the minimum delay, in seconds, between autovacuum runs on any given database. The default is one minute.")
     @JsonProperty(JSON_PROPERTY_AUTOVACUUM_NAPTIME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -548,7 +543,6 @@ public class Postgres {
      * @return autovacuumVacuumThreshold
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "50", value = "Specifies the minimum number of updated or deleted tuples needed to trigger a VACUUM in any one table. The default is 50 tuples.")
     @JsonProperty(JSON_PROPERTY_AUTOVACUUM_VACUUM_THRESHOLD)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -575,7 +569,6 @@ public class Postgres {
      * @return autovacuumAnalyzeThreshold
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "50", value = "Specifies the minimum number of inserted, updated, or deleted tuples needed to trigger an ANALYZE in any one table. The default is 50 tuples.")
     @JsonProperty(JSON_PROPERTY_AUTOVACUUM_ANALYZE_THRESHOLD)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -602,7 +595,6 @@ public class Postgres {
      * @return autovacuumVacuumScaleFactor
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "0.2", value = "Specifies a fraction, in a decimal value, of the table size to add to autovacuum_vacuum_threshold when deciding whether to trigger a VACUUM. The default is 0.2 (20% of table size).")
     @JsonProperty(JSON_PROPERTY_AUTOVACUUM_VACUUM_SCALE_FACTOR)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -629,7 +621,6 @@ public class Postgres {
      * @return autovacuumAnalyzeScaleFactor
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "0.2", value = "Specifies a fraction, in a decimal value, of the table size to add to autovacuum_analyze_threshold when deciding whether to trigger an ANALYZE. The default is 0.2 (20% of table size).")
     @JsonProperty(JSON_PROPERTY_AUTOVACUUM_ANALYZE_SCALE_FACTOR)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -656,7 +647,6 @@ public class Postgres {
      * @return autovacuumVacuumCostDelay
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "20", value = "Specifies the cost delay value, in milliseconds, that will be used in automatic VACUUM operations. If -1, uses the regular vacuum_cost_delay value, which is 20 milliseconds.")
     @JsonProperty(JSON_PROPERTY_AUTOVACUUM_VACUUM_COST_DELAY)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -683,7 +673,6 @@ public class Postgres {
      * @return autovacuumVacuumCostLimit
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "-1", value = "Specifies the cost limit value that will be used in automatic VACUUM operations. If -1 is specified (which is the default), the regular vacuum_cost_limit value will be used.")
     @JsonProperty(JSON_PROPERTY_AUTOVACUUM_VACUUM_COST_LIMIT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -709,7 +698,6 @@ public class Postgres {
      * @return backupHour
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "3", value = "The hour of day (in UTC) when backup for the service starts. New backup only starts if previous backup has already completed.")
     @JsonProperty(JSON_PROPERTY_BACKUP_HOUR)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -736,7 +724,6 @@ public class Postgres {
      * @return backupMinute
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "30", value = "The minute of the backup hour when backup for the service starts. New backup is only started if previous backup has already completed.")
     @JsonProperty(JSON_PROPERTY_BACKUP_MINUTE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -762,7 +749,6 @@ public class Postgres {
      * @return bgwriterDelay
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "200", value = "Specifies the delay, in milliseconds, between activity rounds for the background writer. Default is 200 ms.")
     @JsonProperty(JSON_PROPERTY_BGWRITER_DELAY)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -790,7 +776,6 @@ public class Postgres {
      * @return bgwriterFlushAfter
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "512", value = "The amount of kilobytes that need to be written by the background writer before attempting to force the OS to issue these writes to underlying storage. Specified in kilobytes, default is 512.  Setting of 0 disables forced writeback.")
     @JsonProperty(JSON_PROPERTY_BGWRITER_FLUSH_AFTER)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -817,7 +802,6 @@ public class Postgres {
      * @return bgwriterLruMaxpages
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "100", value = "The maximum number of buffers that the background writer can write. Setting this to zero disables background writing. Default is 100.")
     @JsonProperty(JSON_PROPERTY_BGWRITER_LRU_MAXPAGES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -848,7 +832,6 @@ public class Postgres {
      * @return bgwriterLruMultiplier
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2", value = "The average recent need for new buffers is multiplied by bgwriter_lru_multiplier to arrive at an estimate of the number that will be needed during the next round, (up to bgwriter_lru_maxpages). 1.0 represents a “just in time” policy of writing exactly the number of buffers predicted to be needed. Larger values provide some cushion against spikes in demand, while smaller values intentionally leave writes to be done by server processes. The default is 2.0.")
     @JsonProperty(JSON_PROPERTY_BGWRITER_LRU_MULTIPLIER)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -874,7 +857,6 @@ public class Postgres {
      * @return deadlockTimeout
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "1000", value = "The amount of time, in milliseconds, to wait on a lock before checking to see if there is a deadlock condition.")
     @JsonProperty(JSON_PROPERTY_DEADLOCK_TIMEOUT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -900,7 +882,6 @@ public class Postgres {
      * @return defaultToastCompression
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "lz4", value = "Specifies the default TOAST compression method for values of compressible columns (the default is lz4).")
     @JsonProperty(JSON_PROPERTY_DEFAULT_TOAST_COMPRESSION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -926,7 +907,6 @@ public class Postgres {
      * @return idleInTransactionSessionTimeout
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "10000", value = "Time out sessions with open transactions after this number of milliseconds")
     @JsonProperty(JSON_PROPERTY_IDLE_IN_TRANSACTION_SESSION_TIMEOUT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -952,7 +932,6 @@ public class Postgres {
      * @return jit
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "Activates, in a boolean, the system-wide use of Just-in-Time Compilation (JIT).")
     @JsonProperty(JSON_PROPERTY_JIT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -980,7 +959,6 @@ public class Postgres {
      * @return logAutovacuumMinDuration
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "-1", value = "Causes each action executed by autovacuum to be logged if it ran for at least the specified number of milliseconds. Setting this to zero logs all autovacuum actions. Minus-one (the default) disables logging autovacuum actions.")
     @JsonProperty(JSON_PROPERTY_LOG_AUTOVACUUM_MIN_DURATION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -1006,7 +984,6 @@ public class Postgres {
      * @return logErrorVerbosity
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "VERBOSE", value = "Controls the amount of detail written in the server log for each message that is logged.")
     @JsonProperty(JSON_PROPERTY_LOG_ERROR_VERBOSITY)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -1032,7 +1009,6 @@ public class Postgres {
      * @return logLinePrefix
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "pid=%p,user=%u,db=%d,app=%a,client=%h", value = "Selects one of the available log-formats. These can support popular log analyzers like pgbadger, pganalyze, etc.")
     @JsonProperty(JSON_PROPERTY_LOG_LINE_PREFIX)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -1058,7 +1034,6 @@ public class Postgres {
      * @return logMinDurationStatement
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "-1", value = "Log statements that take more than this number of milliseconds to run. If -1, disables.")
     @JsonProperty(JSON_PROPERTY_LOG_MIN_DURATION_STATEMENT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -1084,7 +1059,6 @@ public class Postgres {
      * @return maxFilesPerProcess
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2048", value = "PostgreSQL maximum number of files that can be open per process.")
     @JsonProperty(JSON_PROPERTY_MAX_FILES_PER_PROCESS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -1109,7 +1083,6 @@ public class Postgres {
      * @return maxPreparedTransactions
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "20", value = "PostgreSQL maximum prepared transactions.")
     @JsonProperty(JSON_PROPERTY_MAX_PREPARED_TRANSACTIONS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -1134,7 +1107,6 @@ public class Postgres {
      * @return maxPredLocksPerTransaction
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "128", value = "PostgreSQL maximum predicate locks per transaction.")
     @JsonProperty(JSON_PROPERTY_MAX_PRED_LOCKS_PER_TRANSACTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -1159,7 +1131,6 @@ public class Postgres {
      * @return maxLocksPerTransaction
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "128", value = "PostgreSQL maximum locks per transaction.")
     @JsonProperty(JSON_PROPERTY_MAX_LOCKS_PER_TRANSACTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -1184,7 +1155,6 @@ public class Postgres {
      * @return maxStackDepth
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2097152", value = "Maximum depth of the stack in bytes.")
     @JsonProperty(JSON_PROPERTY_MAX_STACK_DEPTH)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -1209,7 +1179,6 @@ public class Postgres {
      * @return maxStandbyArchiveDelay
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "43200", value = "Max standby archive delay in milliseconds.")
     @JsonProperty(JSON_PROPERTY_MAX_STANDBY_ARCHIVE_DELAY)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -1234,7 +1203,6 @@ public class Postgres {
      * @return maxStandbyStreamingDelay
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "43200", value = "Max standby streaming delay in milliseconds.")
     @JsonProperty(JSON_PROPERTY_MAX_STANDBY_STREAMING_DELAY)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -1259,7 +1227,6 @@ public class Postgres {
      * @return maxReplicationSlots
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "16", value = "PostgreSQL maximum replication slots.")
     @JsonProperty(JSON_PROPERTY_MAX_REPLICATION_SLOTS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -1285,7 +1252,6 @@ public class Postgres {
      * @return maxLogicalReplicationWorkers
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "16", value = "PostgreSQL maximum logical replication workers (taken from the pool of max_parallel_workers).")
     @JsonProperty(JSON_PROPERTY_MAX_LOGICAL_REPLICATION_WORKERS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -1311,7 +1277,6 @@ public class Postgres {
      * @return maxParallelWorkers
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "12", value = "Sets the maximum number of workers that the system can support for parallel queries.")
     @JsonProperty(JSON_PROPERTY_MAX_PARALLEL_WORKERS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -1337,7 +1302,6 @@ public class Postgres {
      * @return maxParallelWorkersPerGather
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "16", value = "Sets the maximum number of workers that can be started by a single Gather or Gather Merge node.")
     @JsonProperty(JSON_PROPERTY_MAX_PARALLEL_WORKERS_PER_GATHER)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -1363,7 +1327,6 @@ public class Postgres {
      * @return maxWorkerProcesses
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "16", value = "Sets the maximum number of background processes that the system can support.")
     @JsonProperty(JSON_PROPERTY_MAX_WORKER_PROCESSES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -1390,7 +1353,6 @@ public class Postgres {
      * @return pgPartmanBgwRole
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "myrolename", value = "Controls which role to use for pg_partman's scheduled background tasks. Must consist of alpha-numeric characters, dots, underscores, or dashes. May not start with dash or dot. Maximum of 64 characters.")
     @JsonProperty(JSON_PROPERTY_PG_PARTMAN_BGW_ROLE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -1416,7 +1378,6 @@ public class Postgres {
      * @return pgPartmanBgwInterval
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "3600", value = "Sets the time interval to run pg_partman's scheduled tasks.")
     @JsonProperty(JSON_PROPERTY_PG_PARTMAN_BGW_INTERVAL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -1445,7 +1406,6 @@ public class Postgres {
      * @return pgStatStatementsTrack
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "all", value = "Controls which statements are counted. Specify 'top' to track top-level statements (those issued directly by clients), 'all' to also track nested statements (such as statements invoked within functions), or 'none' to disable statement statistics collection. The default value is top.")
     @JsonProperty(JSON_PROPERTY_PG_STAT_STATEMENTS_TRACK)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -1471,7 +1431,6 @@ public class Postgres {
      * @return tempFileLimit
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "5000000", value = "PostgreSQL temporary file limit in KiB. If -1, sets to unlimited.")
     @JsonProperty(JSON_PROPERTY_TEMP_FILE_LIMIT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -1496,7 +1455,6 @@ public class Postgres {
      * @return timezone
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "Europe/Helsinki", value = "PostgreSQL service timezone")
     @JsonProperty(JSON_PROPERTY_TIMEZONE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -1522,7 +1480,6 @@ public class Postgres {
      * @return trackActivityQuerySize
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "1024", value = "Specifies the number of bytes reserved to track the currently executing command for each active session.")
     @JsonProperty(JSON_PROPERTY_TRACK_ACTIVITY_QUERY_SIZE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -1547,7 +1504,6 @@ public class Postgres {
      * @return trackCommitTimestamp
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "off", value = "Record commit time of transactions.")
     @JsonProperty(JSON_PROPERTY_TRACK_COMMIT_TIMESTAMP)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -1572,7 +1528,6 @@ public class Postgres {
      * @return trackFunctions
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "all", value = "Enables tracking of function call counts and time used.")
     @JsonProperty(JSON_PROPERTY_TRACK_FUNCTIONS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -1599,7 +1554,6 @@ public class Postgres {
      * @return trackIoTiming
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "off", value = "Enables timing of database I/O calls. This parameter is off by default, because it will repeatedly query the operating system for the current time, which may cause significant overhead on some platforms.")
     @JsonProperty(JSON_PROPERTY_TRACK_IO_TIMING)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -1624,7 +1578,6 @@ public class Postgres {
      * @return maxWalSenders
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "8", value = "PostgreSQL maximum WAL senders")
     @JsonProperty(JSON_PROPERTY_MAX_WAL_SENDERS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -1652,7 +1605,6 @@ public class Postgres {
      * @return walSenderTimeout
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "60000", value = "Terminate replication connections that are inactive for longer than this amount of time, in milliseconds. Setting this value to zero disables the timeout. Must be either 0 or between 5000 and 10800000.")
     @JsonProperty(JSON_PROPERTY_WAL_SENDER_TIMEOUT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -1679,7 +1631,6 @@ public class Postgres {
      * @return walWriterDelay
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "50", value = "WAL flush interval in milliseconds. Note that setting this value to lower than the default 200ms may negatively impact performance")
     @JsonProperty(JSON_PROPERTY_WAL_WRITER_DELAY)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -1707,7 +1658,6 @@ public class Postgres {
      * @return sharedBuffersPercentage
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "41.5", value = "Percentage of total RAM that the database server uses for shared memory buffers.  Valid range is 20-60 (float), which corresponds to 20% - 60%.  This setting adjusts the shared_buffers configuration value.")
     @JsonProperty(JSON_PROPERTY_SHARED_BUFFERS_PERCENTAGE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -1732,7 +1682,6 @@ public class Postgres {
      * @return pgbouncer
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_PGBOUNCER)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

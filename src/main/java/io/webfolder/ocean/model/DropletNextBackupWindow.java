@@ -7,15 +7,11 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * The details of the Droplet&#39;s backups feature, if backups are configured
  * for the Droplet. This object contains keys for the start and end times of the
  * window during which the backup will start.
  */
-@ApiModel(description = "The details of the Droplet's backups feature, if backups are configured for the Droplet. This object contains keys for the start and end times of the window during which the backup will start.")
 @JsonPropertyOrder({ DropletNextBackupWindow.JSON_PROPERTY_START, DropletNextBackupWindow.JSON_PROPERTY_END })
 public class DropletNextBackupWindow {
     public static final String JSON_PROPERTY_START = "start";
@@ -39,7 +35,6 @@ public class DropletNextBackupWindow {
      * @return start
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2019-12-04T00:00Z", value = "A time value given in ISO8601 combined date and time format specifying the start of the Droplet's backup window.")
     @JsonProperty(JSON_PROPERTY_START)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -65,7 +60,6 @@ public class DropletNextBackupWindow {
      * @return end
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2019-12-04T23:00Z", value = "A time value given in ISO8601 combined date and time format specifying the end of the Droplet's backup window.")
     @JsonProperty(JSON_PROPERTY_END)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

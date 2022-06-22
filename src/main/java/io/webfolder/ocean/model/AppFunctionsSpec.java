@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppFunctionsSpec
  */
@@ -63,7 +61,6 @@ public class AppFunctionsSpec {
      * @return cors
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_CORS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -96,7 +93,6 @@ public class AppFunctionsSpec {
      * @return routes
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "A list of HTTP routes that should be routed to this component.")
     @JsonProperty(JSON_PROPERTY_ROUTES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -121,7 +117,6 @@ public class AppFunctionsSpec {
      * @return name
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "api", required = true, value = "The name. Must be unique across all components within the same app.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -148,7 +143,6 @@ public class AppFunctionsSpec {
      * @return sourceDir
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "path/to/dir", value = "An optional path to the working directory to use for the build. For Dockerfile builds, this will be used as the build context. Must be relative to the root of the repo.")
     @JsonProperty(JSON_PROPERTY_SOURCE_DIR)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -181,7 +175,6 @@ public class AppFunctionsSpec {
      * @return alerts
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_ALERTS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -214,7 +207,6 @@ public class AppFunctionsSpec {
      * @return envs
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "A list of environment variables made available to the component.")
     @JsonProperty(JSON_PROPERTY_ENVS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -239,7 +231,6 @@ public class AppFunctionsSpec {
      * @return git
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_GIT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -264,7 +255,6 @@ public class AppFunctionsSpec {
      * @return github
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_GITHUB)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -289,7 +279,6 @@ public class AppFunctionsSpec {
      * @return gitlab
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_GITLAB)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -314,7 +303,6 @@ public class AppFunctionsSpec {
      * @return logDestinations
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_LOG_DESTINATIONS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

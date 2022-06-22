@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * DropletActionRestoreAllOf
  */
@@ -30,7 +28,6 @@ public class DropletActionRestoreAllOf {
      * @return image
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "12389723", value = "The ID of a backup of the current Droplet instance to restore from.")
     @JsonProperty(JSON_PROPERTY_IMAGE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * DatabaseClusterResize
  */
@@ -34,7 +32,6 @@ public class DatabaseClusterResize {
      * @return size
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "db-s-4vcpu-8gb", required = true, value = "A slug identifier representing desired the size of the nodes in the database cluster.")
     @JsonProperty(JSON_PROPERTY_SIZE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -61,7 +58,6 @@ public class DatabaseClusterResize {
      * @return numNodes
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "3", required = true, value = "The number of nodes in the database cluster. Valid values are are 1-3. In addition to the primary node, up to two standby nodes may be added for highly available configurations.")
     @JsonProperty(JSON_PROPERTY_NUM_NODES)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

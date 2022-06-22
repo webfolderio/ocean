@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * ValidateAppRollbackResponse
  */
@@ -39,7 +37,6 @@ public class ValidateAppRollbackResponse {
      * @return valid
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "Indicates whether the app can be rolled back to the specified deployment.")
     @JsonProperty(JSON_PROPERTY_VALID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -64,7 +61,6 @@ public class ValidateAppRollbackResponse {
      * @return error
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_ERROR)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -98,7 +94,6 @@ public class ValidateAppRollbackResponse {
      * @return warnings
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "Contains a list of warnings that may cause the rollback to run under unideal circumstances.")
     @JsonProperty(JSON_PROPERTY_WARNINGS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

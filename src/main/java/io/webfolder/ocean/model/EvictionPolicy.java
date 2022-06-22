@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * EvictionPolicy
  */
@@ -75,7 +73,6 @@ public class EvictionPolicy {
      * @return evictionPolicy
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "noeviction", required = true, value = "A string specifying the desired eviction policy for the Redis cluster.")
     @JsonProperty(JSON_PROPERTY_EVICTION_POLICY)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

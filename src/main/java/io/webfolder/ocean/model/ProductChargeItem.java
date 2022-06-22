@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * ProductChargeItem
  */
@@ -37,7 +35,6 @@ public class ProductChargeItem {
      * @return amount
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "10.00", value = "Amount of the charge")
     @JsonProperty(JSON_PROPERTY_AMOUNT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -62,7 +59,6 @@ public class ProductChargeItem {
      * @return name
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "Spaces Subscription", value = "Description of the charge")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -87,7 +83,6 @@ public class ProductChargeItem {
      * @return count
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "1", value = "Number of times the charge was applied")
     @JsonProperty(JSON_PROPERTY_COUNT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

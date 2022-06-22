@@ -10,8 +10,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppRollbackValidationCondition
  */
@@ -118,7 +116,6 @@ public class AppRollbackValidationCondition {
      * @return code
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "exceeded_revision_limit", value = "A code identifier that represents the failing condition.  Failing conditions:   - `incompatible_phase` - indicates that the deployment's phase is not suitable for rollback.   - `incompatible_result` - indicates that the deployment's result is not suitable for rollback.   - `exceeded_revision_limit` - indicates that the app has exceeded the rollback revision limits for its tier.   - `app_pinned` - indicates that there is already a rollback in progress and the app is pinned.   - `database_config_conflict` - indicates that the deployment's database config is different than the current config.   - `region_conflict` - indicates that the deployment's region differs from the current app region.    Warning conditions:   - `static_site_requires_rebuild` - indicates that the deployment contains at least one static site that will require a rebuild.   - `image_source_missing_digest` - indicates that the deployment contains at least one component with an image source that is missing a digest. ")
     @JsonProperty(JSON_PROPERTY_CODE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -143,7 +140,6 @@ public class AppRollbackValidationCondition {
      * @return message
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "the deployment is past the maximum historical revision limit of 0 for the \"starter\" app tier", value = "A human-readable message describing the failing condition.")
     @JsonProperty(JSON_PROPERTY_MESSAGE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -176,7 +172,6 @@ public class AppRollbackValidationCondition {
      * @return components
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"www\"]", value = "")
     @JsonProperty(JSON_PROPERTY_COMPONENTS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

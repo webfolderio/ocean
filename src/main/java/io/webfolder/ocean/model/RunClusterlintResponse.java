@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * RunClusterlintResponse
  */
@@ -30,7 +28,6 @@ public class RunClusterlintResponse {
      * @return runId
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "50c2f44c-011d-493e-aee5-361a4a0d1844", value = "ID of the clusterlint run that can be used later to fetch the diagnostics.")
     @JsonProperty(JSON_PROPERTY_RUN_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

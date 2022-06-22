@@ -7,8 +7,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * Domain
  */
@@ -50,7 +48,6 @@ public class Domain {
      * @return name
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "example.com", value = "The name of the domain itself. This should follow the standard domain format of domain.TLD. For instance, `example.com` is a valid domain name.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -76,7 +73,6 @@ public class Domain {
      * @return ipAddress
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "192.0.2.1", value = "This optional attribute may contain an IP address. When provided, an A record will be automatically created pointing to the apex domain.")
     @JsonProperty(JSON_PROPERTY_IP_ADDRESS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -98,7 +94,6 @@ public class Domain {
      * @return ttl
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "1800", value = "This value is the time to live for the records on this domain, in seconds. This defines the time frame that clients can cache queried information before a refresh should be requested.")
     @JsonProperty(JSON_PROPERTY_TTL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -116,7 +111,6 @@ public class Domain {
      * @return zoneFile
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "$ORIGIN example.com. $TTL 1800 example.com. IN SOA ns1.digitalocean.com. hostmaster.example.com. 1415982609 10800 3600 604800 1800 example.com. 1800 IN NS ns1.digitalocean.com. example.com. 1800 IN NS ns2.digitalocean.com. example.com. 1800 IN NS ns3.digitalocean.com. example.com. 1800 IN A 1.2.3.4 ", value = "This attribute contains the complete contents of the zone file for the selected domain. Individual domain record resources should be used to get more granular control over records. However, this attribute can also be used to get information about the SOA record, which is created automatically and is not accessible as an individual record resource.")
     @JsonProperty(JSON_PROPERTY_ZONE_FILE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

@@ -10,13 +10,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * The desired configuration of an application.
  */
-@ApiModel(description = "The desired configuration of an application.")
 @JsonPropertyOrder({ AppSpec.JSON_PROPERTY_NAME, AppSpec.JSON_PROPERTY_REGION, AppSpec.JSON_PROPERTY_DOMAINS,
         AppSpec.JSON_PROPERTY_SERVICES, AppSpec.JSON_PROPERTY_STATIC_SITES, AppSpec.JSON_PROPERTY_JOBS,
         AppSpec.JSON_PROPERTY_WORKERS, AppSpec.JSON_PROPERTY_FUNCTIONS, AppSpec.JSON_PROPERTY_DATABASES })
@@ -100,7 +96,6 @@ public class AppSpec {
      * @return name
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "web-app-01", required = true, value = "The name of the app. Must be unique across all apps in the same account.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -126,7 +121,6 @@ public class AppSpec {
      * @return region
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "nyc", value = "The slug form of the geographical origin of the app. Default: `nearest available`")
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -159,7 +153,6 @@ public class AppSpec {
      * @return domains
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "A set of hostnames where the application will be available.")
     @JsonProperty(JSON_PROPERTY_DOMAINS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -192,7 +185,6 @@ public class AppSpec {
      * @return services
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "Workloads which expose publicly-accessible HTTP services.")
     @JsonProperty(JSON_PROPERTY_SERVICES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -225,7 +217,6 @@ public class AppSpec {
      * @return staticSites
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "Content which can be rendered to static web assets.")
     @JsonProperty(JSON_PROPERTY_STATIC_SITES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -259,7 +250,6 @@ public class AppSpec {
      * @return jobs
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "Pre and post deployment workloads which do not expose publicly-accessible HTTP routes.")
     @JsonProperty(JSON_PROPERTY_JOBS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -292,7 +282,6 @@ public class AppSpec {
      * @return workers
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "Workloads which do not expose publicly-accessible HTTP services.")
     @JsonProperty(JSON_PROPERTY_WORKERS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -326,7 +315,6 @@ public class AppSpec {
      * @return functions
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "Workloads which expose publicly-accessible HTTP services via Functions Components.")
     @JsonProperty(JSON_PROPERTY_FUNCTIONS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -360,7 +348,6 @@ public class AppSpec {
      * @return databases
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "Database instances which can provide persistence to workloads within the application.")
     @JsonProperty(JSON_PROPERTY_DATABASES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * SnapshotAllOf
  */
@@ -30,7 +28,6 @@ public class SnapshotAllOf {
      * @return id
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "6372321", required = true, value = "The unique identifier for the snapshot.")
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

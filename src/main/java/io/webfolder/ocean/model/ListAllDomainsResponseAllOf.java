@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * ListAllDomainsResponseAllOf
  */
@@ -37,7 +35,6 @@ public class ListAllDomainsResponseAllOf {
      * @return domains
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(required = true, value = "Array of volumes.")
     @JsonProperty(JSON_PROPERTY_DOMAINS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

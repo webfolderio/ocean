@@ -11,8 +11,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * Image
  */
@@ -168,7 +166,6 @@ public class Image {
      * @return id
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "7555620", value = "A unique number that can be used to identify and reference a specific image.")
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -189,7 +186,6 @@ public class Image {
      * @return name
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "Nifty New Snapshot", value = "The display name that has been given to an image.  This is what is shown in the control panel and is generally a descriptive title for the image in question.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -219,7 +215,6 @@ public class Image {
      * @return type
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "snapshot", value = "Describes the kind of image. It may be one of `base`, `snapshot`, `backup`, `custom`, or `admin`. Respectively, this specifies whether an image is a DigitalOcean base OS image, user-generated Droplet snapshot, automatically created Droplet backup, user-provided virtual machine image, or an image used for DigitalOcean managed resources (e.g. DOKS worker nodes).")
     @JsonProperty(JSON_PROPERTY_TYPE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -244,7 +239,6 @@ public class Image {
      * @return distribution
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_DISTRIBUTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -271,7 +265,6 @@ public class Image {
      * @return slug
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "nifty1", value = "A uniquely identifying string that is associated with each of the DigitalOcean-provided public images. These can be used to reference a public image as an alternative to the numeric id.")
     @JsonProperty(JSON_PROPERTY_SLUG)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -298,7 +291,6 @@ public class Image {
      * @return _public
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "This is a boolean value that indicates whether the image in question is public or not. An image that is public is available to all accounts. A non-public image is only accessible from your account.")
     @JsonProperty(JSON_PROPERTY_PUBLIC)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -332,7 +324,6 @@ public class Image {
      * @return regions
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"nyc1\",\"nyc2\"]", value = "This attribute is an array of the regions that the image is available in. The regions are represented by their identifying slug values.")
     @JsonProperty(JSON_PROPERTY_REGIONS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -358,7 +349,6 @@ public class Image {
      * @return createdAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2020-05-04T22:23:02Z", value = "A time value given in ISO8601 combined date and time format that represents when the image was created.")
     @JsonProperty(JSON_PROPERTY_CREATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -384,7 +374,6 @@ public class Image {
      * @return minDiskSize
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "20", value = "The minimum disk size in GB required for a Droplet to use this image.")
     @JsonProperty(JSON_PROPERTY_MIN_DISK_SIZE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -409,7 +398,6 @@ public class Image {
      * @return sizeGigabytes
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2.34", value = "The size of the image in gigabytes.")
     @JsonProperty(JSON_PROPERTY_SIZE_GIGABYTES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -434,7 +422,6 @@ public class Image {
      * @return description
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = " ", value = "An optional free-form text field to describe an image.")
     @JsonProperty(JSON_PROPERTY_DESCRIPTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -468,7 +455,6 @@ public class Image {
      * @return tags
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"base-image\",\"prod\"]", value = "A flat array of tag names as strings to be applied to the resource. Tag names may be for either existing or new tags.")
     @JsonProperty(JSON_PROPERTY_TAGS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -495,7 +481,6 @@ public class Image {
      * @return status
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "NEW", value = "A status string indicating the state of a custom image. This may be `NEW`,  `available`, `pending`, `deleted`, or `retired`.")
     @JsonProperty(JSON_PROPERTY_STATUS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -521,7 +506,6 @@ public class Image {
      * @return errorMessage
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = " ", value = "A string containing information about errors that may occur when importing  a custom image.")
     @JsonProperty(JSON_PROPERTY_ERROR_MESSAGE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

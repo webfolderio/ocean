@@ -6,13 +6,9 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * Logtail configuration.
  */
-@ApiModel(description = "Logtail configuration.")
 @JsonPropertyOrder({ AppLogDestinationLogtailSpec.JSON_PROPERTY_TOKEN })
 public class AppLogDestinationLogtailSpec {
     public static final String JSON_PROPERTY_TOKEN = "token";
@@ -32,7 +28,6 @@ public class AppLogDestinationLogtailSpec {
      * @return token
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "abcdefghijklmnopqrstuvwxyz0123456789", value = "Logtail token.")
     @JsonProperty(JSON_PROPERTY_TOKEN)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

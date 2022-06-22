@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * DockerCredentialsAuthsRegistryDigitaloceanCom
  */
@@ -30,7 +28,6 @@ public class DockerCredentialsAuthsRegistryDigitaloceanCom {
      * @return auth
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "YjdkMDNhNjk0N2IyMTdlZmI2ZjNlYzNiZDM1MDQ1ODI6YjdkMDNhNjk0N2IyMTdlZmI2ZjNlYzNiZDM1MDQ1ODIK", value = "A base64 encoded string containing credentials for the container registry.")
     @JsonProperty(JSON_PROPERTY_AUTH)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

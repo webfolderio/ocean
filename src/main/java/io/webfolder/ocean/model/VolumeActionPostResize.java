@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * VolumeActionPostResize
  */
@@ -76,7 +74,6 @@ public class VolumeActionPostResize {
      * @return type
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "attach", required = true, value = "The volume action to initiate.")
     @JsonProperty(JSON_PROPERTY_TYPE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -101,7 +98,6 @@ public class VolumeActionPostResize {
      * @return region
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -126,7 +122,6 @@ public class VolumeActionPostResize {
      * @return sizeGigabytes
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(required = true, value = "The new size of the block storage volume in GiB (1024^3).")
     @JsonProperty(JSON_PROPERTY_SIZE_GIGABYTES)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

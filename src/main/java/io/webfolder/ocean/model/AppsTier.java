@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppsTier
  */
@@ -43,7 +41,6 @@ public class AppsTier {
      * @return buildSeconds
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "233", value = "")
     @JsonProperty(JSON_PROPERTY_BUILD_SECONDS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -68,7 +65,6 @@ public class AppsTier {
      * @return egressBandwidthBytes
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "123", value = "")
     @JsonProperty(JSON_PROPERTY_EGRESS_BANDWIDTH_BYTES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -93,7 +89,6 @@ public class AppsTier {
      * @return name
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "test", value = "")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -118,7 +113,6 @@ public class AppsTier {
      * @return slug
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "test", value = "")
     @JsonProperty(JSON_PROPERTY_SLUG)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -143,7 +137,6 @@ public class AppsTier {
      * @return storageBytes
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "10000000", value = "")
     @JsonProperty(JSON_PROPERTY_STORAGE_BYTES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

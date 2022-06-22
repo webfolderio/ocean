@@ -7,8 +7,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * Balance
  */
@@ -42,7 +40,6 @@ public class Balance {
      * @return monthToDateBalance
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "23.44", value = "Balance as of the `generated_at` time.  This value includes the `account_balance` and `month_to_date_usage`.")
     @JsonProperty(JSON_PROPERTY_MONTH_TO_DATE_BALANCE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -68,7 +65,6 @@ public class Balance {
      * @return accountBalance
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "12.23", value = "Current balance of the customer's most recent billing activity.  Does not reflect `month_to_date_usage`.")
     @JsonProperty(JSON_PROPERTY_ACCOUNT_BALANCE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -94,7 +90,6 @@ public class Balance {
      * @return monthToDateUsage
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "11.21", value = "Amount used in the current billing period as of the `generated_at` time.")
     @JsonProperty(JSON_PROPERTY_MONTH_TO_DATE_USAGE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -119,7 +114,6 @@ public class Balance {
      * @return generatedAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2019-07-09T15:01:12Z", value = "The time at which balances were most recently generated.")
     @JsonProperty(JSON_PROPERTY_GENERATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

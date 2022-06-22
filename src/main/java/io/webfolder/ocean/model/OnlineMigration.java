@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * OnlineMigration
  */
@@ -37,7 +35,6 @@ public class OnlineMigration {
      * @return id
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "77b28fc8-19ff-11eb-8c9c-c68e24557488", value = "The ID of the currently running migration.")
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -62,7 +59,6 @@ public class OnlineMigration {
      * @return status
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "running", value = "The current status of the migration.")
     @JsonProperty(JSON_PROPERTY_STATUS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -87,7 +83,6 @@ public class OnlineMigration {
      * @return createdAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2020-10-29T15:57:38Z", value = "The time the migration was initiated, in ISO 8601 format.")
     @JsonProperty(JSON_PROPERTY_CREATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

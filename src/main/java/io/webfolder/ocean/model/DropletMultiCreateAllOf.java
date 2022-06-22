@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * DropletMultiCreateAllOf
  */
@@ -41,7 +39,6 @@ public class DropletMultiCreateAllOf {
      * @return names
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "[\"sub-01.example.com\",\"sub-02.example.com\"]", required = true, value = "An array of human human-readable strings you wish to use when displaying the Droplet name. Each name, if set to a domain name managed in the DigitalOcean DNS management system, will configure a PTR record for the Droplet. Each name set during creation will also determine the hostname for the Droplet in its internal configuration.")
     @JsonProperty(JSON_PROPERTY_NAMES)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

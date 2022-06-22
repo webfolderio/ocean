@@ -9,8 +9,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppsDeploymentProgressStep
  */
@@ -58,7 +56,6 @@ public class AppsDeploymentProgressStep {
      * @return componentName
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "component", value = "")
     @JsonProperty(JSON_PROPERTY_COMPONENT_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -83,7 +80,6 @@ public class AppsDeploymentProgressStep {
      * @return endedAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2020-11-19T20:27:18Z", value = "")
     @JsonProperty(JSON_PROPERTY_ENDED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -111,7 +107,6 @@ public class AppsDeploymentProgressStep {
      * @return messageBase
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "Building service", value = "The base of a human-readable description of the step intended to be combined with the component name for presentation. For example:  `message_base` = \"Building service\" `component_name` = \"api\"")
     @JsonProperty(JSON_PROPERTY_MESSAGE_BASE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -136,7 +131,6 @@ public class AppsDeploymentProgressStep {
      * @return name
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "example_step", value = "")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -161,7 +155,6 @@ public class AppsDeploymentProgressStep {
      * @return reason
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_REASON)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -186,7 +179,6 @@ public class AppsDeploymentProgressStep {
      * @return startedAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2020-11-19T20:27:18Z", value = "")
     @JsonProperty(JSON_PROPERTY_STARTED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -211,7 +203,6 @@ public class AppsDeploymentProgressStep {
      * @return status
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_STATUS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -244,7 +235,6 @@ public class AppsDeploymentProgressStep {
      * @return steps
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_STEPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

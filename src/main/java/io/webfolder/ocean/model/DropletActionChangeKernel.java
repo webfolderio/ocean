@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * DropletActionChangeKernel
  */
@@ -96,7 +94,6 @@ public class DropletActionChangeKernel {
      * @return type
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "reboot", required = true, value = "The type of action to initiate for the Droplet.")
     @JsonProperty(JSON_PROPERTY_TYPE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -121,7 +118,6 @@ public class DropletActionChangeKernel {
      * @return kernel
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "12389723", value = "A unique number used to identify and reference a specific kernel.")
     @JsonProperty(JSON_PROPERTY_KERNEL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

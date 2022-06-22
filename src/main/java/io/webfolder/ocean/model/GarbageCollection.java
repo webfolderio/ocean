@@ -9,8 +9,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * GarbageCollection
  */
@@ -101,7 +99,6 @@ public class GarbageCollection {
      * @return uuid
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "eff0feee-49c7-4e8f-ba5c-a320c109c8a8", value = "A string specifying the UUID of the garbage collection.")
     @JsonProperty(JSON_PROPERTY_UUID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -126,7 +123,6 @@ public class GarbageCollection {
      * @return registryName
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "example", value = "The name of the container registry.")
     @JsonProperty(JSON_PROPERTY_REGISTRY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -151,7 +147,6 @@ public class GarbageCollection {
      * @return status
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "requested", value = "The current status of this garbage collection.")
     @JsonProperty(JSON_PROPERTY_STATUS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -176,7 +171,6 @@ public class GarbageCollection {
      * @return createdAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2020-10-30T21:03:24Z", value = "The time the garbage collection was created.")
     @JsonProperty(JSON_PROPERTY_CREATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -201,7 +195,6 @@ public class GarbageCollection {
      * @return updatedAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2020-10-30T21:03:44Z", value = "The time the garbage collection was last updated.")
     @JsonProperty(JSON_PROPERTY_UPDATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -226,7 +219,6 @@ public class GarbageCollection {
      * @return blobsDeleted
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "42", value = "The number of blobs deleted as a result of this garbage collection.")
     @JsonProperty(JSON_PROPERTY_BLOBS_DELETED)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -251,7 +243,6 @@ public class GarbageCollection {
      * @return freedBytes
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "667", value = "The number of bytes freed as a result of this garbage collection.")
     @JsonProperty(JSON_PROPERTY_FREED_BYTES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

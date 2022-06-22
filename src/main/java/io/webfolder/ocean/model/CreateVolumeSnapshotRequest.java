@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * CreateVolumeSnapshotRequest
  */
@@ -35,7 +33,6 @@ public class CreateVolumeSnapshotRequest {
      * @return name
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "big-data-snapshot1475261774", required = true, value = "A human-readable name for the volume snapshot.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -69,7 +66,6 @@ public class CreateVolumeSnapshotRequest {
      * @return tags
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"base-image\",\"prod\"]", value = "A flat array of tag names as strings to be applied to the resource. Tag names may be for either existing or new tags.")
     @JsonProperty(JSON_PROPERTY_TAGS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

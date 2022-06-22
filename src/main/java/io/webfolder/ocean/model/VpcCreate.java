@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * VpcCreate
  */
@@ -33,7 +31,6 @@ public class VpcCreate {
      * @return region
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "nyc1", value = "The slug identifier for the region where the VPC will be created.")
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -63,7 +60,6 @@ public class VpcCreate {
      * @return ipRange
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "10.10.10.0/24", value = "The range of IP addresses in the VPC in CIDR notation. Network ranges cannot overlap with other networks in the same account and must be in range of private addresses as defined in RFC1918. It may not be smaller than `/28` nor larger than `/16`. If no IP range is specified, a `/20` network range is generated that won't conflict with other VPC networks in your account.")
     @JsonProperty(JSON_PROPERTY_IP_RANGE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

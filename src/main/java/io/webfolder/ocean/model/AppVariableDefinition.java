@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppVariableDefinition
  */
@@ -118,7 +116,6 @@ public class AppVariableDefinition {
      * @return key
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "BASE_URL", required = true, value = "The variable name")
     @JsonProperty(JSON_PROPERTY_KEY)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -144,7 +141,6 @@ public class AppVariableDefinition {
      * @return scope
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "BUILD_TIME", value = "- RUN_TIME: Made available only at run-time - BUILD_TIME: Made available only at build-time - RUN_AND_BUILD_TIME: Made available at both build and run-time")
     @JsonProperty(JSON_PROPERTY_SCOPE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -170,7 +166,6 @@ public class AppVariableDefinition {
      * @return type
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "GENERAL", value = "- GENERAL: A plain-text environment variable - SECRET: A secret encrypted environment variable")
     @JsonProperty(JSON_PROPERTY_TYPE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -197,7 +192,6 @@ public class AppVariableDefinition {
      * @return value
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "http://example.com", value = "The value. If the type is `SECRET`, the value will be encrypted on first submission. On following submissions, the encrypted value should be used.")
     @JsonProperty(JSON_PROPERTY_VALUE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

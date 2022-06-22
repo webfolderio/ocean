@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppsImageSourceSpec
  */
@@ -78,7 +76,6 @@ public class AppsImageSourceSpec {
      * @return registry
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "registry.hub.docker.com", value = "The registry name. Must be left empty for the `DOCR` registry type.")
     @JsonProperty(JSON_PROPERTY_REGISTRY)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -104,7 +101,6 @@ public class AppsImageSourceSpec {
      * @return registryType
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "DOCR", value = "- DOCKER_HUB: The DockerHub container registry type. - DOCR: The DigitalOcean container registry type.")
     @JsonProperty(JSON_PROPERTY_REGISTRY_TYPE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -129,7 +125,6 @@ public class AppsImageSourceSpec {
      * @return repository
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "origin/master", value = "The repository name.")
     @JsonProperty(JSON_PROPERTY_REPOSITORY)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -154,7 +149,6 @@ public class AppsImageSourceSpec {
      * @return tag
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "latest", value = "The repository tag. Defaults to `latest` if not provided.")
     @JsonProperty(JSON_PROPERTY_TAG)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

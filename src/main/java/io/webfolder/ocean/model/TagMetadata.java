@@ -6,14 +6,10 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * Tagged Resource Statistics include metadata regarding the resource type that
  * has been tagged.
  */
-@ApiModel(description = "Tagged Resource Statistics include metadata regarding the resource type that has been tagged.")
 @JsonPropertyOrder({ TagMetadata.JSON_PROPERTY_COUNT, TagMetadata.JSON_PROPERTY_LAST_TAGGED_URI })
 public class TagMetadata {
     public static final String JSON_PROPERTY_COUNT = "count";
@@ -36,7 +32,6 @@ public class TagMetadata {
      * @return count
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "5", value = "The number of tagged objects for this type of resource.")
     @JsonProperty(JSON_PROPERTY_COUNT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -61,7 +56,6 @@ public class TagMetadata {
      * @return lastTaggedUri
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "https://api.digitalocean.com/v2/images/7555620", value = "The URI for the last tagged object for this type of resource.")
     @JsonProperty(JSON_PROPERTY_LAST_TAGGED_URI)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

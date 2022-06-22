@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppDomainSpec
  */
@@ -89,7 +87,6 @@ public class AppDomainSpec {
      * @return domain
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "app.example.com", required = true, value = "The hostname for the domain")
     @JsonProperty(JSON_PROPERTY_DOMAIN)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -118,7 +115,6 @@ public class AppDomainSpec {
      * @return type
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "DEFAULT", value = "- DEFAULT: The default `.ondigitalocean.app` domain assigned to this app - PRIMARY: The primary domain for this app that is displayed as the default in the control panel, used in bindable environment variables, and any other places that reference an app's live URL. Only one domain may be set as primary. - ALIAS: A non-primary domain")
     @JsonProperty(JSON_PROPERTY_TYPE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -144,7 +140,6 @@ public class AppDomainSpec {
      * @return wildcard
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "Indicates whether the domain includes all sub-domains, in addition to the given domain")
     @JsonProperty(JSON_PROPERTY_WILDCARD)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -172,7 +167,6 @@ public class AppDomainSpec {
      * @return zone
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "example.com", value = "Optional. If the domain uses DigitalOcean DNS and you would like App Platform to automatically manage it for you, set this to the name of the domain on your account.  For example, If the domain you are adding is `app.domain.com`, the zone could be `domain.com`.")
     @JsonProperty(JSON_PROPERTY_ZONE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -200,7 +194,6 @@ public class AppDomainSpec {
      * @return minimumTlsVersion
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "1.3", value = "The minimum version of TLS a client application can use to access resources for the domain.  Must be one of the following values wrapped within quotations: `\\\"1.2\\\"` or `\\\"1.3\\\"`.")
     @JsonProperty(JSON_PROPERTY_MINIMUM_TLS_VERSION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

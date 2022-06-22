@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * Node
  */
@@ -48,7 +46,6 @@ public class Node {
      * @return id
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "e78247f8-b1bb-4f7a-8db9-2a5f8d4b8f8f", value = "A unique ID that can be used to identify and reference the node.")
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -73,7 +70,6 @@ public class Node {
      * @return name
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "adoring-newton-3niq", value = "An automatically generated, human-readable name for the node.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -98,7 +94,6 @@ public class Node {
      * @return status
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_STATUS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -123,7 +118,6 @@ public class Node {
      * @return dropletId
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "205545370", value = "The ID of the Droplet used for the worker node.")
     @JsonProperty(JSON_PROPERTY_DROPLET_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -149,7 +143,6 @@ public class Node {
      * @return createdAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2018-11-15T16:00:11Z", value = "A time value given in ISO8601 combined date and time format that represents when the node was created.")
     @JsonProperty(JSON_PROPERTY_CREATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -175,7 +168,6 @@ public class Node {
      * @return updatedAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2018-11-15T16:00:11Z", value = "A time value given in ISO8601 combined date and time format that represents when the node was last updated.")
     @JsonProperty(JSON_PROPERTY_UPDATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

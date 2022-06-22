@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * PostRegistrySubscriptionRequest
  */
@@ -69,7 +67,6 @@ public class PostRegistrySubscriptionRequest {
      * @return tierSlug
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "basic", value = "The slug of the subscription tier to sign up for.")
     @JsonProperty(JSON_PROPERTY_TIER_SLUG)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

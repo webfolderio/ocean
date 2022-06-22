@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * FirewallRulesOutboundRulesInner
  */
@@ -79,7 +77,6 @@ public class FirewallRulesOutboundRulesInner {
      * @return protocol
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "tcp", required = true, value = "The type of traffic to be allowed. This may be one of `tcp`, `udp`, or `icmp`.")
     @JsonProperty(JSON_PROPERTY_PROTOCOL)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -107,7 +104,6 @@ public class FirewallRulesOutboundRulesInner {
      * @return ports
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "8000", required = true, value = "The ports on which traffic will be allowed specified as a string containing a single port, a range (e.g. \"8000-9000\"), or \"0\" when all ports are open for a protocol. For ICMP rules this parameter will always return \"0\".")
     @JsonProperty(JSON_PROPERTY_PORTS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -132,7 +128,6 @@ public class FirewallRulesOutboundRulesInner {
      * @return destinations
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(required = true, value = "")
     @JsonProperty(JSON_PROPERTY_DESTINATIONS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

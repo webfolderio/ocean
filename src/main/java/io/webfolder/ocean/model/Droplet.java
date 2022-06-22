@@ -11,8 +11,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * Droplet
  */
@@ -143,7 +141,6 @@ public class Droplet {
      * @return id
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "3164444", required = true, value = "A unique identifier for each Droplet instance. This is automatically generated upon Droplet creation.")
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -168,7 +165,6 @@ public class Droplet {
      * @return name
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "example.com", required = true, value = "The human-readable name set for the Droplet instance.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -193,7 +189,6 @@ public class Droplet {
      * @return memory
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "1024", required = true, value = "Memory of the Droplet in megabytes.")
     @JsonProperty(JSON_PROPERTY_MEMORY)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -218,7 +213,6 @@ public class Droplet {
      * @return vcpus
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "1", required = true, value = "The number of virtual CPUs.")
     @JsonProperty(JSON_PROPERTY_VCPUS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -243,7 +237,6 @@ public class Droplet {
      * @return disk
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "25", required = true, value = "The size of the Droplet's disk in gigabytes.")
     @JsonProperty(JSON_PROPERTY_DISK)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -269,7 +262,6 @@ public class Droplet {
      * @return locked
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "false", required = true, value = "A boolean value indicating whether the Droplet has been locked, preventing actions by users.")
     @JsonProperty(JSON_PROPERTY_LOCKED)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -296,7 +288,6 @@ public class Droplet {
      * @return status
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "active", required = true, value = "A status string indicating the state of the Droplet instance. This may be \"new\", \"active\", \"off\", or \"archive\".")
     @JsonProperty(JSON_PROPERTY_STATUS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -323,7 +314,6 @@ public class Droplet {
      **/
     @Deprecated
     @javax.annotation.Nullable
-    @ApiModelProperty(required = true, value = "")
     @JsonProperty(JSON_PROPERTY_KERNEL)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -349,7 +339,6 @@ public class Droplet {
      * @return createdAt
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "2020-07-21T18:37:44Z", required = true, value = "A time value given in ISO8601 combined date and time format that represents when the Droplet was created.")
     @JsonProperty(JSON_PROPERTY_CREATED_AT)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -379,7 +368,6 @@ public class Droplet {
      * @return features
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "[\"backups\",\"private_networking\",\"ipv6\"]", required = true, value = "An array of features enabled on this Droplet.")
     @JsonProperty(JSON_PROPERTY_FEATURES)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -410,7 +398,6 @@ public class Droplet {
      * @return backupIds
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "[53893572]", required = true, value = "An array of backup IDs of any backups that have been taken of the Droplet instance.  Droplet backups are enabled at the time of the instance creation.")
     @JsonProperty(JSON_PROPERTY_BACKUP_IDS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -435,7 +422,6 @@ public class Droplet {
      * @return nextBackupWindow
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(required = true, value = "")
     @JsonProperty(JSON_PROPERTY_NEXT_BACKUP_WINDOW)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -465,7 +451,6 @@ public class Droplet {
      * @return snapshotIds
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "[67512819]", required = true, value = "An array of snapshot IDs of any snapshots created from the Droplet instance.")
     @JsonProperty(JSON_PROPERTY_SNAPSHOT_IDS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -490,7 +475,6 @@ public class Droplet {
      * @return image
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(required = true, value = "")
     @JsonProperty(JSON_PROPERTY_IMAGE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -521,7 +505,6 @@ public class Droplet {
      * @return volumeIds
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "[\"506f78a4-e098-11e5-ad9f-000f53306ae1\"]", required = true, value = "A flat array including the unique identifier for each Block Storage volume attached to the Droplet.")
     @JsonProperty(JSON_PROPERTY_VOLUME_IDS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -546,7 +529,6 @@ public class Droplet {
      * @return size
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(required = true, value = "")
     @JsonProperty(JSON_PROPERTY_SIZE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -571,7 +553,6 @@ public class Droplet {
      * @return sizeSlug
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "s-1vcpu-1gb", required = true, value = "The unique slug identifier for the size of this Droplet.")
     @JsonProperty(JSON_PROPERTY_SIZE_SLUG)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -596,7 +577,6 @@ public class Droplet {
      * @return networks
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(required = true, value = "")
     @JsonProperty(JSON_PROPERTY_NETWORKS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -621,7 +601,6 @@ public class Droplet {
      * @return region
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(required = true, value = "")
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -651,7 +630,6 @@ public class Droplet {
      * @return tags
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "[\"web\",\"env:prod\"]", required = true, value = "An array of Tags the Droplet has been tagged with.")
     @JsonProperty(JSON_PROPERTY_TAGS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -676,7 +654,6 @@ public class Droplet {
      * @return vpcUuid
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "760e09ef-dc84-11e8-981e-3cfdfeaae000", value = "A string specifying the UUID of the VPC to which the Droplet is assigned.")
     @JsonProperty(JSON_PROPERTY_VPC_UUID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

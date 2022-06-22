@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * CreateCertificatesResponse
  */
@@ -30,7 +28,6 @@ public class CreateCertificatesResponse {
      * @return certificate
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_CERTIFICATE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

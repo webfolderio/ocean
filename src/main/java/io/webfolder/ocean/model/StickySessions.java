@@ -8,13 +8,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * An object specifying sticky sessions settings for the load balancer.
  */
-@ApiModel(description = "An object specifying sticky sessions settings for the load balancer.")
 @JsonPropertyOrder({ StickySessions.JSON_PROPERTY_TYPE, StickySessions.JSON_PROPERTY_COOKIE_NAME,
         StickySessions.JSON_PROPERTY_COOKIE_TTL_SECONDS })
 public class StickySessions {
@@ -80,7 +76,6 @@ public class StickySessions {
      * @return type
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "cookies", value = "An attribute indicating how and if requests from a client will be persistently served by the same backend Droplet. The possible values are `cookies` or `none`.")
     @JsonProperty(JSON_PROPERTY_TYPE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -106,7 +101,6 @@ public class StickySessions {
      * @return cookieName
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "DO-LB", value = "The name of the cookie sent to the client. This attribute is only returned when using `cookies` for the sticky sessions type.")
     @JsonProperty(JSON_PROPERTY_COOKIE_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -133,7 +127,6 @@ public class StickySessions {
      * @return cookieTtlSeconds
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "300", value = "The number of seconds until the cookie set by the load balancer expires. This attribute is only returned when using `cookies` for the sticky sessions type.")
     @JsonProperty(JSON_PROPERTY_COOKIE_TTL_SECONDS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

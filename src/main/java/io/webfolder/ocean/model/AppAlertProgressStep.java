@@ -7,8 +7,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppAlertProgressStep
  */
@@ -45,7 +43,6 @@ public class AppAlertProgressStep {
      * @return name
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "example_step", value = "")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -70,7 +67,6 @@ public class AppAlertProgressStep {
      * @return status
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_STATUS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -95,7 +91,6 @@ public class AppAlertProgressStep {
      * @return startedAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2020-11-19T20:27:18Z", value = "")
     @JsonProperty(JSON_PROPERTY_STARTED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -120,7 +115,6 @@ public class AppAlertProgressStep {
      * @return endedAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2020-11-19T20:27:18Z", value = "")
     @JsonProperty(JSON_PROPERTY_ENDED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -145,7 +139,6 @@ public class AppAlertProgressStep {
      * @return reason
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_REASON)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

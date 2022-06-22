@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * DatabaseClusterMaintenanceWindow
  */
@@ -51,7 +49,6 @@ public class DatabaseClusterMaintenanceWindow {
      * @return day
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "tuesday", required = true, value = "The day of the week on which to apply maintenance updates.")
     @JsonProperty(JSON_PROPERTY_DAY)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -77,7 +74,6 @@ public class DatabaseClusterMaintenanceWindow {
      * @return hour
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "14:00", required = true, value = "The hour in UTC at which maintenance updates will be applied in 24 hour format.")
     @JsonProperty(JSON_PROPERTY_HOUR)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -98,7 +94,6 @@ public class DatabaseClusterMaintenanceWindow {
      * @return pending
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "A boolean value indicating whether any maintenance is scheduled to be performed in the next window.")
     @JsonProperty(JSON_PROPERTY_PENDING)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -113,7 +108,6 @@ public class DatabaseClusterMaintenanceWindow {
      * @return description
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"Update TimescaleDB to version 1.2.1\",\"Upgrade to PostgreSQL 11.2 and 10.7 bugfix releases\"]", value = "A list of strings, each containing information about a pending maintenance update.")
     @JsonProperty(JSON_PROPERTY_DESCRIPTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

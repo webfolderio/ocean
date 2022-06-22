@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * VpcMember
  */
@@ -36,7 +34,6 @@ public class VpcMember {
      * @return name
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "nyc1-load-balancer-01", value = "The name of the resource.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -62,7 +59,6 @@ public class VpcMember {
      * @return urn
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "do:droplet:13457723", value = "The uniform resource name (URN) for the resource in the format do:resource_type:resource_id.")
     @JsonProperty(JSON_PROPERTY_URN)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -88,7 +84,6 @@ public class VpcMember {
      * @return createdAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2020-03-13T19:30:48Z", value = "A time value given in ISO8601 combined date and time format that represents when the resource was created.")
     @JsonProperty(JSON_PROPERTY_CREATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

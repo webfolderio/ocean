@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppComponentInstanceBase
  */
@@ -88,7 +86,6 @@ public class AppComponentInstanceBase {
      * @return instanceCount
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2", value = "The amount of instances that this component should be scaled to. Default: 1")
     @JsonProperty(JSON_PROPERTY_INSTANCE_COUNT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -113,7 +110,6 @@ public class AppComponentInstanceBase {
      * @return instanceSizeSlug
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "basic-xxs", value = "The instance size to use for this component. Default: `basic-xxs`")
     @JsonProperty(JSON_PROPERTY_INSTANCE_SIZE_SLUG)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

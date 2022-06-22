@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * LoadBalancerAllOf1
  */
@@ -40,7 +38,6 @@ public class LoadBalancerAllOf1 {
      * @return dropletIds
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[3164444,3164445]", value = "An array containing the IDs of the Droplets assigned to the load balancer.")
     @JsonProperty(JSON_PROPERTY_DROPLET_IDS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

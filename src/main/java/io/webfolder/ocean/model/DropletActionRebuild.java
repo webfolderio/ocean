@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * DropletActionRebuild
  */
@@ -96,7 +94,6 @@ public class DropletActionRebuild {
      * @return type
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "reboot", required = true, value = "The type of action to initiate for the Droplet.")
     @JsonProperty(JSON_PROPERTY_TYPE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -122,7 +119,6 @@ public class DropletActionRebuild {
      * @return image
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "ubuntu-20-04-x64", value = "The image ID of a public or private image or the slug identifier for a public image. The Droplet will be rebuilt using this image as its base.")
     @JsonProperty(JSON_PROPERTY_IMAGE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

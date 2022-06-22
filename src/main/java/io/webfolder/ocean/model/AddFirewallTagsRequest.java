@@ -7,8 +7,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AddFirewallTagsRequest
  */
@@ -31,7 +29,6 @@ public class AddFirewallTagsRequest {
      * @return tags
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(required = true, value = "")
     @JsonProperty(JSON_PROPERTY_TAGS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

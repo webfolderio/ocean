@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppsDeploymentFunctions
  */
@@ -37,7 +35,6 @@ public class AppsDeploymentFunctions {
      * @return name
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "my-functions-component", value = "")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -63,7 +60,6 @@ public class AppsDeploymentFunctions {
      * @return sourceCommitHash
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "54d4a727f457231062439895000d45437c7bb405", value = "The commit hash of the repository that was used to build this functions component.")
     @JsonProperty(JSON_PROPERTY_SOURCE_COMMIT_HASH)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -88,7 +84,6 @@ public class AppsDeploymentFunctions {
      * @return namespace
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "ap-b2a93513-8d9b-4223-9d61-5e7272c81c32", value = "The namespace where the functions are deployed.")
     @JsonProperty(JSON_PROPERTY_NAMESPACE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

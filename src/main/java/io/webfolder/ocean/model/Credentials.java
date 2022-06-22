@@ -9,8 +9,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * Credentials
  */
@@ -50,7 +48,6 @@ public class Credentials {
      * @return server
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "https://bd5f5959-5e1e-4205-a714-a914373942af.k8s.ondigitalocean.com", value = "The URL used to access the cluster API server.")
     @JsonProperty(JSON_PROPERTY_SERVER)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -76,7 +73,6 @@ public class Credentials {
      * @return certificateAuthorityData
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "A base64 encoding of bytes representing the certificate authority data for accessing the cluster.")
     @JsonProperty(JSON_PROPERTY_CERTIFICATE_AUTHORITY_DATA)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -108,7 +104,6 @@ public class Credentials {
      **/
     @Deprecated
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "A base64 encoding of bytes representing the x509 client certificate data for access the cluster. This is only returned for clusters without support for token-based authentication.  Newly created Kubernetes clusters do not return credentials using certificate-based authentication. For additional information, [see here](https://www.digitalocean.com/docs/kubernetes/how-to/connect-to-cluster/#authenticate). ")
     @JsonProperty(JSON_PROPERTY_CLIENT_CERTIFICATE_DATA)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -140,7 +135,6 @@ public class Credentials {
      **/
     @Deprecated
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "A base64 encoding of bytes representing the x509 client key data for access the cluster. This is only returned for clusters without support for token-based authentication.  Newly created Kubernetes clusters do not return credentials using certificate-based authentication. For additional information, [see here](https://www.digitalocean.com/docs/kubernetes/how-to/connect-to-cluster/#authenticate). ")
     @JsonProperty(JSON_PROPERTY_CLIENT_KEY_DATA)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -166,7 +160,6 @@ public class Credentials {
      * @return token
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "$DIGITALOCEAN_TOKEN", value = "An access token used to authenticate with the cluster. This is only returned for clusters with support for token-based authentication.")
     @JsonProperty(JSON_PROPERTY_TOKEN)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -192,7 +185,6 @@ public class Credentials {
      * @return expiresAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2019-11-09T11:50:28.889080521Z", value = "A time value given in ISO8601 combined date and time format that represents when the access token expires.")
     @JsonProperty(JSON_PROPERTY_EXPIRES_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

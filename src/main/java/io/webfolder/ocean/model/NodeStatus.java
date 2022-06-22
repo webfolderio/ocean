@@ -8,14 +8,10 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * An object containing a &#x60;state&#x60; attribute whose value is set to a
  * string indicating the current status of the node.
  */
-@ApiModel(description = "An object containing a `state` attribute whose value is set to a string indicating the current status of the node.")
 @JsonPropertyOrder({ NodeStatus.JSON_PROPERTY_STATE })
 public class NodeStatus {
     /**
@@ -74,7 +70,6 @@ public class NodeStatus {
      * @return state
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "provisioning", value = "A string indicating the current status of the node.")
     @JsonProperty(JSON_PROPERTY_STATE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

@@ -14,8 +14,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * LoadBalancer
  */
@@ -222,7 +220,6 @@ public class LoadBalancer {
      * @return id
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "4de7ac8b-495b-4884-9a69-1050c6793cd6", value = "A unique ID that can be used to identify and reference a load balancer.")
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -241,7 +238,6 @@ public class LoadBalancer {
      * @return name
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "example-lb-01", value = "A human-readable name for a load balancer instance.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -261,7 +257,6 @@ public class LoadBalancer {
      * @return ip
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "104.131.186.241", value = "An attribute containing the public-facing IP address of the load balancer.")
     @JsonProperty(JSON_PROPERTY_IP)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -285,7 +280,6 @@ public class LoadBalancer {
      * @return sizeUnit
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "3", value = "How many nodes the load balancer contains. Each additional node increases the load balancer's ability to manage more connections. Load balancers can be scaled up or down, and you can change the number of nodes after creation up to once per hour. This field is currently not available in the AMS2, NYC2, or SFO1 regions. Use the `size` field to scale load balancers that reside in these regions.")
     @JsonProperty(JSON_PROPERTY_SIZE_UNIT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -318,7 +312,6 @@ public class LoadBalancer {
      **/
     @Deprecated
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "lb-small", value = "This field has been replaced by the `size_unit` field for all regions except in AMS2, NYC2, and SFO1. Each available load balancer size now equates to the load balancer having a set number of nodes. * `lb-small` = 1 node * `lb-medium` = 3 nodes * `lb-large` = 6 nodes  You can resize load balancers after creation up to once per hour. You cannot resize a load balancer within the first hour of its creation.")
     @JsonProperty(JSON_PROPERTY_SIZE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -346,7 +339,6 @@ public class LoadBalancer {
      **/
     @Deprecated
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "round_robin", value = "This field has been deprecated. You can no longer specify an algorithm for load balancers.")
     @JsonProperty(JSON_PROPERTY_ALGORITHM)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -367,7 +359,6 @@ public class LoadBalancer {
      * @return status
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "new", value = "A status string indicating the current state of the load balancer. This can be `new`, `active`, or `errored`.")
     @JsonProperty(JSON_PROPERTY_STATUS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -382,7 +373,6 @@ public class LoadBalancer {
      * @return createdAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2017-02-01T22:22:58Z", value = "A time value given in ISO8601 combined date and time format that represents when the load balancer was created.")
     @JsonProperty(JSON_PROPERTY_CREATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -406,7 +396,6 @@ public class LoadBalancer {
      * @return forwardingRules
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(required = true, value = "An array of objects specifying the forwarding rules for a load balancer.")
     @JsonProperty(JSON_PROPERTY_FORWARDING_RULES)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -431,7 +420,6 @@ public class LoadBalancer {
      * @return healthCheck
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_HEALTH_CHECK)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -456,7 +444,6 @@ public class LoadBalancer {
      * @return stickySessions
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_STICKY_SESSIONS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -482,7 +469,6 @@ public class LoadBalancer {
      * @return redirectHttpToHttps
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "A boolean value indicating whether HTTP requests to the load balancer on port 80 will be redirected to HTTPS on port 443.")
     @JsonProperty(JSON_PROPERTY_REDIRECT_HTTP_TO_HTTPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -507,7 +493,6 @@ public class LoadBalancer {
      * @return enableProxyProtocol
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "A boolean value indicating whether PROXY Protocol is in use.")
     @JsonProperty(JSON_PROPERTY_ENABLE_PROXY_PROTOCOL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -533,7 +518,6 @@ public class LoadBalancer {
      * @return enableBackendKeepalive
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "A boolean value indicating whether HTTP keepalive connections are maintained to target Droplets.")
     @JsonProperty(JSON_PROPERTY_ENABLE_BACKEND_KEEPALIVE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -559,7 +543,6 @@ public class LoadBalancer {
      * @return vpcUuid
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "c33931f2-a26a-4e61-b85c-4e95a2ec431b", value = "A string specifying the UUID of the VPC to which the load balancer is assigned.")
     @JsonProperty(JSON_PROPERTY_VPC_UUID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -585,7 +568,6 @@ public class LoadBalancer {
      * @return disableLetsEncryptDnsRecords
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "A boolean value indicating whether to disable automatic DNS record creation for Let's Encrypt certificates that are added to the load balancer.")
     @JsonProperty(JSON_PROPERTY_DISABLE_LETS_ENCRYPT_DNS_RECORDS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -618,7 +600,6 @@ public class LoadBalancer {
      * @return region
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -651,7 +632,6 @@ public class LoadBalancer {
      * @return dropletIds
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[3164444,3164445]", value = "An array containing the IDs of the Droplets assigned to the load balancer.")
     @JsonProperty(JSON_PROPERTY_DROPLET_IDS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -677,7 +657,6 @@ public class LoadBalancer {
      * @return tag
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "prod:web", value = "The name of a Droplet tag corresponding to Droplets assigned to the load balancer.")
     @JsonProperty(JSON_PROPERTY_TAG)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

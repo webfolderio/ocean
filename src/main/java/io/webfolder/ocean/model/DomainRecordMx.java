@@ -7,8 +7,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * DomainRecordMx
  */
@@ -62,7 +60,6 @@ public class DomainRecordMx {
      * @return id
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "28448429", value = "A unique identifier for each domain record.")
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -81,7 +78,6 @@ public class DomainRecordMx {
      * @return type
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "NS", required = true, value = "The type of the DNS record. For example: A, CNAME, TXT, ...")
     @JsonProperty(JSON_PROPERTY_TYPE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -106,7 +102,6 @@ public class DomainRecordMx {
      * @return name
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "@", value = "The host name, alias, or service being defined by the record.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -134,7 +129,6 @@ public class DomainRecordMx {
      * @return data
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "ns1.digitalocean.com", required = true, value = "Variable data depending on record type. For example, the \"data\" value for an A record would be the IPv4 address to which the domain will be mapped. For a CAA record, it would contain the domain name of the CA being granted permission to issue certificates.")
     @JsonProperty(JSON_PROPERTY_DATA)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -159,7 +153,6 @@ public class DomainRecordMx {
      * @return priority
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(required = true, value = "The priority for SRV and MX records.")
     @JsonProperty(JSON_PROPERTY_PRIORITY)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -184,7 +177,6 @@ public class DomainRecordMx {
      * @return port
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "The port for SRV records.")
     @JsonProperty(JSON_PROPERTY_PORT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -211,7 +203,6 @@ public class DomainRecordMx {
      * @return ttl
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "1800", value = "This value is the time to live for the record, in seconds. This defines the time frame that clients can cache queried information before a refresh should be requested.")
     @JsonProperty(JSON_PROPERTY_TTL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -236,7 +227,6 @@ public class DomainRecordMx {
      * @return weight
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "The weight for SRV records.")
     @JsonProperty(JSON_PROPERTY_WEIGHT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -261,7 +251,6 @@ public class DomainRecordMx {
      * @return flags
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "An unsigned integer between 0-255 used for CAA records.")
     @JsonProperty(JSON_PROPERTY_FLAGS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -287,7 +276,6 @@ public class DomainRecordMx {
      * @return tag
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "The parameter tag for CAA records. Valid values are \"issue\", \"issuewild\", or \"iodef\"")
     @JsonProperty(JSON_PROPERTY_TAG)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AssignToDroplet1
  */
@@ -30,7 +28,6 @@ public class AssignToDroplet1 {
      * @return dropletId
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "2457247", required = true, value = "The ID of the Droplet that the reserved IP will be assigned to.")
     @JsonProperty(JSON_PROPERTY_DROPLET_ID)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

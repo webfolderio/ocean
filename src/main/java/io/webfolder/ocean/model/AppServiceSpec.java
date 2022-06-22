@@ -10,8 +10,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppServiceSpec
  */
@@ -147,7 +145,6 @@ public class AppServiceSpec {
      * @return name
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "api", required = true, value = "The name. Must be unique across all components within the same app.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -172,7 +169,6 @@ public class AppServiceSpec {
      * @return git
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_GIT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -197,7 +193,6 @@ public class AppServiceSpec {
      * @return github
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_GITHUB)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -222,7 +217,6 @@ public class AppServiceSpec {
      * @return gitlab
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_GITLAB)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -247,7 +241,6 @@ public class AppServiceSpec {
      * @return image
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_IMAGE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -274,7 +267,6 @@ public class AppServiceSpec {
      * @return dockerfilePath
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "path/to/Dockerfile", value = "The path to the Dockerfile relative to the root of the repo. If set, it will be used to build this component. Otherwise, App Platform will attempt to build it using buildpacks.")
     @JsonProperty(JSON_PROPERTY_DOCKERFILE_PATH)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -299,7 +291,6 @@ public class AppServiceSpec {
      * @return buildCommand
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "npm run build", value = "An optional build command to run while building this component from source.")
     @JsonProperty(JSON_PROPERTY_BUILD_COMMAND)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -324,7 +315,6 @@ public class AppServiceSpec {
      * @return runCommand
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "bin/api", value = "An optional run command to override the component's default.")
     @JsonProperty(JSON_PROPERTY_RUN_COMMAND)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -351,7 +341,6 @@ public class AppServiceSpec {
      * @return sourceDir
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "path/to/dir", value = "An optional path to the working directory to use for the build. For Dockerfile builds, this will be used as the build context. Must be relative to the root of the repo.")
     @JsonProperty(JSON_PROPERTY_SOURCE_DIR)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -384,7 +373,6 @@ public class AppServiceSpec {
      * @return envs
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "A list of environment variables made available to the component.")
     @JsonProperty(JSON_PROPERTY_ENVS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -411,7 +399,6 @@ public class AppServiceSpec {
      * @return environmentSlug
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "node-js", value = "An environment slug describing the type of this app. For a full list, please refer to [the product documentation](https://www.digitalocean.com/docs/app-platform/).")
     @JsonProperty(JSON_PROPERTY_ENVIRONMENT_SLUG)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -436,7 +423,6 @@ public class AppServiceSpec {
      * @return logDestinations
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_LOG_DESTINATIONS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -462,7 +448,6 @@ public class AppServiceSpec {
      * @return instanceCount
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2", value = "The amount of instances that this component should be scaled to. Default: 1")
     @JsonProperty(JSON_PROPERTY_INSTANCE_COUNT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -487,7 +472,6 @@ public class AppServiceSpec {
      * @return instanceSizeSlug
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "basic-xxs", value = "The instance size to use for this component. Default: `basic-xxs`")
     @JsonProperty(JSON_PROPERTY_INSTANCE_SIZE_SLUG)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -512,7 +496,6 @@ public class AppServiceSpec {
      * @return cors
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_CORS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -537,7 +520,6 @@ public class AppServiceSpec {
      * @return healthCheck
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_HEALTH_CHECK)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -565,7 +547,6 @@ public class AppServiceSpec {
      * @return httpPort
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "3000", value = "The internal port on which this service's run command will listen. Default: 8080 If there is not an environment variable with the name `PORT`, one will be automatically added with its value set to the value of this field.")
     @JsonProperty(JSON_PROPERTY_HTTP_PORT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -598,7 +579,6 @@ public class AppServiceSpec {
      * @return internalPorts
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[80,443]", value = "The ports on which this service will listen for internal traffic.")
     @JsonProperty(JSON_PROPERTY_INTERNAL_PORTS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -631,7 +611,6 @@ public class AppServiceSpec {
      * @return routes
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "A list of HTTP routes that should be routed to this component.")
     @JsonProperty(JSON_PROPERTY_ROUTES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

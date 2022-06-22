@@ -10,8 +10,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * CdnEndpoint
  */
@@ -101,7 +99,6 @@ public class CdnEndpoint {
      * @return id
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "892071a0-bb95-49bc-8021-3afd67a210bf", value = "A unique ID that can be used to identify and reference a CDN endpoint.")
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -121,7 +118,6 @@ public class CdnEndpoint {
      * @return origin
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "static-images.nyc3.digitaloceanspaces.com", required = true, value = "The fully qualified domain name (FQDN) for the origin server which provides the content for the CDN. This is currently restricted to a Space.")
     @JsonProperty(JSON_PROPERTY_ORIGIN)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -142,7 +138,6 @@ public class CdnEndpoint {
      * @return endpoint
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "static-images.nyc3.cdn.digitaloceanspaces.com", value = "The fully qualified domain name (FQDN) from which the CDN-backed content is served.")
     @JsonProperty(JSON_PROPERTY_ENDPOINT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -163,7 +158,6 @@ public class CdnEndpoint {
      * @return ttl
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "3600", value = "The amount of time the content is cached by the CDN's edge servers in seconds. TTL must be one of 60, 600, 3600, 86400, or 604800. Defaults to 3600 (one hour) when excluded.")
     @JsonProperty(JSON_PROPERTY_TTL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -189,7 +183,6 @@ public class CdnEndpoint {
      * @return certificateId
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "892071a0-bb95-49bc-8021-3afd67a210bf", value = "The ID of a DigitalOcean managed TLS certificate used for SSL when a custom subdomain is provided.")
     @JsonProperty(JSON_PROPERTY_CERTIFICATE_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -215,7 +208,6 @@ public class CdnEndpoint {
      * @return customDomain
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "static.example.com", value = "The fully qualified domain name (FQDN) of the custom subdomain used with the CDN endpoint.")
     @JsonProperty(JSON_PROPERTY_CUSTOM_DOMAIN)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -236,7 +228,6 @@ public class CdnEndpoint {
      * @return createdAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2018-03-21T16:02:37Z", value = "A time value given in ISO8601 combined date and time format that represents when the CDN endpoint was created.")
     @JsonProperty(JSON_PROPERTY_CREATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

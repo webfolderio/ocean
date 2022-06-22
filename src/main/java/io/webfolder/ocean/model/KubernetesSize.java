@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * KubernetesSize
  */
@@ -33,7 +31,6 @@ public class KubernetesSize {
      * @return name
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "s-1vcpu-2gb", value = "A Droplet size available for use in a Kubernetes node pool.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -58,7 +55,6 @@ public class KubernetesSize {
      * @return slug
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "s-1vcpu-2gb", value = "The identifier for a size for use when creating a new cluster.")
     @JsonProperty(JSON_PROPERTY_SLUG)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

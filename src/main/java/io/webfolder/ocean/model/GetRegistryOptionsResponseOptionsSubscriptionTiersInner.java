@@ -10,8 +10,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * GetRegistryOptionsResponseOptionsSubscriptionTiersInner
  */
@@ -105,7 +103,6 @@ public class GetRegistryOptionsResponseOptionsSubscriptionTiersInner {
      * @return name
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "Basic", value = "The name of the subscription tier.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -130,7 +127,6 @@ public class GetRegistryOptionsResponseOptionsSubscriptionTiersInner {
      * @return slug
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "basic", value = "The slug identifier of the subscription tier.")
     @JsonProperty(JSON_PROPERTY_SLUG)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -156,7 +152,6 @@ public class GetRegistryOptionsResponseOptionsSubscriptionTiersInner {
      * @return includedRepositories
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "5", value = "The number of repositories included in the subscription tier. `0` indicates that the subscription tier includes unlimited repositories.")
     @JsonProperty(JSON_PROPERTY_INCLUDED_REPOSITORIES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -181,7 +176,6 @@ public class GetRegistryOptionsResponseOptionsSubscriptionTiersInner {
      * @return includedStorageBytes
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "5368709120", value = "The amount of storage included in the subscription tier in bytes.")
     @JsonProperty(JSON_PROPERTY_INCLUDED_STORAGE_BYTES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -208,7 +202,6 @@ public class GetRegistryOptionsResponseOptionsSubscriptionTiersInner {
      * @return allowStorageOverage
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "A boolean indicating whether the subscription tier supports additional storage above what is included in the base plan at an additional cost per GiB used.")
     @JsonProperty(JSON_PROPERTY_ALLOW_STORAGE_OVERAGE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -235,7 +228,6 @@ public class GetRegistryOptionsResponseOptionsSubscriptionTiersInner {
      * @return includedBandwidthBytes
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "5368709120", value = "The amount of outbound data transfer included in the subscription tier in bytes.")
     @JsonProperty(JSON_PROPERTY_INCLUDED_BANDWIDTH_BYTES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -260,7 +252,6 @@ public class GetRegistryOptionsResponseOptionsSubscriptionTiersInner {
      * @return monthlyPriceInCents
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "500", value = "The monthly cost of the subscription tier in cents.")
     @JsonProperty(JSON_PROPERTY_MONTHLY_PRICE_IN_CENTS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -287,7 +278,6 @@ public class GetRegistryOptionsResponseOptionsSubscriptionTiersInner {
      * @return storageOveragePriceInCents
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2", value = "The price paid in cents per GiB for additional storage beyond what is included in the subscription plan.")
     @JsonProperty(JSON_PROPERTY_STORAGE_OVERAGE_PRICE_IN_CENTS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -313,7 +303,6 @@ public class GetRegistryOptionsResponseOptionsSubscriptionTiersInner {
      * @return eligible
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "A boolean indicating whether your account it eligible to use a certain subscription tier.")
     @JsonProperty(JSON_PROPERTY_ELIGIBLE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -349,7 +338,6 @@ public class GetRegistryOptionsResponseOptionsSubscriptionTiersInner {
      * @return eligibilityReasons
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"OverRepositoryLimit\"]", value = "If your account is not eligible to use a certain subscription tier, this will include a list of reasons that prevent you from using the tier.")
     @JsonProperty(JSON_PROPERTY_ELIGIBILITY_REASONS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

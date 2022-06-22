@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * ForwardLinks
  */
@@ -33,7 +31,6 @@ public class ForwardLinks {
      * @return last
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "https://api.digitalocean.com/v2/images?page=2", value = "URI of the last page of the results.")
     @JsonProperty(JSON_PROPERTY_LAST)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -58,7 +55,6 @@ public class ForwardLinks {
      * @return next
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "https://api.digitalocean.com/v2/images?page=2", value = "URI of the next page of the results.")
     @JsonProperty(JSON_PROPERTY_NEXT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

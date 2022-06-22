@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * GetGarbageCollectionResponse
  */
@@ -30,7 +28,6 @@ public class GetGarbageCollectionResponse {
      * @return garbageCollection
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_GARBAGE_COLLECTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

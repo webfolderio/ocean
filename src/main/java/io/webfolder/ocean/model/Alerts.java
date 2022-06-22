@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * Alerts
  */
@@ -40,7 +38,6 @@ public class Alerts {
      * @return email
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "[\"bob@exmaple.com\"]", required = true, value = "An email to notify on an alert trigger.")
     @JsonProperty(JSON_PROPERTY_EMAIL)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -70,7 +67,6 @@ public class Alerts {
      * @return slack
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(required = true, value = "Slack integration details.")
     @JsonProperty(JSON_PROPERTY_SLACK)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

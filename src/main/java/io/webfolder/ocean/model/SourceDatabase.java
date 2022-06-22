@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * SourceDatabase
  */
@@ -33,7 +31,6 @@ public class SourceDatabase {
      * @return source
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_SOURCE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -58,7 +55,6 @@ public class SourceDatabase {
      * @return disableSsl
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "false", value = "Enables SSL encryption when connecting to the source database.")
     @JsonProperty(JSON_PROPERTY_DISABLE_SSL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

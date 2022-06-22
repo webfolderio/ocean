@@ -8,9 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * The details of the network that are configured for the Droplet instance. This
  * is an object that contains keys for IPv4 and IPv6. The value of each of these
@@ -19,7 +16,6 @@ import io.swagger.annotations.ApiModelProperty;
  * netmask, and gateway of the specific network depending on the type of network
  * it is.
  */
-@ApiModel(description = "The details of the network that are configured for the Droplet instance.  This is an object that contains keys for IPv4 and IPv6.  The value of each of these is an array that contains objects describing an individual IP resource allocated to the Droplet.  These will define attributes like the IP address, netmask, and gateway of the specific network depending on the type of network it is.")
 @JsonPropertyOrder({ DropletNetworks.JSON_PROPERTY_V4, DropletNetworks.JSON_PROPERTY_V6 })
 public class DropletNetworks {
     public static final String JSON_PROPERTY_V4 = "v4";
@@ -50,7 +46,6 @@ public class DropletNetworks {
      * @return v4
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_V4)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -83,7 +78,6 @@ public class DropletNetworks {
      * @return v6
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_V6)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

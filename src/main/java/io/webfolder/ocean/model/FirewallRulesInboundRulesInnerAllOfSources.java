@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * FirewallRulesInboundRulesInnerAllOfSources
  */
@@ -57,7 +55,6 @@ public class FirewallRulesInboundRulesInnerAllOfSources {
      * @return addresses
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"1.2.3.4\",\"18.0.0.0/8\"]", value = "An array of strings containing the IPv4 addresses, IPv6 addresses, IPv4 CIDRs, and/or IPv6 CIDRs to which the firewall will allow traffic.")
     @JsonProperty(JSON_PROPERTY_ADDRESSES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -91,7 +88,6 @@ public class FirewallRulesInboundRulesInnerAllOfSources {
      * @return dropletIds
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[8043964]", value = "An array containing the IDs of the Droplets to which the firewall will allow traffic.")
     @JsonProperty(JSON_PROPERTY_DROPLET_IDS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -125,7 +121,6 @@ public class FirewallRulesInboundRulesInnerAllOfSources {
      * @return loadBalancerUids
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"4de7ac8b-495b-4884-9a69-1050c6793cd6\"]", value = "An array containing the IDs of the load balancers to which the firewall will allow traffic.")
     @JsonProperty(JSON_PROPERTY_LOAD_BALANCER_UIDS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -159,7 +154,6 @@ public class FirewallRulesInboundRulesInnerAllOfSources {
      * @return kubernetesIds
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"41b74c5d-9bd0-5555-5555-a57c495b81a3\"]", value = "An array containing the IDs of the Kubernetes clusters to which the firewall will allow traffic.")
     @JsonProperty(JSON_PROPERTY_KUBERNETES_IDS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -184,7 +178,6 @@ public class FirewallRulesInboundRulesInnerAllOfSources {
      * @return tags
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_TAGS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

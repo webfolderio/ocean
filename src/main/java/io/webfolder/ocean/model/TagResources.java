@@ -6,16 +6,12 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * An embedded object containing key value pairs of resource type and resource
  * statistics. It also includes a count of the total number of resources tagged
  * with the current tag as well as a &#x60;last_tagged_uri&#x60; attribute set
  * to the last resource tagged with the current tag.
  */
-@ApiModel(description = "An embedded object containing key value pairs of resource type and resource statistics. It also includes a count of the total number of resources tagged with the current tag as well as a `last_tagged_uri` attribute set to the last resource tagged with the current tag.")
 @JsonPropertyOrder({ TagResources.JSON_PROPERTY_COUNT, TagResources.JSON_PROPERTY_LAST_TAGGED_URI,
         TagResources.JSON_PROPERTY_DROPLETS, TagResources.JSON_PROPERTY_IMGAGES, TagResources.JSON_PROPERTY_VOLUMES,
         TagResources.JSON_PROPERTY_VOLUME_SNAPSHOTS, TagResources.JSON_PROPERTY_DATABASES })
@@ -55,7 +51,6 @@ public class TagResources {
      * @return count
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "5", value = "The number of tagged objects for this type of resource.")
     @JsonProperty(JSON_PROPERTY_COUNT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -80,7 +75,6 @@ public class TagResources {
      * @return lastTaggedUri
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "https://api.digitalocean.com/v2/images/7555620", value = "The URI for the last tagged object for this type of resource.")
     @JsonProperty(JSON_PROPERTY_LAST_TAGGED_URI)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -105,7 +99,6 @@ public class TagResources {
      * @return droplets
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_DROPLETS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -130,7 +123,6 @@ public class TagResources {
      * @return imgages
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_IMGAGES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -155,7 +147,6 @@ public class TagResources {
      * @return volumes
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_VOLUMES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -180,7 +171,6 @@ public class TagResources {
      * @return volumeSnapshots
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_VOLUME_SNAPSHOTS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -205,7 +195,6 @@ public class TagResources {
      * @return databases
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_DATABASES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

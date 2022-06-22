@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * ListRepositoryTagsResponse
  */
@@ -47,7 +45,6 @@ public class ListRepositoryTagsResponse {
      * @return tags
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_TAGS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -72,7 +69,6 @@ public class ListRepositoryTagsResponse {
      * @return links
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_LINKS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -97,7 +93,6 @@ public class ListRepositoryTagsResponse {
      * @return meta
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(required = true, value = "")
     @JsonProperty(JSON_PROPERTY_META)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

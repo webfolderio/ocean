@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * VolumeActionPostAttachAllOf
  */
@@ -37,7 +35,6 @@ public class VolumeActionPostAttachAllOf {
      * @return dropletId
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "11612190", required = true, value = "The unique identifier for the Droplet the volume will be attached or detached from.")
     @JsonProperty(JSON_PROPERTY_DROPLET_ID)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -71,7 +68,6 @@ public class VolumeActionPostAttachAllOf {
      * @return tags
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"base-image\",\"prod\"]", value = "A flat array of tag names as strings to be applied to the resource. Tag names may be for either existing or new tags.")
     @JsonProperty(JSON_PROPERTY_TAGS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

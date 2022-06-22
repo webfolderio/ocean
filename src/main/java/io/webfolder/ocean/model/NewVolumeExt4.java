@@ -14,7 +14,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 
-import io.swagger.annotations.ApiModelProperty;
 import io.webfolder.ocean.JSON;
 
 /**
@@ -84,7 +83,6 @@ public class NewVolumeExt4 extends VolumeWriteFileSystemType {
      * @return id
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "506f78a4-e098-11e5-ad9f-000f53306ae1", value = "The unique identifier for the block storage volume.")
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -99,7 +97,6 @@ public class NewVolumeExt4 extends VolumeWriteFileSystemType {
      * @return dropletIds
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[]", value = "An array containing the IDs of the Droplets the volume is attached to. Note that at this time, a volume can only be attached to a single Droplet.")
     @JsonProperty(JSON_PROPERTY_DROPLET_IDS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -120,7 +117,6 @@ public class NewVolumeExt4 extends VolumeWriteFileSystemType {
      * @return name
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "example", required = true, value = "A human-readable name for the block storage volume. Must be lowercase and be composed only of numbers, letters and \"-\", up to a limit of 64 characters. The name must begin with a letter.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -145,7 +141,6 @@ public class NewVolumeExt4 extends VolumeWriteFileSystemType {
      * @return description
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "Block store for examples", value = "An optional free-form text field to describe a block storage volume.")
     @JsonProperty(JSON_PROPERTY_DESCRIPTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -170,7 +165,6 @@ public class NewVolumeExt4 extends VolumeWriteFileSystemType {
      * @return sizeGigabytes
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "10", required = true, value = "The size of the block storage volume in GiB (1024^3).")
     @JsonProperty(JSON_PROPERTY_SIZE_GIGABYTES)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -191,7 +185,6 @@ public class NewVolumeExt4 extends VolumeWriteFileSystemType {
      * @return createdAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2020-03-02T17:00:49Z", value = "A time value given in ISO8601 combined date and time format that represents when the block storage volume was created.")
     @JsonProperty(JSON_PROPERTY_CREATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -219,7 +212,6 @@ public class NewVolumeExt4 extends VolumeWriteFileSystemType {
      * @return tags
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"base-image\",\"prod\"]", value = "A flat array of tag names as strings to be applied to the resource. Tag names may be for either existing or new tags.")
     @JsonProperty(JSON_PROPERTY_TAGS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -245,7 +237,6 @@ public class NewVolumeExt4 extends VolumeWriteFileSystemType {
      * @return snapshotId
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "b0798135-fb76-11eb-946a-0a58ac146f33", value = "The unique identifier for the volume snapshot from which to create the volume.")
     @JsonProperty(JSON_PROPERTY_SNAPSHOT_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -270,7 +261,6 @@ public class NewVolumeExt4 extends VolumeWriteFileSystemType {
      * @return region
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(required = true, value = "")
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -295,7 +285,6 @@ public class NewVolumeExt4 extends VolumeWriteFileSystemType {
      * @return filesystemLabel
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_FILESYSTEM_LABEL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

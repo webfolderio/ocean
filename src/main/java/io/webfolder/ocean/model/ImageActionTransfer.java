@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * ImageActionTransfer
  */
@@ -72,7 +70,6 @@ public class ImageActionTransfer {
      * @return type
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "convert", required = true, value = "The action to be taken on the image. Can be either `convert` or `transfer`.")
     @JsonProperty(JSON_PROPERTY_TYPE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -97,7 +94,6 @@ public class ImageActionTransfer {
      * @return region
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(required = true, value = "")
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

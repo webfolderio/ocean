@@ -8,14 +8,10 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * An object specifying the maintenance window policy for the Kubernetes
  * cluster.
  */
-@ApiModel(description = "An object specifying the maintenance window policy for the Kubernetes cluster.")
 @JsonPropertyOrder({ MaintenancePolicy.JSON_PROPERTY_START_TIME, MaintenancePolicy.JSON_PROPERTY_DURATION,
         MaintenancePolicy.JSON_PROPERTY_DAY })
 public class MaintenancePolicy {
@@ -98,7 +94,6 @@ public class MaintenancePolicy {
      * @return startTime
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "12:00", value = "The start time in UTC of the maintenance window policy in 24-hour clock format / HH:MM notation (e.g., `15:00`).")
     @JsonProperty(JSON_PROPERTY_START_TIME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -118,7 +113,6 @@ public class MaintenancePolicy {
      * @return duration
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "4h0m0s", value = "The duration of the maintenance window policy in human-readable format.")
     @JsonProperty(JSON_PROPERTY_DURATION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -139,7 +133,6 @@ public class MaintenancePolicy {
      * @return day
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "any", value = "The day of the maintenance window policy. May be one of `monday` through `sunday`, or `any` to indicate an arbitrary week day.")
     @JsonProperty(JSON_PROPERTY_DAY)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

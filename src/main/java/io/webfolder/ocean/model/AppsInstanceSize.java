@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppsInstanceSize
  */
@@ -61,7 +59,6 @@ public class AppsInstanceSize {
      * @return cpuType
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_CPU_TYPE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -86,7 +83,6 @@ public class AppsInstanceSize {
      * @return cpus
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "3", value = "")
     @JsonProperty(JSON_PROPERTY_CPUS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -111,7 +107,6 @@ public class AppsInstanceSize {
      * @return memoryBytes
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "1048", value = "")
     @JsonProperty(JSON_PROPERTY_MEMORY_BYTES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -136,7 +131,6 @@ public class AppsInstanceSize {
      * @return name
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "name", value = "")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -161,7 +155,6 @@ public class AppsInstanceSize {
      * @return slug
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "basic", value = "")
     @JsonProperty(JSON_PROPERTY_SLUG)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -186,7 +179,6 @@ public class AppsInstanceSize {
      * @return tierDowngradeTo
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "basic", value = "")
     @JsonProperty(JSON_PROPERTY_TIER_DOWNGRADE_TO)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -211,7 +203,6 @@ public class AppsInstanceSize {
      * @return tierSlug
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "basic", value = "")
     @JsonProperty(JSON_PROPERTY_TIER_SLUG)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -236,7 +227,6 @@ public class AppsInstanceSize {
      * @return tierUpgradeTo
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "basic", value = "")
     @JsonProperty(JSON_PROPERTY_TIER_UPGRADE_TO)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -261,7 +251,6 @@ public class AppsInstanceSize {
      * @return usdPerMonth
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "23", value = "")
     @JsonProperty(JSON_PROPERTY_USD_PER_MONTH)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -286,7 +275,6 @@ public class AppsInstanceSize {
      * @return usdPerSecond
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "0.00000001232", value = "")
     @JsonProperty(JSON_PROPERTY_USD_PER_SECOND)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

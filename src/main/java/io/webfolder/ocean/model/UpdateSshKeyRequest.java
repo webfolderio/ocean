@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * UpdateSshKeyRequest
  */
@@ -31,7 +29,6 @@ public class UpdateSshKeyRequest {
      * @return name
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "My SSH Public Key", value = "A human-readable display name for this key, used to easily identify the SSH keys when they are displayed.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

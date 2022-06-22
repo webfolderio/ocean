@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * CertificateRequestLetsEncryptAllOf
  */
@@ -39,7 +37,6 @@ public class CertificateRequestLetsEncryptAllOf {
      * @return dnsNames
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "[\"www.example.com\",\"example.com\"]", required = true, value = "An array of fully qualified domain names (FQDNs) for which the certificate was issued. A certificate covering all subdomains can be issued using a wildcard (e.g. `*.example.com`).")
     @JsonProperty(JSON_PROPERTY_DNS_NAMES)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

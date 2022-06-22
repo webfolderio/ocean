@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * Backup
  */
@@ -36,7 +34,6 @@ public class Backup {
      * @return createdAt
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "2019-01-31T19:25:22Z", required = true, value = "A time value given in ISO8601 combined date and time format at which the backup was created.")
     @JsonProperty(JSON_PROPERTY_CREATED_AT)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -61,7 +58,6 @@ public class Backup {
      * @return sizeGigabytes
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "0.03364864", required = true, value = "The size of the database backup in GBs.")
     @JsonProperty(JSON_PROPERTY_SIZE_GIGABYTES)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

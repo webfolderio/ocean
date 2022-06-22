@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppAlertSpec
  */
@@ -43,7 +41,6 @@ public class AppAlertSpec {
      * @return rule
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_RULE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -68,7 +65,6 @@ public class AppAlertSpec {
      * @return disabled
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "false", value = "Is the alert disabled?")
     @JsonProperty(JSON_PROPERTY_DISABLED)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -93,7 +89,6 @@ public class AppAlertSpec {
      * @return operator
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_OPERATOR)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -118,7 +113,6 @@ public class AppAlertSpec {
      * @return value
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2.32", value = "Threshold value for alert")
     @JsonProperty(JSON_PROPERTY_VALUE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -143,7 +137,6 @@ public class AppAlertSpec {
      * @return window
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_WINDOW)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

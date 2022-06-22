@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * VolumeSnapshotId
  */
@@ -31,7 +29,6 @@ public class VolumeSnapshotId {
      * @return snapshotId
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "b0798135-fb76-11eb-946a-0a58ac146f33", value = "The unique identifier for the volume snapshot from which to create the volume.")
     @JsonProperty(JSON_PROPERTY_SNAPSHOT_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

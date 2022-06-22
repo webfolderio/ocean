@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * ListReplicasResponse
  */
@@ -40,7 +38,6 @@ public class ListReplicasResponse {
      * @return replicas
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_REPLICAS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

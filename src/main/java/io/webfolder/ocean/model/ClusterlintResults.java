@@ -9,8 +9,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * ClusterlintResults
  */
@@ -43,7 +41,6 @@ public class ClusterlintResults {
      * @return runId
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "50c2f44c-011d-493e-aee5-361a4a0d1844", value = "Id of the clusterlint run that can be used later to fetch the diagnostics.")
     @JsonProperty(JSON_PROPERTY_RUN_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -69,7 +66,6 @@ public class ClusterlintResults {
      * @return requestedAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2019-10-30T05:34:07Z", value = "A time value given in ISO8601 combined date and time format that represents when the schedule clusterlint run request was made.")
     @JsonProperty(JSON_PROPERTY_REQUESTED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -95,7 +91,6 @@ public class ClusterlintResults {
      * @return completedAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2019-10-30T05:34:11Z", value = "A time value given in ISO8601 combined date and time format that represents when the schedule clusterlint run request was completed.")
     @JsonProperty(JSON_PROPERTY_COMPLETED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -128,7 +123,6 @@ public class ClusterlintResults {
      * @return diagnostics
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "An array of diagnostics reporting potential problems for the given cluster.")
     @JsonProperty(JSON_PROPERTY_DIAGNOSTICS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

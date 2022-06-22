@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppsListInstanceSizesResponse
  */
@@ -36,7 +34,6 @@ public class AppsListInstanceSizesResponse {
      * @return discountPercent
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2.32", value = "")
     @JsonProperty(JSON_PROPERTY_DISCOUNT_PERCENT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -69,7 +66,6 @@ public class AppsListInstanceSizesResponse {
      * @return instanceSizes
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_INSTANCE_SIZES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

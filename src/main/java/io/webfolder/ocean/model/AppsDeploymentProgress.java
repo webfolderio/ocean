@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppsDeploymentProgress
  */
@@ -53,7 +51,6 @@ public class AppsDeploymentProgress {
      * @return errorSteps
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "3", value = "")
     @JsonProperty(JSON_PROPERTY_ERROR_STEPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -78,7 +75,6 @@ public class AppsDeploymentProgress {
      * @return pendingSteps
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2", value = "")
     @JsonProperty(JSON_PROPERTY_PENDING_STEPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -103,7 +99,6 @@ public class AppsDeploymentProgress {
      * @return runningSteps
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2", value = "")
     @JsonProperty(JSON_PROPERTY_RUNNING_STEPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -136,7 +131,6 @@ public class AppsDeploymentProgress {
      * @return steps
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_STEPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -161,7 +155,6 @@ public class AppsDeploymentProgress {
      * @return successSteps
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "4", value = "")
     @JsonProperty(JSON_PROPERTY_SUCCESS_STEPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -194,7 +187,6 @@ public class AppsDeploymentProgress {
      * @return summarySteps
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_SUMMARY_STEPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -219,7 +211,6 @@ public class AppsDeploymentProgress {
      * @return totalSteps
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "5", value = "")
     @JsonProperty(JSON_PROPERTY_TOTAL_STEPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * UpdateDatabaseClusterRequest
  */
@@ -31,7 +29,6 @@ public class UpdateDatabaseClusterRequest {
      * @return region
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "lon1", required = true, value = "A slug identifier for the region to which the database cluster will be migrated.")
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

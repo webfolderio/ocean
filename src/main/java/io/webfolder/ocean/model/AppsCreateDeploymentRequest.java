@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppsCreateDeploymentRequest
  */
@@ -30,7 +28,6 @@ public class AppsCreateDeploymentRequest {
      * @return forceBuild
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "")
     @JsonProperty(JSON_PROPERTY_FORCE_BUILD)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

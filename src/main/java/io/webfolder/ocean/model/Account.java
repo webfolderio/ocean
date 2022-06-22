@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * Account
  */
@@ -94,7 +92,6 @@ public class Account {
      * @return dropletLimit
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "25", required = true, value = "The total number of Droplets current user or team may have active at one time.")
     @JsonProperty(JSON_PROPERTY_DROPLET_LIMIT)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -119,7 +116,6 @@ public class Account {
      * @return floatingIpLimit
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "5", required = true, value = "The total number of Floating IPs the current user or team may have.")
     @JsonProperty(JSON_PROPERTY_FLOATING_IP_LIMIT)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -144,7 +140,6 @@ public class Account {
      * @return email
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "sammy@digitalocean.com", required = true, value = "The email address used by the current user to register for DigitalOcean.")
     @JsonProperty(JSON_PROPERTY_EMAIL)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -169,7 +164,6 @@ public class Account {
      * @return uuid
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "b6fr89dbf6d9156cace5f3c78dc9851d957381ef", required = true, value = "The unique universal identifier for the current user.")
     @JsonProperty(JSON_PROPERTY_UUID)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -194,7 +188,6 @@ public class Account {
      * @return emailVerified
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "true", required = true, value = "If true, the user has verified their account via email. False otherwise.")
     @JsonProperty(JSON_PROPERTY_EMAIL_VERIFIED)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -220,7 +213,6 @@ public class Account {
      * @return status
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "active", required = true, value = "This value is one of \"active\", \"warning\" or \"locked\".")
     @JsonProperty(JSON_PROPERTY_STATUS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -245,7 +237,6 @@ public class Account {
      * @return statusMessage
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = " ", required = true, value = "A human-readable message giving more details about the status of the account.")
     @JsonProperty(JSON_PROPERTY_STATUS_MESSAGE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -270,7 +261,6 @@ public class Account {
      * @return team
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_TEAM)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

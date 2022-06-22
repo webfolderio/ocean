@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * Registry
  */
@@ -61,7 +59,6 @@ public class Registry {
      * @return name
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "example", value = "A globally unique name for the container registry. Must be lowercase and be composed only of numbers, letters and `-`, up to a limit of 63 characters.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -82,7 +79,6 @@ public class Registry {
      * @return createdAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2020-03-21T16:02:37Z", value = "A time value given in ISO8601 combined date and time format that represents when the registry was created.")
     @JsonProperty(JSON_PROPERTY_CREATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -101,7 +97,6 @@ public class Registry {
      * @return region
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "fra1", value = "Slug of the region where registry data is stored")
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -121,7 +116,6 @@ public class Registry {
      * @return storageUsageBytes
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "29393920", value = "The amount of storage used in the registry in bytes.")
     @JsonProperty(JSON_PROPERTY_STORAGE_USAGE_BYTES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -136,7 +130,6 @@ public class Registry {
      * @return storageUsageBytesUpdatedAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2020-11-04T21:39:49.530562231Z", value = "The time at which the storage usage was updated. Storage usage is calculated asynchronously, and may not immediately reflect pushes to the registry.")
     @JsonProperty(JSON_PROPERTY_STORAGE_USAGE_BYTES_UPDATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -155,7 +148,6 @@ public class Registry {
      * @return subscription
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_SUBSCRIPTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * KubernetesRegion
  */
@@ -33,7 +31,6 @@ public class KubernetesRegion {
      * @return name
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "New York 3", value = "A DigitalOcean region where Kubernetes is available.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -58,7 +55,6 @@ public class KubernetesRegion {
      * @return slug
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "nyc3", value = "The identifier for a region for use when creating a new cluster.")
     @JsonProperty(JSON_PROPERTY_SLUG)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

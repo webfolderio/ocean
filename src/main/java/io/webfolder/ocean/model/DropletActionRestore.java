@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * DropletActionRestore
  */
@@ -96,7 +94,6 @@ public class DropletActionRestore {
      * @return type
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "reboot", required = true, value = "The type of action to initiate for the Droplet.")
     @JsonProperty(JSON_PROPERTY_TYPE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -121,7 +118,6 @@ public class DropletActionRestore {
      * @return image
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "12389723", value = "The ID of a backup of the current Droplet instance to restore from.")
     @JsonProperty(JSON_PROPERTY_IMAGE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

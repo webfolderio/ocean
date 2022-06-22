@@ -7,8 +7,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * DatabaseBackup
  */
@@ -35,7 +33,6 @@ public class DatabaseBackup {
      * @return databaseName
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "backend", required = true, value = "The name of an existing database cluster from which the backup will be restored.")
     @JsonProperty(JSON_PROPERTY_DATABASE_NAME)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -61,7 +58,6 @@ public class DatabaseBackup {
      * @return backupCreatedAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2019-01-31T19:25:22Z", value = "The timestamp of an existing database cluster backup in ISO8601 combined date and time format. The most recent backup will be used if excluded.")
     @JsonProperty(JSON_PROPERTY_BACKUP_CREATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

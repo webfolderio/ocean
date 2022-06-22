@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * InvoiceSummaryTaxes
  */
@@ -33,7 +31,6 @@ public class InvoiceSummaryTaxes {
      * @return name
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "Overages", value = "Name of the charge")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -58,7 +55,6 @@ public class InvoiceSummaryTaxes {
      * @return amount
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "3.45", value = "Total amount charged in USD")
     @JsonProperty(JSON_PROPERTY_AMOUNT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

@@ -9,8 +9,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * BillingHistory
  */
@@ -101,7 +99,6 @@ public class BillingHistory {
      * @return description
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "Invoice for May 2018", value = "Description of the billing history entry.")
     @JsonProperty(JSON_PROPERTY_DESCRIPTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -126,7 +123,6 @@ public class BillingHistory {
      * @return amount
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "12.34", value = "Amount of the billing history entry.")
     @JsonProperty(JSON_PROPERTY_AMOUNT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -151,7 +147,6 @@ public class BillingHistory {
      * @return invoiceId
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "123", value = "ID of the invoice associated with the billing history entry, if  applicable.")
     @JsonProperty(JSON_PROPERTY_INVOICE_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -176,7 +171,6 @@ public class BillingHistory {
      * @return invoiceUuid
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "example-uuid", value = "UUID of the invoice associated with the billing history entry, if  applicable.")
     @JsonProperty(JSON_PROPERTY_INVOICE_UUID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -201,7 +195,6 @@ public class BillingHistory {
      * @return date
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2018-06-01T08:44:38Z", value = "Time the billing history entry occured.")
     @JsonProperty(JSON_PROPERTY_DATE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -226,7 +219,6 @@ public class BillingHistory {
      * @return type
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "Invoice", value = "Type of billing history entry.")
     @JsonProperty(JSON_PROPERTY_TYPE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

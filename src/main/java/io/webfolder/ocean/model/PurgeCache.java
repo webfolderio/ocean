@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * PurgeCache
  */
@@ -38,7 +36,6 @@ public class PurgeCache {
      * @return files
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "[\"path/to/image.png\",\"path/to/css/_*\"]", required = true, value = "An array of strings containing the path to the content to be purged from the CDN cache.")
     @JsonProperty(JSON_PROPERTY_FILES)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

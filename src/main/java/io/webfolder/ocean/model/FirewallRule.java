@@ -9,8 +9,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * FirewallRule
  */
@@ -94,7 +92,6 @@ public class FirewallRule {
      * @return uuid
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "79f26d28-ea8a-41f2-8ad8-8cfcdd020095", value = "A unique ID for the firewall rule itself.")
     @JsonProperty(JSON_PROPERTY_UUID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -119,7 +116,6 @@ public class FirewallRule {
      * @return clusterUuid
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "9cc10173-e9ea-4176-9dbc-a4cee4c4ff30", value = "A unique ID for the database cluster to which the rule is applied.")
     @JsonProperty(JSON_PROPERTY_CLUSTER_UUID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -145,7 +141,6 @@ public class FirewallRule {
      * @return type
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "droplet", required = true, value = "The type of resource that the firewall rule allows to access the database cluster.")
     @JsonProperty(JSON_PROPERTY_TYPE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -172,7 +167,6 @@ public class FirewallRule {
      * @return value
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "ff2a6c52-5a44-4b63-b99c-0e98e7a63d61", required = true, value = "The ID of the specific resource, the name of a tag applied to a group of resources, or the IP address that the firewall rule allows to access the database cluster.")
     @JsonProperty(JSON_PROPERTY_VALUE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -193,7 +187,6 @@ public class FirewallRule {
      * @return createdAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2019-01-11T18:37:36Z", value = "A time value given in ISO8601 combined date and time format that represents when the firewall rule was created.")
     @JsonProperty(JSON_PROPERTY_CREATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

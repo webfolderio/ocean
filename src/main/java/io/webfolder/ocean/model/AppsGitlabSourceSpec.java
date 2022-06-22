@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppsGitlabSourceSpec
  */
@@ -37,7 +35,6 @@ public class AppsGitlabSourceSpec {
      * @return branch
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "main", value = "The name of the branch to use")
     @JsonProperty(JSON_PROPERTY_BRANCH)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -62,7 +59,6 @@ public class AppsGitlabSourceSpec {
      * @return deployOnPush
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "Whether to automatically deploy new commits made to the repo")
     @JsonProperty(JSON_PROPERTY_DEPLOY_ON_PUSH)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -88,7 +84,6 @@ public class AppsGitlabSourceSpec {
      * @return repo
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "digitalocean/sample-golang", value = "The name of the repo in the format owner/repo. Example: `digitalocean/sample-golang`")
     @JsonProperty(JSON_PROPERTY_REPO)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

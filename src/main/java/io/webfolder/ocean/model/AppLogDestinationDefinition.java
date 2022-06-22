@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppLogDestinationDefinition
  */
@@ -41,7 +39,6 @@ public class AppLogDestinationDefinition {
      * @return name
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "my_log_destination", required = true, value = "")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -66,7 +63,6 @@ public class AppLogDestinationDefinition {
      * @return papertrail
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_PAPERTRAIL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -91,7 +87,6 @@ public class AppLogDestinationDefinition {
      * @return datadog
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_DATADOG)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -116,7 +111,6 @@ public class AppLogDestinationDefinition {
      * @return logtail
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_LOGTAIL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

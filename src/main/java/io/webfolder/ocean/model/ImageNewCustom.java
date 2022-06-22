@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * ImageNewCustom
  */
@@ -51,7 +49,6 @@ public class ImageNewCustom {
      * @return name
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "Nifty New Snapshot", required = true, value = "The display name that has been given to an image.  This is what is shown in the control panel and is generally a descriptive title for the image in question.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -76,7 +73,6 @@ public class ImageNewCustom {
      * @return distribution
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_DISTRIBUTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -101,7 +97,6 @@ public class ImageNewCustom {
      * @return description
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = " ", value = "An optional free-form text field to describe an image.")
     @JsonProperty(JSON_PROPERTY_DESCRIPTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -129,7 +124,6 @@ public class ImageNewCustom {
      * @return url
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "http://cloud-images.ubuntu.com/minimal/releases/bionic/release/ubuntu-18.04-minimal-cloudimg-amd64.img", required = true, value = "A URL from which the custom Linux virtual machine image may be retrieved.  The image it points to must be in the raw, qcow2, vhdx, vdi, or vmdk format.  It may be compressed using gzip or bzip2 and must be smaller than 100 GB after being decompressed.")
     @JsonProperty(JSON_PROPERTY_URL)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -154,7 +148,6 @@ public class ImageNewCustom {
      * @return region
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(required = true, value = "")
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -188,7 +181,6 @@ public class ImageNewCustom {
      * @return tags
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"base-image\",\"prod\"]", value = "A flat array of tag names as strings to be applied to the resource. Tag names may be for either existing or new tags.")
     @JsonProperty(JSON_PROPERTY_TAGS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * KubernetesNodePoolTaint
  */
@@ -82,7 +80,6 @@ public class KubernetesNodePoolTaint {
      * @return key
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "priority", value = "An arbitrary string. The `key` and `value` fields of the `taint` object form a key-value pair. For example, if the value of the `key` field is \"special\" and the value of the `value` field is \"gpu\", the key value pair would be `special=gpu`.")
     @JsonProperty(JSON_PROPERTY_KEY)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -111,7 +108,6 @@ public class KubernetesNodePoolTaint {
      * @return value
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "high", value = "An arbitrary string. The `key` and `value` fields of the `taint` object form a key-value pair. For example, if the value of the `key` field is \"special\" and the value of the `value` field is \"gpu\", the key value pair would be `special=gpu`.")
     @JsonProperty(JSON_PROPERTY_VALUE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -138,7 +134,6 @@ public class KubernetesNodePoolTaint {
      * @return effect
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "NoSchedule", value = "How the node reacts to pods that it won't tolerate. Available effect values are `NoSchedule`, `PreferNoSchedule`, and `NoExecute`.")
     @JsonProperty(JSON_PROPERTY_EFFECT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

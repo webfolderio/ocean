@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * ClusterlintRequest
  */
@@ -50,7 +48,6 @@ public class ClusterlintRequest {
      * @return includeGroups
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"basic\",\"doks\",\"security\"]", value = "An array of check groups that will be run when clusterlint executes checks.")
     @JsonProperty(JSON_PROPERTY_INCLUDE_GROUPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -83,7 +80,6 @@ public class ClusterlintRequest {
      * @return includeChecks
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"bare-pods\",\"resource-requirements\"]", value = "An array of checks that will be run when clusterlint executes checks.")
     @JsonProperty(JSON_PROPERTY_INCLUDE_CHECKS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -117,7 +113,6 @@ public class ClusterlintRequest {
      * @return excludeGroups
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"workload-health\"]", value = "An array of check groups that will be omitted when clusterlint executes checks.")
     @JsonProperty(JSON_PROPERTY_EXCLUDE_GROUPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -150,7 +145,6 @@ public class ClusterlintRequest {
      * @return excludeChecks
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"default-namespace\"]", value = "An array of checks that will be run when clusterlint executes checks.")
     @JsonProperty(JSON_PROPERTY_EXCLUDE_CHECKS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

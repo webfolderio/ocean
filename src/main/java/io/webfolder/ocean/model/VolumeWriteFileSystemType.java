@@ -11,7 +11,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 
-import io.swagger.annotations.ApiModelProperty;
 import io.webfolder.ocean.JSON;
 
 /**
@@ -53,7 +52,6 @@ public class VolumeWriteFileSystemType {
      * @return filesystemType
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "ext4", required = true, value = "The name of the filesystem type to be used on the volume. When provided, the volume will automatically be formatted to the specified filesystem type. Currently, the available options are `ext4` and `xfs`. Pre-formatted volumes are automatically mounted when attached to Ubuntu, Debian, Fedora, Fedora Atomic, and CentOS Droplets created on or after April 26, 2018. Attaching pre-formatted volumes to other Droplets is not recommended.")
     @JsonProperty(JSON_PROPERTY_FILESYSTEM_TYPE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

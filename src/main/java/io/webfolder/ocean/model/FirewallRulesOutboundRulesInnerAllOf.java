@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * FirewallRulesOutboundRulesInnerAllOf
  */
@@ -31,7 +29,6 @@ public class FirewallRulesOutboundRulesInnerAllOf {
      * @return destinations
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(required = true, value = "")
     @JsonProperty(JSON_PROPERTY_DESTINATIONS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

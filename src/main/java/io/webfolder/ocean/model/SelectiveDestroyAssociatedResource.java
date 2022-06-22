@@ -8,14 +8,10 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * An object containing information about a resource to be scheduled for
  * deletion.
  */
-@ApiModel(description = "An object containing information about a resource to be scheduled for deletion.")
 @JsonPropertyOrder({ SelectiveDestroyAssociatedResource.JSON_PROPERTY_FLOATING_IPS,
         SelectiveDestroyAssociatedResource.JSON_PROPERTY_RESERVED_IPS,
         SelectiveDestroyAssociatedResource.JSON_PROPERTY_SNAPSHOTS,
@@ -62,7 +58,6 @@ public class SelectiveDestroyAssociatedResource {
      **/
     @Deprecated
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"6186916\"]", value = "An array of unique identifiers for the floating IPs to be scheduled for deletion.")
     @JsonProperty(JSON_PROPERTY_FLOATING_IPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -96,7 +91,6 @@ public class SelectiveDestroyAssociatedResource {
      * @return reservedIps
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"6186916\"]", value = "An array of unique identifiers for the reserved IPs to be scheduled for deletion.")
     @JsonProperty(JSON_PROPERTY_RESERVED_IPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -130,7 +124,6 @@ public class SelectiveDestroyAssociatedResource {
      * @return snapshots
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"61486916\"]", value = "An array of unique identifiers for the snapshots to be scheduled for deletion.")
     @JsonProperty(JSON_PROPERTY_SNAPSHOTS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -163,7 +156,6 @@ public class SelectiveDestroyAssociatedResource {
      * @return volumes
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"ba49449a-7435-11ea-b89e-0a58ac14480f\"]", value = "An array of unique identifiers for the volumes to be scheduled for deletion.")
     @JsonProperty(JSON_PROPERTY_VOLUMES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -197,7 +189,6 @@ public class SelectiveDestroyAssociatedResource {
      * @return volumeSnapshots
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"edb0478d-7436-11ea-86e6-0a58ac144b91\"]", value = "An array of unique identifiers for the volume snapshots to be scheduled for deletion.")
     @JsonProperty(JSON_PROPERTY_VOLUME_SNAPSHOTS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

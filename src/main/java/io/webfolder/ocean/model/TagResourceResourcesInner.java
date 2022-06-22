@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * TagResourceResourcesInner
  */
@@ -75,7 +73,6 @@ public class TagResourceResourcesInner {
      * @return resourceId
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "3d80cb72-342b-4aaa-b92e-4e4abb24a933", value = "The identifier of a resource.")
     @JsonProperty(JSON_PROPERTY_RESOURCE_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -100,7 +97,6 @@ public class TagResourceResourcesInner {
      * @return resourceType
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "volume", value = "The type of the resource.")
     @JsonProperty(JSON_PROPERTY_RESOURCE_TYPE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

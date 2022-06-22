@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * RepositoryBlob
  */
@@ -33,7 +31,6 @@ public class RepositoryBlob {
      * @return digest
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "sha256:cb8a924afdf0229ef7515d9e5b3024e23b3eb03ddbba287f4a19c6ac90b8d221", value = "The digest of the blob")
     @JsonProperty(JSON_PROPERTY_DIGEST)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -58,7 +55,6 @@ public class RepositoryBlob {
      * @return compressedSizeBytes
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2803255", value = "The compressed size of the blob in bytes.")
     @JsonProperty(JSON_PROPERTY_COMPRESSED_SIZE_BYTES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

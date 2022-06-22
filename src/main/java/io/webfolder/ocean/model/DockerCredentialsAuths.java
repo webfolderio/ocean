@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * DockerCredentialsAuths
  */
@@ -31,7 +29,6 @@ public class DockerCredentialsAuths {
      * @return registryDigitaloceanCom
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_REGISTRY_DIGITALOCEAN_COM)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

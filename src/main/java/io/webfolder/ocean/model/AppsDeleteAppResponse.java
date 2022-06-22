@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppsDeleteAppResponse
  */
@@ -30,7 +28,6 @@ public class AppsDeleteAppResponse {
      * @return id
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "4f6c71e2-1e90-4762-9fee-6cc4a0a9f2cf", value = "")
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

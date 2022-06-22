@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * GetFloatingIpResponse
  */
@@ -30,7 +28,6 @@ public class GetFloatingIpResponse {
      * @return floatingIp
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_FLOATING_IP)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

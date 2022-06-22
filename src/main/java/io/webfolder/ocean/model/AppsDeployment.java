@@ -10,8 +10,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppsDeployment
  */
@@ -88,7 +86,6 @@ public class AppsDeployment {
      * @return cause
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "commit 9a4df0b pushed to github/digitalocean/sample-golang", value = "")
     @JsonProperty(JSON_PROPERTY_CAUSE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -113,7 +110,6 @@ public class AppsDeployment {
      * @return clonedFrom
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "3aa4d20e-5527-4c00-b496-601fbd22520a", value = "")
     @JsonProperty(JSON_PROPERTY_CLONED_FROM)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -138,7 +134,6 @@ public class AppsDeployment {
      * @return createdAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2020-07-28T18:00Z", value = "")
     @JsonProperty(JSON_PROPERTY_CREATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -163,7 +158,6 @@ public class AppsDeployment {
      * @return id
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "b6bdf840-2854-4f87-a36c-5f231c617c84", value = "")
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -196,7 +190,6 @@ public class AppsDeployment {
      * @return jobs
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_JOBS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -229,7 +222,6 @@ public class AppsDeployment {
      * @return functions
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_FUNCTIONS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -254,7 +246,6 @@ public class AppsDeployment {
      * @return phase
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_PHASE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -279,7 +270,6 @@ public class AppsDeployment {
      * @return phaseLastUpdatedAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "0001-01-01T00:00Z", value = "")
     @JsonProperty(JSON_PROPERTY_PHASE_LAST_UPDATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -304,7 +294,6 @@ public class AppsDeployment {
      * @return progress
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_PROGRESS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -337,7 +326,6 @@ public class AppsDeployment {
      * @return services
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_SERVICES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -362,7 +350,6 @@ public class AppsDeployment {
      * @return spec
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_SPEC)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -395,7 +382,6 @@ public class AppsDeployment {
      * @return staticSites
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_STATIC_SITES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -415,7 +401,6 @@ public class AppsDeployment {
      * @return tierSlug
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "basic", value = "")
     @JsonProperty(JSON_PROPERTY_TIER_SLUG)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -434,7 +419,6 @@ public class AppsDeployment {
      * @return updatedAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2020-07-28T18:00Z", value = "")
     @JsonProperty(JSON_PROPERTY_UPDATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -467,7 +451,6 @@ public class AppsDeployment {
      * @return workers
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_WORKERS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

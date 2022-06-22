@@ -9,8 +9,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * Action
  */
@@ -97,7 +95,6 @@ public class Action {
      * @return id
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "36804636", value = "A unique numeric ID that can be used to identify and reference an action.")
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -123,7 +120,6 @@ public class Action {
      * @return status
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "completed", value = "The current status of the action. This can be \"in-progress\", \"completed\", or \"errored\".")
     @JsonProperty(JSON_PROPERTY_STATUS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -150,7 +146,6 @@ public class Action {
      * @return type
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "create", value = "This is the type of action that the object represents. For example, this could be \"transfer\" to represent the state of an image transfer action.")
     @JsonProperty(JSON_PROPERTY_TYPE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -176,7 +171,6 @@ public class Action {
      * @return startedAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2020-11-14T16:29:21Z", value = "A time value given in ISO8601 combined date and time format that represents when the action was initiated.")
     @JsonProperty(JSON_PROPERTY_STARTED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -202,7 +196,6 @@ public class Action {
      * @return completedAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2020-11-14T16:30:06Z", value = "A time value given in ISO8601 combined date and time format that represents when the action was completed.")
     @JsonProperty(JSON_PROPERTY_COMPLETED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -227,7 +220,6 @@ public class Action {
      * @return resourceId
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "3164444", value = "A unique identifier for the resource that the action is associated with.")
     @JsonProperty(JSON_PROPERTY_RESOURCE_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -252,7 +244,6 @@ public class Action {
      * @return resourceType
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "droplet", value = "The type of resource that the action is associated with.")
     @JsonProperty(JSON_PROPERTY_RESOURCE_TYPE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -277,7 +268,6 @@ public class Action {
      * @return region
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -302,7 +292,6 @@ public class Action {
      * @return regionSlug
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_REGION_SLUG)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

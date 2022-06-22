@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppsDomainProgress
  */
@@ -40,7 +38,6 @@ public class AppsDomainProgress {
      * @return steps
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_STEPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

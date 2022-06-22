@@ -7,8 +7,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * SshKey
  */
@@ -45,7 +43,6 @@ public class SshKey {
      * @return id
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "512189", value = "A unique identification number for this key. Can be used to embed a  specific SSH key into a Droplet.")
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -61,7 +58,6 @@ public class SshKey {
      * @return fingerprint
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "3b:16:bf:e4:8b:00:8b:b8:59:8c:a9:d3:f0:19:45:fa", value = "A unique identifier that differentiates this key from other keys using  a format that SSH recognizes. The fingerprint is created when the key is added to your account.")
     @JsonProperty(JSON_PROPERTY_FINGERPRINT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -82,7 +78,6 @@ public class SshKey {
      * @return publicKey
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "ssh-rsa AEXAMPLEaC1yc2EAAAADAQABAAAAQQDDHr/jh2Jy4yALcK4JyWbVkPRaWmhck3IgCoeOO3z1e2dBowLh64QAM+Qb72pxekALga2oi4GvT+TlWNhzPH4V example", required = true, value = "The entire public key string that was uploaded. Embedded into the root user's `authorized_keys` file if you include this key during Droplet creation.")
     @JsonProperty(JSON_PROPERTY_PUBLIC_KEY)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -108,7 +103,6 @@ public class SshKey {
      * @return name
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "My SSH Public Key", required = true, value = "A human-readable display name for this key, used to easily identify the SSH keys when they are displayed.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

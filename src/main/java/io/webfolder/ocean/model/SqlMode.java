@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * SqlMode
  */
@@ -30,7 +28,6 @@ public class SqlMode {
      * @return sqlMode
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "ANSI,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION,NO_ZERO_DATE,NO_ZERO_IN_DATE,STRICT_ALL_TABLES", required = true, value = "A string specifying the configured SQL modes for the MySQL cluster.")
     @JsonProperty(JSON_PROPERTY_SQL_MODE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

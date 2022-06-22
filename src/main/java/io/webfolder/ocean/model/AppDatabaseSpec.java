@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppDatabaseSpec
  */
@@ -93,7 +91,6 @@ public class AppDatabaseSpec {
      * @return clusterName
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "cluster_name", value = "The name of the underlying DigitalOcean DBaaS cluster. This is required for production databases. For dev databases, if cluster_name is not set, a new cluster will be provisioned.")
     @JsonProperty(JSON_PROPERTY_CLUSTER_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -118,7 +115,6 @@ public class AppDatabaseSpec {
      * @return dbName
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "my_db", value = "The name of the MySQL or PostgreSQL database to configure.")
     @JsonProperty(JSON_PROPERTY_DB_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -143,7 +139,6 @@ public class AppDatabaseSpec {
      * @return dbUser
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "superuser", value = "The name of the MySQL or PostgreSQL user to configure.")
     @JsonProperty(JSON_PROPERTY_DB_USER)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -168,7 +163,6 @@ public class AppDatabaseSpec {
      * @return engine
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "PG", value = "- MYSQL: MySQL - PG: PostgreSQL - REDIS: Redis")
     @JsonProperty(JSON_PROPERTY_ENGINE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -193,7 +187,6 @@ public class AppDatabaseSpec {
      * @return name
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "prod-db", required = true, value = "The name. Must be unique across all components within the same app.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -218,7 +211,6 @@ public class AppDatabaseSpec {
      * @return production
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "Whether this is a production or dev database.")
     @JsonProperty(JSON_PROPERTY_PRODUCTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -243,7 +235,6 @@ public class AppDatabaseSpec {
      * @return version
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "12", value = "The version of the database engine")
     @JsonProperty(JSON_PROPERTY_VERSION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * ProjectAssignment
  */
@@ -40,7 +38,6 @@ public class ProjectAssignment {
      * @return resources
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"do:droplet:13457723\"]", value = "A list of uniform resource names (URNs) to be added to a project.")
     @JsonProperty(JSON_PROPERTY_RESOURCES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * UpdateRegistry
  */
@@ -30,7 +28,6 @@ public class UpdateRegistry {
      * @return cancel
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "A boolean value indicating that the garbage collection should be cancelled.")
     @JsonProperty(JSON_PROPERTY_CANCEL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

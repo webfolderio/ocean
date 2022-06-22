@@ -7,14 +7,10 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * The links object contains the &#x60;self&#x60; object, which contains the
  * resource relationship.
  */
-@ApiModel(description = "The links object contains the `self` object, which contains the resource relationship.")
 @JsonPropertyOrder({ ResourceLinks.JSON_PROPERTY_SELF })
 public class ResourceLinks {
     public static final String JSON_PROPERTY_SELF = "self";
@@ -34,7 +30,6 @@ public class ResourceLinks {
      * @return self
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "https://api.digitalocean.com/v2/droplets/13457723", value = "A URI that can be used to retrieve the resource.")
     @JsonProperty(JSON_PROPERTY_SELF)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

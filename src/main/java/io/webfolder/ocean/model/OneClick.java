@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * OneClick
  */
@@ -33,7 +31,6 @@ public class OneClick {
      * @return slug
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "monitoring", required = true, value = "The slug identifier for the 1-Click application.")
     @JsonProperty(JSON_PROPERTY_SLUG)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -58,7 +55,6 @@ public class OneClick {
      * @return type
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "kubernetes", required = true, value = "The type of the 1-Click application.")
     @JsonProperty(JSON_PROPERTY_TYPE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

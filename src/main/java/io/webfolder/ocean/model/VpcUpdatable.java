@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * VpcUpdatable
  */
@@ -34,7 +32,6 @@ public class VpcUpdatable {
      * @return name
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "env.prod-vpc", value = "The name of the VPC. Must be unique and may only contain alphanumeric characters, dashes, and periods.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -60,7 +57,6 @@ public class VpcUpdatable {
      * @return description
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "VPC for production environment", value = "A free-form text field for describing the VPC's purpose. It may be a maximum of 255 characters.")
     @JsonProperty(JSON_PROPERTY_DESCRIPTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

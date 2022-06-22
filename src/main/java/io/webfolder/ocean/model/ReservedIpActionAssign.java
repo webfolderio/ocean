@@ -11,7 +11,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 
-import io.swagger.annotations.ApiModelProperty;
 import io.webfolder.ocean.JSON;
 
 /**
@@ -44,7 +43,6 @@ public class ReservedIpActionAssign extends ReservedIpActionType {
      * @return dropletId
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "758604968", required = true, value = "The ID of the Droplet that the reserved IP will be assigned to.")
     @JsonProperty(JSON_PROPERTY_DROPLET_ID)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

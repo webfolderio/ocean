@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppServiceSpecHealthCheck
  */
@@ -53,7 +51,6 @@ public class AppServiceSpecHealthCheck {
      * @return failureThreshold
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2", value = "The number of failed health checks before considered unhealthy.")
     @JsonProperty(JSON_PROPERTY_FAILURE_THRESHOLD)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -80,7 +77,6 @@ public class AppServiceSpecHealthCheck {
      * @return port
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "80", value = "The port on which the health check will be performed. If not set, the health check will be performed on the component's http_port.")
     @JsonProperty(JSON_PROPERTY_PORT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -106,7 +102,6 @@ public class AppServiceSpecHealthCheck {
      * @return httpPath
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "/health", value = "The route path used for the HTTP health check ping. If not set, the HTTP health check will be disabled and a TCP health check used instead.")
     @JsonProperty(JSON_PROPERTY_HTTP_PATH)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -131,7 +126,6 @@ public class AppServiceSpecHealthCheck {
      * @return initialDelaySeconds
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "30", value = "The number of seconds to wait before beginning health checks.")
     @JsonProperty(JSON_PROPERTY_INITIAL_DELAY_SECONDS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -156,7 +150,6 @@ public class AppServiceSpecHealthCheck {
      * @return periodSeconds
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "60", value = "The number of seconds to wait between health checks.")
     @JsonProperty(JSON_PROPERTY_PERIOD_SECONDS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -181,7 +174,6 @@ public class AppServiceSpecHealthCheck {
      * @return successThreshold
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "3", value = "The number of successful health checks before considered healthy.")
     @JsonProperty(JSON_PROPERTY_SUCCESS_THRESHOLD)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -206,7 +198,6 @@ public class AppServiceSpecHealthCheck {
      * @return timeoutSeconds
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "45", value = "The number of seconds after which the check times out.")
     @JsonProperty(JSON_PROPERTY_TIMEOUT_SECONDS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

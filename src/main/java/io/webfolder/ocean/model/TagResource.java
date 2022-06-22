@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * TagResource
  */
@@ -37,7 +35,6 @@ public class TagResource {
      * @return resources
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "[{\"resource_id\":\"9569411\",\"resource_type\":\"droplet\"},{\"resource_id\":\"7555620\",\"resource_type\":\"image\"},{\"resource_id\":\"3d80cb72-342b-4aaa-b92e-4e4abb24a933\",\"resource_type\":\"volume\"}]", required = true, value = "An array of objects containing resource_id and resource_type  attributes.")
     @JsonProperty(JSON_PROPERTY_RESOURCES)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

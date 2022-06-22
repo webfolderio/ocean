@@ -9,13 +9,9 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * An application&#39;s configuration and status.
  */
-@ApiModel(description = "An application's configuration and status.")
 @JsonPropertyOrder({ App.JSON_PROPERTY_ACTIVE_DEPLOYMENT, App.JSON_PROPERTY_CREATED_AT,
         App.JSON_PROPERTY_DEFAULT_INGRESS, App.JSON_PROPERTY_DOMAINS, App.JSON_PROPERTY_ID,
         App.JSON_PROPERTY_IN_PROGRESS_DEPLOYMENT, App.JSON_PROPERTY_LAST_DEPLOYMENT_CREATED_AT,
@@ -110,7 +106,6 @@ public class App {
      * @return activeDeployment
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_ACTIVE_DEPLOYMENT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -130,7 +125,6 @@ public class App {
      * @return createdAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2020-11-19T20:27:18Z", value = "")
     @JsonProperty(JSON_PROPERTY_CREATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -144,7 +138,6 @@ public class App {
      * @return defaultIngress
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "digitalocean.com", value = "")
     @JsonProperty(JSON_PROPERTY_DEFAULT_INGRESS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -158,7 +151,6 @@ public class App {
      * @return domains
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_DOMAINS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -172,7 +164,6 @@ public class App {
      * @return id
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "4f6c71e2-1e90-4762-9fee-6cc4a0a9f2cf", value = "")
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -191,7 +182,6 @@ public class App {
      * @return inProgressDeployment
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_IN_PROGRESS_DEPLOYMENT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -211,7 +201,6 @@ public class App {
      * @return lastDeploymentCreatedAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2020-11-19T20:27:18Z", value = "")
     @JsonProperty(JSON_PROPERTY_LAST_DEPLOYMENT_CREATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -225,7 +214,6 @@ public class App {
      * @return liveDomain
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "live_domain", value = "")
     @JsonProperty(JSON_PROPERTY_LIVE_DOMAIN)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -239,7 +227,6 @@ public class App {
      * @return liveUrl
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "google.com", value = "")
     @JsonProperty(JSON_PROPERTY_LIVE_URL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -253,7 +240,6 @@ public class App {
      * @return liveUrlBase
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "digitalocean.com", value = "")
     @JsonProperty(JSON_PROPERTY_LIVE_URL_BASE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -267,7 +253,6 @@ public class App {
      * @return ownerUuid
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "4f6c71e2-1e90-4762-9fee-6cc4a0a9f2cf", value = "")
     @JsonProperty(JSON_PROPERTY_OWNER_UUID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -286,7 +271,6 @@ public class App {
      * @return region
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -311,7 +295,6 @@ public class App {
      * @return spec
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(required = true, value = "")
     @JsonProperty(JSON_PROPERTY_SPEC)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -331,7 +314,6 @@ public class App {
      * @return tierSlug
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "basic", value = "")
     @JsonProperty(JSON_PROPERTY_TIER_SLUG)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -345,7 +327,6 @@ public class App {
      * @return updatedAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2020-12-01T00:42:16Z", value = "")
     @JsonProperty(JSON_PROPERTY_UPDATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -364,7 +345,6 @@ public class App {
      * @return pinnedDeployment
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_PINNED_DEPLOYMENT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

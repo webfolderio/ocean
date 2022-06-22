@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * Error
  */
@@ -38,7 +36,6 @@ public class Error {
      * @return id
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "not_found", required = true, value = "A short identifier corresponding to the HTTP status code returned. For  example, the ID for a response returning a 404 status code would be \"not_found.\"")
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -64,7 +61,6 @@ public class Error {
      * @return message
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "The resource you were accessing could not be found.", required = true, value = "A message providing additional information about the error, including  details to help resolve it when possible.")
     @JsonProperty(JSON_PROPERTY_MESSAGE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -90,7 +86,6 @@ public class Error {
      * @return requestId
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "4d9d8375-3c56-4925-a3e7-eb137fed17e9", value = "Optionally, some endpoints may include a request ID that should be  provided when reporting bugs or opening support tickets to help  identify the issue.")
     @JsonProperty(JSON_PROPERTY_REQUEST_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

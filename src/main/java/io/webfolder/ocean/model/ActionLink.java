@@ -7,14 +7,10 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * The linked actions can be used to check the status of a Droplet&#39;s create
  * event.
  */
-@ApiModel(description = "The linked actions can be used to check the status of a Droplet's create event.")
 @JsonPropertyOrder({ ActionLink.JSON_PROPERTY_ID, ActionLink.JSON_PROPERTY_REL, ActionLink.JSON_PROPERTY_HREF })
 public class ActionLink {
     public static final String JSON_PROPERTY_ID = "id";
@@ -40,7 +36,6 @@ public class ActionLink {
      * @return id
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "7515", value = "A unique numeric ID that can be used to identify and reference an action.")
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -65,7 +60,6 @@ public class ActionLink {
      * @return rel
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "create", value = "A string specifying the type of the related action.")
     @JsonProperty(JSON_PROPERTY_REL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -90,7 +84,6 @@ public class ActionLink {
      * @return href
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "https://api.digitalocean.com/v2/actions/7515", value = "A URL that can be used to access the action.")
     @JsonProperty(JSON_PROPERTY_HREF)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

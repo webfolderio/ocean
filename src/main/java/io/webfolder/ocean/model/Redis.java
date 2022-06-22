@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * Redis
  */
@@ -191,7 +189,6 @@ public class Redis {
      * @return redisMaxmemoryPolicy
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "allkeys-lru", value = "")
     @JsonProperty(JSON_PROPERTY_REDIS_MAXMEMORY_POLICY)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -219,7 +216,6 @@ public class Redis {
      * @return redisPubsubClientOutputBufferLimit
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "64", value = "Set output buffer limit for pub / sub clients in MB. The value is the hard limit, the soft limit is 1/4 of the hard limit. When setting the limit, be mindful of the available memory in the selected service plan.")
     @JsonProperty(JSON_PROPERTY_REDIS_PUBSUB_CLIENT_OUTPUT_BUFFER_LIMIT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -245,7 +241,6 @@ public class Redis {
      * @return redisNumberOfDatabases
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "16", value = "Set number of redis databases. Changing this will cause a restart of redis service.")
     @JsonProperty(JSON_PROPERTY_REDIS_NUMBER_OF_DATABASES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -270,7 +265,6 @@ public class Redis {
      * @return redisIoThreads
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "1", value = "Redis IO thread count")
     @JsonProperty(JSON_PROPERTY_REDIS_IO_THREADS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -296,7 +290,6 @@ public class Redis {
      * @return redisLfuLogFactor
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "10", value = "Counter logarithm factor for volatile-lfu and allkeys-lfu maxmemory-policies")
     @JsonProperty(JSON_PROPERTY_REDIS_LFU_LOG_FACTOR)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -321,7 +314,6 @@ public class Redis {
      * @return redisLfuDecayTime
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "1", value = "LFU maxmemory-policy counter decay time in minutes")
     @JsonProperty(JSON_PROPERTY_REDIS_LFU_DECAY_TIME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -346,7 +338,6 @@ public class Redis {
      * @return redisSsl
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "Require SSL to access Redis")
     @JsonProperty(JSON_PROPERTY_REDIS_SSL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -371,7 +362,6 @@ public class Redis {
      * @return redisTimeout
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "300", value = "Redis idle connection timeout in seconds")
     @JsonProperty(JSON_PROPERTY_REDIS_TIMEOUT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -396,7 +386,6 @@ public class Redis {
      * @return redisNotifyKeyspaceEvents
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "K", value = "Set notify-keyspace-events option")
     @JsonProperty(JSON_PROPERTY_REDIS_NOTIFY_KEYSPACE_EVENTS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -425,7 +414,6 @@ public class Redis {
      * @return redisPersistence
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "rdb", value = "When persistence is 'rdb', Redis does RDB dumps each 10 minutes if any key is changed. Also RDB dumps are done according to backup schedule for backup purposes. When persistence is 'off', no RDB dumps and backups are done, so data can be lost at any moment if service is restarted for any reason, or if service is powered off. Also service can't be forked.")
     @JsonProperty(JSON_PROPERTY_REDIS_PERSISTENCE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -453,7 +441,6 @@ public class Redis {
      * @return redisAclChannelsDefault
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "allchannels", value = "Determines default pub/sub channels' ACL for new users if ACL is not supplied. When this option is not defined, all_channels is assumed to keep backward compatibility. This option doesn't affect Redis configuration acl-pubsub-default.")
     @JsonProperty(JSON_PROPERTY_REDIS_ACL_CHANNELS_DEFAULT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

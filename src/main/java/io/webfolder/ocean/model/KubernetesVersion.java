@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * KubernetesVersion
  */
@@ -41,7 +39,6 @@ public class KubernetesVersion {
      * @return slug
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "1.16.13-do.0", value = "The slug identifier for an available version of Kubernetes for use when creating or updating a cluster. The string contains both the upstream version of Kubernetes as well as the DigitalOcean revision.")
     @JsonProperty(JSON_PROPERTY_SLUG)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -67,7 +64,6 @@ public class KubernetesVersion {
      * @return kubernetesVersion
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "1.16.13", value = "The upstream version string for the version of Kubernetes provided by a given slug.")
     @JsonProperty(JSON_PROPERTY_KUBERNETES_VERSION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -101,7 +97,6 @@ public class KubernetesVersion {
      * @return supportedFeatures
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"cluster-autoscaler\",\"docr-integration\",\"token-authentication\"]", value = "The features available with the version of Kubernetes provided by a given slug.")
     @JsonProperty(JSON_PROPERTY_SUPPORTED_FEATURES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

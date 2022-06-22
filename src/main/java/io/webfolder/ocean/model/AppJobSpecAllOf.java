@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppJobSpecAllOf
  */
@@ -77,7 +75,6 @@ public class AppJobSpecAllOf {
      * @return kind
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "PRE_DEPLOY", value = "- UNSPECIFIED: Default job type, will auto-complete to POST_DEPLOY kind. - PRE_DEPLOY: Indicates a job that runs before an app deployment. - POST_DEPLOY: Indicates a job that runs after an app deployment. - FAILED_DEPLOY: Indicates a job that runs after a component fails to deploy.")
     @JsonProperty(JSON_PROPERTY_KIND)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

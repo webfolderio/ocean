@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppsRegion
  */
@@ -68,7 +66,6 @@ public class AppsRegion {
      * @return continent
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "europe", value = "")
     @JsonProperty(JSON_PROPERTY_CONTINENT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -82,7 +79,6 @@ public class AppsRegion {
      * @return dataCenters
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"ams\"]", value = "")
     @JsonProperty(JSON_PROPERTY_DATA_CENTERS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -96,7 +92,6 @@ public class AppsRegion {
      * @return _default
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "Whether or not the region is presented as the default.")
     @JsonProperty(JSON_PROPERTY_DEFAULT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -110,7 +105,6 @@ public class AppsRegion {
      * @return disabled
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "")
     @JsonProperty(JSON_PROPERTY_DISABLED)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -124,7 +118,6 @@ public class AppsRegion {
      * @return flag
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "ams", value = "")
     @JsonProperty(JSON_PROPERTY_FLAG)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -138,7 +131,6 @@ public class AppsRegion {
      * @return label
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "ams", value = "")
     @JsonProperty(JSON_PROPERTY_LABEL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -152,7 +144,6 @@ public class AppsRegion {
      * @return reason
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "to crowded", value = "")
     @JsonProperty(JSON_PROPERTY_REASON)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -166,7 +157,6 @@ public class AppsRegion {
      * @return slug
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "basic", value = "")
     @JsonProperty(JSON_PROPERTY_SLUG)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

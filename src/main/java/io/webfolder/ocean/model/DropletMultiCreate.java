@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * DropletMultiCreate
  */
@@ -83,7 +81,6 @@ public class DropletMultiCreate {
      * @return names
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "[\"sub-01.example.com\",\"sub-02.example.com\"]", required = true, value = "An array of human human-readable strings you wish to use when displaying the Droplet name. Each name, if set to a domain name managed in the DigitalOcean DNS management system, will configure a PTR record for the Droplet. Each name set during creation will also determine the hostname for the Droplet in its internal configuration.")
     @JsonProperty(JSON_PROPERTY_NAMES)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -108,7 +105,6 @@ public class DropletMultiCreate {
      * @return region
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "nyc3", required = true, value = "The slug identifier for the region that you wish to deploy the Droplet in.")
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -133,7 +129,6 @@ public class DropletMultiCreate {
      * @return size
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "s-1vcpu-1gb", required = true, value = "The slug identifier for the size that you wish to select for this Droplet.")
     @JsonProperty(JSON_PROPERTY_SIZE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -158,7 +153,6 @@ public class DropletMultiCreate {
      * @return image
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(required = true, value = "")
     @JsonProperty(JSON_PROPERTY_IMAGE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -192,7 +186,6 @@ public class DropletMultiCreate {
      * @return sshKeys
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[289794,\"3b:16:e4:bf:8b:00:8b:b8:59:8c:a9:d3:f0:19:fa:45\"]", value = "An array containing the IDs or fingerprints of the SSH keys that you wish to embed in the Droplet's root account upon creation.")
     @JsonProperty(JSON_PROPERTY_SSH_KEYS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -218,7 +211,6 @@ public class DropletMultiCreate {
      * @return backups
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "A boolean indicating whether automated backups should be enabled for the Droplet.")
     @JsonProperty(JSON_PROPERTY_BACKUPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -243,7 +235,6 @@ public class DropletMultiCreate {
      * @return ipv6
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "A boolean indicating whether to enable IPv6 on the Droplet.")
     @JsonProperty(JSON_PROPERTY_IPV6)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -269,7 +260,6 @@ public class DropletMultiCreate {
      * @return monitoring
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "A boolean indicating whether to install the DigitalOcean agent for monitoring.")
     @JsonProperty(JSON_PROPERTY_MONITORING)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -303,7 +293,6 @@ public class DropletMultiCreate {
      * @return tags
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"env:prod\",\"web\"]", value = "A flat array of tag names as strings to apply to the Droplet after it is created. Tag names can either be existing or new tags.")
     @JsonProperty(JSON_PROPERTY_TAGS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -330,7 +319,6 @@ public class DropletMultiCreate {
      * @return userData
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "#cloud-config runcmd:   - touch /test.txt ", value = "A string containing 'user data' which may be used to configure the Droplet on first boot, often a 'cloud-config' file or Bash script. It must be plain text and may not exceed 64 KiB in size.")
     @JsonProperty(JSON_PROPERTY_USER_DATA)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -360,7 +348,6 @@ public class DropletMultiCreate {
      **/
     @Deprecated
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "This parameter has been deprecated. Use `vpc_uuid` instead to specify a VPC network for the Droplet. If no `vpc_uuid` is provided, the Droplet will be placed in your account's default VPC for the region.")
     @JsonProperty(JSON_PROPERTY_PRIVATE_NETWORKING)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -387,7 +374,6 @@ public class DropletMultiCreate {
      * @return vpcUuid
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "760e09ef-dc84-11e8-981e-3cfdfeaae000", value = "A string specifying the UUID of the VPC to which the Droplet will be assigned. If excluded, the Droplet will be assigned to your account's default VPC for the region.")
     @JsonProperty(JSON_PROPERTY_VPC_UUID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -417,7 +403,6 @@ public class DropletMultiCreate {
      * @return withDropletAgent
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "true", value = "A boolean indicating whether to install the DigitalOcean agent used for providing access to the Droplet web console in the control panel. By default, the agent is installed on new Droplets but installation errors (i.e. OS not supported) are ignored. To prevent it from being installed, set to `false`. To make installation errors fatal, explicitly set it to `true`.")
     @JsonProperty(JSON_PROPERTY_WITH_DROPLET_AGENT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

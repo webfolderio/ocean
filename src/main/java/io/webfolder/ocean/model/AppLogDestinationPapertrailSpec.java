@@ -6,13 +6,9 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * Papertrail configuration.
  */
-@ApiModel(description = "Papertrail configuration.")
 @JsonPropertyOrder({ AppLogDestinationPapertrailSpec.JSON_PROPERTY_ENDPOINT })
 public class AppLogDestinationPapertrailSpec {
     public static final String JSON_PROPERTY_ENDPOINT = "endpoint";
@@ -32,7 +28,6 @@ public class AppLogDestinationPapertrailSpec {
      * @return endpoint
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "https://mypapertrailendpoint.com", required = true, value = "Papertrail syslog endpoint.")
     @JsonProperty(JSON_PROPERTY_ENDPOINT)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 

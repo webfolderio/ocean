@@ -8,14 +8,10 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * An object containing additional information about resource related to a
  * Droplet requested to be destroyed.
  */
-@ApiModel(description = "An object containing additional information about resource related to a Droplet requested to be destroyed.")
 @JsonPropertyOrder({ AssociatedResourceStatusResources.JSON_PROPERTY_RESERVED_IPS,
         AssociatedResourceStatusResources.JSON_PROPERTY_FLOATING_IPS,
         AssociatedResourceStatusResources.JSON_PROPERTY_SNAPSHOTS,
@@ -59,7 +55,6 @@ public class AssociatedResourceStatusResources {
      * @return reservedIps
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_RESERVED_IPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -92,7 +87,6 @@ public class AssociatedResourceStatusResources {
      * @return floatingIps
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_FLOATING_IPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -125,7 +119,6 @@ public class AssociatedResourceStatusResources {
      * @return snapshots
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_SNAPSHOTS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -158,7 +151,6 @@ public class AssociatedResourceStatusResources {
      * @return volumes
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_VOLUMES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -191,7 +183,6 @@ public class AssociatedResourceStatusResources {
      * @return volumeSnapshots
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_VOLUME_SNAPSHOTS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

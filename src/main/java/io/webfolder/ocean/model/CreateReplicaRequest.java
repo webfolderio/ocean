@@ -11,8 +11,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * CreateReplicaRequest
  */
@@ -112,7 +110,6 @@ public class CreateReplicaRequest {
      * @return name
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "read-nyc3-01", required = true, value = "The name to give the read-only replicating")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -138,7 +135,6 @@ public class CreateReplicaRequest {
      * @return region
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "nyc3", value = "A slug identifier for the region where the read-only replica will be located. If excluded, the replica will be placed in the same region as the cluster.")
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -165,7 +161,6 @@ public class CreateReplicaRequest {
      * @return size
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "db-s-2vcpu-4gb", required = true, value = "A slug identifier representing the size of the node for the read-only replica. The size of the replica must be at least as large as the node size for the database cluster from which it is replicating.")
     @JsonProperty(JSON_PROPERTY_SIZE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -185,7 +180,6 @@ public class CreateReplicaRequest {
      * @return status
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "creating", value = "A string representing the current status of the database cluster.")
     @JsonProperty(JSON_PROPERTY_STATUS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -213,7 +207,6 @@ public class CreateReplicaRequest {
      * @return tags
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "[\"production\"]", value = "A flat array of tag names as strings to apply to the read-only replica after it is created. Tag names can either be existing or new tags.")
     @JsonProperty(JSON_PROPERTY_TAGS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -234,7 +227,6 @@ public class CreateReplicaRequest {
      * @return createdAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2019-01-11T18:37:36Z", value = "A time value given in ISO8601 combined date and time format that represents when the database cluster was created.")
     @JsonProperty(JSON_PROPERTY_CREATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -255,7 +247,6 @@ public class CreateReplicaRequest {
      * @return privateNetworkUuid
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "9423cbad-9211-442f-820b-ef6915e99b5f", value = "A string specifying the UUID of the VPC to which the read-only replica will be assigned. If excluded, the replica will be assigned to your account's default VPC for the region.")
     @JsonProperty(JSON_PROPERTY_PRIVATE_NETWORK_UUID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -280,7 +271,6 @@ public class CreateReplicaRequest {
      * @return connection
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_CONNECTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -305,7 +295,6 @@ public class CreateReplicaRequest {
      * @return privateConnection
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_PRIVATE_CONNECTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

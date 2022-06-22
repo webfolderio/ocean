@@ -9,8 +9,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * Resource
  */
@@ -85,7 +83,6 @@ public class Resource {
      * @return urn
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "do:droplet:13457723", value = "The uniform resource name (URN) for the resource in the format do:resource_type:resource_id.")
     @JsonProperty(JSON_PROPERTY_URN)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -111,7 +108,6 @@ public class Resource {
      * @return assignedAt
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "2018-09-28T19:26:37Z", value = "A time value given in ISO8601 combined date and time format that represents when the project was created.")
     @JsonProperty(JSON_PROPERTY_ASSIGNED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -136,7 +132,6 @@ public class Resource {
      * @return links
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_LINKS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -161,7 +156,6 @@ public class Resource {
      * @return status
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "ok", value = "The status of assigning and fetching the resources.")
     @JsonProperty(JSON_PROPERTY_STATUS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

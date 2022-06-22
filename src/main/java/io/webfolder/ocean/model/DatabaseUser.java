@@ -8,8 +8,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * DatabaseUser
  */
@@ -86,7 +84,6 @@ public class DatabaseUser {
      * @return name
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(example = "app-01", required = true, value = "The name of a database user.")
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -107,7 +104,6 @@ public class DatabaseUser {
      * @return role
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "normal", value = "A string representing the database user's role. The value will be either \"primary\" or \"normal\". ")
     @JsonProperty(JSON_PROPERTY_ROLE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -121,7 +117,6 @@ public class DatabaseUser {
      * @return password
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "jge5lfxtzhx42iff", value = "A randomly generated password for the database user.")
     @JsonProperty(JSON_PROPERTY_PASSWORD)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -140,7 +135,6 @@ public class DatabaseUser {
      * @return mysqlSettings
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(value = "")
     @JsonProperty(JSON_PROPERTY_MYSQL_SETTINGS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

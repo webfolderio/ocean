@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * UpgradeKubernetesClusterRequest
  */
@@ -31,7 +29,6 @@ public class UpgradeKubernetesClusterRequest {
      * @return version
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "1.16.13-do.0", value = "The slug identifier for the version of Kubernetes that the cluster will be upgraded to.")
     @JsonProperty(JSON_PROPERTY_VERSION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

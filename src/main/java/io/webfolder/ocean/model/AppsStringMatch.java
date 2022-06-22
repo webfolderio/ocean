@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppsStringMatch
  */
@@ -38,7 +36,6 @@ public class AppsStringMatch {
      * @return exact
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "https://www.example.com", value = "Exact string match. Only 1 of `exact`, `prefix`, or `regex` must be set.")
     @JsonProperty(JSON_PROPERTY_EXACT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -64,7 +61,6 @@ public class AppsStringMatch {
      * @return prefix
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "https://www.example.com", value = "Prefix-based match. Only 1 of `exact`, `prefix`, or `regex` must be set.")
     @JsonProperty(JSON_PROPERTY_PREFIX)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -91,7 +87,6 @@ public class AppsStringMatch {
      * @return regex
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "^.*example.com", value = "RE2 style regex-based match. Only 1 of `exact`, `prefix`, or `regex` must be set. For more information about RE2 syntax, see: https://github.com/google/re2/wiki/Syntax")
     @JsonProperty(JSON_PROPERTY_REGEX)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

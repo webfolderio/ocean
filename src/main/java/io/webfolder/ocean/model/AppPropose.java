@@ -6,8 +6,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * AppPropose
  */
@@ -33,7 +31,6 @@ public class AppPropose {
      * @return spec
      **/
     @javax.annotation.Nonnull
-    @ApiModelProperty(required = true, value = "")
     @JsonProperty(JSON_PROPERTY_SPEC)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
@@ -60,7 +57,6 @@ public class AppPropose {
      * @return appId
      **/
     @javax.annotation.Nullable
-    @ApiModelProperty(example = "b6bdf840-2854-4f87-a36c-5f231c617c84", value = "An optional ID of an existing app. If set, the spec will be treated as a proposed update to the specified app. The existing app is not modified using this method.")
     @JsonProperty(JSON_PROPERTY_APP_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
