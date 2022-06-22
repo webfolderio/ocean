@@ -4,7 +4,7 @@
   <artifactId>ocean</artifactId>
   <packaging>jar</packaging>
   <name>ocean</name>
-  <version>1.0</version>
+  <version>1.0.0</version>
   <url>https://github.com/webfolderio/ocean</url>
   <description>DigitalOcean Java Client</description>
   <scm>
@@ -26,6 +26,16 @@
       <organizationUrl>http://webfolder.io/</organizationUrl>
     </developer>
   </developers>
+  <distributionManagement>
+    <snapshotRepository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+    <repository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+    </repository>
+  </distributionManagement>
   <build>
     <plugins>
       <plugin>
