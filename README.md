@@ -1,6 +1,6 @@
 # ocean
 
-unofficial DigitalOcean Java Client
+unofficial DigitalOcean API Java Client
 
 Supported Java Versions
 -----------------------
