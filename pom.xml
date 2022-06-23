@@ -77,6 +77,20 @@
         </executions>
       </plugin>
       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <archive>
+            <index>true</index>
+            <manifestEntries>
+              <Implementation-Title>ocean</Implementation-Title>
+              <Implementation-Version>${project.version}</Implementation-Version>
+              <Automatic-Module-Name>io.webfolder.ocean</Automatic-Module-Name>
+            </manifestEntries>
+          </archive>
+        </configuration>
+      </plugin>
+      <plugin>
         <groupId>net.revelc.code</groupId>
         <artifactId>impsort-maven-plugin</artifactId>
         <version>1.7.0</version>
