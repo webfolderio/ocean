@@ -30,7 +30,6 @@ public class DropletSnapshotAllOf {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public Integer getId() {
         return id;
     }

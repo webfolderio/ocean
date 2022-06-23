@@ -33,7 +33,6 @@ public class SlackDetails {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_CHANNEL)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public String getChannel() {
         return channel;
     }

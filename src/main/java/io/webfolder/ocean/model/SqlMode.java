@@ -30,7 +30,6 @@ public class SqlMode {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_SQL_MODE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public String getSqlMode() {
         return sqlMode;
     }

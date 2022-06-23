@@ -30,7 +30,6 @@ public class GetDatabaseConfigResponse {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_CONFIG)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public GetDatabaseConfigResponseConfig getConfig() {
         return config;
     }

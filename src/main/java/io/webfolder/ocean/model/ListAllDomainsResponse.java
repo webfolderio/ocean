@@ -44,7 +44,6 @@ public class ListAllDomainsResponse {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_DOMAINS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public List<Domain> getDomains() {
         return domains;
     }

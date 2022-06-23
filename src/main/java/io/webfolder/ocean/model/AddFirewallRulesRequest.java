@@ -41,7 +41,6 @@ public class AddFirewallRulesRequest {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_INBOUND_RULES)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public List<FirewallRulesInboundRulesInner> getInboundRules() {
         return inboundRules;
     }

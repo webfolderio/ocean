@@ -75,7 +75,6 @@ public class MetricsData {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_RESULT)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public List<MetricsResult> getResult() {
         return result;
     }

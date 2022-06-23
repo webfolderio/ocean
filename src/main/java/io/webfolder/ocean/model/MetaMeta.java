@@ -30,7 +30,6 @@ public class MetaMeta {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_TOTAL)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public Integer getTotal() {
         return total;
     }

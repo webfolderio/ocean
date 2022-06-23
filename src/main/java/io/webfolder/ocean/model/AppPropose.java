@@ -33,7 +33,6 @@ public class AppPropose {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_SPEC)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public AppSpec getSpec() {
         return spec;
     }

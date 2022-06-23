@@ -44,7 +44,6 @@ public class ListAlertPoliciesResponse {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_POLICIES)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public List<AlertPolicy> getPolicies() {
         return policies;
     }

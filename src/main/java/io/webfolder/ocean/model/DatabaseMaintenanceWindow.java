@@ -50,7 +50,6 @@ public class DatabaseMaintenanceWindow {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_DAY)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public String getDay() {
         return day;
     }

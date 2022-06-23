@@ -79,7 +79,6 @@ public class FirewallRulesOutboundRulesInner {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_PROTOCOL)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public ProtocolEnum getProtocol() {
         return protocol;
     }

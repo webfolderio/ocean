@@ -37,7 +37,6 @@ public class DeleteFirewallDropletsRequest {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_DROPLET_IDS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public List<Integer> getDropletIds() {
         return dropletIds;
     }

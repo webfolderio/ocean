@@ -37,7 +37,6 @@ public class TagResource {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_RESOURCES)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public List<TagResourceResourcesInner> getResources() {
         return resources;
     }

@@ -76,7 +76,6 @@ public class SnapshotAllOf1 {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_RESOURCE_ID)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public String getResourceId() {
         return resourceId;
     }

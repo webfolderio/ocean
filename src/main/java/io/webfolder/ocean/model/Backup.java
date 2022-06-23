@@ -36,7 +36,6 @@ public class Backup {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_CREATED_AT)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public OffsetDateTime getCreatedAt() {
         return createdAt;
     }

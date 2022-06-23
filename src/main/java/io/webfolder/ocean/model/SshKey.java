@@ -78,7 +78,6 @@ public class SshKey {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_PUBLIC_KEY)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public String getPublicKey() {
         return publicKey;
     }

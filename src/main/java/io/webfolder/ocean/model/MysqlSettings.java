@@ -77,7 +77,6 @@ public class MysqlSettings {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_AUTH_PLUGIN)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public AuthPluginEnum getAuthPlugin() {
         return authPlugin;
     }

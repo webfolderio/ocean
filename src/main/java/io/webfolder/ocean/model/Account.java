@@ -94,7 +94,6 @@ public class Account {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_DROPLET_LIMIT)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public Integer getDropletLimit() {
         return dropletLimit;
     }

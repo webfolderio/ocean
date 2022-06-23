@@ -42,7 +42,6 @@ public class MetricsResult {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_METRIC)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public Map<String, String> getMetric() {
         return metric;
     }

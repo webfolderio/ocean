@@ -35,7 +35,6 @@ public class DatabaseBackup {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_DATABASE_NAME)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public String getDatabaseName() {
         return databaseName;
     }

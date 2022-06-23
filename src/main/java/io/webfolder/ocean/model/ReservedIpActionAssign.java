@@ -45,7 +45,6 @@ public class ReservedIpActionAssign extends ReservedIpActionType {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_DROPLET_ID)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public Integer getDropletId() {
         return dropletId;
     }

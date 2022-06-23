@@ -41,7 +41,6 @@ public class OneClickCreate {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_ADDON_SLUGS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public List<String> getAddonSlugs() {
         return addonSlugs;
     }

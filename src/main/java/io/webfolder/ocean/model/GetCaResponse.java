@@ -30,7 +30,6 @@ public class GetCaResponse {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_CA)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public Ca getCa() {
         return ca;
     }

@@ -83,7 +83,6 @@ public class DropletMultiCreate {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_NAMES)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public List<String> getNames() {
         return names;
     }

@@ -57,7 +57,6 @@ public class AppLogDestinationDatadogSpec {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_API_KEY)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public String getApiKey() {
         return apiKey;
     }

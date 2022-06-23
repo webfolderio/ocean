@@ -200,7 +200,6 @@ public class AlertPolicyRequest {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_ALERTS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public Alerts getAlerts() {
         return alerts;
     }

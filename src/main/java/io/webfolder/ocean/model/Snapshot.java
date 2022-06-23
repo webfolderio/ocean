@@ -96,7 +96,6 @@ public class Snapshot {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public String getId() {
         return id;
     }

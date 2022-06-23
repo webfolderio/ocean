@@ -31,7 +31,6 @@ public class AddFirewallTagsRequest {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_TAGS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public List<Tag> getTags() {
         return tags;
     }

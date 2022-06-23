@@ -30,7 +30,6 @@ public class AppLogDestinationPapertrailSpec {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_ENDPOINT)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public String getEndpoint() {
         return endpoint;
     }

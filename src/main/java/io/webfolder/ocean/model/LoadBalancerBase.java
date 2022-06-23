@@ -385,7 +385,6 @@ public class LoadBalancerBase {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_FORWARDING_RULES)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public List<ForwardingRule> getForwardingRules() {
         return forwardingRules;
     }

@@ -118,7 +118,6 @@ public class AppVariableDefinition {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_KEY)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public String getKey() {
         return key;
     }

@@ -39,7 +39,6 @@ public class ErrorWithRootCauses {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_ERROR)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public String getError() {
         return error;
     }

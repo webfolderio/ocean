@@ -40,7 +40,6 @@ public class Alerts {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_EMAIL)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public List<String> getEmail() {
         return email;
     }

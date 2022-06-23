@@ -75,7 +75,6 @@ public class EvictionPolicy {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_EVICTION_POLICY)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public EvictionPolicyEnum getEvictionPolicy() {
         return evictionPolicy;
     }

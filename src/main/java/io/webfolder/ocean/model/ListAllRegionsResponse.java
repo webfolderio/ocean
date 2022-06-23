@@ -44,7 +44,6 @@ public class ListAllRegionsResponse {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_REGIONS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public List<Region> getRegions() {
         return regions;
     }

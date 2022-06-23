@@ -78,7 +78,6 @@ public class DropletSingleCreate {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public String getName() {
         return name;
     }

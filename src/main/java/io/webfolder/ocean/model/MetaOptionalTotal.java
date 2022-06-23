@@ -30,7 +30,6 @@ public class MetaOptionalTotal {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_META)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public MetaProperties getMeta() {
         return meta;
     }

@@ -33,7 +33,6 @@ public class SingleDropletResponse {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_DROPLET)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public Droplet getDroplet() {
         return droplet;
     }

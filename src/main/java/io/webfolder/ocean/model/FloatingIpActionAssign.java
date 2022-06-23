@@ -45,7 +45,6 @@ public class FloatingIpActionAssign extends FloatingIpActionType {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_DROPLET_ID)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public Integer getDropletId() {
         return dropletId;
     }

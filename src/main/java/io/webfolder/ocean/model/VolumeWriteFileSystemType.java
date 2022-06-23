@@ -54,7 +54,6 @@ public class VolumeWriteFileSystemType {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_FILESYSTEM_TYPE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public String getFilesystemType() {
         return filesystemType;
     }

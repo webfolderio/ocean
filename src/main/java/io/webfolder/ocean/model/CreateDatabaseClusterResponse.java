@@ -30,7 +30,6 @@ public class CreateDatabaseClusterResponse {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_DATABASE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public DatabaseCluster getDatabase() {
         return database;
     }

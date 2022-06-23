@@ -32,7 +32,6 @@ public class Ca {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_CERTIFICATE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public String getCertificate() {
         return certificate;
     }

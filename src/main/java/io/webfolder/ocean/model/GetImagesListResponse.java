@@ -44,7 +44,6 @@ public class GetImagesListResponse {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_IMAGES)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public List<Image> getImages() {
         return images;
     }

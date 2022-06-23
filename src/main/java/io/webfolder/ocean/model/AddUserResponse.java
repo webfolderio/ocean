@@ -30,7 +30,6 @@ public class AddUserResponse {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_USER)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public DatabaseUser getUser() {
         return user;
     }

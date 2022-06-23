@@ -37,7 +37,6 @@ public class ListDatabaseBackupsResponse {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_BACKUPS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public List<Backup> getBackups() {
         return backups;
     }

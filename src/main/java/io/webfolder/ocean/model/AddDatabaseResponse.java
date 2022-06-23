@@ -30,7 +30,6 @@ public class AddDatabaseResponse {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_DB)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public Database getDb() {
         return db;
     }

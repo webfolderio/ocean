@@ -131,7 +131,6 @@ public class ForwardingRule {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_ENTRY_PROTOCOL)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public EntryProtocolEnum getEntryProtocol() {
         return entryProtocol;
     }

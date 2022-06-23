@@ -37,7 +37,6 @@ public class ListAllSizesResponseAllOf {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_SIZES)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public List<Size> getSizes() {
         return sizes;
     }

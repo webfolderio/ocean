@@ -38,7 +38,6 @@ public class PurgeCache {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_FILES)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public List<String> getFiles() {
         return files;
     }

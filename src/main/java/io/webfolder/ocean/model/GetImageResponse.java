@@ -30,7 +30,6 @@ public class GetImageResponse {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_IMAGE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public Image getImage() {
         return image;
     }

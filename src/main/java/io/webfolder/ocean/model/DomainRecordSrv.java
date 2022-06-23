@@ -79,7 +79,6 @@ public class DomainRecordSrv {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_TYPE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public String getType() {
         return type;
     }

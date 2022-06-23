@@ -30,7 +30,6 @@ public class AddConnectionPoolResponse {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_POOL)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public ConnectionPool getPool() {
         return pool;
     }

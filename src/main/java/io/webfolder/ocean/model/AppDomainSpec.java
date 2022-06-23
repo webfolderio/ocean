@@ -89,7 +89,6 @@ public class AppDomainSpec {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_DOMAIN)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public String getDomain() {
         return domain;
     }

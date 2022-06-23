@@ -119,7 +119,6 @@ public class CdnEndpoint {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_ORIGIN)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public String getOrigin() {
         return origin;
     }

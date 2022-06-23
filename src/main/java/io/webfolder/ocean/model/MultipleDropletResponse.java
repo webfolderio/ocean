@@ -40,7 +40,6 @@ public class MultipleDropletResponse {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_DROPLETS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public List<Droplet> getDroplets() {
         return droplets;
     }

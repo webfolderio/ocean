@@ -84,7 +84,6 @@ public class ReservedIpActionType {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_TYPE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public TypeEnum getType() {
         return type;
     }

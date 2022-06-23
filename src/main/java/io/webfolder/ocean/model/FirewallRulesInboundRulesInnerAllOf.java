@@ -30,7 +30,6 @@ public class FirewallRulesInboundRulesInnerAllOf {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_SOURCES)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public FirewallRulesInboundRulesInnerAllOfSources getSources() {
         return sources;
     }

@@ -31,7 +31,6 @@ public class FirewallRulesOutboundRulesInnerAllOf {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_DESTINATIONS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public FirewallRulesOutboundRulesInnerAllOfDestinations getDestinations() {
         return destinations;
     }
