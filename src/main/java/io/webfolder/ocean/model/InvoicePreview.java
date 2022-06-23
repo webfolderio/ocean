@@ -40,7 +40,6 @@ public class InvoicePreview {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_INVOICE_UUID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getInvoiceUuid() {
         return invoiceUuid;
     }
@@ -171,5 +170,4 @@ public class InvoicePreview {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

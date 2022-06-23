@@ -80,5 +80,4 @@ public class ImageActionTransferAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

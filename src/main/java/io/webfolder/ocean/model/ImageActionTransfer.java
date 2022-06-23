@@ -148,5 +148,4 @@ public class ImageActionTransfer {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

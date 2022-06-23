@@ -50,7 +50,6 @@ public class ListInvoicesResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_INVOICES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<InvoicePreview> getInvoices() {
         return invoices;
     }
@@ -178,5 +177,4 @@ public class ListInvoicesResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

@@ -50,7 +50,6 @@ public class ClusterlintRequest {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_INCLUDE_GROUPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<String> getIncludeGroups() {
         return includeGroups;
     }
@@ -203,5 +202,4 @@ public class ClusterlintRequest {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

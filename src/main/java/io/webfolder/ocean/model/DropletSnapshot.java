@@ -307,5 +307,4 @@ public class DropletSnapshot {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

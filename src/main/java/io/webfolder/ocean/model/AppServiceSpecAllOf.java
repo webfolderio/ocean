@@ -46,7 +46,6 @@ public class AppServiceSpecAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_CORS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public AppsCorsPolicy getCors() {
         return cors;
     }
@@ -219,5 +218,4 @@ public class AppServiceSpecAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

@@ -30,7 +30,6 @@ public class DropletActionSnapshotAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getName() {
         return name;
     }
@@ -80,5 +79,4 @@ public class DropletActionSnapshotAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

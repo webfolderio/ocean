@@ -134,7 +134,6 @@ public class Pgbouncer {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_SERVER_RESET_QUERY_ALWAYS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Boolean getServerResetQueryAlways() {
         return serverResetQueryAlways;
     }
@@ -409,5 +408,4 @@ public class Pgbouncer {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

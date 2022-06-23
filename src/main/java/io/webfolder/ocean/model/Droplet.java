@@ -656,7 +656,6 @@ public class Droplet {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_VPC_UUID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getVpcUuid() {
         return vpcUuid;
     }
@@ -738,5 +737,4 @@ public class Droplet {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

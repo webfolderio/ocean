@@ -30,7 +30,6 @@ public class AppsAlertResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ALERT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public AppAlert getAlert() {
         return alert;
     }
@@ -80,5 +79,4 @@ public class AppsAlertResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

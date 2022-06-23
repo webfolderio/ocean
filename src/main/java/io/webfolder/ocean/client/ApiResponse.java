@@ -1,4 +1,4 @@
-package io.webfolder.ocean;
+package io.webfolder.ocean.client;
 
 import java.util.List;
 import java.util.Map;

@@ -14,6 +14,7 @@ import io.webfolder.ocean.api.DomainsApi;
 import io.webfolder.ocean.api.DropletsApi;
 import io.webfolder.ocean.api.FirewallsApi;
 import io.webfolder.ocean.api.RegionsApi;
+import io.webfolder.ocean.client.ApiClient;
 import io.webfolder.ocean.model.ListAllDomainsResponse;
 import io.webfolder.ocean.model.ListAllDropletsResponse;
 import io.webfolder.ocean.model.ListAllRegionsResponse;

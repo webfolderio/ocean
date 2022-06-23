@@ -30,7 +30,6 @@ public class CreateLoadBalancerResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_LOAD_BALANCER)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public LoadBalancer getLoadBalancer() {
         return loadBalancer;
     }
@@ -80,5 +79,4 @@ public class CreateLoadBalancerResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

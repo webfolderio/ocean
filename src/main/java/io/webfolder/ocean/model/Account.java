@@ -263,7 +263,6 @@ public class Account {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_TEAM)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public AccountTeam getTeam() {
         return team;
     }
@@ -325,5 +324,4 @@ public class Account {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

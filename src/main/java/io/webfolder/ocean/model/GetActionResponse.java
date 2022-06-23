@@ -30,7 +30,6 @@ public class GetActionResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ACTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Action getAction() {
         return action;
     }
@@ -80,5 +79,4 @@ public class GetActionResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

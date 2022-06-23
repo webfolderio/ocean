@@ -198,7 +198,6 @@ public class AppJobSpec {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_GIT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public AppsGitSourceSpec getGit() {
         return git;
     }
@@ -604,5 +603,4 @@ public class AppJobSpec {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

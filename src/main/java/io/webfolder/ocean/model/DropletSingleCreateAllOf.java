@@ -84,5 +84,4 @@ public class DropletSingleCreateAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

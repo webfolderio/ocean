@@ -47,7 +47,6 @@ public class ListBillingHistoryResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_BILLING_HISTORY)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<BillingHistory> getBillingHistory() {
         return billingHistory;
     }
@@ -149,5 +148,4 @@ public class ListBillingHistoryResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

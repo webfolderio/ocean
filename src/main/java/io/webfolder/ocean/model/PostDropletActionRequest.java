@@ -20,7 +20,7 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.deser.std.StdDeserializer;
 import com.fasterxml.jackson.databind.ser.std.StdSerializer;
 
-import io.webfolder.ocean.JSON;
+import io.webfolder.ocean.client.internal.JSON;
 
 @JsonDeserialize(using = PostDropletActionRequest.PostDropletActionRequestDeserializer.class)
 @JsonSerialize(using = PostDropletActionRequest.PostDropletActionRequestSerializer.class)
@@ -384,5 +384,4 @@ public class PostDropletActionRequest extends AbstractOpenApiSchema {
     public DropletActionType getDropletActionType() throws ClassCastException {
         return (DropletActionType) super.getActualInstance();
     }
-
 }

@@ -80,5 +80,4 @@ public class AddConnectionPoolResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

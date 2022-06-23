@@ -13,9 +13,9 @@ import java.util.function.Consumer;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import io.webfolder.ocean.ApiClient;
-import io.webfolder.ocean.ApiException;
-import io.webfolder.ocean.ApiResponse;
+import io.webfolder.ocean.client.ApiClient;
+import io.webfolder.ocean.client.ApiException;
+import io.webfolder.ocean.client.ApiResponse;
 import io.webfolder.ocean.model.Balance;
 import io.webfolder.ocean.model.GetInvoiceByUuidResponse;
 import io.webfolder.ocean.model.InvoiceSummary;

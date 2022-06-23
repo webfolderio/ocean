@@ -87,5 +87,4 @@ public class ListDatabaseBackupsResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

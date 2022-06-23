@@ -41,7 +41,6 @@ public class NeighborIds {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_NEIGHBOR_IDS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<List<Integer>> getNeighborIds() {
         return neighborIds;
     }
@@ -91,5 +90,4 @@ public class NeighborIds {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

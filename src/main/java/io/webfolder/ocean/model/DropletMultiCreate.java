@@ -188,7 +188,6 @@ public class DropletMultiCreate {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_SSH_KEYS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<DropletCreateSshKeysInner> getSshKeys() {
         return sshKeys;
     }
@@ -480,5 +479,4 @@ public class DropletMultiCreate {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

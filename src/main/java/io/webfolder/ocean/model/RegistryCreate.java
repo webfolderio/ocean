@@ -171,7 +171,6 @@ public class RegistryCreate {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public RegionEnum getRegion() {
         return region;
     }
@@ -225,5 +224,4 @@ public class RegistryCreate {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

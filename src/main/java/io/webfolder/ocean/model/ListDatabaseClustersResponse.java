@@ -40,7 +40,6 @@ public class ListDatabaseClustersResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DATABASES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<DatabaseCluster> getDatabases() {
         return databases;
     }
@@ -90,5 +89,4 @@ public class ListDatabaseClustersResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

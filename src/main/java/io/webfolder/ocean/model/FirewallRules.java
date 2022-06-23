@@ -43,7 +43,6 @@ public class FirewallRules {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_INBOUND_RULES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<FirewallRulesInboundRulesInner> getInboundRules() {
         return inboundRules;
     }
@@ -127,5 +126,4 @@ public class FirewallRules {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

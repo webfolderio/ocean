@@ -100,7 +100,6 @@ public class VolumeAction {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_TYPE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getType() {
         return type;
     }
@@ -359,5 +358,4 @@ public class VolumeAction {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

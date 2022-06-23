@@ -20,7 +20,7 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.deser.std.StdDeserializer;
 import com.fasterxml.jackson.databind.ser.std.StdSerializer;
 
-import io.webfolder.ocean.JSON;
+import io.webfolder.ocean.client.internal.JSON;
 
 @JsonDeserialize(using = GetImageImageIdParameter.GetImageImageIdParameterDeserializer.class)
 @JsonSerialize(using = GetImageImageIdParameter.GetImageImageIdParameterSerializer.class)
@@ -173,5 +173,4 @@ public class GetImageImageIdParameter extends AbstractOpenApiSchema {
     public String getString() throws ClassCastException {
         return (String) super.getActualInstance();
     }
-
 }

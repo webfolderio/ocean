@@ -80,5 +80,4 @@ public class CreateDatabaseClusterResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

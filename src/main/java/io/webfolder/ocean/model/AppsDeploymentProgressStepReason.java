@@ -34,7 +34,6 @@ public class AppsDeploymentProgressStepReason {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_CODE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getCode() {
         return code;
     }
@@ -111,5 +110,4 @@ public class AppsDeploymentProgressStepReason {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

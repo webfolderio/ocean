@@ -105,7 +105,6 @@ public class Firewall {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getId() {
         return id;
     }
@@ -352,5 +351,4 @@ public class Firewall {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

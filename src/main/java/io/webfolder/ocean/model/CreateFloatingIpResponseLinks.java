@@ -44,7 +44,6 @@ public class CreateFloatingIpResponseLinks {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DROPLETS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<ActionLink> getDroplets() {
         return droplets;
     }
@@ -128,5 +127,4 @@ public class CreateFloatingIpResponseLinks {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

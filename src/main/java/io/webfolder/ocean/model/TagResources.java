@@ -53,7 +53,6 @@ public class TagResources {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_COUNT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Integer getCount() {
         return count;
     }
@@ -259,5 +258,4 @@ public class TagResources {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

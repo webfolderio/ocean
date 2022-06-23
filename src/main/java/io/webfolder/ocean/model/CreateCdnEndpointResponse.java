@@ -30,7 +30,6 @@ public class CreateCdnEndpointResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ENDPOINT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public CdnEndpoint getEndpoint() {
         return endpoint;
     }
@@ -80,5 +79,4 @@ public class CreateCdnEndpointResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

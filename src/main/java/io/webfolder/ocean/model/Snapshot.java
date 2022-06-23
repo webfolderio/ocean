@@ -363,5 +363,4 @@ public class Snapshot {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

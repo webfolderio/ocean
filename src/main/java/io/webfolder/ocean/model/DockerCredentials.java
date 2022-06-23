@@ -30,7 +30,6 @@ public class DockerCredentials {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_AUTHS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public DockerCredentialsAuths getAuths() {
         return auths;
     }
@@ -80,5 +79,4 @@ public class DockerCredentials {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

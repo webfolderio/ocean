@@ -44,7 +44,6 @@ public class AppsAssignAppAlertDestinationsRequest {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_EMAILS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<String> getEmails() {
         return emails;
     }
@@ -129,5 +128,4 @@ public class AppsAssignAppAlertDestinationsRequest {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

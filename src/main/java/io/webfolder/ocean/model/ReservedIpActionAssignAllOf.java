@@ -80,5 +80,4 @@ public class ReservedIpActionAssignAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

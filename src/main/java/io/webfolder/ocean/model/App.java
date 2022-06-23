@@ -108,7 +108,6 @@ public class App {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ACTIVE_DEPLOYMENT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public AppsDeployment getActiveDeployment() {
         return activeDeployment;
     }
@@ -424,5 +423,4 @@ public class App {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

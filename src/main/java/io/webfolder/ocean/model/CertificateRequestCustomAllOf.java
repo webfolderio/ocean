@@ -88,7 +88,6 @@ public class CertificateRequestCustomAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_CERTIFICATE_CHAIN)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getCertificateChain() {
         return certificateChain;
     }
@@ -142,5 +141,4 @@ public class CertificateRequestCustomAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

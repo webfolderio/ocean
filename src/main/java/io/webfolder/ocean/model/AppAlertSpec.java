@@ -43,7 +43,6 @@ public class AppAlertSpec {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_RULE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public AppAlertSpecRule getRule() {
         return rule;
     }
@@ -195,5 +194,4 @@ public class AppAlertSpec {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

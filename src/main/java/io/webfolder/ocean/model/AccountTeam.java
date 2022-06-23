@@ -34,7 +34,6 @@ public class AccountTeam {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_UUID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getUuid() {
         return uuid;
     }
@@ -109,5 +108,4 @@ public class AccountTeam {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

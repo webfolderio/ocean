@@ -108,5 +108,4 @@ public class SlackDetails {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

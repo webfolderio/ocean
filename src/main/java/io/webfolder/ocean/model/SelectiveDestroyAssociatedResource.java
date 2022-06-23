@@ -60,7 +60,6 @@ public class SelectiveDestroyAssociatedResource {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_FLOATING_IPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<String> getFloatingIps() {
         return floatingIps;
     }
@@ -250,5 +249,4 @@ public class SelectiveDestroyAssociatedResource {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

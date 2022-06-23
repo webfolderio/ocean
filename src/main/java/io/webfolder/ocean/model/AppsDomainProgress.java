@@ -40,7 +40,6 @@ public class AppsDomainProgress {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_STEPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<Object> getSteps() {
         return steps;
     }
@@ -90,5 +89,4 @@ public class AppsDomainProgress {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

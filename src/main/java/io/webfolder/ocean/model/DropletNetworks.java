@@ -48,7 +48,6 @@ public class DropletNetworks {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_V4)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<NetworkV4> getV4() {
         return v4;
     }
@@ -131,5 +130,4 @@ public class DropletNetworks {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

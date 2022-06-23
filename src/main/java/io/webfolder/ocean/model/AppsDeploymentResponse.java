@@ -30,7 +30,6 @@ public class AppsDeploymentResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DEPLOYMENT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public AppsDeployment getDeployment() {
         return deployment;
     }
@@ -80,5 +79,4 @@ public class AppsDeploymentResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

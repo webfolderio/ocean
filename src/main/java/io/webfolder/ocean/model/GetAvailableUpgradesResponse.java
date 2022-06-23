@@ -41,7 +41,6 @@ public class GetAvailableUpgradesResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_AVAILABLE_UPGRADE_VERSIONS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<KubernetesVersion> getAvailableUpgradeVersions() {
         return availableUpgradeVersions;
     }
@@ -91,5 +90,4 @@ public class GetAvailableUpgradesResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

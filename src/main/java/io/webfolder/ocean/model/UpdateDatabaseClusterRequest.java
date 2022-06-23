@@ -81,5 +81,4 @@ public class UpdateDatabaseClusterRequest {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

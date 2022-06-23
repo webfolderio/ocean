@@ -82,7 +82,6 @@ public class KubernetesNodePoolTaint {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_KEY)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getKey() {
         return key;
     }
@@ -190,5 +189,4 @@ public class KubernetesNodePoolTaint {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

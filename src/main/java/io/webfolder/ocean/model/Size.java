@@ -357,5 +357,4 @@ public class Size {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

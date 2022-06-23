@@ -40,7 +40,6 @@ public class ListDropletFirewallsResponseAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_FIREWALLS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<Firewall> getFirewalls() {
         return firewalls;
     }
@@ -91,5 +90,4 @@ public class ListDropletFirewallsResponseAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

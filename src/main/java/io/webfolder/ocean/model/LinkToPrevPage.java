@@ -30,7 +30,6 @@ public class LinkToPrevPage {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_PREV)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getPrev() {
         return prev;
     }
@@ -80,5 +79,4 @@ public class LinkToPrevPage {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

@@ -111,7 +111,6 @@ public class CertificateRequestCustom {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_TYPE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public TypeEnum getType() {
         return type;
     }
@@ -243,5 +242,4 @@ public class CertificateRequestCustom {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

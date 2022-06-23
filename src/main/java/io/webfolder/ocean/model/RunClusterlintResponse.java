@@ -30,7 +30,6 @@ public class RunClusterlintResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_RUN_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getRunId() {
         return runId;
     }
@@ -80,5 +79,4 @@ public class RunClusterlintResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

@@ -97,7 +97,6 @@ public class Action {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Integer getId() {
         return id;
     }
@@ -357,5 +356,4 @@ public class Action {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

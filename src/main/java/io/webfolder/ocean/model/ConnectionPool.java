@@ -176,7 +176,6 @@ public class ConnectionPool {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_CONNECTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public DatabaseClusterConnection getConnection() {
         return connection;
     }
@@ -260,5 +259,4 @@ public class ConnectionPool {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

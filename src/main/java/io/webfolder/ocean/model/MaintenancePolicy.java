@@ -96,7 +96,6 @@ public class MaintenancePolicy {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_START_TIME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getStartTime() {
         return startTime;
     }
@@ -189,5 +188,4 @@ public class MaintenancePolicy {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

@@ -47,7 +47,6 @@ public class ListCertificatesResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_CERTIFICATES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<Certificate> getCertificates() {
         return certificates;
     }
@@ -149,5 +148,4 @@ public class ListCertificatesResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

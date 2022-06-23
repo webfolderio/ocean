@@ -183,5 +183,4 @@ public class SnapshotAllOf1 {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

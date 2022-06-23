@@ -65,7 +65,6 @@ public class AppLogDestinationDefinition {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_PAPERTRAIL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public AppLogDestinationPapertrailSpec getPapertrail() {
         return papertrail;
     }
@@ -169,5 +168,4 @@ public class AppLogDestinationDefinition {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

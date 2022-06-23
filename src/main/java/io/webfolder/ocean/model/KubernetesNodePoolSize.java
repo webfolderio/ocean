@@ -30,7 +30,6 @@ public class KubernetesNodePoolSize {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_SIZE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getSize() {
         return size;
     }
@@ -80,5 +79,4 @@ public class KubernetesNodePoolSize {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

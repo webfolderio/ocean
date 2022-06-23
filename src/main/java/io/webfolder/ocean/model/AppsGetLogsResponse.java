@@ -43,7 +43,6 @@ public class AppsGetLogsResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_HISTORIC_URLS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<String> getHistoricUrls() {
         return historicUrls;
     }
@@ -121,5 +120,4 @@ public class AppsGetLogsResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

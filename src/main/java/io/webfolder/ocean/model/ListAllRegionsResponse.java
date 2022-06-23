@@ -68,7 +68,6 @@ public class ListAllRegionsResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_LINKS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public PageLinks getLinks() {
         return links;
     }
@@ -146,5 +145,4 @@ public class ListAllRegionsResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

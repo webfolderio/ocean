@@ -42,7 +42,6 @@ public class ClusterlintResultsDiagnosticsInner {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_CHECK_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getCheckName() {
         return checkName;
     }
@@ -171,5 +170,4 @@ public class ClusterlintResultsDiagnosticsInner {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

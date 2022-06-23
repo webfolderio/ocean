@@ -468,5 +468,4 @@ public class AlertPolicyRequest {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

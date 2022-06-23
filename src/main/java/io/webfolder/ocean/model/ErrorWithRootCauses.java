@@ -71,7 +71,6 @@ public class ErrorWithRootCauses {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_MESSAGES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<String> getMessages() {
         return messages;
     }
@@ -155,5 +154,4 @@ public class ErrorWithRootCauses {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

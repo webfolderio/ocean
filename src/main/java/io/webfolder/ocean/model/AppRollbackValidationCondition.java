@@ -118,7 +118,6 @@ public class AppRollbackValidationCondition {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_CODE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public CodeEnum getCode() {
         return code;
     }
@@ -228,5 +227,4 @@ public class AppRollbackValidationCondition {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

@@ -30,7 +30,6 @@ public class CreateKubernetesClusterResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_KUBERNETES_CLUSTER)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Cluster getKubernetesCluster() {
         return kubernetesCluster;
     }
@@ -80,5 +79,4 @@ public class CreateKubernetesClusterResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

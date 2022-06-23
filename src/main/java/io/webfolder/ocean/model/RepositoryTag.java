@@ -52,7 +52,6 @@ public class RepositoryTag {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_REGISTRY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getRegistryName() {
         return registryName;
     }
@@ -259,5 +258,4 @@ public class RepositoryTag {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

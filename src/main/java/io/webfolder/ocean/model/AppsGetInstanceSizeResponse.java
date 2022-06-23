@@ -30,7 +30,6 @@ public class AppsGetInstanceSizeResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_INSTANCE_SIZE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public AppsInstanceSize getInstanceSize() {
         return instanceSize;
     }
@@ -80,5 +79,4 @@ public class AppsGetInstanceSizeResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

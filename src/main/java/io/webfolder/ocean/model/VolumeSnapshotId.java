@@ -31,7 +31,6 @@ public class VolumeSnapshotId {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_SNAPSHOT_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getSnapshotId() {
         return snapshotId;
     }
@@ -81,5 +80,4 @@ public class VolumeSnapshotId {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

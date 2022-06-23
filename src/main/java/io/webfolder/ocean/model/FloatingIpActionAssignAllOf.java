@@ -80,5 +80,4 @@ public class FloatingIpActionAssignAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

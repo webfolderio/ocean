@@ -222,7 +222,6 @@ public class LoadBalancer {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public UUID getId() {
         return id;
     }
@@ -746,5 +745,4 @@ public class LoadBalancer {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

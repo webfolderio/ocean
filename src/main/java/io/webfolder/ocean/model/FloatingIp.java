@@ -40,7 +40,6 @@ public class FloatingIp {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_IP)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getIp() {
         return ip;
     }
@@ -167,5 +166,4 @@ public class FloatingIp {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

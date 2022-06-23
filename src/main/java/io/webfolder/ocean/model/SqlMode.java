@@ -80,5 +80,4 @@ public class SqlMode {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

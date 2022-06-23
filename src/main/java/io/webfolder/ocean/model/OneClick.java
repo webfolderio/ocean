@@ -108,5 +108,4 @@ public class OneClick {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

@@ -40,7 +40,6 @@ public class ListReplicasResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_REPLICAS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<DatabaseReplica> getReplicas() {
         return replicas;
     }
@@ -90,5 +89,4 @@ public class ListReplicasResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

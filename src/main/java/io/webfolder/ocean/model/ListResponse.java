@@ -40,7 +40,6 @@ public class ListResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_1CLICKS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<OneClick> get1clicks() {
         return _1clicks;
     }
@@ -90,5 +89,4 @@ public class ListResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

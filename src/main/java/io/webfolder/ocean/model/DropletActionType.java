@@ -143,5 +143,4 @@ public class DropletActionType {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

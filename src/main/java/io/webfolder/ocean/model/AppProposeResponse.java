@@ -51,7 +51,6 @@ public class AppProposeResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_APP_IS_STATIC)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Boolean getAppIsStatic() {
         return appIsStatic;
     }
@@ -267,5 +266,4 @@ public class AppProposeResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

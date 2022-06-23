@@ -53,7 +53,6 @@ public class AppServiceSpecHealthCheck {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_FAILURE_THRESHOLD)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Integer getFailureThreshold() {
         return failureThreshold;
     }
@@ -263,5 +262,4 @@ public class AppServiceSpecHealthCheck {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

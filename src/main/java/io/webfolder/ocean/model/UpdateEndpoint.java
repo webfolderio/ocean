@@ -85,7 +85,6 @@ public class UpdateEndpoint {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_TTL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public TtlEnum getTtl() {
         return ttl;
     }
@@ -189,5 +188,4 @@ public class UpdateEndpoint {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

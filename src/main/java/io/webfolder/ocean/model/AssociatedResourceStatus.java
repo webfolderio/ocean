@@ -41,7 +41,6 @@ public class AssociatedResourceStatus {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DROPLET)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public DestroyedAssociatedResource getDroplet() {
         return droplet;
     }
@@ -170,5 +169,4 @@ public class AssociatedResourceStatus {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

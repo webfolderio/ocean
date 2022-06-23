@@ -33,7 +33,6 @@ public class CreateFloatingIpResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_FLOATING_IP)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public FloatingIp getFloatingIp() {
         return floatingIp;
     }
@@ -109,5 +108,4 @@ public class CreateFloatingIpResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

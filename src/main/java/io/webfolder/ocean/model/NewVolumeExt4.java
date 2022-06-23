@@ -14,7 +14,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 
-import io.webfolder.ocean.JSON;
+import io.webfolder.ocean.client.internal.JSON;
 
 /**
  * NewVolumeExt4
@@ -85,7 +85,6 @@ public class NewVolumeExt4 extends VolumeWriteFileSystemType {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getId() {
         return id;
     }

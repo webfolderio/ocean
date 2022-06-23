@@ -78,7 +78,6 @@ public class AppsImageSourceSpec {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_REGISTRY)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getRegistry() {
         return registry;
     }
@@ -207,5 +206,4 @@ public class AppsImageSourceSpec {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

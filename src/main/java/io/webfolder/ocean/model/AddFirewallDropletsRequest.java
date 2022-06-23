@@ -87,5 +87,4 @@ public class AddFirewallDropletsRequest {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

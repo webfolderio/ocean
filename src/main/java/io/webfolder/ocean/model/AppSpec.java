@@ -123,7 +123,6 @@ public class AppSpec {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public RegionEnum getRegion() {
         return region;
     }
@@ -412,5 +411,4 @@ public class AppSpec {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

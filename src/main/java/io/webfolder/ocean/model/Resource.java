@@ -85,7 +85,6 @@ public class Resource {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_URN)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getUrn() {
         return urn;
     }
@@ -212,5 +211,4 @@ public class Resource {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

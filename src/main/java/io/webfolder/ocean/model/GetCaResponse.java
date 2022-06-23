@@ -80,5 +80,4 @@ public class GetCaResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

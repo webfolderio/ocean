@@ -30,7 +30,6 @@ public class MetaProperties {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_TOTAL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Integer getTotal() {
         return total;
     }
@@ -80,5 +79,4 @@ public class MetaProperties {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

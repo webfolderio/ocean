@@ -56,7 +56,6 @@ public class ListDropletAssociatedResourcesResponseAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_RESERVED_IPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<AssociatedResource> getReservedIps() {
         return reservedIps;
     }
@@ -243,5 +242,4 @@ public class ListDropletAssociatedResourcesResponseAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

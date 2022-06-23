@@ -118,5 +118,4 @@ public class OneClickCreate {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

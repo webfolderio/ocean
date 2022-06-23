@@ -40,7 +40,6 @@ public class ListDropletKernelsResponseAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_KERNELS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<Kernel> getKernels() {
         return kernels;
     }
@@ -90,5 +89,4 @@ public class ListDropletKernelsResponseAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

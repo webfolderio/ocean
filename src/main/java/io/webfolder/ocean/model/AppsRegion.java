@@ -68,7 +68,6 @@ public class AppsRegion {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_CONTINENT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getContinent() {
         return continent;
     }
@@ -215,5 +214,4 @@ public class AppsRegion {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

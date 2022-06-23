@@ -80,5 +80,4 @@ public class AppLogDestinationPapertrailSpec {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

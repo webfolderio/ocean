@@ -58,7 +58,6 @@ public class AppsDeploymentProgressStep {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_COMPONENT_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getComponentName() {
         return componentName;
     }
@@ -301,5 +300,4 @@ public class AppsDeploymentProgressStep {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

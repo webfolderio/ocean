@@ -30,7 +30,6 @@ public class ResetAuthRequest {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_MYSQL_SETTINGS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public MysqlSettings getMysqlSettings() {
         return mysqlSettings;
     }
@@ -80,5 +79,4 @@ public class ResetAuthRequest {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

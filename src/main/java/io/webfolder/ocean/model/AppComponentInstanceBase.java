@@ -88,7 +88,6 @@ public class AppComponentInstanceBase {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_INSTANCE_COUNT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Long getInstanceCount() {
         return instanceCount;
     }
@@ -164,5 +163,4 @@ public class AppComponentInstanceBase {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

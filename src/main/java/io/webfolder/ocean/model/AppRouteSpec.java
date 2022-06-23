@@ -34,7 +34,6 @@ public class AppRouteSpec {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_PATH)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getPath() {
         return path;
     }
@@ -115,5 +114,4 @@ public class AppRouteSpec {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

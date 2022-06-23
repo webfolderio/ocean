@@ -44,7 +44,6 @@ public class ListInvoicesResponseAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_INVOICES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<InvoicePreview> getInvoices() {
         return invoices;
     }
@@ -120,5 +119,4 @@ public class ListInvoicesResponseAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

@@ -57,7 +57,6 @@ public class NewVolumeXfsAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_FILESYSTEM_LABEL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getFilesystemLabel() {
         return filesystemLabel;
     }
@@ -109,5 +108,4 @@ public class NewVolumeXfsAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

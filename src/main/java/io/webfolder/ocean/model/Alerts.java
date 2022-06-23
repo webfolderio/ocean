@@ -120,5 +120,4 @@ public class Alerts {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

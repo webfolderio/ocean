@@ -30,7 +30,6 @@ public class GetDropletResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DROPLET)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Droplet getDroplet() {
         return droplet;
     }
@@ -80,5 +79,4 @@ public class GetDropletResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

@@ -77,7 +77,6 @@ public class NetworkV4 {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_IP_ADDRESS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getIpAddress() {
         return ipAddress;
     }
@@ -205,5 +204,4 @@ public class NetworkV4 {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

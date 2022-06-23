@@ -127,5 +127,4 @@ public class MysqlSettings {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

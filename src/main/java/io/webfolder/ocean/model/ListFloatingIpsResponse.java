@@ -47,7 +47,6 @@ public class ListFloatingIpsResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_FLOATING_IPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<FloatingIp> getFloatingIps() {
         return floatingIps;
     }
@@ -149,5 +148,4 @@ public class ListFloatingIpsResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

@@ -30,7 +30,6 @@ public class DatabaseConfig {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_CONFIG)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public GetDatabaseConfigResponseConfig getConfig() {
         return config;
     }
@@ -80,5 +79,4 @@ public class DatabaseConfig {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

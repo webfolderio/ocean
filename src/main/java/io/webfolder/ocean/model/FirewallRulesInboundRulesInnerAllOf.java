@@ -81,5 +81,4 @@ public class FirewallRulesInboundRulesInnerAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

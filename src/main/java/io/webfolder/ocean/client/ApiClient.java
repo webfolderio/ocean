@@ -1,4 +1,4 @@
-package io.webfolder.ocean;
+package io.webfolder.ocean.client;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
 
@@ -25,6 +25,8 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+
+import io.webfolder.ocean.client.internal.Pair;
 
 /**
  * Configuration and utility class for API clients.

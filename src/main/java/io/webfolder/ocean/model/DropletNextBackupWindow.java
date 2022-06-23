@@ -37,7 +37,6 @@ public class DropletNextBackupWindow {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_START)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public OffsetDateTime getStart() {
         return start;
     }
@@ -114,5 +113,4 @@ public class DropletNextBackupWindow {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

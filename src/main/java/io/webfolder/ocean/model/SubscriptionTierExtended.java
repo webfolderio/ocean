@@ -74,7 +74,6 @@ public class SubscriptionTierExtended {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ELIGIBLE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Boolean getEligible() {
         return eligible;
     }
@@ -159,5 +158,4 @@ public class SubscriptionTierExtended {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

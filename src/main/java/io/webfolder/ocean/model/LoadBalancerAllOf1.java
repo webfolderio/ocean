@@ -40,7 +40,6 @@ public class LoadBalancerAllOf1 {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DROPLET_IDS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<Integer> getDropletIds() {
         return dropletIds;
     }
@@ -90,5 +89,4 @@ public class LoadBalancerAllOf1 {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

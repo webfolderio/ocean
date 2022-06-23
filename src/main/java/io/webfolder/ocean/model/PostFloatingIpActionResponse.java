@@ -30,7 +30,6 @@ public class PostFloatingIpActionResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ACTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Action getAction() {
         return action;
     }
@@ -80,5 +79,4 @@ public class PostFloatingIpActionResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

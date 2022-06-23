@@ -47,7 +47,6 @@ public class ListProjectResourcesResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_RESOURCES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<Resource> getResources() {
         return resources;
     }
@@ -149,5 +148,4 @@ public class ListProjectResourcesResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

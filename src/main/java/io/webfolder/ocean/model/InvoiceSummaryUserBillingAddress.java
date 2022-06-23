@@ -57,7 +57,6 @@ public class InvoiceSummaryUserBillingAddress {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ADDRESS_LINE1)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getAddressLine1() {
         return addressLine1;
     }
@@ -291,5 +290,4 @@ public class InvoiceSummaryUserBillingAddress {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

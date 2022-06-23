@@ -47,7 +47,6 @@ public class ListRegistryRepositoriesResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_REPOSITORIES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<Repository> getRepositories() {
         return repositories;
     }
@@ -149,5 +148,4 @@ public class ListRegistryRepositoriesResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

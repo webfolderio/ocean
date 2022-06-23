@@ -47,7 +47,6 @@ public class ListReservedIpsResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_RESERVED_IPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<ReservedIp> getReservedIps() {
         return reservedIps;
     }
@@ -149,5 +148,4 @@ public class ListReservedIpsResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

@@ -33,7 +33,6 @@ public class AppAlertProgressStepReason {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_CODE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getCode() {
         return code;
     }
@@ -109,5 +108,4 @@ public class AppAlertProgressStepReason {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

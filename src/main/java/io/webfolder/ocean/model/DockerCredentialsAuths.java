@@ -31,7 +31,6 @@ public class DockerCredentialsAuths {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_REGISTRY_DIGITALOCEAN_COM)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public DockerCredentialsAuthsRegistryDigitaloceanCom getRegistryDigitaloceanCom() {
         return registryDigitaloceanCom;
     }
@@ -81,5 +80,4 @@ public class DockerCredentialsAuths {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

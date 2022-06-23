@@ -144,7 +144,6 @@ public class Certificate {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public UUID getId() {
         return id;
     }
@@ -339,5 +338,4 @@ public class Certificate {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

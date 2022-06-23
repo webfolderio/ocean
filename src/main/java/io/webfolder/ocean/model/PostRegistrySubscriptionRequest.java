@@ -69,7 +69,6 @@ public class PostRegistrySubscriptionRequest {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_TIER_SLUG)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public TierSlugEnum getTierSlug() {
         return tierSlug;
     }
@@ -119,5 +118,4 @@ public class PostRegistrySubscriptionRequest {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

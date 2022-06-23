@@ -33,7 +33,6 @@ public class RepositoryBlob {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DIGEST)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getDigest() {
         return digest;
     }
@@ -109,5 +108,4 @@ public class RepositoryBlob {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

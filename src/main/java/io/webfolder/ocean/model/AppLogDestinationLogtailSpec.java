@@ -30,7 +30,6 @@ public class AppLogDestinationLogtailSpec {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_TOKEN)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getToken() {
         return token;
     }
@@ -80,5 +79,4 @@ public class AppLogDestinationLogtailSpec {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

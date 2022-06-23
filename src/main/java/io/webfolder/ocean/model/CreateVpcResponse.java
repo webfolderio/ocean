@@ -30,7 +30,6 @@ public class CreateVpcResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_VPC)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Vpc getVpc() {
         return vpc;
     }
@@ -80,5 +79,4 @@ public class CreateVpcResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

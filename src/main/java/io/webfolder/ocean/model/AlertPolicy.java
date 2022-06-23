@@ -492,5 +492,4 @@ public class AlertPolicy {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

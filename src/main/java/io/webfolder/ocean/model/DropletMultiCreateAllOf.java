@@ -91,5 +91,4 @@ public class DropletMultiCreateAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

@@ -51,7 +51,6 @@ public class AppStaticSiteSpecAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_INDEX_DOCUMENT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getIndexDocument() {
         return indexDocument;
     }
@@ -246,5 +245,4 @@ public class AppStaticSiteSpecAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

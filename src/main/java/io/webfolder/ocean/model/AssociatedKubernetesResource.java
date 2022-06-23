@@ -33,7 +33,6 @@ public class AssociatedKubernetesResource {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getId() {
         return id;
     }
@@ -109,5 +108,4 @@ public class AssociatedKubernetesResource {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

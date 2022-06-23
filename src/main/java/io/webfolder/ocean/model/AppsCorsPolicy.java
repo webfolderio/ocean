@@ -57,7 +57,6 @@ public class AppsCorsPolicy {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ALLOW_ORIGINS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<AppsStringMatch> getAllowOrigins() {
         return allowOrigins;
     }
@@ -268,5 +267,4 @@ public class AppsCorsPolicy {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

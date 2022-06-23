@@ -30,7 +30,6 @@ public class LinkToLastPage {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_LAST)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getLast() {
         return last;
     }
@@ -80,5 +79,4 @@ public class LinkToLastPage {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

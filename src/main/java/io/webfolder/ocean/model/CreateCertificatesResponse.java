@@ -30,7 +30,6 @@ public class CreateCertificatesResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_CERTIFICATE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Certificate getCertificate() {
         return certificate;
     }
@@ -80,5 +79,4 @@ public class CreateCertificatesResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

@@ -151,5 +151,4 @@ public class MetricsData {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

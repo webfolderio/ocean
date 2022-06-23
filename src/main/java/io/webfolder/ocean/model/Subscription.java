@@ -47,7 +47,6 @@ public class Subscription {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_TIER)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public SubscriptionTierBase getTier() {
         return tier;
     }
@@ -126,5 +125,4 @@ public class Subscription {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

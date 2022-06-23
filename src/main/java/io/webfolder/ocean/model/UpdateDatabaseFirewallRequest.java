@@ -40,7 +40,6 @@ public class UpdateDatabaseFirewallRequest {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_RULES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<FirewallRule> getRules() {
         return rules;
     }
@@ -90,5 +89,4 @@ public class UpdateDatabaseFirewallRequest {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

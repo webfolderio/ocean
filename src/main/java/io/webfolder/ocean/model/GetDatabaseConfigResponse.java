@@ -80,5 +80,4 @@ public class GetDatabaseConfigResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

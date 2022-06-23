@@ -40,7 +40,6 @@ public class AppsListRegionsResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_REGIONS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<AppsRegion> getRegions() {
         return regions;
     }
@@ -90,5 +89,4 @@ public class AppsListRegionsResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

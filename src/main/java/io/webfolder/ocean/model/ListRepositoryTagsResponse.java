@@ -47,7 +47,6 @@ public class ListRepositoryTagsResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_TAGS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<RepositoryTag> getTags() {
         return tags;
     }
@@ -149,5 +148,4 @@ public class ListRepositoryTagsResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

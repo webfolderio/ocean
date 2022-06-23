@@ -54,7 +54,6 @@ public class AppAlert {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getId() {
         return id;
     }
@@ -267,5 +266,4 @@ public class AppAlert {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

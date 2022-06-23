@@ -30,7 +30,6 @@ public class KubernetesOptions {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_OPTIONS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public KubernetesOptionsOptions getOptions() {
         return options;
     }
@@ -80,5 +79,4 @@ public class KubernetesOptions {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

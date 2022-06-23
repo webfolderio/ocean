@@ -47,7 +47,6 @@ public class ListCdnEndpointsResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ENDPOINTS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<CdnEndpoint> getEndpoints() {
         return endpoints;
     }
@@ -149,5 +148,4 @@ public class ListCdnEndpointsResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

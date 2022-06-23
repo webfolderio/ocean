@@ -40,7 +40,6 @@ public class ListAllKubernetesClustersResponseAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_KUBERNETES_CLUSTERS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<Cluster> getKubernetesClusters() {
         return kubernetesClusters;
     }
@@ -91,5 +90,4 @@ public class ListAllKubernetesClustersResponseAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

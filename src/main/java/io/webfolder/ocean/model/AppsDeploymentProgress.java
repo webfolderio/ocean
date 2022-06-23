@@ -53,7 +53,6 @@ public class AppsDeploymentProgress {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ERROR_STEPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Integer getErrorSteps() {
         return errorSteps;
     }
@@ -275,5 +274,4 @@ public class AppsDeploymentProgress {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

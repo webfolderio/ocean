@@ -30,7 +30,6 @@ public class GetDefaultProjectResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_PROJECT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Project getProject() {
         return project;
     }
@@ -80,5 +79,4 @@ public class GetDefaultProjectResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

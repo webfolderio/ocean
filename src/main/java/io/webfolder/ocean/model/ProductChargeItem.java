@@ -37,7 +37,6 @@ public class ProductChargeItem {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_AMOUNT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getAmount() {
         return amount;
     }
@@ -139,5 +138,4 @@ public class ProductChargeItem {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

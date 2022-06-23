@@ -80,5 +80,4 @@ public class VolumeActionPostResizeAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

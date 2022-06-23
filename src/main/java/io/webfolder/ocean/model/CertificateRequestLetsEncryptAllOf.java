@@ -90,5 +90,4 @@ public class CertificateRequestLetsEncryptAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

@@ -80,5 +80,4 @@ public class AddDatabaseResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

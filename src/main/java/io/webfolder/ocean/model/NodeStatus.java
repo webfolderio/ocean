@@ -72,7 +72,6 @@ public class NodeStatus {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_STATE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public StateEnum getState() {
         return state;
     }
@@ -122,5 +121,4 @@ public class NodeStatus {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

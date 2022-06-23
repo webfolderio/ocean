@@ -30,7 +30,6 @@ public class GetNodePoolResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_NODE_POOL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public KubernetesNodePool getNodePool() {
         return nodePool;
     }
@@ -80,5 +79,4 @@ public class GetNodePoolResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

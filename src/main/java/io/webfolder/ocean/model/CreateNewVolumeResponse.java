@@ -30,7 +30,6 @@ public class CreateNewVolumeResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_VOLUME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public VolumeFull getVolume() {
         return volume;
     }
@@ -80,5 +79,4 @@ public class CreateNewVolumeResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

@@ -32,7 +32,6 @@ public class ResourceLinks {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_SELF)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public URI getSelf() {
         return self;
     }
@@ -82,5 +81,4 @@ public class ResourceLinks {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

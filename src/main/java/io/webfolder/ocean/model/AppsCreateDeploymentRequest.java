@@ -30,7 +30,6 @@ public class AppsCreateDeploymentRequest {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_FORCE_BUILD)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Boolean getForceBuild() {
         return forceBuild;
     }
@@ -80,5 +79,4 @@ public class AppsCreateDeploymentRequest {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

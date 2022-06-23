@@ -40,7 +40,6 @@ public class ListAllLoadBalancersResponseAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_LOAD_BALANCERS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<LoadBalancer> getLoadBalancers() {
         return loadBalancers;
     }
@@ -91,5 +90,4 @@ public class ListAllLoadBalancersResponseAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

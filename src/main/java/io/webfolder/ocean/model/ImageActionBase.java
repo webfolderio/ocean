@@ -119,5 +119,4 @@ public class ImageActionBase {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

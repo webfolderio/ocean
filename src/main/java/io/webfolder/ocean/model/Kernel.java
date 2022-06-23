@@ -43,7 +43,6 @@ public class Kernel {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Integer getId() {
         return id;
     }
@@ -146,5 +145,4 @@ public class Kernel {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

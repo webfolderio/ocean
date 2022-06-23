@@ -40,7 +40,6 @@ public class ListRegistryRepositoriesV2ResponseAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_REPOSITORIES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<RepositoryV2> getRepositories() {
         return repositories;
     }
@@ -91,5 +90,4 @@ public class ListRegistryRepositoriesV2ResponseAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

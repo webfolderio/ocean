@@ -68,7 +68,6 @@ public class KubernetesNodePoolBase {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public UUID getId() {
         return id;
     }
@@ -361,5 +360,4 @@ public class KubernetesNodePoolBase {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

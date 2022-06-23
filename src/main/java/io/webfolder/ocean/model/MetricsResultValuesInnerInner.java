@@ -22,7 +22,7 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.deser.std.StdDeserializer;
 import com.fasterxml.jackson.databind.ser.std.StdSerializer;
 
-import io.webfolder.ocean.JSON;
+import io.webfolder.ocean.client.internal.JSON;
 
 @JsonDeserialize(using = MetricsResultValuesInnerInner.MetricsResultValuesInnerInnerDeserializer.class)
 @JsonSerialize(using = MetricsResultValuesInnerInner.MetricsResultValuesInnerInnerSerializer.class)
@@ -225,5 +225,4 @@ public class MetricsResultValuesInnerInner extends AbstractOpenApiSchema {
     public String getString() throws ClassCastException {
         return (String) super.getActualInstance();
     }
-
 }

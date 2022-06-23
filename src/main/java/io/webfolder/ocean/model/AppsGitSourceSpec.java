@@ -33,7 +33,6 @@ public class AppsGitSourceSpec {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_BRANCH)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getBranch() {
         return branch;
     }
@@ -110,5 +109,4 @@ public class AppsGitSourceSpec {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

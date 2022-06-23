@@ -47,7 +47,6 @@ public class ListDropletSnapshotsResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_SNAPSHOTS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<DropletSnapshot> getSnapshots() {
         return snapshots;
     }
@@ -149,5 +148,4 @@ public class ListDropletSnapshotsResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

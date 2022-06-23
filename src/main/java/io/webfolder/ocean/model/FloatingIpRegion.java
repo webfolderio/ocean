@@ -213,5 +213,4 @@ public class FloatingIpRegion {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

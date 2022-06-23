@@ -37,7 +37,6 @@ public class FirewallAllOfPendingChanges {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DROPLET_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Integer getDropletId() {
         return dropletId;
     }
@@ -139,5 +138,4 @@ public class FirewallAllOfPendingChanges {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

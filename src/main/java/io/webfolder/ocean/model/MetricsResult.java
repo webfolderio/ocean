@@ -122,5 +122,4 @@ public class MetricsResult {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

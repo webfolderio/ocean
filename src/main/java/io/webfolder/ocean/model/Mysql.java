@@ -155,7 +155,6 @@ public class Mysql {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_BACKUP_HOUR)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Integer getBackupHour() {
         return backupHour;
     }
@@ -892,5 +891,4 @@ public class Mysql {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

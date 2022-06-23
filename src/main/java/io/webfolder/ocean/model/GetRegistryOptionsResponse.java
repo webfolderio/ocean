@@ -30,7 +30,6 @@ public class GetRegistryOptionsResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_OPTIONS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public GetRegistryOptionsResponseOptions getOptions() {
         return options;
     }
@@ -80,5 +79,4 @@ public class GetRegistryOptionsResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

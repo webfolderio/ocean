@@ -109,5 +109,4 @@ public class SingleDropletResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

@@ -80,5 +80,4 @@ public class AddUserResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

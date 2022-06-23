@@ -30,7 +30,6 @@ public class GetUserInformationResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ACCOUNT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Account getAccount() {
         return account;
     }
@@ -80,5 +79,4 @@ public class GetUserInformationResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

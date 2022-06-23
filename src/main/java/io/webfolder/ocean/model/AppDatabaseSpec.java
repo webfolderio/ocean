@@ -93,7 +93,6 @@ public class AppDatabaseSpec {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_CLUSTER_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getClusterName() {
         return clusterName;
     }
@@ -299,5 +298,4 @@ public class AppDatabaseSpec {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

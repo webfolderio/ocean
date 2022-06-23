@@ -80,5 +80,4 @@ public class AssignToDroplet1 {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

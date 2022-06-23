@@ -81,5 +81,4 @@ public class VolumeActionPostDetachAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

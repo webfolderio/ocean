@@ -76,5 +76,4 @@ public class Ca {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

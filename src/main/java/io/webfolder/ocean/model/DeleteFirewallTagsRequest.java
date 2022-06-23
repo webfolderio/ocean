@@ -81,5 +81,4 @@ public class DeleteFirewallTagsRequest {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

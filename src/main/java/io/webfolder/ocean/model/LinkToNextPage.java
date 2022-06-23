@@ -30,7 +30,6 @@ public class LinkToNextPage {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_NEXT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getNext() {
         return next;
     }
@@ -80,5 +79,4 @@ public class LinkToNextPage {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

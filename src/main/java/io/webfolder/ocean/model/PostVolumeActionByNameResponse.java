@@ -30,7 +30,6 @@ public class PostVolumeActionByNameResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ACTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public VolumeAction getAction() {
         return action;
     }
@@ -80,5 +79,4 @@ public class PostVolumeActionByNameResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

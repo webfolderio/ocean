@@ -30,7 +30,6 @@ public class DropletActionRestoreAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_IMAGE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Integer getImage() {
         return image;
     }
@@ -80,5 +79,4 @@ public class DropletActionRestoreAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

@@ -122,5 +122,4 @@ public class AddFirewallRulesRequest {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

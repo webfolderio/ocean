@@ -33,7 +33,6 @@ public class ConnectionPools {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_POOLS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<ConnectionPool> getPools() {
         return pools;
     }
@@ -77,5 +76,4 @@ public class ConnectionPools {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

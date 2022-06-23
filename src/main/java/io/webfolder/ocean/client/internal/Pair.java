@@ -1,4 +1,4 @@
-package io.webfolder.ocean;
+package io.webfolder.ocean.client.internal;
 
 public class Pair {
     private String name = "";

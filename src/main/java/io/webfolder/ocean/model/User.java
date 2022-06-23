@@ -30,7 +30,6 @@ public class User {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_KUBERNETES_CLUSTER_USER)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public UserKubernetesClusterUser getKubernetesClusterUser() {
         return kubernetesClusterUser;
     }
@@ -80,5 +79,4 @@ public class User {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

@@ -82,5 +82,4 @@ public class ValidateRegistry {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

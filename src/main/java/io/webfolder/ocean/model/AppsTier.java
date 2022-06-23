@@ -43,7 +43,6 @@ public class AppsTier {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_BUILD_SECONDS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getBuildSeconds() {
         return buildSeconds;
     }
@@ -196,5 +195,4 @@ public class AppsTier {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

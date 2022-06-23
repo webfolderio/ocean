@@ -33,7 +33,6 @@ public class ForwardLinks {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_LAST)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getLast() {
         return last;
     }
@@ -108,5 +107,4 @@ public class ForwardLinks {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

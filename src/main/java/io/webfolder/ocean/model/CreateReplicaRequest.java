@@ -137,7 +137,6 @@ public class CreateReplicaRequest {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getRegion() {
         return region;
     }
@@ -364,5 +363,4 @@ public class CreateReplicaRequest {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

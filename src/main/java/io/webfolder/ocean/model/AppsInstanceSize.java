@@ -61,7 +61,6 @@ public class AppsInstanceSize {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_CPU_TYPE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public InstanceSizeCpuType getCpuType() {
         return cpuType;
     }
@@ -345,5 +344,4 @@ public class AppsInstanceSize {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

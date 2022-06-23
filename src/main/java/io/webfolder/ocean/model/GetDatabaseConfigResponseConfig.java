@@ -20,7 +20,7 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.deser.std.StdDeserializer;
 import com.fasterxml.jackson.databind.ser.std.StdSerializer;
 
-import io.webfolder.ocean.JSON;
+import io.webfolder.ocean.client.internal.JSON;
 
 @JsonDeserialize(using = GetDatabaseConfigResponseConfig.GetDatabaseConfigResponseConfigDeserializer.class)
 @JsonSerialize(using = GetDatabaseConfigResponseConfig.GetDatabaseConfigResponseConfigSerializer.class)
@@ -209,5 +209,4 @@ public class GetDatabaseConfigResponseConfig extends AbstractOpenApiSchema {
     public Redis getRedis() throws ClassCastException {
         return (Redis) super.getActualInstance();
     }
-
 }

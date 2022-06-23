@@ -30,7 +30,6 @@ public class CreateDatabaseClusterRequestAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_BACKUP_RESTORE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public DatabaseBackup getBackupRestore() {
         return backupRestore;
     }
@@ -81,5 +80,4 @@ public class CreateDatabaseClusterRequestAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

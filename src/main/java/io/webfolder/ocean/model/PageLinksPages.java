@@ -20,7 +20,7 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.deser.std.StdDeserializer;
 import com.fasterxml.jackson.databind.ser.std.StdSerializer;
 
-import io.webfolder.ocean.JSON;
+import io.webfolder.ocean.client.internal.JSON;
 
 @JsonDeserialize(using = PageLinksPages.PageLinksPagesDeserializer.class)
 @JsonSerialize(using = PageLinksPages.PageLinksPagesSerializer.class)
@@ -208,5 +208,4 @@ public class PageLinksPages extends AbstractOpenApiSchema {
     public Object getObject() throws ClassCastException {
         return (Object) super.getActualInstance();
     }
-
 }

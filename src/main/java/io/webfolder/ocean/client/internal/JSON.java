@@ -1,6 +1,5 @@
-package io.webfolder.ocean;
+package io.webfolder.ocean.client.internal;
 
-import java.text.DateFormat;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -12,41 +11,22 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.MapperFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import com.fasterxml.jackson.databind.json.JsonMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 
 public class JSON {
     private ObjectMapper mapper;
 
-    @SuppressWarnings("deprecation")
-    public JSON() {
-        mapper = new ObjectMapper();
-        mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
-        mapper.configure(MapperFeature.ALLOW_COERCION_OF_SCALARS, false);
-        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, true);
-        mapper.configure(DeserializationFeature.FAIL_ON_INVALID_SUBTYPE, true);
-        mapper.disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS);
-        mapper.enable(SerializationFeature.WRITE_ENUMS_USING_TO_STRING);
-        mapper.enable(DeserializationFeature.READ_ENUMS_USING_TO_STRING);
-        mapper.setDateFormat(new RFC3339DateFormat());
+    private JSON() {
+        mapper = JsonMapper.builder().serializationInclusion(JsonInclude.Include.NON_NULL)
+                .configure(MapperFeature.ALLOW_COERCION_OF_SCALARS, false)
+                .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, true)
+                .configure(DeserializationFeature.FAIL_ON_INVALID_SUBTYPE, true)
+                .disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS)
+                .enable(SerializationFeature.WRITE_ENUMS_USING_TO_STRING)
+                .enable(DeserializationFeature.READ_ENUMS_USING_TO_STRING).defaultDateFormat(new RFC3339DateFormat())
+                .build();
         mapper.registerModule(new JavaTimeModule());
-    }
-
-    /**
-     * Set the date format for JSON (de)serialization with Date properties.
-     *
-     * @param dateFormat Date format
-     */
-    public void setDateFormat(DateFormat dateFormat) {
-        mapper.setDateFormat(dateFormat);
-    }
-
-    /**
-     * Get the object mapper
-     *
-     * @return object mapper
-     */
-    public ObjectMapper getMapper() {
-        return mapper;
     }
 
     /**
@@ -238,14 +218,5 @@ public class JSON {
      */
     public static JSON getDefault() {
         return json;
-    }
-
-    /**
-     * Set the default JSON instance.
-     *
-     * @param json JSON instance to be used
-     */
-    public static void setDefault(JSON json) {
-        JSON.json = json;
     }
 }

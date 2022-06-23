@@ -75,7 +75,6 @@ public class ImageNewCustom {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DISTRIBUTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Distribution getDistribution() {
         return distribution;
     }
@@ -242,5 +241,4 @@ public class ImageNewCustom {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

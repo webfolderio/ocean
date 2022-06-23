@@ -30,7 +30,6 @@ public class CreateSshKeyResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_SSH_KEY)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public SshKey getSshKey() {
         return sshKey;
     }
@@ -80,5 +79,4 @@ public class CreateSshKeyResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

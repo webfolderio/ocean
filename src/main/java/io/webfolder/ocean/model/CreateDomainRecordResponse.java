@@ -30,7 +30,6 @@ public class CreateDomainRecordResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DOMAIN_RECORD)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public DomainRecord getDomainRecord() {
         return domainRecord;
     }
@@ -80,5 +79,4 @@ public class CreateDomainRecordResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

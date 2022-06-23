@@ -39,7 +39,6 @@ public class VolumeFullAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Object getRegion() {
         return region;
     }
@@ -135,5 +134,4 @@ public class VolumeFullAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

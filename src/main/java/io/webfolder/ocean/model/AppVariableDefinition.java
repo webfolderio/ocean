@@ -143,7 +143,6 @@ public class AppVariableDefinition {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_SCOPE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public ScopeEnum getScope() {
         return scope;
     }
@@ -250,5 +249,4 @@ public class AppVariableDefinition {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

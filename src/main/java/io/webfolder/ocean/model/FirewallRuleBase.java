@@ -153,5 +153,4 @@ public class FirewallRuleBase {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

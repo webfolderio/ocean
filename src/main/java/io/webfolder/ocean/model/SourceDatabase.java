@@ -33,7 +33,6 @@ public class SourceDatabase {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_SOURCE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public SourceDatabaseSource getSource() {
         return source;
     }
@@ -109,5 +108,4 @@ public class SourceDatabase {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

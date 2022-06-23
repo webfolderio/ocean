@@ -30,7 +30,6 @@ public class GetRegistrySubscriptionResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_SUBSCRIPTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Subscription getSubscription() {
         return subscription;
     }
@@ -80,5 +79,4 @@ public class GetRegistrySubscriptionResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

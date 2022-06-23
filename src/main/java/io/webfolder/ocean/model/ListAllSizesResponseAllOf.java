@@ -87,5 +87,4 @@ public class ListAllSizesResponseAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

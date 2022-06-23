@@ -47,7 +47,6 @@ public class KubernetesOptionsOptions {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_REGIONS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<KubernetesRegion> getRegions() {
         return regions;
     }
@@ -165,5 +164,4 @@ public class KubernetesOptionsOptions {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

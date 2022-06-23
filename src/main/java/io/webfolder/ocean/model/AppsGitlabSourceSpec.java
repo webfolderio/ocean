@@ -37,7 +37,6 @@ public class AppsGitlabSourceSpec {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_BRANCH)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getBranch() {
         return branch;
     }
@@ -140,5 +139,4 @@ public class AppsGitlabSourceSpec {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

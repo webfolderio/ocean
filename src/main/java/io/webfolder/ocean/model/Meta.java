@@ -80,5 +80,4 @@ public class Meta {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

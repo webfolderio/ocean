@@ -101,7 +101,6 @@ public class BillingHistory {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DESCRIPTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getDescription() {
         return description;
     }
@@ -280,5 +279,4 @@ public class BillingHistory {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

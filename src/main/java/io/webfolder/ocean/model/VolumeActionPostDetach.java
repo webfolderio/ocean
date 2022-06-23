@@ -100,7 +100,6 @@ public class VolumeActionPostDetach {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public RegionSlug getRegion() {
         return region;
     }
@@ -179,5 +178,4 @@ public class VolumeActionPostDetach {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

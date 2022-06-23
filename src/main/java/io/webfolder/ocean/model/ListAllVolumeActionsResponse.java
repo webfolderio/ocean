@@ -47,7 +47,6 @@ public class ListAllVolumeActionsResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ACTIONS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<VolumeAction> getActions() {
         return actions;
     }
@@ -149,5 +148,4 @@ public class ListAllVolumeActionsResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

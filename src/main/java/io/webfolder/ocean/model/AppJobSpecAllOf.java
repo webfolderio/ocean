@@ -77,7 +77,6 @@ public class AppJobSpecAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_KIND)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public KindEnum getKind() {
         return kind;
     }
@@ -127,5 +126,4 @@ public class AppJobSpecAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

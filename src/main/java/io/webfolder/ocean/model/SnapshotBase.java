@@ -207,5 +207,4 @@ public class SnapshotBase {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

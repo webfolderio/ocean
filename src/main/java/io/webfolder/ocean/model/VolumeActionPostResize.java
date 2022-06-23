@@ -100,7 +100,6 @@ public class VolumeActionPostResize {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public RegionSlug getRegion() {
         return region;
     }
@@ -178,5 +177,4 @@ public class VolumeActionPostResize {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

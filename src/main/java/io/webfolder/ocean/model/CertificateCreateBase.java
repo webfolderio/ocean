@@ -100,7 +100,6 @@ public class CertificateCreateBase {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_TYPE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public TypeEnum getType() {
         return type;
     }
@@ -152,5 +151,4 @@ public class CertificateCreateBase {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

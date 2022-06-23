@@ -57,7 +57,6 @@ public class AssociatedResourceStatusResources {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_RESERVED_IPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<DestroyedAssociatedResource> getReservedIps() {
         return reservedIps;
     }
@@ -244,5 +243,4 @@ public class AssociatedResourceStatusResources {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

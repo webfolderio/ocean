@@ -40,7 +40,6 @@ public class AppsResponseAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_APPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<App> getApps() {
         return apps;
     }
@@ -90,5 +89,4 @@ public class AppsResponseAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

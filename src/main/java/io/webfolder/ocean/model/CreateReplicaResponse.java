@@ -30,7 +30,6 @@ public class CreateReplicaResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_REPLICA)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public DatabaseReplica getReplica() {
         return replica;
     }
@@ -80,5 +79,4 @@ public class CreateReplicaResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

@@ -105,7 +105,6 @@ public class VolumeActionPostAttach {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public RegionSlug getRegion() {
         return region;
     }
@@ -219,5 +218,4 @@ public class VolumeActionPostAttach {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

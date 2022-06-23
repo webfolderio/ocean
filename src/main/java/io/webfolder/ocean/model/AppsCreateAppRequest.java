@@ -80,5 +80,4 @@ public class AppsCreateAppRequest {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

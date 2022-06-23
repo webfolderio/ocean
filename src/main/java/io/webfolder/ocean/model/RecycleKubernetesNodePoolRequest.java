@@ -40,7 +40,6 @@ public class RecycleKubernetesNodePoolRequest {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_NODES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<String> getNodes() {
         return nodes;
     }
@@ -91,5 +90,4 @@ public class RecycleKubernetesNodePoolRequest {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

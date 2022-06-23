@@ -47,7 +47,6 @@ public class RegistrySubscription {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_TIER)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public SubscriptionTierBase getTier() {
         return tier;
     }
@@ -127,5 +126,4 @@ public class RegistrySubscription {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

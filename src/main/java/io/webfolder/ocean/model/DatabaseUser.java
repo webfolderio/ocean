@@ -106,7 +106,6 @@ public class DatabaseUser {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ROLE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public RoleEnum getRole() {
         return role;
     }
@@ -192,5 +191,4 @@ public class DatabaseUser {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

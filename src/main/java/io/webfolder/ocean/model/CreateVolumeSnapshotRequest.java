@@ -68,7 +68,6 @@ public class CreateVolumeSnapshotRequest {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_TAGS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<String> getTags() {
         return tags;
     }
@@ -120,5 +119,4 @@ public class CreateVolumeSnapshotRequest {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

@@ -20,7 +20,7 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.deser.std.StdDeserializer;
 import com.fasterxml.jackson.databind.ser.std.StdSerializer;
 
-import io.webfolder.ocean.JSON;
+import io.webfolder.ocean.client.internal.JSON;
 
 @JsonDeserialize(using = PostFloatingIpActionRequest.PostFloatingIpActionRequestDeserializer.class)
 @JsonSerialize(using = PostFloatingIpActionRequest.PostFloatingIpActionRequestSerializer.class)
@@ -195,5 +195,4 @@ public class PostFloatingIpActionRequest extends AbstractOpenApiSchema {
     public FloatingIpActionUnassign getFloatingIpActionUnassign() throws ClassCastException {
         return (FloatingIpActionUnassign) super.getActualInstance();
     }
-
 }

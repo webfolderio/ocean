@@ -34,7 +34,6 @@ public class TagMetadata {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_COUNT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Integer getCount() {
         return count;
     }
@@ -110,5 +109,4 @@ public class TagMetadata {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

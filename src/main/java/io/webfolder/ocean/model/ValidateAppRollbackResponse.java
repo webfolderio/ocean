@@ -39,7 +39,6 @@ public class ValidateAppRollbackResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_VALID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Boolean getValid() {
         return valid;
     }
@@ -150,5 +149,4 @@ public class ValidateAppRollbackResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

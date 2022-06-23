@@ -30,7 +30,6 @@ public class GetVolumeSnapshotByIdResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_SNAPSHOT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Snapshot getSnapshot() {
         return snapshot;
     }
@@ -80,5 +79,4 @@ public class GetVolumeSnapshotByIdResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

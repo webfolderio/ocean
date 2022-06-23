@@ -40,7 +40,6 @@ public class ClusterRegistries {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_CLUSTER_UUIDS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<String> getClusterUuids() {
         return clusterUuids;
     }
@@ -90,5 +89,4 @@ public class ClusterRegistries {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

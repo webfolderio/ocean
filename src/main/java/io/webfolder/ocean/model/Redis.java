@@ -191,7 +191,6 @@ public class Redis {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_REDIS_MAXMEMORY_POLICY)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public RedisMaxmemoryPolicyEnum getRedisMaxmemoryPolicy() {
         return redisMaxmemoryPolicy;
     }
@@ -516,5 +515,4 @@ public class Redis {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

@@ -22,7 +22,7 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.deser.std.StdDeserializer;
 import com.fasterxml.jackson.databind.ser.std.StdSerializer;
 
-import io.webfolder.ocean.JSON;
+import io.webfolder.ocean.client.internal.JSON;
 
 @JsonDeserialize(using = FloatingIpCreate.FloatingIpCreateDeserializer.class)
 @JsonSerialize(using = FloatingIpCreate.FloatingIpCreateSerializer.class)
@@ -229,5 +229,4 @@ public class FloatingIpCreate extends AbstractOpenApiSchema {
     public ReserveToRegion getReserveToRegion() throws ClassCastException {
         return (ReserveToRegion) super.getActualInstance();
     }
-
 }

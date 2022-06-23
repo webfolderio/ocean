@@ -88,7 +88,6 @@ public class Error {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_REQUEST_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getRequestId() {
         return requestId;
     }
@@ -141,5 +140,4 @@ public class Error {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

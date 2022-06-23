@@ -80,5 +80,4 @@ public class Database {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

@@ -40,7 +40,6 @@ public class ListUsersResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_USERS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<DatabaseUser> getUsers() {
         return users;
     }
@@ -90,5 +89,4 @@ public class ListUsersResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

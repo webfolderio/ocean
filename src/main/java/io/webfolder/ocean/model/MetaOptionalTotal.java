@@ -80,5 +80,4 @@ public class MetaOptionalTotal {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

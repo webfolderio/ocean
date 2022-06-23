@@ -183,7 +183,6 @@ public class DropletSingleCreate {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_SSH_KEYS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<DropletCreateSshKeysInner> getSshKeys() {
         return sshKeys;
     }
@@ -475,5 +474,4 @@ public class DropletSingleCreate {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

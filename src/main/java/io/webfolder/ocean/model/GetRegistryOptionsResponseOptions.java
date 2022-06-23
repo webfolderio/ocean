@@ -44,7 +44,6 @@ public class GetRegistryOptionsResponseOptions {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_AVAILABLE_REGIONS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<String> getAvailableRegions() {
         return availableRegions;
     }
@@ -131,5 +130,4 @@ public class GetRegistryOptionsResponseOptions {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

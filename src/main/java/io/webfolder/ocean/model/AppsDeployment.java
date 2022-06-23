@@ -88,7 +88,6 @@ public class AppsDeployment {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_CAUSE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getCause() {
         return cause;
     }
@@ -531,5 +530,4 @@ public class AppsDeployment {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

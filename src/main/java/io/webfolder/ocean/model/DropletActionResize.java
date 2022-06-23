@@ -126,7 +126,6 @@ public class DropletActionResize {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DISK)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Boolean getDisk() {
         return disk;
     }
@@ -204,5 +203,4 @@ public class DropletActionResize {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

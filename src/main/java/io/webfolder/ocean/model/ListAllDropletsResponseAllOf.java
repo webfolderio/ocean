@@ -40,7 +40,6 @@ public class ListAllDropletsResponseAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DROPLETS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<Droplet> getDroplets() {
         return droplets;
     }
@@ -90,5 +89,4 @@ public class ListAllDropletsResponseAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

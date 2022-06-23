@@ -40,7 +40,6 @@ public class ListProjectsResponseAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_PROJECTS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<Project> getProjects() {
         return projects;
     }
@@ -90,5 +89,4 @@ public class ListProjectsResponseAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

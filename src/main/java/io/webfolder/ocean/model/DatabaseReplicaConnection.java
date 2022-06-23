@@ -64,7 +64,6 @@ public class DatabaseReplicaConnection {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_URI)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getUri() {
         return uri;
     }
@@ -198,5 +197,4 @@ public class DatabaseReplicaConnection {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

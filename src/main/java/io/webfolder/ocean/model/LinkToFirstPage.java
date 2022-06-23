@@ -30,7 +30,6 @@ public class LinkToFirstPage {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_FIRST)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getFirst() {
         return first;
     }
@@ -80,5 +79,4 @@ public class LinkToFirstPage {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

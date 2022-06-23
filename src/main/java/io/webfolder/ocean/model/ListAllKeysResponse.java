@@ -47,7 +47,6 @@ public class ListAllKeysResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_SSH_KEYS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<SshKey> getSshKeys() {
         return sshKeys;
     }
@@ -149,5 +148,4 @@ public class ListAllKeysResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

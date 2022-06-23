@@ -30,7 +30,6 @@ public class UpdateRegistry {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_CANCEL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Boolean getCancel() {
         return cancel;
     }
@@ -80,5 +79,4 @@ public class UpdateRegistry {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

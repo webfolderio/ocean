@@ -115,7 +115,6 @@ public class AppStaticSiteSpec {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_GIT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public AppsGitSourceSpec getGit() {
         return git;
     }
@@ -614,5 +613,4 @@ public class AppStaticSiteSpec {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

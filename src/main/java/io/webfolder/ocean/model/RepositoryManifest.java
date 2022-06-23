@@ -57,7 +57,6 @@ public class RepositoryManifest {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_REGISTRY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getRegistryName() {
         return registryName;
     }
@@ -306,5 +305,4 @@ public class RepositoryManifest {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

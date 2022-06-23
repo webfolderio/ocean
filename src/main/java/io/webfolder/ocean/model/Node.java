@@ -48,7 +48,6 @@ public class Node {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public UUID getId() {
         return id;
     }
@@ -227,5 +226,4 @@ public class Node {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

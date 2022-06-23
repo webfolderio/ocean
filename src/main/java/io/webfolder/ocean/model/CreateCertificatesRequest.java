@@ -22,7 +22,7 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.deser.std.StdDeserializer;
 import com.fasterxml.jackson.databind.ser.std.StdSerializer;
 
-import io.webfolder.ocean.JSON;
+import io.webfolder.ocean.client.internal.JSON;
 
 @JsonDeserialize(using = CreateCertificatesRequest.CreateCertificatesRequestDeserializer.class)
 @JsonSerialize(using = CreateCertificatesRequest.CreateCertificatesRequestSerializer.class)
@@ -242,5 +242,4 @@ public class CreateCertificatesRequest extends AbstractOpenApiSchema {
     public CertificateRequestLetsEncrypt getCertificateRequestLetsEncrypt() throws ClassCastException {
         return (CertificateRequestLetsEncrypt) super.getActualInstance();
     }
-
 }

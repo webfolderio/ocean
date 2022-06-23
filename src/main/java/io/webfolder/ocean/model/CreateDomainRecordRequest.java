@@ -20,7 +20,7 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.deser.std.StdDeserializer;
 import com.fasterxml.jackson.databind.ser.std.StdSerializer;
 
-import io.webfolder.ocean.JSON;
+import io.webfolder.ocean.client.internal.JSON;
 
 @JsonDeserialize(using = CreateDomainRecordRequest.CreateDomainRecordRequestDeserializer.class)
 @JsonSerialize(using = CreateDomainRecordRequest.CreateDomainRecordRequestSerializer.class)
@@ -444,5 +444,4 @@ public class CreateDomainRecordRequest extends AbstractOpenApiSchema {
     public DomainRecordTxt getDomainRecordTxt() throws ClassCastException {
         return (DomainRecordTxt) super.getActualInstance();
     }
-
 }

@@ -40,7 +40,6 @@ public class AssignProjectResourcesResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_RESOURCES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<Resource> getResources() {
         return resources;
     }
@@ -90,5 +89,4 @@ public class AssignProjectResourcesResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

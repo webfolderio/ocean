@@ -50,7 +50,6 @@ public class DestroyAssociatedKubernetesResources {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_LOAD_BALANCERS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<String> getLoadBalancers() {
         return loadBalancers;
     }
@@ -170,5 +169,4 @@ public class DestroyAssociatedKubernetesResources {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

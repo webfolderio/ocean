@@ -30,7 +30,6 @@ public class GetGarbageCollectionResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_GARBAGE_COLLECTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public GarbageCollection getGarbageCollection() {
         return garbageCollection;
     }
@@ -80,5 +79,4 @@ public class GetGarbageCollectionResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

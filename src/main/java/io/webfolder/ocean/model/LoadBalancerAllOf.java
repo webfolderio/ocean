@@ -40,7 +40,6 @@ public class LoadBalancerAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Object getRegion() {
         return region;
     }
@@ -90,5 +89,4 @@ public class LoadBalancerAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

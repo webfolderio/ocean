@@ -1,4 +1,4 @@
-package io.webfolder.ocean;
+package io.webfolder.ocean.client.internal;
 
 import java.text.DateFormat;
 import java.text.DecimalFormat;
@@ -10,7 +10,7 @@ import java.util.TimeZone;
 
 import com.fasterxml.jackson.databind.util.StdDateFormat;
 
-public class RFC3339DateFormat extends DateFormat {
+class RFC3339DateFormat extends DateFormat {
     private static final long serialVersionUID = 1L;
     private static final TimeZone TIMEZONE_Z = TimeZone.getTimeZone("UTC");
 

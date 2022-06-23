@@ -44,7 +44,6 @@ public class TagResourcesAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DROPLETS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public TagMetadata getDroplets() {
         return droplets;
     }
@@ -198,5 +197,4 @@ public class TagResourcesAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

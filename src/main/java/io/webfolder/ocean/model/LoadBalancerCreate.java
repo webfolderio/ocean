@@ -22,7 +22,7 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.deser.std.StdDeserializer;
 import com.fasterxml.jackson.databind.ser.std.StdSerializer;
 
-import io.webfolder.ocean.JSON;
+import io.webfolder.ocean.client.internal.JSON;
 
 @JsonDeserialize(using = LoadBalancerCreate.LoadBalancerCreateDeserializer.class)
 @JsonSerialize(using = LoadBalancerCreate.LoadBalancerCreateSerializer.class)
@@ -170,5 +170,4 @@ public class LoadBalancerCreate extends AbstractOpenApiSchema {
     public Object getObject() throws ClassCastException {
         return (Object) super.getActualInstance();
     }
-
 }

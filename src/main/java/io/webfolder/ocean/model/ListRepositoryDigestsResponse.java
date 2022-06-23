@@ -47,7 +47,6 @@ public class ListRepositoryDigestsResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_MANIFESTS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<RepositoryManifest> getManifests() {
         return manifests;
     }
@@ -149,5 +148,4 @@ public class ListRepositoryDigestsResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

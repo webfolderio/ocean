@@ -80,5 +80,4 @@ public class SnapshotAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

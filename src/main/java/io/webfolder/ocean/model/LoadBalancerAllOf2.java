@@ -31,7 +31,6 @@ public class LoadBalancerAllOf2 {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_TAG)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getTag() {
         return tag;
     }
@@ -81,5 +80,4 @@ public class LoadBalancerAllOf2 {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

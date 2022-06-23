@@ -101,7 +101,6 @@ public class GarbageCollection {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_UUID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getUuid() {
         return uuid;
     }
@@ -307,5 +306,4 @@ public class GarbageCollection {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

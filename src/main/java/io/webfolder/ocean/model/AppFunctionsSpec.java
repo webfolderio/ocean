@@ -63,7 +63,6 @@ public class AppFunctionsSpec {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_CORS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public AppsCorsPolicy getCors() {
         return cors;
     }
@@ -371,5 +370,4 @@ public class AppFunctionsSpec {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

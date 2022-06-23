@@ -87,5 +87,4 @@ public class ListAllVolumesResponseAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

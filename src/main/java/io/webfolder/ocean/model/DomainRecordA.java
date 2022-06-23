@@ -62,7 +62,6 @@ public class DomainRecordA {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Integer getId() {
         return id;
     }
@@ -342,5 +341,4 @@ public class DomainRecordA {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

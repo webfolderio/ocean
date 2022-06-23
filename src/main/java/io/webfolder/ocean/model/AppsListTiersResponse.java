@@ -40,7 +40,6 @@ public class AppsListTiersResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_TIERS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<AppsTier> getTiers() {
         return tiers;
     }
@@ -90,5 +89,4 @@ public class AppsListTiersResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

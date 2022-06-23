@@ -31,7 +31,6 @@ public class ProjectAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_IS_DEFAULT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Boolean getIsDefault() {
         return isDefault;
     }
@@ -81,5 +80,4 @@ public class ProjectAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

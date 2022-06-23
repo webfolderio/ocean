@@ -112,5 +112,4 @@ public class DatabaseClusterResize {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

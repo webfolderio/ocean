@@ -30,7 +30,6 @@ public class CreateNewTagResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_TAG)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Tag getTag() {
         return tag;
     }
@@ -80,5 +79,4 @@ public class CreateNewTagResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

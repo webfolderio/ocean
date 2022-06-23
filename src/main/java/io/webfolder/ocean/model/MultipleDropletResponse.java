@@ -116,5 +116,4 @@ public class MultipleDropletResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

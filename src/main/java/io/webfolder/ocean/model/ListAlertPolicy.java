@@ -87,5 +87,4 @@ public class ListAlertPolicy {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

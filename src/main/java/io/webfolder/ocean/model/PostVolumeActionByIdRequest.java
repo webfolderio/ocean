@@ -20,7 +20,7 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.deser.std.StdDeserializer;
 import com.fasterxml.jackson.databind.ser.std.StdSerializer;
 
-import io.webfolder.ocean.JSON;
+import io.webfolder.ocean.client.internal.JSON;
 
 @JsonDeserialize(using = PostVolumeActionByIdRequest.PostVolumeActionByIdRequestDeserializer.class)
 @JsonSerialize(using = PostVolumeActionByIdRequest.PostVolumeActionByIdRequestSerializer.class)
@@ -231,5 +231,4 @@ public class PostVolumeActionByIdRequest extends AbstractOpenApiSchema {
     public VolumeActionPostResize getVolumeActionPostResize() throws ClassCastException {
         return (VolumeActionPostResize) super.getActualInstance();
     }
-
 }

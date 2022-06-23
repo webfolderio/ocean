@@ -80,5 +80,4 @@ public class AppsUpdateAppRequest {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

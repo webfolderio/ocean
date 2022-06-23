@@ -121,5 +121,4 @@ public class DropletSnapshotAllOf1 {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

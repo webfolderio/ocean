@@ -38,7 +38,6 @@ public class AppsStringMatch {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_EXACT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getExact() {
         return exact;
     }
@@ -142,5 +141,4 @@ public class AppsStringMatch {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

@@ -47,7 +47,6 @@ public class GetInvoiceByUuidResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_INVOICE_ITEMS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<InvoiceItem> getInvoiceItems() {
         return invoiceItems;
     }
@@ -149,5 +148,4 @@ public class GetInvoiceByUuidResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

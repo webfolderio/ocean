@@ -108,7 +108,6 @@ public class CreateFirewallRequest {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getId() {
         return id;
     }
@@ -352,5 +351,4 @@ public class CreateFirewallRequest {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

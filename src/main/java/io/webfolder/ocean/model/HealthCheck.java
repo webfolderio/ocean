@@ -91,7 +91,6 @@ public class HealthCheck {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_PROTOCOL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public ProtocolEnum getProtocol() {
         return protocol;
     }
@@ -302,5 +301,4 @@ public class HealthCheck {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

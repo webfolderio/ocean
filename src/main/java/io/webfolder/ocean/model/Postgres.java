@@ -468,7 +468,6 @@ public class Postgres {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_AUTOVACUUM_FREEZE_MAX_AGE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Integer getAutovacuumFreezeMaxAge() {
         return autovacuumFreezeMaxAge;
     }
@@ -1846,5 +1845,4 @@ public class Postgres {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

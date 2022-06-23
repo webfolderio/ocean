@@ -40,7 +40,6 @@ public class ListAllActionsResponseAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ACTIONS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<Action> getActions() {
         return actions;
     }
@@ -90,5 +89,4 @@ public class ListAllActionsResponseAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

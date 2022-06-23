@@ -213,5 +213,4 @@ public class ReservedIpRegion {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

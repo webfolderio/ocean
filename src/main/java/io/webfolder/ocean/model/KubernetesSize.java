@@ -33,7 +33,6 @@ public class KubernetesSize {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getName() {
         return name;
     }
@@ -108,5 +107,4 @@ public class KubernetesSize {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

@@ -96,7 +96,6 @@ public class DatabaseClusterMaintenanceWindow {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_PENDING)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Boolean getPending() {
         return pending;
     }
@@ -160,5 +159,4 @@ public class DatabaseClusterMaintenanceWindow {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

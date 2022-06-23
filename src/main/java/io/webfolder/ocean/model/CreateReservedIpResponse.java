@@ -33,7 +33,6 @@ public class CreateReservedIpResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_RESERVED_IP)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public ReservedIp getReservedIp() {
         return reservedIp;
     }
@@ -109,5 +108,4 @@ public class CreateReservedIpResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

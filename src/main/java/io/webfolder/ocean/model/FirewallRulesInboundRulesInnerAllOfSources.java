@@ -57,7 +57,6 @@ public class FirewallRulesInboundRulesInnerAllOfSources {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ADDRESSES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<String> getAddresses() {
         return addresses;
     }
@@ -239,5 +238,4 @@ public class FirewallRulesInboundRulesInnerAllOfSources {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

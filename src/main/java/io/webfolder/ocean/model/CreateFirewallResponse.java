@@ -30,7 +30,6 @@ public class CreateFirewallResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_FIREWALL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Firewall getFirewall() {
         return firewall;
     }
@@ -80,5 +79,4 @@ public class CreateFirewallResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

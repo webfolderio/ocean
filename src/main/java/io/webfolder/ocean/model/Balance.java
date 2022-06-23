@@ -42,7 +42,6 @@ public class Balance {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_MONTH_TO_DATE_BALANCE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getMonthToDateBalance() {
         return monthToDateBalance;
     }
@@ -172,5 +171,4 @@ public class Balance {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

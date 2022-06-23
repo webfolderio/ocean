@@ -64,7 +64,6 @@ public class InvoiceItem {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_PRODUCT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getProduct() {
         return product;
     }
@@ -376,5 +375,4 @@ public class InvoiceItem {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

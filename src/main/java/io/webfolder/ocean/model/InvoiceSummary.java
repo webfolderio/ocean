@@ -65,7 +65,6 @@ public class InvoiceSummary {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_INVOICE_UUID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getInvoiceUuid() {
         return invoiceUuid;
     }
@@ -378,5 +377,4 @@ public class InvoiceSummary {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

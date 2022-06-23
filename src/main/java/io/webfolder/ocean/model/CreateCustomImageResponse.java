@@ -30,7 +30,6 @@ public class CreateCustomImageResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_IMAGE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Image getImage() {
         return image;
     }
@@ -80,5 +79,4 @@ public class CreateCustomImageResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

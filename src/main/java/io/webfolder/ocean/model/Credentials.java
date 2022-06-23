@@ -50,7 +50,6 @@ public class Credentials {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_SERVER)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public URI getServer() {
         return server;
     }
@@ -248,5 +247,4 @@ public class Credentials {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

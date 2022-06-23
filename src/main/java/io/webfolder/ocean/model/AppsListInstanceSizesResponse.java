@@ -36,7 +36,6 @@ public class AppsListInstanceSizesResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DISCOUNT_PERCENT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Float getDiscountPercent() {
         return discountPercent;
     }
@@ -120,5 +119,4 @@ public class AppsListInstanceSizesResponse {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

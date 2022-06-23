@@ -37,7 +37,6 @@ public class AssociatedResource {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getId() {
         return id;
     }
@@ -139,5 +138,4 @@ public class AssociatedResource {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

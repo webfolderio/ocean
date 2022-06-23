@@ -40,7 +40,6 @@ public class ListVpcMembersResponseAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_MEMBERS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<VpcMember> getMembers() {
         return members;
     }
@@ -90,5 +89,4 @@ public class ListVpcMembersResponseAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

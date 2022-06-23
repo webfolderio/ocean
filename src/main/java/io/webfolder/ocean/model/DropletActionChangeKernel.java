@@ -120,7 +120,6 @@ public class DropletActionChangeKernel {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_KERNEL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Integer getKernel() {
         return kernel;
     }
@@ -172,5 +171,4 @@ public class DropletActionChangeKernel {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

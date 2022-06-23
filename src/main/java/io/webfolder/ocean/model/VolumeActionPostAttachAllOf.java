@@ -70,7 +70,6 @@ public class VolumeActionPostAttachAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_TAGS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<String> getTags() {
         return tags;
     }
@@ -122,5 +121,4 @@ public class VolumeActionPostAttachAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

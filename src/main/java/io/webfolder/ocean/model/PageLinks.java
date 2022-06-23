@@ -30,7 +30,6 @@ public class PageLinks {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_PAGES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public PageLinksPages getPages() {
         return pages;
     }
@@ -80,5 +79,4 @@ public class PageLinks {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }

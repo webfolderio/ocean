@@ -40,7 +40,6 @@ public class ListAllDomainRecordsResponseAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DOMAIN_RECORDS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<DomainRecord> getDomainRecords() {
         return domainRecords;
     }
@@ -91,5 +90,4 @@ public class ListAllDomainRecordsResponseAllOf {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 }
