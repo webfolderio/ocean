@@ -75,7 +75,6 @@ public class DatabaseClusterMaintenanceWindow {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_HOUR)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public String getHour() {
         return hour;
     }

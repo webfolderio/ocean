@@ -225,7 +225,6 @@ public class AlertPolicy {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_COMPARE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public CompareEnum getCompare() {
         return compare;
     }

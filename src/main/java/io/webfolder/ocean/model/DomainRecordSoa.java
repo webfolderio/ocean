@@ -201,7 +201,6 @@ public class DomainRecordSoa {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_TTL)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public Integer getTtl() {
         return ttl;
     }

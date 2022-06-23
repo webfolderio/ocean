@@ -99,7 +99,6 @@ public class ErrorWithRootCauses {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_ROOT_CAUSES)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public List<String> getRootCauses() {
         return rootCauses;
     }

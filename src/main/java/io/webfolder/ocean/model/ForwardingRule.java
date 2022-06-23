@@ -155,7 +155,6 @@ public class ForwardingRule {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_ENTRY_PORT)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public Integer getEntryPort() {
         return entryPort;
     }

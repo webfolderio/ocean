@@ -62,7 +62,6 @@ public class Error {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_MESSAGE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public String getMessage() {
         return message;
     }

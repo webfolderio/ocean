@@ -74,7 +74,6 @@ public class ConnectionPool {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_MODE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public String getMode() {
         return mode;
     }

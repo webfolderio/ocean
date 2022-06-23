@@ -231,7 +231,6 @@ public class CreateDatabaseClusterRequest {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_ENGINE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public EngineEnum getEngine() {
         return engine;
     }

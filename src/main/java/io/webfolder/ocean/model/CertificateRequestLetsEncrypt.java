@@ -135,7 +135,6 @@ public class CertificateRequestLetsEncrypt {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_DNS_NAMES)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public List<String> getDnsNames() {
         return dnsNames;
     }

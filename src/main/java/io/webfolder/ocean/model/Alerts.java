@@ -68,7 +68,6 @@ public class Alerts {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_SLACK)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public List<SlackDetails> getSlack() {
         return slack;
     }

@@ -92,7 +92,6 @@ public class DropletCreate {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_SIZE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public String getSize() {
         return size;
     }

@@ -104,7 +104,6 @@ public class FirewallRulesInboundRulesInner {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_PORTS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public String getPorts() {
         return ports;
     }

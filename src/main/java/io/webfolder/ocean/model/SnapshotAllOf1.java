@@ -99,7 +99,6 @@ public class SnapshotAllOf1 {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_RESOURCE_TYPE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public ResourceTypeEnum getResourceType() {
         return resourceType;
     }

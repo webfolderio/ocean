@@ -56,7 +56,6 @@ public class SlackDetails {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_URL)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public String getUrl() {
         return url;
     }

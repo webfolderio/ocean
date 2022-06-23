@@ -59,7 +59,6 @@ public class DatabaseClusterResize {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_NUM_NODES)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public Integer getNumNodes() {
         return numNodes;
     }

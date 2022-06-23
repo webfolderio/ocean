@@ -134,7 +134,6 @@ public class CertificateRequestCustom {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_PRIVATE_KEY)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public String getPrivateKey() {
         return privateKey;
     }

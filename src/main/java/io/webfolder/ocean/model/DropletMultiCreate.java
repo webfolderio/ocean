@@ -106,7 +106,6 @@ public class DropletMultiCreate {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public String getRegion() {
         return region;
     }

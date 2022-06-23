@@ -65,7 +65,6 @@ public class OneClickCreate {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_CLUSTER_UUID)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public String getClusterUuid() {
         return clusterUuid;
     }

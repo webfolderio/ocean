@@ -69,7 +69,6 @@ public class Region {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_SLUG)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public String getSlug() {
         return slug;
     }

@@ -98,7 +98,6 @@ public class MetricsData {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_RESULT_TYPE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public ResultTypeEnum getResultType() {
         return resultType;
     }

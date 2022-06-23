@@ -63,7 +63,6 @@ public class MultipleDropletResponse {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_LINKS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public SingleDropletResponseLinks getLinks() {
         return links;
     }

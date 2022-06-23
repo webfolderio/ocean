@@ -108,7 +108,6 @@ public class KubernetesNodePoolUpdate {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_COUNT)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public Integer getCount() {
         return count;
     }

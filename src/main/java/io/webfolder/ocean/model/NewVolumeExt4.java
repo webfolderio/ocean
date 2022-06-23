@@ -163,7 +163,6 @@ public class NewVolumeExt4 extends VolumeWriteFileSystemType {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_SIZE_GIGABYTES)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public Integer getSizeGigabytes() {
         return sizeGigabytes;
     }

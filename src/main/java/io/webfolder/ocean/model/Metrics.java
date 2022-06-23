@@ -93,7 +93,6 @@ public class Metrics {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_STATUS)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public StatusEnum getStatus() {
         return status;
     }

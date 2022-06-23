@@ -62,7 +62,6 @@ public class CertificateRequestCustomAllOf {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_LEAF_CERTIFICATE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public String getLeafCertificate() {
         return leafCertificate;
     }

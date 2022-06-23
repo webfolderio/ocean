@@ -166,7 +166,6 @@ public class FirewallRule {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_VALUE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public String getValue() {
         return value;
     }

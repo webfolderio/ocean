@@ -128,7 +128,6 @@ public class DomainRecordMx {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_DATA)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public String getData() {
         return data;
     }

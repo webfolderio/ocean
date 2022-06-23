@@ -86,7 +86,6 @@ public class Size {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_MEMORY)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public Integer getMemory() {
         return memory;
     }

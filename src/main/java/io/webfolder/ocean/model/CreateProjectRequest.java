@@ -203,7 +203,6 @@ public class CreateProjectRequest {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_PURPOSE)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public String getPurpose() {
         return purpose;
     }

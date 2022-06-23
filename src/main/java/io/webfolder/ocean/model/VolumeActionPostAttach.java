@@ -128,7 +128,6 @@ public class VolumeActionPostAttach {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_DROPLET_ID)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public Integer getDropletId() {
         return dropletId;
     }

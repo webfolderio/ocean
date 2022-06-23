@@ -176,7 +176,6 @@ public class UpdateDefaultProjectRequest {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_DESCRIPTION)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public String getDescription() {
         return description;
     }

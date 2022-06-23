@@ -145,7 +145,6 @@ public class RegistryCreate {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_SUBSCRIPTION_TIER_SLUG)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public SubscriptionTierSlugEnum getSubscriptionTierSlug() {
         return subscriptionTierSlug;
     }

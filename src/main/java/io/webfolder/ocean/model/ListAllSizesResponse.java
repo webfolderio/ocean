@@ -90,7 +90,6 @@ public class ListAllSizesResponse {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_META)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public MetaMeta getMeta() {
         return meta;
     }

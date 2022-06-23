@@ -117,7 +117,6 @@ public class Account {
     @javax.annotation.Nonnull
     @JsonProperty(JSON_PROPERTY_FLOATING_IP_LIMIT)
     @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
     public Integer getFloatingIpLimit() {
         return floatingIpLimit;
     }
