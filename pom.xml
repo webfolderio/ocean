@@ -85,7 +85,6 @@
             <manifestEntries>
               <Implementation-Title>ocean</Implementation-Title>
               <Implementation-Version>${project.version}</Implementation-Version>
-              <Automatic-Module-Name>io.webfolder.ocean</Automatic-Module-Name>
             </manifestEntries>
           </archive>
         </configuration>
