@@ -14,40 +14,40 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonPropertyOrder({ ListResponse.JSON_PROPERTY_1CLICKS })
 public class ListResponse {
     public static final String JSON_PROPERTY_1CLICKS = "1_clicks";
-    private List<OneClick> _1clicks = null;
+    private List<OneClick> oneClicks = null;
 
     public ListResponse() {
     }
 
-    public ListResponse _1clicks(List<OneClick> _1clicks) {
-        this._1clicks = _1clicks;
+    public ListResponse oneClicks(List<OneClick> oneClicks) {
+        this.oneClicks = oneClicks;
         return this;
     }
 
-    public ListResponse add1clicksItem(OneClick _1clicksItem) {
-        if (this._1clicks == null) {
-            this._1clicks = new ArrayList<>();
+    public ListResponse addOneClicksItem(OneClick oneClicksItem) {
+        if (this.oneClicks == null) {
+            this.oneClicks = new ArrayList<>();
         }
-        this._1clicks.add(_1clicksItem);
+        this.oneClicks.add(oneClicksItem);
         return this;
     }
 
     /**
-     * Get _1clicks
+     * Get getOneclicks
      *
-     * @return _1clicks
+     * @return oneClicks
      **/
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_1CLICKS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-    public List<OneClick> get1clicks() {
-        return _1clicks;
+    public List<OneClick> getOneclicks() {
+        return oneClicks;
     }
 
     @JsonProperty(JSON_PROPERTY_1CLICKS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-    public void set1clicks(List<OneClick> _1clicks) {
-        this._1clicks = _1clicks;
+    public void set1clicks(List<OneClick> oneClicks) {
+        this.oneClicks = oneClicks;
     }
 
     /**
@@ -62,19 +62,19 @@ public class ListResponse {
             return false;
         }
         ListResponse listResponse = (ListResponse) o;
-        return Objects.equals(this._1clicks, listResponse._1clicks);
+        return Objects.equals(this.oneClicks, listResponse.oneClicks);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(_1clicks);
+        return Objects.hash(oneClicks);
     }
 
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("class ListResponse {\n");
-        sb.append("    _1clicks: ").append(toIndentedString(_1clicks)).append("\n");
+        sb.append("    oneClicks: ").append(toIndentedString(oneClicks)).append("\n");
         sb.append("}");
         return sb.toString();
     }

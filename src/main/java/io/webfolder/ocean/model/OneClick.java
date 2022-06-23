@@ -77,8 +77,8 @@ public class OneClick {
         if (o == null || getClass() != o.getClass()) {
             return false;
         }
-        OneClick _1click = (OneClick) o;
-        return Objects.equals(this.slug, _1click.slug) && Objects.equals(this.type, _1click.type);
+        OneClick oneClick = (OneClick) o;
+        return Objects.equals(this.slug, oneClick.slug) && Objects.equals(this.type, oneClick.type);
     }
 
     @Override

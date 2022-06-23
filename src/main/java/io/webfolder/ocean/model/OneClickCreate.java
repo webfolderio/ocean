@@ -86,9 +86,9 @@ public class OneClickCreate {
         if (o == null || getClass() != o.getClass()) {
             return false;
         }
-        OneClickCreate _1clickCreate = (OneClickCreate) o;
-        return Objects.equals(this.addonSlugs, _1clickCreate.addonSlugs)
-                && Objects.equals(this.clusterUuid, _1clickCreate.clusterUuid);
+        OneClickCreate oneClickCreate = (OneClickCreate) o;
+        return Objects.equals(this.addonSlugs, oneClickCreate.addonSlugs)
+                && Objects.equals(this.clusterUuid, oneClickCreate.clusterUuid);
     }
 
     @Override
