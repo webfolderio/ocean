@@ -107,7 +107,6 @@ public class AppsDeploymentProgressStep {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_MESSAGE_BASE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getMessageBase() {
         return messageBase;
     }

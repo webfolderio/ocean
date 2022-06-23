@@ -118,7 +118,6 @@ public class ListDropletAssociatedResourcesResponseAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_SNAPSHOTS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<AssociatedResource> getSnapshots() {
         return snapshots;
     }

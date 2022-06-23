@@ -97,7 +97,6 @@ public class AppProposeResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_APP_NAME_SUGGESTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getAppNameSuggestion() {
         return appNameSuggestion;
     }

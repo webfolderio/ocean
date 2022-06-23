@@ -146,7 +146,6 @@ public class Action {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_TYPE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getType() {
         return type;
     }

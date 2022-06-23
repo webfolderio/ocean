@@ -191,7 +191,6 @@ public class Pgbouncer {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_MIN_POOL_SIZE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Integer getMinPoolSize() {
         return minPoolSize;
     }

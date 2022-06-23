@@ -246,7 +246,6 @@ public class LoadBalancerBase {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_IP)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getIp() {
         return ip;
     }

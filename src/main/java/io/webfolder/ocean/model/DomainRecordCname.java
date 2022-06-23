@@ -177,7 +177,6 @@ public class DomainRecordCname {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_PORT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Integer getPort() {
         return port;
     }

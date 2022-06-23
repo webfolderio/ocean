@@ -110,7 +110,6 @@ public class InvoiceItem {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_RESOURCE_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getResourceId() {
         return resourceId;
     }

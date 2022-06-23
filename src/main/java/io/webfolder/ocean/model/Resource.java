@@ -132,7 +132,6 @@ public class Resource {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_LINKS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public ResourceLinks getLinks() {
         return links;
     }

@@ -121,7 +121,6 @@ public class AppsCorsPolicy {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ALLOW_HEADERS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<String> getAllowHeaders() {
         return allowHeaders;
     }

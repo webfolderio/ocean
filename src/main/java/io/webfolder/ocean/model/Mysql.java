@@ -203,7 +203,6 @@ public class Mysql {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_SQL_MODE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getSqlMode() {
         return sqlMode;
     }

@@ -147,7 +147,6 @@ public class GarbageCollection {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_STATUS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public StatusEnum getStatus() {
         return status;
     }

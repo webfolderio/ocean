@@ -94,7 +94,6 @@ public class AppAlert {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_SPEC)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public AppAlertSpec getSpec() {
         return spec;
     }

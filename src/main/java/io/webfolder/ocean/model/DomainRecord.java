@@ -128,7 +128,6 @@ public class DomainRecord {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DATA)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getData() {
         return data;
     }

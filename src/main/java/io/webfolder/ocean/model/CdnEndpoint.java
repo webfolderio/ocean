@@ -157,7 +157,6 @@ public class CdnEndpoint {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_TTL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public TtlEnum getTtl() {
         return ttl;
     }

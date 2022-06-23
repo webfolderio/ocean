@@ -142,7 +142,6 @@ public class AppFunctionsSpec {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_SOURCE_DIR)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getSourceDir() {
         return sourceDir;
     }

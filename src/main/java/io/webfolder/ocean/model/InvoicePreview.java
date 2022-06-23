@@ -88,7 +88,6 @@ public class InvoicePreview {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_INVOICE_PERIOD)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getInvoicePeriod() {
         return invoicePeriod;
     }

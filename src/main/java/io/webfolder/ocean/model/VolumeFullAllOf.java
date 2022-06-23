@@ -79,7 +79,6 @@ public class VolumeFullAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_FILESYSTEM_LABEL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getFilesystemLabel() {
         return filesystemLabel;
     }

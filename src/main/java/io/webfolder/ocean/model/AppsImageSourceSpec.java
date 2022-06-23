@@ -125,7 +125,6 @@ public class AppsImageSourceSpec {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_REPOSITORY)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getRepository() {
         return repository;
     }

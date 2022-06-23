@@ -160,7 +160,6 @@ public class AppStaticSiteSpec {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_GITLAB)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public AppsGitlabSourceSpec getGitlab() {
         return gitlab;
     }

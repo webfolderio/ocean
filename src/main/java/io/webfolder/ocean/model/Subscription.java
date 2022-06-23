@@ -77,7 +77,6 @@ public class Subscription {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_UPDATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public OffsetDateTime getUpdatedAt() {
         return updatedAt;
     }

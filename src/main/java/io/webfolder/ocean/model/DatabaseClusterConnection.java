@@ -88,7 +88,6 @@ public class DatabaseClusterConnection {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_HOST)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getHost() {
         return host;
     }

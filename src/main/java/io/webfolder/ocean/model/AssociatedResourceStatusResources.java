@@ -119,7 +119,6 @@ public class AssociatedResourceStatusResources {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_SNAPSHOTS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<DestroyedAssociatedResource> getSnapshots() {
         return snapshots;
     }

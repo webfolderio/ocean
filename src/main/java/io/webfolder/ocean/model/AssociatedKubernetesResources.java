@@ -114,7 +114,6 @@ public class AssociatedKubernetesResources {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_VOLUME_SNAPSHOTS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<AssociatedKubernetesResource> getVolumeSnapshots() {
         return volumeSnapshots;
     }

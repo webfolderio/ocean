@@ -134,7 +134,6 @@ public class AppsDeployment {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_CREATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public OffsetDateTime getCreatedAt() {
         return createdAt;
     }

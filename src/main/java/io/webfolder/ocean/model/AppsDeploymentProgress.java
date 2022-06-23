@@ -99,7 +99,6 @@ public class AppsDeploymentProgress {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_RUNNING_STEPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Integer getRunningSteps() {
         return runningSteps;
     }

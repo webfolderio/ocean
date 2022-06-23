@@ -100,7 +100,6 @@ public class BillingAddress {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_CITY)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getCity() {
         return city;
     }

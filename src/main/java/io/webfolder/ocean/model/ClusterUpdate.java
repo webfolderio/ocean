@@ -125,7 +125,6 @@ public class ClusterUpdate {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_AUTO_UPGRADE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Boolean getAutoUpgrade() {
         return autoUpgrade;
     }

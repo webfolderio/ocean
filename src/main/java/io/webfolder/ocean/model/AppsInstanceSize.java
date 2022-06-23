@@ -107,7 +107,6 @@ public class AppsInstanceSize {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_MEMORY_BYTES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getMemoryBytes() {
         return memoryBytes;
     }

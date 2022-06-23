@@ -98,7 +98,6 @@ public class RepositoryTag {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_TAG)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getTag() {
         return tag;
     }

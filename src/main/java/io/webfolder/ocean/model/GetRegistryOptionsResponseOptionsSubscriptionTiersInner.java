@@ -152,7 +152,6 @@ public class GetRegistryOptionsResponseOptionsSubscriptionTiersInner {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_INCLUDED_REPOSITORIES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Integer getIncludedRepositories() {
         return includedRepositories;
     }

@@ -196,7 +196,6 @@ public class DropletCreate {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_IPV6)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Boolean getIpv6() {
         return ipv6;
     }

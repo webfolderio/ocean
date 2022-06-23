@@ -102,7 +102,6 @@ public class AppServiceSpecHealthCheck {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_HTTP_PATH)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getHttpPath() {
         return httpPath;
     }

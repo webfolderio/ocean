@@ -94,7 +94,6 @@ public class ValidateAppRollbackResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_WARNINGS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<AppRollbackValidationCondition> getWarnings() {
         return warnings;
     }

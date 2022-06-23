@@ -147,7 +147,6 @@ public class BillingHistory {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_INVOICE_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getInvoiceId() {
         return invoiceId;
     }

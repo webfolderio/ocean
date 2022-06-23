@@ -184,7 +184,6 @@ public class AppSpec {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_SERVICES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<AppServiceSpec> getServices() {
         return services;
     }

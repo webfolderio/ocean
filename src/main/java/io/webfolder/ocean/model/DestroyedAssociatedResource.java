@@ -89,7 +89,6 @@ public class DestroyedAssociatedResource {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DESTROYED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public OffsetDateTime getDestroyedAt() {
         return destroyedAt;
     }

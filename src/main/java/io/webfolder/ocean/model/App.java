@@ -138,7 +138,6 @@ public class App {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DEFAULT_INGRESS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getDefaultIngress() {
         return defaultIngress;
     }

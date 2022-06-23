@@ -125,7 +125,6 @@ public class NetworkV4 {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_GATEWAY)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getGateway() {
         return gateway;
     }

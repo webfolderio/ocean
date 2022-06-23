@@ -134,7 +134,6 @@ public class KubernetesNodePoolTaint {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_EFFECT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public EffectEnum getEffect() {
         return effect;
     }

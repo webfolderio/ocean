@@ -131,7 +131,6 @@ public class ProjectBase {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_OWNER_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Integer getOwnerId() {
         return ownerId;
     }

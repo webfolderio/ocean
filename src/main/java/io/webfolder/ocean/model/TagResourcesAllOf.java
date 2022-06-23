@@ -90,7 +90,6 @@ public class TagResourcesAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_VOLUMES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public TagMetadata getVolumes() {
         return volumes;
     }

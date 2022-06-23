@@ -127,7 +127,6 @@ public class StickySessions {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_COOKIE_TTL_SECONDS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Integer getCookieTtlSeconds() {
         return cookieTtlSeconds;
     }

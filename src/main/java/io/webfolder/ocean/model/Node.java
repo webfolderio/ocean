@@ -94,7 +94,6 @@ public class Node {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_STATUS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public NodeStatus getStatus() {
         return status;
     }

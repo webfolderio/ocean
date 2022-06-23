@@ -86,7 +86,6 @@ public class FloatingIp {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DROPLET)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public FloatingIpDroplet getDroplet() {
         return droplet;
     }

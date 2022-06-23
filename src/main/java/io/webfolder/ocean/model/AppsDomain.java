@@ -86,7 +86,6 @@ public class AppsDomain {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_PROGRESS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public AppsDomainProgress getProgress() {
         return progress;
     }

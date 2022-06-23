@@ -97,7 +97,6 @@ public class Registry {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getRegion() {
         return region;
     }

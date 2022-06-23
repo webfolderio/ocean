@@ -110,7 +110,6 @@ public class AppLogDestinationDefinition {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_LOGTAIL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public AppLogDestinationLogtailSpec getLogtail() {
         return logtail;
     }

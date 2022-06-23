@@ -166,7 +166,6 @@ public class KubernetesNodePoolUpdate {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_LABELS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Object getLabels() {
         return labels;
     }

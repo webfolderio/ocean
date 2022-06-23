@@ -87,7 +87,6 @@ public class AppsStringMatch {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_REGEX)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getRegex() {
         return regex;
     }

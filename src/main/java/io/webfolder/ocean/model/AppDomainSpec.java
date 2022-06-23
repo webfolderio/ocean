@@ -166,7 +166,6 @@ public class AppDomainSpec {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ZONE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getZone() {
         return zone;
     }

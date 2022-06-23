@@ -93,7 +93,6 @@ public class InvoiceSummaryProductCharges {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ITEMS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<ProductChargeItem> getItems() {
         return items;
     }

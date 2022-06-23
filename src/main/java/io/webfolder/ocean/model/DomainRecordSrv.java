@@ -226,7 +226,6 @@ public class DomainRecordSrv {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_WEIGHT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Integer getWeight() {
         return weight;
     }

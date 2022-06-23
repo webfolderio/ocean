@@ -103,7 +103,6 @@ public class RepositoryManifest {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DIGEST)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getDigest() {
         return digest;
     }

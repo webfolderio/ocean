@@ -139,7 +139,6 @@ public class AppDatabaseSpec {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DB_USER)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getDbUser() {
         return dbUser;
     }

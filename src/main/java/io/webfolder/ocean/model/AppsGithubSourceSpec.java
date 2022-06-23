@@ -84,7 +84,6 @@ public class AppsGithubSourceSpec {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_REPO)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getRepo() {
         return repo;
     }

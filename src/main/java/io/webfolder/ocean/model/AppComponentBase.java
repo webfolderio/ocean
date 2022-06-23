@@ -116,7 +116,6 @@ public class AppComponentBase {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_GITHUB)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public AppsGithubSourceSpec getGithub() {
         return github;
     }

@@ -104,7 +104,6 @@ public class Credentials {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_CLIENT_CERTIFICATE_DATA)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public byte[] getClientCertificateData() {
         return clientCertificateData;
     }

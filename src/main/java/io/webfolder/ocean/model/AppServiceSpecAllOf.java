@@ -95,7 +95,6 @@ public class AppServiceSpecAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_HTTP_PORT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Long getHttpPort() {
         return httpPort;
     }

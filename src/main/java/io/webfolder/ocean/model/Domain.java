@@ -94,7 +94,6 @@ public class Domain {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_TTL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Integer getTtl() {
         return ttl;
     }

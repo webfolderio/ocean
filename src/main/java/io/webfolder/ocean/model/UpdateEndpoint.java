@@ -133,7 +133,6 @@ public class UpdateEndpoint {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_CUSTOM_DOMAIN)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getCustomDomain() {
         return customDomain;
     }

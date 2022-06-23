@@ -109,7 +109,6 @@ public class KubernetesOptionsOptions {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_SIZES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<KubernetesSize> getSizes() {
         return sizes;
     }

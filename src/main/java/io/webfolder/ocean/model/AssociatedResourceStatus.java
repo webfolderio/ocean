@@ -88,7 +88,6 @@ public class AssociatedResourceStatus {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_COMPLETED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public OffsetDateTime getCompletedAt() {
         return completedAt;
     }

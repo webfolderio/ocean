@@ -101,7 +101,6 @@ public class AppStaticSiteSpecAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_CATCHALL_DOCUMENT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getCatchallDocument() {
         return catchallDocument;
     }

@@ -86,7 +86,6 @@ public class Repository {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_LATEST_TAG)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public RepositoryTag getLatestTag() {
         return latestTag;
     }

@@ -97,7 +97,6 @@ public class ImageNewCustomAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_TAGS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<String> getTags() {
         return tags;
     }

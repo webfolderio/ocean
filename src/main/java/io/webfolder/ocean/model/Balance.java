@@ -90,7 +90,6 @@ public class Balance {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_MONTH_TO_DATE_USAGE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getMonthToDateUsage() {
         return monthToDateUsage;
     }

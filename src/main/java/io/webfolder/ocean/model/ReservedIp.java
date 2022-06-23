@@ -86,7 +86,6 @@ public class ReservedIp {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DROPLET)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public ReservedIpDroplet getDroplet() {
         return droplet;
     }

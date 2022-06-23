@@ -113,7 +113,6 @@ public class ClusterlintRequest {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_EXCLUDE_GROUPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<String> getExcludeGroups() {
         return excludeGroups;
     }

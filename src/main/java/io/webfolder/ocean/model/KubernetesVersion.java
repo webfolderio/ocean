@@ -97,7 +97,6 @@ public class KubernetesVersion {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_SUPPORTED_FEATURES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<String> getSupportedFeatures() {
         return supportedFeatures;
     }

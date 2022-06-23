@@ -84,7 +84,6 @@ public class ClusterlintResultsDiagnosticsInnerObject {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_NAMESPACE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getNamespace() {
         return namespace;
     }

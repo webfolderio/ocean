@@ -517,7 +517,6 @@ public class Postgres {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_AUTOVACUUM_NAPTIME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Integer getAutovacuumNaptime() {
         return autovacuumNaptime;
     }

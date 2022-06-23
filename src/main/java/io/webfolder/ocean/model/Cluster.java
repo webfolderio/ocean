@@ -211,7 +211,6 @@ public class Cluster {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_SERVICE_SUBNET)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getServiceSubnet() {
         return serviceSubnet;
     }

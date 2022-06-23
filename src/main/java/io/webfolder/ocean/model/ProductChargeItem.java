@@ -83,7 +83,6 @@ public class ProductChargeItem {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_COUNT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getCount() {
         return count;
     }

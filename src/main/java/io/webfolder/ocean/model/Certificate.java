@@ -180,7 +180,6 @@ public class Certificate {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_NOT_AFTER)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public OffsetDateTime getNotAfter() {
         return notAfter;
     }

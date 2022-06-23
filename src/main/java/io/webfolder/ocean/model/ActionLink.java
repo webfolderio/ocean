@@ -84,7 +84,6 @@ public class ActionLink {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_HREF)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public URI getHref() {
         return href;
     }

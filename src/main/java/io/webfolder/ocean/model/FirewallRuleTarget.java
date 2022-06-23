@@ -119,7 +119,6 @@ public class FirewallRuleTarget {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_LOAD_BALANCER_UIDS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<String> getLoadBalancerUids() {
         return loadBalancerUids;
     }

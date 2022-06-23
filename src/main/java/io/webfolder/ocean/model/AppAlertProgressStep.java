@@ -91,7 +91,6 @@ public class AppAlertProgressStep {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_STARTED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public OffsetDateTime getStartedAt() {
         return startedAt;
     }

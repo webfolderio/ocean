@@ -172,7 +172,6 @@ public class AppRollbackValidationCondition {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_COMPONENTS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<String> getComponents() {
         return components;
     }

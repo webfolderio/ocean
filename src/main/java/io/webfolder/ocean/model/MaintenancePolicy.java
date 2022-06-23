@@ -133,7 +133,6 @@ public class MaintenancePolicy {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DAY)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public DayEnum getDay() {
         return day;
     }

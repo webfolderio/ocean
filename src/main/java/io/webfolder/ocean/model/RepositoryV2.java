@@ -90,7 +90,6 @@ public class RepositoryV2 {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_LATEST_MANIFEST)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public RepositoryManifest getLatestManifest() {
         return latestManifest;
     }

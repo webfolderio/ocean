@@ -84,7 +84,6 @@ public class VpcMember {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_CREATED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getCreatedAt() {
         return createdAt;
     }

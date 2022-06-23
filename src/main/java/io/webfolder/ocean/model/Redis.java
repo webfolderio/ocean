@@ -241,7 +241,6 @@ public class Redis {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_REDIS_NUMBER_OF_DATABASES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Integer getRedisNumberOfDatabases() {
         return redisNumberOfDatabases;
     }
