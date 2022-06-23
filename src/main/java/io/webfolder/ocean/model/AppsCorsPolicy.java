@@ -89,7 +89,6 @@ public class AppsCorsPolicy {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ALLOW_METHODS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<String> getAllowMethods() {
         return allowMethods;
     }

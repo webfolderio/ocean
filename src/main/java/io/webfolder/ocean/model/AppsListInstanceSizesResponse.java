@@ -67,7 +67,6 @@ public class AppsListInstanceSizesResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_INSTANCE_SIZES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<AppsInstanceSize> getInstanceSizes() {
         return instanceSizes;
     }

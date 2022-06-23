@@ -111,7 +111,6 @@ public class AppsDeployment {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_CLONED_FROM)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getClonedFrom() {
         return clonedFrom;
     }

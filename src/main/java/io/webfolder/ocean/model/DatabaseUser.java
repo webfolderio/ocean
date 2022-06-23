@@ -118,7 +118,6 @@ public class DatabaseUser {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_PASSWORD)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getPassword() {
         return password;
     }

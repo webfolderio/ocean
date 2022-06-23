@@ -65,7 +65,6 @@ public class KubernetesVersion {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_KUBERNETES_VERSION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getKubernetesVersion() {
         return kubernetesVersion;
     }

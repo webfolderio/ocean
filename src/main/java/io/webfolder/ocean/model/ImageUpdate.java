@@ -62,7 +62,6 @@ public class ImageUpdate {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DISTRIBUTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Distribution getDistribution() {
         return distribution;
     }

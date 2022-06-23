@@ -79,7 +79,6 @@ public class DropletNetworks {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_V6)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<NetworkV6> getV6() {
         return v6;
     }

@@ -154,7 +154,6 @@ public class AppSpec {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DOMAINS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<AppDomainSpec> getDomains() {
         return domains;
     }

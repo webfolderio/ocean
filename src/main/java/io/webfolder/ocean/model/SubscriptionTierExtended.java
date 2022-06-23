@@ -106,7 +106,6 @@ public class SubscriptionTierExtended {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ELIGIBILITY_REASONS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<EligibilityReasonsEnum> getEligibilityReasons() {
         return eligibilityReasons;
     }

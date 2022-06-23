@@ -78,7 +78,6 @@ public class KubernetesOptionsOptions {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_VERSIONS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<KubernetesVersion> getVersions() {
         return versions;
     }

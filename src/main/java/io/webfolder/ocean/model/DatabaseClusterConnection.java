@@ -76,7 +76,6 @@ public class DatabaseClusterConnection {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DATABASE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getDatabase() {
         return database;
     }

@@ -75,7 +75,6 @@ public class AppsAssignAppAlertDestinationsRequest {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_SLACK_WEBHOOKS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<AppAlertSlackWebhook> getSlackWebhooks() {
         return slackWebhooks;
     }

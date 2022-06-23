@@ -56,7 +56,6 @@ public class CreateFloatingIpResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_LINKS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public CreateFloatingIpResponseLinks getLinks() {
         return links;
     }

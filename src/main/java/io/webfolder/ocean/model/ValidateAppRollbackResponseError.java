@@ -142,7 +142,6 @@ public class ValidateAppRollbackResponseError {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_MESSAGE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getMessage() {
         return message;
     }

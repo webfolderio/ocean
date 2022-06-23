@@ -102,7 +102,6 @@ public class StickySessions {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_COOKIE_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getCookieName() {
         return cookieName;
     }

@@ -74,7 +74,6 @@ public class Domain {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_IP_ADDRESS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getIpAddress() {
         return ipAddress;
     }

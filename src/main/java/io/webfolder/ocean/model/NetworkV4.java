@@ -100,7 +100,6 @@ public class NetworkV4 {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_NETMASK)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getNetmask() {
         return netmask;
     }

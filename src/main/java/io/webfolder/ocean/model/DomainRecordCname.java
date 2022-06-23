@@ -155,7 +155,6 @@ public class DomainRecordCname {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_PRIORITY)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Integer getPriority() {
         return priority;
     }

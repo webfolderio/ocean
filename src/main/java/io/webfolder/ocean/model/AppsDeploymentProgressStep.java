@@ -81,7 +81,6 @@ public class AppsDeploymentProgressStep {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ENDED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public OffsetDateTime getEndedAt() {
         return endedAt;
     }

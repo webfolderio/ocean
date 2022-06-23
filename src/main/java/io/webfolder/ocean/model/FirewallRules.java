@@ -74,7 +74,6 @@ public class FirewallRules {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_OUTBOUND_RULES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<FirewallRulesOutboundRulesInner> getOutboundRules() {
         return outboundRules;
     }

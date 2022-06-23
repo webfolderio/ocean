@@ -67,7 +67,6 @@ public class ClusterlintResults {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_REQUESTED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public OffsetDateTime getRequestedAt() {
         return requestedAt;
     }

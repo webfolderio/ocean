@@ -109,7 +109,6 @@ public class Resource {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ASSIGNED_AT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public OffsetDateTime getAssignedAt() {
         return assignedAt;
     }

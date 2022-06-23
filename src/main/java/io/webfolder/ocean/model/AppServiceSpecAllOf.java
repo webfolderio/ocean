@@ -69,7 +69,6 @@ public class AppServiceSpecAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_HEALTH_CHECK)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public AppServiceSpecHealthCheck getHealthCheck() {
         return healthCheck;
     }

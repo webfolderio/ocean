@@ -87,7 +87,6 @@ public class ListDropletAssociatedResourcesResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_FLOATING_IPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<AssociatedResource> getFloatingIps() {
         return floatingIps;
     }

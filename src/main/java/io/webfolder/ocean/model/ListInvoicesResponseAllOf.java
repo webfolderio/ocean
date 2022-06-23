@@ -67,7 +67,6 @@ public class ListInvoicesResponseAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_INVOICE_PREVIEW)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public InvoicePreview getInvoicePreview() {
         return invoicePreview;
     }

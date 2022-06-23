@@ -76,7 +76,6 @@ public class AppsDeploymentProgress {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_PENDING_STEPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Integer getPendingSteps() {
         return pendingSteps;
     }

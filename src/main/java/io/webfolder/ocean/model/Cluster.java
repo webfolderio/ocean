@@ -199,7 +199,6 @@ public class Cluster {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_CLUSTER_SUBNET)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getClusterSubnet() {
         return clusterSubnet;
     }

@@ -62,7 +62,6 @@ public class AppsRollbackAppRequest {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_SKIP_PIN)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Boolean getSkipPin() {
         return skipPin;
     }

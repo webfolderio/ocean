@@ -62,7 +62,6 @@ public class AppsStringMatch {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_PREFIX)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getPrefix() {
         return prefix;
     }

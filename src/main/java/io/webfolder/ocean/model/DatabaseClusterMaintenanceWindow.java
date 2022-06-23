@@ -109,7 +109,6 @@ public class DatabaseClusterMaintenanceWindow {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DESCRIPTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<String> getDescription() {
         return description;
     }

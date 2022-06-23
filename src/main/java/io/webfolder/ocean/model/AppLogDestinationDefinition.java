@@ -88,7 +88,6 @@ public class AppLogDestinationDefinition {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DATADOG)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public AppLogDestinationDatadogSpec getDatadog() {
         return datadog;
     }

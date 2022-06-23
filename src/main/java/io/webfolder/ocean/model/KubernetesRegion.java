@@ -56,7 +56,6 @@ public class KubernetesRegion {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_SLUG)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getSlug() {
         return slug;
     }

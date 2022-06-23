@@ -62,7 +62,6 @@ public class AppRouteSpec {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_PRESERVE_PATH_PREFIX)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Boolean getPreservePathPrefix() {
         return preservePathPrefix;
     }

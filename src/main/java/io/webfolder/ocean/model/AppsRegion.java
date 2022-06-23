@@ -80,7 +80,6 @@ public class AppsRegion {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DATA_CENTERS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<String> getDataCenters() {
         return dataCenters;
     }

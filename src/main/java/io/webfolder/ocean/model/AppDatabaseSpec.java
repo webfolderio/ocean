@@ -116,7 +116,6 @@ public class AppDatabaseSpec {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DB_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getDbName() {
         return dbName;
     }

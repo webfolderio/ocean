@@ -88,7 +88,6 @@ public class AssociatedResourceStatusResources {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_FLOATING_IPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<DestroyedAssociatedResource> getFloatingIps() {
         return floatingIps;
     }

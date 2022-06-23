@@ -71,7 +71,6 @@ public class VolumeBase {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DROPLET_IDS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<Integer> getDropletIds() {
         return dropletIds;
     }

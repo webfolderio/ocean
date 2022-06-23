@@ -61,7 +61,6 @@ public class ClusterlintResultsDiagnosticsInnerObject {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_KIND)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getKind() {
         return kind;
     }

@@ -64,7 +64,6 @@ public class AssociatedResourceStatus {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_RESOURCES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public AssociatedResourceStatusResources getResources() {
         return resources;
     }

@@ -72,7 +72,6 @@ public class Tag {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_RESOURCES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public TagResources getResources() {
         return resources;
     }

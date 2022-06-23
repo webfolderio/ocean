@@ -67,7 +67,6 @@ public class TagResourcesAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_IMGAGES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public TagMetadata getImgages() {
         return imgages;
     }

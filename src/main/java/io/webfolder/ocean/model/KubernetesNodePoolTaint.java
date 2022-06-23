@@ -109,7 +109,6 @@ public class KubernetesNodePoolTaint {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_VALUE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getValue() {
         return value;
     }

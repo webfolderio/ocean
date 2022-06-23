@@ -161,7 +161,6 @@ public class DatabaseReplica {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_SIZE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getSize() {
         return size;
     }

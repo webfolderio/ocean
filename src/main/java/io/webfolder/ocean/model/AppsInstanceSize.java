@@ -84,7 +84,6 @@ public class AppsInstanceSize {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_CPUS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getCpus() {
         return cpus;
     }

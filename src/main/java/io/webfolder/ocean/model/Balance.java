@@ -66,7 +66,6 @@ public class Balance {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ACCOUNT_BALANCE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getAccountBalance() {
         return accountBalance;
     }

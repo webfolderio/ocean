@@ -93,7 +93,6 @@ public class AppComponentBase {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_GIT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public AppsGitSourceSpec getGit() {
         return git;
     }

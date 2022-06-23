@@ -251,7 +251,6 @@ public class DatabaseCluster {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_VERSION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getVersion() {
         return version;
     }

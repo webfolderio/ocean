@@ -56,7 +56,6 @@ public class SourceDatabase {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DISABLE_SSL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Boolean getDisableSsl() {
         return disableSsl;
     }

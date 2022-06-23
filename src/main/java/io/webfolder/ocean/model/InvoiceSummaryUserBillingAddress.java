@@ -80,7 +80,6 @@ public class InvoiceSummaryUserBillingAddress {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ADDRESS_LINE2)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getAddressLine2() {
         return addressLine2;
     }

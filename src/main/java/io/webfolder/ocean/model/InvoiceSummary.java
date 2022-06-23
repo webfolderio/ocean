@@ -89,7 +89,6 @@ public class InvoiceSummary {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_BILLING_PERIOD)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getBillingPeriod() {
         return billingPeriod;
     }

@@ -60,7 +60,6 @@ public class AppsGithubSourceSpec {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DEPLOY_ON_PUSH)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Boolean getDeployOnPush() {
         return deployOnPush;
     }

@@ -111,7 +111,6 @@ public class AppComponentInstanceBase {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_INSTANCE_SIZE_SLUG)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public InstanceSizeSlugEnum getInstanceSizeSlug() {
         return instanceSizeSlug;
     }

@@ -141,7 +141,6 @@ public class AppDomainSpec {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_WILDCARD)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Boolean getWildcard() {
         return wildcard;
     }

@@ -76,7 +76,6 @@ public class AppStaticSiteSpecAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ERROR_DOCUMENT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getErrorDocument() {
         return errorDocument;
     }

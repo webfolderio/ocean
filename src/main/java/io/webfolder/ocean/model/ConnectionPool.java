@@ -199,7 +199,6 @@ public class ConnectionPool {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_PRIVATE_CONNECTION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public DatabaseClusterConnection getPrivateConnection() {
         return privateConnection;
     }

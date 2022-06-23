@@ -66,7 +66,6 @@ public class UserKubernetesClusterUser {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_GROUPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<String> getGroups() {
         return groups;
     }

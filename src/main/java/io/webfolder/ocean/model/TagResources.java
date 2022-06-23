@@ -76,7 +76,6 @@ public class TagResources {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_LAST_TAGGED_URI)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getLastTaggedUri() {
         return lastTaggedUri;
     }

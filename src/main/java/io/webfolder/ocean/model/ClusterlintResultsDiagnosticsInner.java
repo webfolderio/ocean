@@ -65,7 +65,6 @@ public class ClusterlintResultsDiagnosticsInner {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_SEVERITY)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getSeverity() {
         return severity;
     }

@@ -56,7 +56,6 @@ public class AppAlertSlackWebhook {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_CHANNEL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getChannel() {
         return channel;
     }

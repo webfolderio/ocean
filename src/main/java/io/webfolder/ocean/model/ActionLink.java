@@ -61,7 +61,6 @@ public class ActionLink {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_REL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getRel() {
         return rel;
     }

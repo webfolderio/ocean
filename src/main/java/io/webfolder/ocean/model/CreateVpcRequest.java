@@ -118,7 +118,6 @@ public class CreateVpcRequest {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_IP_RANGE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getIpRange() {
         return ipRange;
     }

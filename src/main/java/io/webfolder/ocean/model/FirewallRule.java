@@ -117,7 +117,6 @@ public class FirewallRule {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_CLUSTER_UUID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getClusterUuid() {
         return clusterUuid;
     }

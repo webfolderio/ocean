@@ -94,7 +94,6 @@ public class AppFunctionsSpec {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ROUTES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<AppRouteSpec> getRoutes() {
         return routes;
     }

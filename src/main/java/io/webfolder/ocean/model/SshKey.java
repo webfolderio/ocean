@@ -59,7 +59,6 @@ public class SshKey {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_FINGERPRINT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getFingerprint() {
         return fingerprint;
     }

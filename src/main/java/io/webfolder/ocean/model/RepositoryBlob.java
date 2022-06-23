@@ -56,7 +56,6 @@ public class RepositoryBlob {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_COMPRESSED_SIZE_BYTES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Integer getCompressedSizeBytes() {
         return compressedSizeBytes;
     }

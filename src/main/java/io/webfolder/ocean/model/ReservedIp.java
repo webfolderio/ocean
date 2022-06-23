@@ -63,7 +63,6 @@ public class ReservedIp {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public ReservedIpRegion getRegion() {
         return region;
     }

@@ -81,7 +81,6 @@ public class ClusterlintRequest {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_INCLUDE_CHECKS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<String> getIncludeChecks() {
         return includeChecks;
     }

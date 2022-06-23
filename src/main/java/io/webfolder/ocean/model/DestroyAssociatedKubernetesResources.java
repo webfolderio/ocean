@@ -81,7 +81,6 @@ public class DestroyAssociatedKubernetesResources {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_VOLUMES)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<String> getVolumes() {
         return volumes;
     }

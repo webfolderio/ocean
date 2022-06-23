@@ -493,7 +493,6 @@ public class Postgres {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_AUTOVACUUM_MAX_WORKERS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Integer getAutovacuumMaxWorkers() {
         return autovacuumMaxWorkers;
     }

@@ -165,7 +165,6 @@ public class Pgbouncer {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_IGNORE_STARTUP_PARAMETERS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<IgnoreStartupParametersEnum> getIgnoreStartupParameters() {
         return ignoreStartupParameters;
     }

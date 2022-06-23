@@ -57,7 +57,6 @@ public class AppsDeploymentStaticSite {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_SOURCE_COMMIT_HASH)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getSourceCommitHash() {
         return sourceCommitHash;
     }

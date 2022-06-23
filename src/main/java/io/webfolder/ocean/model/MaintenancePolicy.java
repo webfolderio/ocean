@@ -114,7 +114,6 @@ public class MaintenancePolicy {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DURATION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getDuration() {
         return duration;
     }

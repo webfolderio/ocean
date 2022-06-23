@@ -92,7 +92,6 @@ public class UpdateVpcRequest {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DEFAULT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Boolean getDefault() {
         return _default;
     }

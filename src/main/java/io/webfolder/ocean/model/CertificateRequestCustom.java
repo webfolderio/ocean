@@ -184,7 +184,6 @@ public class CertificateRequestCustom {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_CERTIFICATE_CHAIN)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getCertificateChain() {
         return certificateChain;
     }

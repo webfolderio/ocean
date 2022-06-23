@@ -119,7 +119,6 @@ public class ProjectBase {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_OWNER_UUID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getOwnerUuid() {
         return ownerUuid;
     }

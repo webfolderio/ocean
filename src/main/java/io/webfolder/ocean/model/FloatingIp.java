@@ -63,7 +63,6 @@ public class FloatingIp {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public FloatingIpRegion getRegion() {
         return region;
     }

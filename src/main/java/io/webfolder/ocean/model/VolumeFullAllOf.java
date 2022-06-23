@@ -56,7 +56,6 @@ public class VolumeFullAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_FILESYSTEM_TYPE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getFilesystemType() {
         return filesystemType;
     }

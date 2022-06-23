@@ -77,7 +77,6 @@ public class GetRegistryOptionsResponseOptions {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_SUBSCRIPTION_TIERS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public List<GetRegistryOptionsResponseOptionsSubscriptionTiersInner> getSubscriptionTiers() {
         return subscriptionTiers;
     }

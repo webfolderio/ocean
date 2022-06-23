@@ -56,7 +56,6 @@ public class InvoiceSummaryOverages {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_AMOUNT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getAmount() {
         return amount;
     }

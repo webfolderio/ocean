@@ -68,7 +68,6 @@ public class AppsGetLogsResponse {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_LIVE_URL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getLiveUrl() {
         return liveUrl;
     }

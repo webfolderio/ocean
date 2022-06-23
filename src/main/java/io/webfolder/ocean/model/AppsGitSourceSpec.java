@@ -57,7 +57,6 @@ public class AppsGitSourceSpec {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_REPO_CLONE_URL)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getRepoCloneUrl() {
         return repoCloneUrl;
     }

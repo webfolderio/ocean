@@ -102,7 +102,6 @@ public class AppsImageSourceSpec {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_REGISTRY_TYPE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public RegistryTypeEnum getRegistryType() {
         return registryType;
     }

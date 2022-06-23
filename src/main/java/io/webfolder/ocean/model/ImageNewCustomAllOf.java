@@ -65,7 +65,6 @@ public class ImageNewCustomAllOf {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_REGION)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public RegionSlug getRegion() {
         return region;
     }

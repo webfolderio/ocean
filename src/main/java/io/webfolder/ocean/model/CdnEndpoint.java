@@ -139,7 +139,6 @@ public class CdnEndpoint {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_ENDPOINT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getEndpoint() {
         return endpoint;
     }

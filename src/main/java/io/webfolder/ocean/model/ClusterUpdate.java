@@ -102,7 +102,6 @@ public class ClusterUpdate {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_MAINTENANCE_POLICY)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public MaintenancePolicy getMaintenancePolicy() {
         return maintenancePolicy;
     }

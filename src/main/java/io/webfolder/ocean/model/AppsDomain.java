@@ -63,7 +63,6 @@ public class AppsDomain {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_PHASE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public AppsDomainPhase getPhase() {
         return phase;
     }

@@ -109,7 +109,6 @@ public class UpdateEndpoint {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_CERTIFICATE_ID)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public UUID getCertificateId() {
         return certificateId;
     }

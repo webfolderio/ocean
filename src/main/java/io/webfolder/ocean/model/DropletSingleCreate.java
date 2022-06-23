@@ -207,7 +207,6 @@ public class DropletSingleCreate {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_BACKUPS)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Boolean getBackups() {
         return backups;
     }

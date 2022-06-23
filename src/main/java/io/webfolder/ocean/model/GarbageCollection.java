@@ -124,7 +124,6 @@ public class GarbageCollection {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_REGISTRY_NAME)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public String getRegistryName() {
         return registryName;
     }

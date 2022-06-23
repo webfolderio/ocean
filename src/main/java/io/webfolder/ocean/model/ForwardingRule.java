@@ -255,7 +255,6 @@ public class ForwardingRule {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_TLS_PASSTHROUGH)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Boolean getTlsPassthrough() {
         return tlsPassthrough;
     }

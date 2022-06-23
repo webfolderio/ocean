@@ -167,7 +167,6 @@ public class AppVariableDefinition {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_TYPE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public TypeEnum getType() {
         return type;
     }

@@ -66,7 +66,6 @@ public class AppAlertSpec {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_DISABLED)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Boolean getDisabled() {
         return disabled;
     }

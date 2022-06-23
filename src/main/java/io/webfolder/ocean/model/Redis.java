@@ -217,7 +217,6 @@ public class Redis {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_REDIS_PUBSUB_CLIENT_OUTPUT_BUFFER_LIMIT)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Integer getRedisPubsubClientOutputBufferLimit() {
         return redisPubsubClientOutputBufferLimit;
     }

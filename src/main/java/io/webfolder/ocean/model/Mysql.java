@@ -179,7 +179,6 @@ public class Mysql {
     @javax.annotation.Nullable
     @JsonProperty(JSON_PROPERTY_BACKUP_MINUTE)
     @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
     public Integer getBackupMinute() {
         return backupMinute;
     }
